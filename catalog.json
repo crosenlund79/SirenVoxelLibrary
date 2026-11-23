@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "library": "SirenVoxelLibrary",
+  "description": "Curated editable voxel assets; proposals live in docs and are not counted as generated models.",
+  "models": []
+}
