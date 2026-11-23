@@ -10,11 +10,14 @@ This is an **independent voxel art repository**, not the Sirens Went Quiet game.
 4. `docs/EXPORT_RULES.md` — real `.vox` source, metadata, previews, derived `.glb` and validation.
 5. `docs/REVIEW_PROCESS.md` — candidate/approval/integration responsibilities.
 6. `docs/PILOT_BATCH.md` — **proposed** first five objects, not automatically authorized.
+7. `docs/RIVAL_WORKFLOW.md` — **mandatory GPT_ / Claude_ ownership and comparison conventions**.
 
 ## Required preflight
 
 - Verify repository identity, branch and clean/dirty status. Preserve unrelated work.
 - Identify the **specific user-approved batch** for the current instruction; a proposed list in docs is not authorization.
+- You are **Claude** in a friendly model-making rivalry. Only author models named `Claude_<base_id>` (exact case); ChatGPT owns the `GPT_` namespace. For the first batch, follow the identical shared briefs independently; do not copy GPT's voxel data, generator implementation, or final geometry.
+- Never create, overwrite, move, or remove `GPT_` model assets, specs, or previews. If GPT models already exist, preserve them. Shared catalog entries must be merged safely.
 - Work in a suitable working branch; don't overwrite previously approved source, push to main, merge or copy into game repos without user approval.
 - Make a concise plan and state what will be produced and how it will be verified.
 - Check available tools before promising actual MagicaVoxel or Godot GUI verification.
@@ -23,6 +26,8 @@ This is an **independent voxel art repository**, not the Sirens Went Quiet game.
 
 - Build physically plausible 3D voxel geometry, **not PNG concept images or ordinary uneditable GLBs**.
 - Generate real MagicaVoxel-compatible `.vox` files with actual cell occupancy, palette and bounds.
+- Canonical source names are `Claude_<base_id>.vox` inside `models/<category>/Claude_<base_id>/`, with matching `Claude_<base_id>.glb` only if exported. Keep `model.json` in that directory and previews in `previews/<category>/Claude_<base_id>/`.
+- Metadata must record `creator: "Claude"`, `base_id`, prefixed `id` and matching prefixed `source` filename. Add only actual candidates to the catalog; preserve existing GPT records.
 - Prefer reproducible generator scripts where it improves iteration; keep source files editable and recognizable without the generator.
 - Work at the coarsest resolution that supports recognizable details. Choose resolution separately for each model.
 - Create corresponding `model.json` records, actual renders, and an updated `catalog.json` with status `candidate`.
@@ -33,7 +38,7 @@ This is an **independent voxel art repository**, not the Sirens Went Quiet game.
 ## Review boundary
 
 - **Only the user approves a candidate.** Never promote it to `approved` merely because scripts/tests pass.
-- Produce a review-ready contact sheet and honest evidence of each actual model.
+- Produce a review-ready contact sheet named `Claude_<batch_id>.png` and honest evidence of each actual model. Present side-by-side comparisons only if actual GPT models already exist; do not fabricate GPT results.
 - Never automatically transfer assets to Sirens Went Quiet or any other game.
 - Treat requested revisions as new proposals against the previously approved revision; no silent replacement.
 
