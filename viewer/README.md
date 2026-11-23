@@ -1,5 +1,23 @@
 # Browser Voxel Viewer
 
+## Online viewing with GitHub Pages
+
+After GitHub Pages has been enabled for this repository, the public viewer URL is:
+
+**https://crosenlund79.github.io/SirenVoxelLibrary/**
+
+The repo contains `.github/workflows/publish-voxel-viewer.yml`, which builds and deploys a static website whenever `main` changes its viewer, `catalog.json`, models or previews. The published site serves only the viewer, catalog, and model/preview files. No backend or account is required.
+
+**One-time GitHub setting (repository owner):**
+
+1. Open `https://github.com/crosenlund79/SirenVoxelLibrary/settings/pages`.
+2. Under **Build and deployment**, choose **Source → GitHub Actions**.
+3. Open the repository **Actions** tab and re-run the **Publish Voxel Viewer** workflow if the initial run failed before Pages was enabled.
+4. Verify the live website above.
+
+GitHub Pages must actually deploy successfully before the URL is considered live. Without the one-time setting, the workflow may fail at `configure-pages`; simply committing a workflow is not enough.
+
+
 **Open `viewer/index.html` by double-clicking it.** It is one self-contained HTML file: no Godot, MagicaVoxel, Python, npm, external libraries, or installation required.
 
 ## Using it
