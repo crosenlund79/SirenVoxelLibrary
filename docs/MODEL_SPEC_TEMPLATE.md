@@ -1,10 +1,12 @@
 # Model Specification Template
 
-Copy this template to `docs/specs/<category>/<asset_id>.md` when a specific asset is proposed. A spec describes **one asset**, not an entire batch. Proposed dimensions, materials and resolutions may be revised during visual review.
+Copy this template to `docs/specs/<category>/<asset_id>.md` when a specific asset is proposed. The asset ID is exactly `GPT_<base_id>` or `Claude_<base_id>` (case-sensitive); both versions share the same base brief. A spec describes **one asset**, not an entire batch. Proposed dimensions, materials and resolutions may be revised during visual review.
 
 ```md
 # <Readable model name>
-- Asset ID: <snake_case_id>
+- Asset ID: <GPT_base_id | Claude_base_id>
+- Base ID: <lowercase_snake_case_id>
+- Creator: <GPT | Claude>
 - Category: <furniture | survival | vegetation | vehicles | decorations | architecture>
 - Status: Proposed
 - Intended uses: <possible game(s); not authorization to integrate>
@@ -42,10 +44,10 @@ Required ground contact, wall clearance, mounts, origin, collision proxy suggest
 Only metadata in this library; game placement mechanics live in the receiving game.
 
 ## Required outputs
-- Editable source.vox
-- model.json (dimensions, cell size, pivot, axes, palette roles, counts)
+- Editable <asset_id>.vox
+- model.json (creator, base ID, prefixed ID/source, dimensions, cell size, pivot, axes, palette roles, counts)
 - Preview: three-quarter, front, side, and scale/scene comparison
-- Optional derived model.glb; if present, must be verified against source
+- Optional derived <asset_id>.glb; if present, must be verified against source
 
 ## Acceptance checks
 - [ ] Recognizable silhouette at thumbnail size
@@ -60,4 +62,4 @@ Only metadata in this library; game placement mechanics live in the receiving ga
 
 ### Scope discipline
 
-Claude can propose improvements during generation, but a written spec or a proposal is **not user approval**. Work only on the models/batch the user actually authorizes. Use clear version identifiers if an already-approved asset needs a revision. Do not overwrite its source before approval.
+Claude can propose improvements during generation, but a written spec or a proposal is **not user approval**. Claude must create only `Claude_` models, while ChatGPT uses `GPT_`; neither modifies the other's candidate. Work only on the models/batch the user actually authorizes. Use clear version identifiers if an already-approved asset needs a revision. Do not overwrite its source before approval.
