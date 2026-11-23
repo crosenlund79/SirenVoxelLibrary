@@ -14,6 +14,7 @@ Voxel art is an **art direction**, not a requirement that every game object uses
 - [Model specification template](docs/MODEL_SPEC_TEMPLATE.md) — what each proposed model must define.
 - [Production and export rules](docs/EXPORT_RULES.md) — editable source, formats, orientation, conversions, and checks.
 - [Review and approval](docs/REVIEW_PROCESS.md) — Candidate → Approved → Integrated.
+- [GPT versus Claude rivalry](docs/RIVAL_WORKFLOW.md) — independent rival models, exact prefixes, side-by-side review.
 - [First five models](docs/PILOT_BATCH.md) — workbench, rain collector, stove, bed, and dead pine.
 - [Claude working instructions](CLAUDE.md) — how to produce models without bypassing review.
 
@@ -27,7 +28,13 @@ tools/                  Generators, validators, exporters (as introduced)
 catalog.json            Machine-readable catalog of model records
 ```
 
-Every completed model directory should contain `source.vox`, `model.json`, and a visual preview (under `previews/`); optional `model.glb` and raw voxel exports are generated from the same source.
+Every completed model directory contains `<asset_id>.vox` (the editable source), `model.json`, and actual rendered previews (under `previews/`); optional `<asset_id>.glb` exports are generated from that source.
+
+## Two creators, one shared standard 🧱
+
+**ChatGPT models must start with `GPT_`; Claude models must start with `Claude_`.** Preserve the exact capitalization in asset IDs, model folders, `.vox` and `.glb` filenames, specs, and batch contact sheets. The suffix is the same base brief for both creators, e.g. `GPT_workbench_worn` and `Claude_workbench_worn`. Both follow the same art bible but create their geometry independently. Nothing is preferred or approved automatically.
+
+Review paired models side by side and select the better version **per object**, rather than forcing one creator to win the entire library. The two creators must never overwrite or delete each other's models. See [Rival Workflow](docs/RIVAL_WORKFLOW.md).
 
 ## Rules of the workshop
 
