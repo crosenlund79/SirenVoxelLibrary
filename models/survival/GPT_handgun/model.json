@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "GPT_handgun",
+  "base_id": "handgun",
+  "creator": "GPT",
+  "name": "Unbranded handgun",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_handgun.vox",
+  "voxel_size_m": 0.01,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    3,
+    11.5,
+    0
+  ],
+  "dimensions_m": [
+    0.06,
+    0.23,
+    0.17
+  ],
+  "occupied_voxels": 853,
+  "material_roles": [
+    "pine_dark",
+    "steel",
+    "steel_dark",
+    "charcoal",
+    "charcoal_lite",
+    "grip",
+    "brass",
+    "shadow_cavity"
+  ],
+  "game_integrations": [],
+  "notes": "Nonfunctional game-art prop with stylized dark slide, olive grip and simple readable silhouette.",
+  "format_validation": "Generated with SIZE/XYZI/RGBA (VOX 150), within 256 cells per dimension. External MagicaVoxel opening not verified."
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "GPT_cooking_pot",
+  "base_id": "cooking_pot",
+  "creator": "GPT",
+  "name": "Enamel cooking pot",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_cooking_pot.vox",
+  "voxel_size_m": 0.02,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    9,
+    7.5,
+    0
+  ],
+  "dimensions_m": [
+    0.36,
+    0.3,
+    0.26
+  ],
+  "occupied_voxels": 640,
+  "material_roles": [
+    "steel",
+    "steel_highlight",
+    "steel_dark",
+    "enamel",
+    "enamel_lite",
+    "rust",
+    "shadow_cavity"
+  ],
+  "game_integrations": [],
+  "notes": "Scuffed blue-gray saucepan with dark interior, bright rim and opposed handles.",
+  "format_validation": "Generated with SIZE/XYZI/RGBA (VOX 150), within 256 cells per dimension. External MagicaVoxel opening not verified."
+}

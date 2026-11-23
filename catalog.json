@@ -2,5 +2,58 @@
   "schema_version": 1,
   "library": "SirenVoxelLibrary",
   "description": "Curated editable voxel assets; proposals live in docs and are not counted as generated models.",
-  "models": []
+  "models": [
+    {
+      "id": "GPT_dining_table",
+      "base_id": "dining_table",
+      "creator": "GPT",
+      "name": "Worn dining table",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/GPT_dining_table/GPT_dining_table.vox",
+      "metadata_path": "models/furniture/GPT_dining_table/model.json",
+      "preview_path": "previews/furniture/GPT_dining_table/hero.svg",
+      "game_integrations": []
+    },
+    {
+      "id": "GPT_dining_chair",
+      "base_id": "dining_chair",
+      "creator": "GPT",
+      "name": "Dining chair",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/GPT_dining_chair/GPT_dining_chair.vox",
+      "metadata_path": "models/furniture/GPT_dining_chair/model.json",
+      "preview_path": "previews/furniture/GPT_dining_chair/hero.svg",
+      "game_integrations": []
+    },
+    {
+      "id": "GPT_cooking_pot",
+      "base_id": "cooking_pot",
+      "creator": "GPT",
+      "name": "Enamel cooking pot",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/GPT_cooking_pot/GPT_cooking_pot.vox",
+      "metadata_path": "models/survival/GPT_cooking_pot/model.json",
+      "preview_path": "previews/survival/GPT_cooking_pot/hero.svg",
+      "game_integrations": []
+    },
+    {
+      "id": "GPT_handgun",
+      "base_id": "handgun",
+      "creator": "GPT",
+      "name": "Unbranded handgun",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/GPT_handgun/GPT_handgun.vox",
+      "metadata_path": "models/survival/GPT_handgun/model.json",
+      "preview_path": "previews/survival/GPT_handgun/hero.svg",
+      "game_integrations": []
+    }
+  ]
 }

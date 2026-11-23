@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "GPT_dining_table",
+  "base_id": "dining_table",
+  "creator": "GPT",
+  "name": "Worn dining table",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_dining_table.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    14,
+    8,
+    0
+  ],
+  "dimensions_m": [
+    1.4,
+    0.8,
+    0.75
+  ],
+  "occupied_voxels": 1981,
+  "material_roles": [
+    "aged_pine",
+    "pine_light",
+    "pine_dark",
+    "wood_highlight",
+    "grain",
+    "brass"
+  ],
+  "game_integrations": [],
+  "notes": "A practical pine household dining table. Matched to the companion chair.",
+  "format_validation": "Generated with SIZE/XYZI/RGBA (VOX 150), within 256 cells per dimension. External MagicaVoxel opening not verified."
+}

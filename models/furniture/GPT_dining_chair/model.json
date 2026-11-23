@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "GPT_dining_chair",
+  "base_id": "dining_chair",
+  "creator": "GPT",
+  "name": "Dining chair",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_dining_chair.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    5,
+    5.5,
+    0
+  ],
+  "dimensions_m": [
+    0.5,
+    0.55,
+    0.9
+  ],
+  "occupied_voxels": 476,
+  "material_roles": [
+    "aged_pine",
+    "pine_light",
+    "pine_dark",
+    "wood_highlight",
+    "grain"
+  ],
+  "game_integrations": [],
+  "notes": "Aged pine chair with fitted seat, tapered legs and a welcoming slatted back.",
+  "format_validation": "Generated with SIZE/XYZI/RGBA (VOX 150), within 256 cells per dimension. External MagicaVoxel opening not verified."
+}
