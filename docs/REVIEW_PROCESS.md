@@ -32,9 +32,13 @@ The catalog's `status` field is `candidate`, `approved`, or `rejected`; `game_in
 
 ## Catalog rules
 
-`catalog.json` is the searchable inventory of **actual generated assets**. Do not add speculative assets as if they exist. Required record fields: `id`, `name`, `category`, `status`, `revision`, `source_path`, `metadata_path`, `preview_path`, `game_integrations`.
+`catalog.json` is the searchable inventory of **actual generated assets**. Do not add speculative assets as if they exist. Required record fields: `id`, `base_id`, `creator`, `name`, `category`, `status`, `revision`, `source_path`, `metadata_path`, `preview_path`, `game_integrations`. Append each candidate independently. Never remove or overwrite another creator's record when updating the shared catalog.
 
-Model IDs: lowercase `snake_case`, unique and stable. Categories initially: `furniture`, `survival`, `vegetation`, `vehicles`, `decorations`, `architecture`. Expand categories only when helpful.
+Model IDs: **case-sensitive** `GPT_<base_id>` or `Claude_<base_id>`, with `<base_id>` in lowercase `snake_case`; unique and stable. The prefixes identify creator, not winner. Categories initially: `furniture`, `survival`, `vegetation`, `vehicles`, `decorations`, `architecture`. Expand categories only when helpful.
+
+## Rival review
+
+For each shared base ID, present the GPT and Claude versions at the same world scale, lighting and camera angles. If only one exists, label the other **not yet produced**; never invent results. Compare art quality, silhouette, materials, technical validity and performance pragmatically. The user may approve either, both, neither or request a new interpretation. See `docs/RIVAL_WORKFLOW.md`.
 
 ## First review standard
 
