@@ -17,6 +17,7 @@ Voxel art is an **art direction**, not a requirement that every game object uses
 - [GPT versus Claude rivalry](docs/RIVAL_WORKFLOW.md) — independent rival models, exact prefixes, side-by-side review.
 - [First five models](docs/PILOT_BATCH.md) — workbench, rain collector, stove, bed, and dead pine.
 - [Claude working instructions](CLAUDE.md) — how to produce models without bypassing review.
+- [Voxel Viewer](viewer/README.md) — open and rotate genuine `.vox` models in your browser, offline and without installation.
 
 ## Library layout
 
@@ -26,6 +27,7 @@ models/<category>/<id>/  A model's source, metadata and derived files
 previews/<category>/     Consistent contact sheets and showcase renders
 tools/                  Generators, validators, exporters (as introduced)
 catalog.json            Machine-readable catalog of model records
+viewer/index.html      Self-contained read-only voxel viewer (double-click to open)
 ```
 
 Every completed model directory contains `<asset_id>.vox` (the editable source), `model.json`, and actual rendered previews (under `previews/`); optional `<asset_id>.glb` exports are generated from that source.
