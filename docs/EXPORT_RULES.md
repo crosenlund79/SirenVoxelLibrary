@@ -39,7 +39,7 @@ A per-model `model.json` must include the following minimal information. Example
   "godot_forward": "-Z",
   "pivot_voxel": [8.5, 3.5, 0.0],
   "dimensions_m": [1.7, 0.7, 0.9],
-  "occupied_voxels": 1250,
+  "occupied_voxels": 600,
   "material_roles": ["aged_pine", "dark_steel"],
   "game_integration": []
 }
