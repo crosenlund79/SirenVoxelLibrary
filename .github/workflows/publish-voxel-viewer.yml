@@ -1,0 +1,74 @@
+name: Publish Voxel Viewer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'viewer/**'
+      - 'catalog.json'
+      - 'models/**'
+      - 'previews/**'
+      - '.github/workflows/publish-voxel-viewer.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout library
+        uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Prepare viewer and catalog
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site/viewer
+          cp viewer/index.html _site/viewer/index.html
+          cp catalog.json _site/catalog.json
+          if [ -d models ]; then cp -R models _site/models; fi
+          if [ -d previews ]; then cp -R previews _site/previews; fi
+          touch _site/.nojekyll
+          cat > _site/index.html <<'EOF'
+          <!doctype html>
+          <html lang="en">
+            <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <meta http-equiv="refresh" content="0;url=viewer/">
+              <title>SirenVoxelLibrary — Voxel Viewer</title>
+            </head>
+            <body>
+              <p><a href="viewer/">Open SirenVoxelLibrary Viewer</a></p>
+            </body>
+          </html>
+          EOF
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
