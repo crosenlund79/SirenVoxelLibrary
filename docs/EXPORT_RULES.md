@@ -2,15 +2,15 @@
 
 ## 1. Source of truth
 
-**`source.vox` is the editable master.** Never substitute a screenshot, a raster sprite, or a baked polygon mesh for it.
+**`<asset_id>.vox` is the editable master**, where `<asset_id>` starts with `GPT_` or `Claude_`. Never substitute a screenshot, a raster sprite, or a baked polygon mesh for it.
 
 For each model `<category>/<asset_id>`, use:
 
 ```text
 models/<category>/<asset_id>/
-  source.vox            # canonical editable source
+  <asset_id>.vox        # canonical editable source, e.g. Claude_workbench_worn.vox
   model.json            # machine-readable metadata
-  model.glb             # optional generated Godot-ready mesh
+  <asset_id>.glb        # optional generated Godot-ready mesh
 previews/<category>/<asset_id>/
   hero.png
   front.png
@@ -18,6 +18,8 @@ previews/<category>/<asset_id>/
   scale.png
 docs/specs/<category>/<asset_id>.md
 ```
+
+The model directory, VOX filename, optional GLB filename, and spec filename must all use the same **creator-prefixed asset ID**. The preview directory is also creator-prefixed; generic filenames inside it (hero.png etc.) are fine. See `docs/RIVAL_WORKFLOW.md` for exact `GPT_` and `Claude_` ownership rules.
 
 Derived exports are reproducible from the source and should not be edited by hand. This path convention is the default; if the pilot requires a different scheme, document the change before generating many assets.
 
@@ -28,12 +30,14 @@ A per-model `model.json` must include the following minimal information. Example
 ```json
 {
   "schema_version": 1,
-  "id": "example_workbench",
+  "id": "Claude_example_workbench",
+  "base_id": "example_workbench",
+  "creator": "Claude",
   "name": "Example Workbench",
   "category": "furniture",
   "revision": 1,
   "status": "candidate",
-  "source": "source.vox",
+  "source": "Claude_example_workbench.vox",
   "voxel_size_m": 0.1,
   "source_axes": {"right": "+X", "front": "+Y", "up": "+Z"},
   "godot_forward": "-Z",
@@ -47,12 +51,14 @@ A per-model `model.json` must include the following minimal information. Example
 
 `pivot_voxel` is in **voxel-coordinate units** measured from the source grid's minimum corner; it may use half-cell coordinates to express a centred floor pivot. `dimensions_m` are (X width, Y depth, Z height). Source model world dimensions should be consistent with occupied extents and `voxel_size_m`. If the model uses additional intentional empty space or offsets, document them.
 
+**The prefix is provenance, not approval or a quality rank.** Source names must agree with `id`, and the same base model may appear independently in `GPT_` and `Claude_` variants.
+
 **Catalog status versus metadata status:** the catalog is the review index. Before publishing, ensure the catalog and model metadata agree; never claim `approved` without explicit user approval.
 
 ## 3. Formats
 
 **Required:**
-- `.vox` in a documented MagicaVoxel-compatible VOX format with a valid palette and actual occupied voxel data.
+- `<asset_id>.vox` in a documented MagicaVoxel-compatible VOX format with a valid palette and actual occupied voxel data.
 - `model.json` as described above.
 - Actual model renders (`.png`) captured from the voxel model, not AI images presented as evidence of a finished asset.
 
