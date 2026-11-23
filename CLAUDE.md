@@ -11,6 +11,7 @@ This is an **independent voxel art repository**, not the Sirens Went Quiet game.
 5. `docs/REVIEW_PROCESS.md` — candidate/approval/integration responsibilities.
 6. `docs/PILOT_BATCH.md` — **proposed** first five objects, not automatically authorized.
 7. `docs/RIVAL_WORKFLOW.md` — **mandatory GPT_ / Claude_ ownership and comparison conventions**.
+8. `viewer/README.md` — built-in read-only `.vox` inspector for creator review.
 
 ## Required preflight
 
@@ -31,6 +32,7 @@ This is an **independent voxel art repository**, not the Sirens Went Quiet game.
 - Prefer reproducible generator scripts where it improves iteration; keep source files editable and recognizable without the generator.
 - Work at the coarsest resolution that supports recognizable details. Choose resolution separately for each model.
 - Create corresponding `model.json` records, actual renders, and an updated `catalog.json` with status `candidate`.
+- Use `viewer/index.html` for a quick visual inspection of the genuine `.vox` output where a browser is available. It is a convenience viewer, not a format validator and not a replacement for generated preview files or actual MagicaVoxel compatibility testing.
 - If exporting `.glb`, derive it from the VOX source and verify orientation, scale and colors. Do not claim Godot integration without testing it.
 - Use compatible, documented software available in the environment. If a GUI is not available, validate the VOX structure with a parser and mark external-editor verification pending.
 - Keep the library free of unnecessary game logic and tool infrastructure.
