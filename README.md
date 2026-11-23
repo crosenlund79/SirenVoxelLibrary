@@ -8,6 +8,14 @@ Make expressive, readable, hand-crafted voxel models for a believable, slightly 
 
 Voxel art is an **art direction**, not a requirement that every game object uses runtime destructible voxels. The game can render approved assets as conventional meshes or convert suitable assets into its own voxel engine.
 
+## 🌐 Online voxel viewer
+
+**Website:** https://crosenlund79.github.io/SirenVoxelLibrary/
+
+The read-only viewer and automated Pages deployment are installed. **The site will become live once GitHub Pages is enabled** in [repository Settings → Pages](https://github.com/crosenlund79/SirenVoxelLibrary/settings/pages) by choosing **Source: GitHub Actions**. If the first workflow run failed, re-run [Publish Voxel Viewer](https://github.com/crosenlund79/SirenVoxelLibrary/actions/workflows/publish-voxel-viewer.yml) afterward.
+
+Future committed `GPT_` and `Claude_` models are picked up automatically from `catalog.json`. You can also open `viewer/index.html` locally and drag-and-drop a `.vox` file without a server.
+
 ## Start here
 
 - [Voxel art bible](docs/VOXEL_ART_BIBLE.md) — visual identity, scale, resolution, materials, and shape language.
