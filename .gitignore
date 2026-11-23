@@ -1,0 +1,16 @@
+# Local generation/cache and editor metadata
+__pycache__/
+*.pyc
+.venv/
+venv/
+.cache/
+.DS_Store
+Thumbs.db
+*.blend1
+*.blend2
+
+# Keep final source.vox, verified model.glb, model.json and actual previews tracked.
+# Avoid committing giant temporary render sequences or intermediate meshes.
+tmp/
+temp/
+render_tmp/
