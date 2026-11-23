@@ -1,7 +1,7 @@
 # SirenVoxelLibrary — Voxel Art Bible
 **Version 1.0 · Draft foundation · 2026-11-23**
 
-This is the shared visual standard for a curated library of real editable voxel objects. Its first use case is **Sirens Went Quiet**, but it must remain usable in other games. It is a creative and technical *guide*, not permission to generate unrequested models.
+This is the **shared visual standard for both GPT and Claude** in a friendly model-making rivalry. Both creators must follow it, while building their model geometry independently. Creator prefixes are exactly `GPT_` and `Claude_` (see `docs/RIVAL_WORKFLOW.md`). It is the shared visual standard for a curated library of real editable voxel objects. Its first use case is **Sirens Went Quiet**, but it must remain usable in other games. It is a creative and technical *guide*, not permission to generate unrequested models.
 
 ## 1. Artistic thesis
 
