@@ -1,9 +1,11 @@
 # Pilot Batch 001 — Five Proposed Models
-**Status: proposed concepts only.** This document does not authorize generation. The user may approve all, some, or revised briefs in a later instruction.
+**Status: shared briefs, not yet generated.** This document alone does not authorize generation; a direct user instruction may commission one creator's batch. The two creators use these **same five briefs** but build independently under `GPT_` and `Claude_` names.
 
 ## Why these five?
 
 These models test the library's visual rules across **furniture**, **functional survival devices**, **fire/metalwork**, **soft domestic objects**, and **organic vegetation**. Review them together, at the same physical scale, before producing a large catalog.
+
+**Rival pair IDs:** for base `workbench_worn`, names are `GPT_workbench_worn` and `Claude_workbench_worn`; this same rule applies to all five. Their canonical VOX source filenames also carry the prefix. See `docs/RIVAL_WORKFLOW.md`.
 
 All models use the standard library orientation: X right, +Y front, Z up; dimensions in metres; bottom-centre pivot unless noted. Dimensions are **starting targets**, not final commitments.
 
@@ -64,7 +66,7 @@ For each model, show:
 - actual `.vox` source and `model.json`;
 - dimensions, cell size, occupied voxel count, and any exported GLB validation results.
 
-Make one **five-model contact sheet** using consistent camera and lighting, with each object's name and scale. Use separate framing for the 4.5 m pine so it stays legible.
+Make one **five-model contact sheet per creator**, named `GPT_pilot_001.png` and `Claude_pilot_001.png` respectively, using consistent camera and lighting, with each object's name and scale. When both sets exist, optionally make a labeled side-by-side sheet with the same render settings. Use separate framing for the 4.5 m pine so it stays legible.
 
 ## Success threshold before expanding
 
