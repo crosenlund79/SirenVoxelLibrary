@@ -2,5 +2,121 @@
   "schema_version": 1,
   "library": "SirenVoxelLibrary",
   "description": "Curated editable voxel assets; proposals live in docs and are not counted as generated models.",
-  "models": []
+  "models": [
+    {
+      "id": "Claude_workbench_worn",
+      "base_id": "workbench_worn",
+      "creator": "Claude",
+      "name": "Worn Workbench",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_workbench_worn/Claude_workbench_worn.vox",
+      "metadata_path": "models/furniture/Claude_workbench_worn/model.json",
+      "preview_path": "previews/furniture/Claude_workbench_worn/",
+      "derived_paths": [
+        "models/furniture/Claude_workbench_worn/Claude_workbench_worn.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.8,
+        0.9,
+        1.1
+      ],
+      "occupied_voxels": 2427,
+      "game_integrations": []
+    },
+    {
+      "id": "Claude_rain_collector_basic",
+      "base_id": "rain_collector_basic",
+      "creator": "Claude",
+      "name": "Basic Rain Collector",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_rain_collector_basic/Claude_rain_collector_basic.vox",
+      "metadata_path": "models/survival/Claude_rain_collector_basic/model.json",
+      "preview_path": "previews/survival/Claude_rain_collector_basic/",
+      "derived_paths": [
+        "models/survival/Claude_rain_collector_basic/Claude_rain_collector_basic.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.05,
+        1.0,
+        1.6
+      ],
+      "occupied_voxels": 2390,
+      "game_integrations": []
+    },
+    {
+      "id": "Claude_wood_stove_compact",
+      "base_id": "wood_stove_compact",
+      "creator": "Claude",
+      "name": "Compact Wood Stove",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_wood_stove_compact/Claude_wood_stove_compact.vox",
+      "metadata_path": "models/survival/Claude_wood_stove_compact/model.json",
+      "preview_path": "previews/survival/Claude_wood_stove_compact/",
+      "derived_paths": [
+        "models/survival/Claude_wood_stove_compact/Claude_wood_stove_compact.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.8,
+        0.75,
+        1.0
+      ],
+      "occupied_voxels": 1267,
+      "game_integrations": []
+    },
+    {
+      "id": "Claude_single_bed_unmade",
+      "base_id": "single_bed_unmade",
+      "creator": "Claude",
+      "name": "Unmade Single Bed",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_single_bed_unmade/Claude_single_bed_unmade.vox",
+      "metadata_path": "models/furniture/Claude_single_bed_unmade/model.json",
+      "preview_path": "previews/furniture/Claude_single_bed_unmade/",
+      "derived_paths": [
+        "models/furniture/Claude_single_bed_unmade/Claude_single_bed_unmade.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.1,
+        2.0,
+        0.75
+      ],
+      "occupied_voxels": 3709,
+      "game_integrations": []
+    },
+    {
+      "id": "Claude_pine_dead_small",
+      "base_id": "pine_dead_small",
+      "creator": "Claude",
+      "name": "Small Dead Pine",
+      "category": "vegetation",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vegetation/Claude_pine_dead_small/Claude_pine_dead_small.vox",
+      "metadata_path": "models/vegetation/Claude_pine_dead_small/model.json",
+      "preview_path": "previews/vegetation/Claude_pine_dead_small/",
+      "derived_paths": [
+        "models/vegetation/Claude_pine_dead_small/Claude_pine_dead_small.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        2.2,
+        1.9,
+        4.4
+      ],
+      "occupied_voxels": 400,
+      "game_integrations": []
+    }
+  ]
 }
