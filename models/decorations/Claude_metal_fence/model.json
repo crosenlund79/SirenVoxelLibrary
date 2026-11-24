@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "Claude_metal_fence",
+  "base_id": "metal_fence",
+  "creator": "Claude",
+  "name": "Metal Fence Section",
+  "category": "decorations",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_metal_fence.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_metal_fence.glb",
+    "glb_vertices": 3968,
+    "glb_triangles": 1984,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    19.0,
+    1.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y faces the street or the person using it.",
+  "grid_size_cells": [
+    38,
+    2,
+    33
+  ],
+  "dimensions_m": [
+    1.9,
+    0.1,
+    1.65
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 854,
+  "condition": "worn",
+  "gameplay_use": "Yard/industrial boundary",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "galv",
+    "galv_dark",
+    "galv_hi",
+    "porcelain_deep",
+    "porcelain_shadow"
+  ],
+  "palette_roles": [
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 92
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 182
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 567
+    },
+    {
+      "index": 116,
+      "role": "porcelain_shadow",
+      "hex": "#ABA69B",
+      "voxels": 6
+    },
+    {
+      "index": 117,
+      "role": "porcelain_deep",
+      "hex": "#8D897F",
+      "voxels": 7
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 1.9 x 0.1 x 1.6 m; mesh blocks movement, not sight.",
+  "story": "A chain-link section along a school or yard boundary. Someone climbed it at the left corner until the mesh tore off the top rail and sagged outward, and a plastic bag has been caught low in the mesh for months.",
+  "notes": [
+    "Chain-link panel with galvanised posts and top rail, sagging corner."
+  ],
+  "generator": "tools/claude/models/catalog/d2_street.py",
+  "spec": "docs/specs/decorations/Claude_metal_fence.md",
+  "previews": {
+    "hero": "previews/decorations/Claude_metal_fence/hero.png",
+    "front": "previews/decorations/Claude_metal_fence/front.png",
+    "side": "previews/decorations/Claude_metal_fence/side.png",
+    "scale": "previews/decorations/Claude_metal_fence/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.9,
+    0.1
+  ]
+}

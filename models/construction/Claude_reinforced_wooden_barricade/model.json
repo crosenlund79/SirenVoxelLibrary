@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "id": "Claude_reinforced_wooden_barricade",
+  "base_id": "reinforced_wooden_barricade",
+  "creator": "Claude",
+  "name": "Reinforced Wooden Barricade",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_reinforced_wooden_barricade.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_reinforced_wooden_barricade.glb",
+    "glb_vertices": 1584,
+    "glb_triangles": 792,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    10.0,
+    4.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the outside face; the module fills its full span.",
+  "grid_size_cells": [
+    20,
+    10,
+    41
+  ],
+  "dimensions_m": [
+    1.0,
+    0.5,
+    2.05
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 2236,
+  "condition": "improvised",
+  "gameplay_use": "Upgraded barricade",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "break_fresh",
+    "galv",
+    "galv_dark",
+    "galv_hi",
+    "iron_edge",
+    "iron_warm",
+    "pine_aged",
+    "pine_dark",
+    "pine_light",
+    "pine_mid",
+    "rust_deep",
+    "sage_dark",
+    "sage_deep",
+    "steel",
+    "steel_dark",
+    "steel_light",
+    "wgrey",
+    "wgrey_dark",
+    "wgrey_deep",
+    "wgrey_mid",
+    "wgrey_warm",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 66
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 371
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 615
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 16
+    },
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 24
+    },
+    {
+      "index": 10,
+      "role": "wgrey",
+      "hex": "#8B8478",
+      "voxels": 127
+    },
+    {
+      "index": 11,
+      "role": "wgrey_mid",
+      "hex": "#766F64",
+      "voxels": 170
+    },
+    {
+      "index": 12,
+      "role": "wgrey_dark",
+      "hex": "#5E5850",
+      "voxels": 217
+    },
+    {
+      "index": 13,
+      "role": "wgrey_deep",
+      "hex": "#46423C",
+      "voxels": 43
+    },
+    {
+      "index": 15,
+      "role": "wgrey_warm",
+      "hex": "#94806A",
+      "voxels": 235
+    },
+    {
+      "index": 25,
+      "role": "break_fresh",
+      "hex": "#C9B08A",
+      "voxels": 1
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 4
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 9
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 6
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 13
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 74
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 21
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 86
+    },
+    {
+      "index": 47,
+      "role": "iron_warm",
+      "hex": "#4A4440",
+      "voxels": 72
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 39
+    },
+    {
+      "index": 147,
+      "role": "sage_dark",
+      "hex": "#637064",
+      "voxels": 19
+    },
+    {
+      "index": 148,
+      "role": "sage_deep",
+      "hex": "#4C574D",
+      "voxels": 8
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The side-passage barricade after a bad week: rebuilt on three uprights with a second layer of boards, propped from behind, and patched with whatever steel turned up - a corrugated garage panel and a rusty plate - bolted through.",
+  "notes": [
+    "1.0 x 2.05 m face; the props need 0.5 m of depth (reference 0.25 m)."
+  ],
+  "generator": "tools/claude/models/catalog/b3_construction.py",
+  "spec": "docs/specs/construction/Claude_reinforced_wooden_barricade.md",
+  "previews": {
+    "hero": "previews/construction/Claude_reinforced_wooden_barricade/hero.png",
+    "front": "previews/construction/Claude_reinforced_wooden_barricade/front.png",
+    "side": "previews/construction/Claude_reinforced_wooden_barricade/side.png",
+    "scale": "previews/construction/Claude_reinforced_wooden_barricade/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.0,
+    0.45
+  ],
+  "variant_of": "wooden_barricade"
+}

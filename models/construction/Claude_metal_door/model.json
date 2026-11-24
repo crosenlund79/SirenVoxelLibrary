@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "id": "Claude_metal_door",
+  "base_id": "metal_door",
+  "creator": "Claude",
+  "name": "Metal Door",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_metal_door.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_metal_door.glb",
+    "glb_vertices": 824,
+    "glb_triangles": 412,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    10.0,
+    2.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the outside face; the module fills its full span.",
+  "grid_size_cells": [
+    20,
+    4,
+    42
+  ],
+  "dimensions_m": [
+    1.0,
+    0.2,
+    2.1
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 2048,
+  "condition": "used",
+  "gameplay_use": "Upgraded door",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "bluegrey",
+    "bluegrey_dark",
+    "bluegrey_deep",
+    "brass_dark",
+    "charcoal",
+    "iron",
+    "iron_edge",
+    "rust_dark",
+    "rust_deep",
+    "steel",
+    "steel_dark",
+    "steel_hi",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 33,
+      "role": "steel_hi",
+      "hex": "#ADB4B2",
+      "voxels": 9
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 29
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 46
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 125
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 489
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 1
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 6
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 12
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 3
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 43
+    },
+    {
+      "index": 55,
+      "role": "brass_dark",
+      "hex": "#786439",
+      "voxels": 1
+    },
+    {
+      "index": 74,
+      "role": "bluegrey",
+      "hex": "#687A82",
+      "voxels": 28
+    },
+    {
+      "index": 75,
+      "role": "bluegrey_dark",
+      "hex": "#53636A",
+      "voxels": 392
+    },
+    {
+      "index": 76,
+      "role": "bluegrey_deep",
+      "hex": "#404C52",
+      "voxels": 864
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A steel security door from a pharmacy's back entrance, rehung in a welded frame by survivors. The heavy bar latch is scratched bright from use and the bottom has rusted where rain sat against it.",
+  "notes": [
+    "Closed. 1.0 x 2.1 m frame, 0.15 m deep; the latch bar stands 5 cm proud (bounds 0.2 m)."
+  ],
+  "generator": "tools/claude/models/catalog/b3_construction.py",
+  "spec": "docs/specs/construction/Claude_metal_door.md",
+  "previews": {
+    "hero": "previews/construction/Claude_metal_door/hero.png",
+    "front": "previews/construction/Claude_metal_door/front.png",
+    "side": "previews/construction/Claude_metal_door/side.png",
+    "scale": "previews/construction/Claude_metal_door/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.0,
+    0.2
+  ]
+}

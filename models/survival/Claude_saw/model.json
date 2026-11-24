@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "Claude_saw",
+  "base_id": "saw",
+  "creator": "Claude",
+  "name": "Hand Saw",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_saw.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_saw.glb",
+    "glb_vertices": 1180,
+    "glb_triangles": 590,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    5.0,
+    27.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "Lies on its side as it would rest on a bench: handle along Y, working end at +Y, lowest point on z = 0. Rotate to the hand for a held pose. Teeth toward -X (camera side), spine toward +X.",
+  "grid_size_cells": [
+    10,
+    55,
+    2
+  ],
+  "dimensions_m": [
+    0.125,
+    0.6875,
+    0.025
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 426,
+  "condition": "used",
+  "gameplay_use": "Woodworking tool",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "brass_hi",
+    "pine_aged",
+    "pine_dark",
+    "pine_mid",
+    "rust_dark",
+    "steel",
+    "steel_light",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 75
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 105
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 5
+    },
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 14
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 134
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 83
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 7
+    },
+    {
+      "index": 53,
+      "role": "brass_hi",
+      "hex": "#C2A468",
+      "voxels": 3
+    }
+  ],
+  "attachments": {
+    "grip": {
+      "description": "Fingers through the hand hole around the rear grip of the D-handle.",
+      "voxel": [
+        4,
+        2,
+        1
+      ],
+      "offset_m_from_pivot": [
+        -0.0062,
+        -0.3125,
+        0.0188
+      ]
+    }
+  },
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A panel saw from a retired neighbour's workshop, still sharp. The beech handle has gone dark and glossy where the fingers wrap; a little rust has bloomed near the toe where it hung on a damp shed wall.",
+  "notes": [
+    "Hand saw with a wooden D-handle and a tapering blade.",
+    "Height (Z) is the tool's real thickness lying on its side; the reference's larger Z is a coarse-cell minimum."
+  ],
+  "generator": "tools/claude/models/catalog/b1_storage_tools.py",
+  "spec": "docs/specs/survival/Claude_saw.md",
+  "previews": {
+    "hero": "previews/survival/Claude_saw/hero.png",
+    "front": "previews/survival/Claude_saw/front.png",
+    "side": "previews/survival/Claude_saw/side.png",
+    "scale": "previews/survival/Claude_saw/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.125,
+    0.6875
+  ]
+}

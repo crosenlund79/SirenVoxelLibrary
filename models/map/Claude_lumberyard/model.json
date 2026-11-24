@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "id": "Claude_lumberyard",
+  "base_id": "lumberyard",
+  "creator": "Claude",
+  "name": "Lumberyard / Sawmill",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_lumberyard.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_lumberyard.glb",
+    "glb_vertices": 1872,
+    "glb_triangles": 936,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    15.0,
+    14.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    30,
+    28,
+    11
+  ],
+  "dimensions_m": [
+    15.0,
+    14.0,
+    5.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1982,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Construction)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "bark",
+    "bark_mid",
+    "black",
+    "break_fresh",
+    "concrete",
+    "galv",
+    "galv_dark",
+    "galv_hi",
+    "gravel",
+    "hazard_yellow_dark",
+    "pine_light",
+    "pine_mid",
+    "sawdust",
+    "snag_light",
+    "soil",
+    "steel",
+    "steel_dark",
+    "wgrey_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 76
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 28
+    },
+    {
+      "index": 8,
+      "role": "sawdust",
+      "hex": "#D6C19C",
+      "voxels": 183
+    },
+    {
+      "index": 12,
+      "role": "wgrey_dark",
+      "hex": "#5E5850",
+      "voxels": 69
+    },
+    {
+      "index": 18,
+      "role": "bark",
+      "hex": "#73695F",
+      "voxels": 54
+    },
+    {
+      "index": 19,
+      "role": "bark_mid",
+      "hex": "#5F564E",
+      "voxels": 48
+    },
+    {
+      "index": 22,
+      "role": "snag_light",
+      "hex": "#BFB39F",
+      "voxels": 28
+    },
+    {
+      "index": 25,
+      "role": "break_fresh",
+      "hex": "#C9B08A",
+      "voxels": 22
+    },
+    {
+      "index": 31,
+      "role": "soil",
+      "hex": "#4F453C",
+      "voxels": 152
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 8
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 67
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 20
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 38
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 546
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 30
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 204
+    },
+    {
+      "index": 200,
+      "role": "gravel",
+      "hex": "#8C877D",
+      "voxels": 385
+    },
+    {
+      "index": 204,
+      "role": "hazard_yellow_dark",
+      "hex": "#9A7E2D",
+      "voxels": 24
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A family sawmill at the edge of the woods. The last log is still on the carriage under the saw; the yard crew stacked the week's boards and never came back for them.",
+  "notes": [
+    "Open-sided saw shed, log piles, stacked lumber, conveyor."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_lumberyard.md",
+  "previews": {
+    "hero": "previews/map/Claude_lumberyard/hero.png",
+    "front": "previews/map/Claude_lumberyard/front.png",
+    "side": "previews/map/Claude_lumberyard/side.png",
+    "scale": "previews/map/Claude_lumberyard/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    15.0,
+    14.0
+  ]
+}

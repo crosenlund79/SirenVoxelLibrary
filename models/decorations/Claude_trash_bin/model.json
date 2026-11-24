@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "Claude_trash_bin",
+  "base_id": "trash_bin",
+  "creator": "Claude",
+  "name": "Wheelie Bin",
+  "category": "decorations",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_trash_bin.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_trash_bin.glb",
+    "glb_vertices": 744,
+    "glb_triangles": 372,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    6.0,
+    5.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y faces the street or the person using it.",
+  "grid_size_cells": [
+    12,
+    11,
+    19
+  ],
+  "dimensions_m": [
+    0.6,
+    0.55,
+    0.95
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 909,
+  "condition": "worn",
+  "gameplay_use": "Street prop (game trash_bin)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "charcoal",
+    "green",
+    "green_dark",
+    "green_deep",
+    "green_light",
+    "iron",
+    "porcelain_shadow",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 4
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 6
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 27
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 40
+    },
+    {
+      "index": 66,
+      "role": "green_light",
+      "hex": "#69806F",
+      "voxels": 50
+    },
+    {
+      "index": 67,
+      "role": "green",
+      "hex": "#566C60",
+      "voxels": 96
+    },
+    {
+      "index": 68,
+      "role": "green_dark",
+      "hex": "#46584F",
+      "voxels": 474
+    },
+    {
+      "index": 69,
+      "role": "green_deep",
+      "hex": "#36443D",
+      "voxels": 208
+    },
+    {
+      "index": 116,
+      "role": "porcelain_shadow",
+      "hex": "#ABA69B",
+      "voxels": 4
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 0.6 x 0.5 x 0.9 m; the lid gap is cosmetic.",
+  "story": "A household wheelie bin left at the kerb for a collection that never came. The lid will not shut over the last black bag someone forced in, and the lid front is rubbed pale where hands lifted it every week.",
+  "notes": [
+    "Dark green wheelie bin, lid ajar, wheels and axle, a bag poking out."
+  ],
+  "generator": "tools/claude/models/catalog/d2_street.py",
+  "spec": "docs/specs/decorations/Claude_trash_bin.md",
+  "previews": {
+    "hero": "previews/decorations/Claude_trash_bin/hero.png",
+    "front": "previews/decorations/Claude_trash_bin/front.png",
+    "side": "previews/decorations/Claude_trash_bin/side.png",
+    "scale": "previews/decorations/Claude_trash_bin/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.6,
+    0.45
+  ]
+}

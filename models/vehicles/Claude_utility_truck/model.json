@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "id": "Claude_utility_truck",
+  "base_id": "utility_truck",
+  "creator": "Claude",
+  "name": "Abandoned Utility Truck",
+  "category": "vehicles",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_utility_truck.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_utility_truck.glb",
+    "glb_vertices": 3152,
+    "glb_triangles": 1576,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count. Compartment doors, boom and 0.8 m wheels need 0.1 m cells; the game's structure grid is also 0.1 m.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    11.5,
+    29.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre between the axles (wheel centres at y = 13 and y = 46).",
+  "front_note": "The vehicle's nose is +Y.",
+  "grid_size_cells": [
+    23,
+    56,
+    23
+  ],
+  "dimensions_m": [
+    2.3,
+    5.6,
+    2.3
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 5475,
+  "condition": "abandoned",
+  "gameplay_use": "Street prop",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "charcoal",
+    "galv_dark",
+    "glass_dark",
+    "glass_deep",
+    "glass_hi",
+    "hazard_yellow_dark",
+    "label_cream",
+    "paint_white",
+    "paint_white_shadow",
+    "porcelain_deep",
+    "porcelain_mid",
+    "rust_dark",
+    "rust_deep",
+    "rust_hi",
+    "safety_orange",
+    "safety_orange_dark",
+    "screen",
+    "soot",
+    "steel",
+    "steel_dark",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 74
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 59
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 78
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 339
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 220
+    },
+    {
+      "index": 45,
+      "role": "soot",
+      "hex": "#1B1D1D",
+      "voxels": 120
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 335
+    },
+    {
+      "index": 49,
+      "role": "rust_hi",
+      "hex": "#C28052",
+      "voxels": 606
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 68
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 6
+    },
+    {
+      "index": 115,
+      "role": "porcelain_mid",
+      "hex": "#C5C0B5",
+      "voxels": 9
+    },
+    {
+      "index": 117,
+      "role": "porcelain_deep",
+      "hex": "#8D897F",
+      "voxels": 32
+    },
+    {
+      "index": 121,
+      "role": "glass_hi",
+      "hex": "#A7BDC2",
+      "voxels": 8
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 40
+    },
+    {
+      "index": 124,
+      "role": "glass_deep",
+      "hex": "#42535A",
+      "voxels": 85
+    },
+    {
+      "index": 125,
+      "role": "screen",
+      "hex": "#262C2F",
+      "voxels": 93
+    },
+    {
+      "index": 204,
+      "role": "hazard_yellow_dark",
+      "hex": "#9A7E2D",
+      "voxels": 4
+    },
+    {
+      "index": 205,
+      "role": "safety_orange",
+      "hex": "#C26C36",
+      "voxels": 1798
+    },
+    {
+      "index": 206,
+      "role": "safety_orange_dark",
+      "hex": "#91512A",
+      "voxels": 1299
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 28
+    },
+    {
+      "index": 210,
+      "role": "paint_white_shadow",
+      "hex": "#B0AEA6",
+      "voxels": 170
+    },
+    {
+      "index": 231,
+      "role": "label_cream",
+      "hex": "#D9CFB3",
+      "voxels": 4
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 2.2 x 5.6 x 2.3 m centred on the pivot.",
+  "story": "A line crew's bucket truck abandoned on the shoulder with its boom still stowed. It was already old: rust is eating the compartment doors and arch lips, the rear tyre on the road side has gone flat, and the crew's cones are still stacked on the back step.",
+  "notes": [
+    "Bucket truck in faded safety orange with stowed boom, cones on the back, rust and a flat tyre."
+  ],
+  "generator": "tools/claude/models/catalog/d3_vehicles.py",
+  "spec": "docs/specs/vehicles/Claude_utility_truck.md",
+  "previews": {
+    "hero": "previews/vehicles/Claude_utility_truck/hero.png",
+    "front": "previews/vehicles/Claude_utility_truck/front.png",
+    "side": "previews/vehicles/Claude_utility_truck/side.png",
+    "scale": "previews/vehicles/Claude_utility_truck/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": []
+}

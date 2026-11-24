@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "id": "Claude_shooting_range",
+  "base_id": "shooting_range",
+  "creator": "Claude",
+  "name": "Shooting Range",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_shooting_range.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_shooting_range.glb",
+    "glb_vertices": 1360,
+    "glb_triangles": 680,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    16.0,
+    11.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    32,
+    22,
+    11
+  ],
+  "dimensions_m": [
+    16.0,
+    11.0,
+    5.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1763,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Weapons)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "concrete",
+    "concrete_dark",
+    "concrete_hi",
+    "galv",
+    "glass_dark",
+    "grass",
+    "gravel",
+    "paper",
+    "pine_dark",
+    "roof",
+    "soil",
+    "wgrey",
+    "wgrey_dark",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 16
+    },
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 8
+    },
+    {
+      "index": 10,
+      "role": "wgrey",
+      "hex": "#8B8478",
+      "voxels": 278
+    },
+    {
+      "index": 12,
+      "role": "wgrey_dark",
+      "hex": "#5E5850",
+      "voxels": 51
+    },
+    {
+      "index": 31,
+      "role": "soil",
+      "hex": "#4F453C",
+      "voxels": 316
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 90
+    },
+    {
+      "index": 95,
+      "role": "paper",
+      "hex": "#DDD6C6",
+      "voxels": 16
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 4
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 68
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 91
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 16
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 408
+    },
+    {
+      "index": 200,
+      "role": "gravel",
+      "hex": "#8C877D",
+      "voxels": 189
+    },
+    {
+      "index": 218,
+      "role": "roof",
+      "hex": "#5A5E61",
+      "voxels": 212
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A members' outdoor range with a timber clubhouse. Targets are still pinned up from the last practice; the range became a meeting point, then a place to avoid.",
+  "notes": [
+    "Long low building with outdoor lanes, berm and target frames."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_shooting_range.md",
+  "previews": {
+    "hero": "previews/map/Claude_shooting_range/hero.png",
+    "front": "previews/map/Claude_shooting_range/front.png",
+    "side": "previews/map/Claude_shooting_range/side.png",
+    "scale": "previews/map/Claude_shooting_range/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    16.0,
+    11.0
+  ]
+}

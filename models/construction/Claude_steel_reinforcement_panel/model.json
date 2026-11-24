@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "Claude_steel_reinforcement_panel",
+  "base_id": "steel_reinforcement_panel",
+  "creator": "Claude",
+  "name": "Steel Reinforcement Panel",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_steel_reinforcement_panel.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_steel_reinforcement_panel.glb",
+    "glb_vertices": 996,
+    "glb_triangles": 498,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    10.0,
+    1.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the outside face; the module fills its full span.",
+  "grid_size_cells": [
+    20,
+    2,
+    46
+  ],
+  "dimensions_m": [
+    1.0,
+    0.1,
+    2.3
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1188,
+  "condition": "used",
+  "gameplay_use": "Bolt-on reinforcement for windows/walls",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "iron",
+    "iron_dark",
+    "iron_edge",
+    "rust_dark",
+    "rust_deep",
+    "steel",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 16
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 619
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 85
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 187
+    },
+    {
+      "index": 43,
+      "role": "iron_dark",
+      "hex": "#2E3232",
+      "voxels": 224
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 32
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 25
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "Cut from a road-plate by a welder in the group and framed in angle iron so it can be bolted over a window or a weak wall. Grinder marks still show where the cut was dressed.",
+  "notes": [
+    "1.0 x 2.3 m, 0.1 m deep including the frame."
+  ],
+  "generator": "tools/claude/models/catalog/b3_construction.py",
+  "spec": "docs/specs/construction/Claude_steel_reinforcement_panel.md",
+  "previews": {
+    "hero": "previews/construction/Claude_steel_reinforcement_panel/hero.png",
+    "front": "previews/construction/Claude_steel_reinforcement_panel/front.png",
+    "side": "previews/construction/Claude_steel_reinforcement_panel/side.png",
+    "scale": "previews/construction/Claude_steel_reinforcement_panel/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.0,
+    0.1
+  ]
+}

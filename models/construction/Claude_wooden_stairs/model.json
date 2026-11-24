@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "Claude_wooden_stairs",
+  "base_id": "wooden_stairs",
+  "creator": "Claude",
+  "name": "Simple Wooden Stairs",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_wooden_stairs.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_wooden_stairs.glb",
+    "glb_vertices": 572,
+    "glb_triangles": 286,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    5.5,
+    8.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the foot of the stairs (the approach side); they rise toward -Y.",
+  "grid_size_cells": [
+    11,
+    17,
+    10
+  ],
+  "dimensions_m": [
+    1.1,
+    1.7,
+    1.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 283,
+  "condition": "new",
+  "gameplay_use": "Porch/deck stairs",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "concrete",
+    "concrete_dark",
+    "pine_aged",
+    "pine_hi",
+    "pine_light",
+    "pine_mid"
+  ],
+  "palette_roles": [
+    {
+      "index": 1,
+      "role": "pine_hi",
+      "hex": "#CDA77D",
+      "voxels": 55
+    },
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 97
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 98
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 11
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 20
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 2
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "Porch steps cut from new lumber last week: two notched stringers, five two-board treads and a precast pad at the foot. The first muddy boots have already worn a path up the middle.",
+  "notes": [
+    "Five steps on two stringers rising to 1.0 m."
+  ],
+  "generator": "tools/claude/models/catalog/b3_construction.py",
+  "spec": "docs/specs/construction/Claude_wooden_stairs.md",
+  "previews": {
+    "hero": "previews/construction/Claude_wooden_stairs/hero.png",
+    "front": "previews/construction/Claude_wooden_stairs/front.png",
+    "side": "previews/construction/Claude_wooden_stairs/side.png",
+    "scale": "previews/construction/Claude_wooden_stairs/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.1,
+    1.7
+  ]
+}

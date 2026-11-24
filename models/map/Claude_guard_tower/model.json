@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "Claude_guard_tower",
+  "base_id": "guard_tower",
+  "creator": "Claude",
+  "name": "Guard Tower",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_guard_tower.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_guard_tower.glb",
+    "glb_vertices": 1468,
+    "glb_triangles": 734,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    4.0,
+    4.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    8,
+    8,
+    21
+  ],
+  "dimensions_m": [
+    4.0,
+    4.0,
+    10.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 382,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Weapons)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "galv",
+    "galv_hi",
+    "steel",
+    "steel_hi",
+    "wgrey",
+    "wgrey_dark",
+    "wgrey_deep",
+    "wgrey_hi",
+    "wgrey_mid"
+  ],
+  "palette_roles": [
+    {
+      "index": 9,
+      "role": "wgrey_hi",
+      "hex": "#A59E91",
+      "voxels": 6
+    },
+    {
+      "index": 10,
+      "role": "wgrey",
+      "hex": "#8B8478",
+      "voxels": 56
+    },
+    {
+      "index": 11,
+      "role": "wgrey_mid",
+      "hex": "#766F64",
+      "voxels": 96
+    },
+    {
+      "index": 12,
+      "role": "wgrey_dark",
+      "hex": "#5E5850",
+      "voxels": 100
+    },
+    {
+      "index": 13,
+      "role": "wgrey_deep",
+      "hex": "#46423C",
+      "voxels": 6
+    },
+    {
+      "index": 33,
+      "role": "steel_hi",
+      "hex": "#ADB4B2",
+      "voxels": 1
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 1
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 4
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 112
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A timber watchtower over a perimeter road. The last guard climbed down and never came back; the searchlight still points at the gate.",
+  "notes": [
+    "Stilt watchtower with cabin and ladder."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_guard_tower.md",
+  "previews": {
+    "hero": "previews/map/Claude_guard_tower/hero.png",
+    "front": "previews/map/Claude_guard_tower/front.png",
+    "side": "previews/map/Claude_guard_tower/side.png",
+    "scale": "previews/map/Claude_guard_tower/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    4.0,
+    4.0
+  ]
+}

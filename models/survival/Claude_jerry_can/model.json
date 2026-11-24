@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "Claude_jerry_can",
+  "base_id": "jerry_can",
+  "creator": "Claude",
+  "name": "Jerry Can",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_jerry_can.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_jerry_can.glb",
+    "glb_vertices": 1388,
+    "glb_triangles": 694,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.025,
+  "resolution_tier": "fine",
+  "resolution_rationale": "2.5 cm cells: a handheld or small gear item whose handles, straps and blades would be 2-4x too thick at 5 cm.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    7.0,
+    3.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the working / interaction side.",
+  "grid_size_cells": [
+    14,
+    7,
+    19
+  ],
+  "dimensions_m": [
+    0.35,
+    0.175,
+    0.475
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 889,
+  "condition": "worn",
+  "gameplay_use": "Fuel/water container",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "green_deep",
+    "olive_dark",
+    "rust_dark",
+    "rust_deep",
+    "steel",
+    "steel_dark",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 2
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 8
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 7
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 7
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 64
+    },
+    {
+      "index": 69,
+      "role": "green_deep",
+      "hex": "#36443D",
+      "voxels": 129
+    },
+    {
+      "index": 87,
+      "role": "olive_dark",
+      "hex": "#5F6244",
+      "voxels": 672
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "An army-surplus jerry can bought for camping, now the household's petrol reserve. The olive paint is chipped at every corner it has been dropped on, the centre handle is rubbed to bare steel, and rust has started on the base seam.",
+  "notes": [
+    "Steel jerry can in olive drab with the three-handle top and X-pressing, chipped paint."
+  ],
+  "generator": "tools/claude/models/catalog/b2_survival_gear.py",
+  "spec": "docs/specs/survival/Claude_jerry_can.md",
+  "previews": {
+    "hero": "previews/survival/Claude_jerry_can/hero.png",
+    "front": "previews/survival/Claude_jerry_can/front.png",
+    "side": "previews/survival/Claude_jerry_can/side.png",
+    "scale": "previews/survival/Claude_jerry_can/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.35,
+    0.175
+  ]
+}

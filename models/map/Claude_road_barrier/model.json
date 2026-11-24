@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "id": "Claude_road_barrier",
+  "base_id": "road_barrier",
+  "creator": "Claude",
+  "name": "Road Barrier",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_road_barrier.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_road_barrier.glb",
+    "glb_vertices": 224,
+    "glb_triangles": 112,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    4.5,
+    1.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    9,
+    2,
+    3
+  ],
+  "dimensions_m": [
+    4.5,
+    1.0,
+    1.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 23,
+  "condition": "worn",
+  "gameplay_use": "Regional-map infrastructure piece",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "charcoal",
+    "concrete",
+    "concrete_hi",
+    "iron",
+    "paint_white",
+    "safety_orange",
+    "signal_red"
+  ],
+  "palette_roles": [
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 3
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 1
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 6
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 6
+    },
+    {
+      "index": 201,
+      "role": "signal_red",
+      "hex": "#A8463B",
+      "voxels": 2
+    },
+    {
+      "index": 205,
+      "role": "safety_orange",
+      "hex": "#C26C36",
+      "voxels": 2
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 3
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A checkpoint line thrown across a road: two concrete barriers, a manual boom between them and a cone at each end. Whoever manned it is gone; the boom is still down.",
+  "notes": [
+    "4.5 x 1.0 x 1.5 m (GPT reference 4 x 0.6 x 0.9 m): at 0.5 m cells the cones need their own row in front of the barrier line, and the boom must clear the barriers to read as a gate.",
+    "Deliberately tiny (~25 voxels): a 4 m piece at 0.5 m cells."
+  ],
+  "generator": "tools/claude/models/catalog/e2_map_infrastructure.py",
+  "spec": "docs/specs/map/Claude_road_barrier.md",
+  "previews": {
+    "hero": "previews/map/Claude_road_barrier/hero.png",
+    "front": "previews/map/Claude_road_barrier/front.png",
+    "side": "previews/map/Claude_road_barrier/side.png",
+    "scale": "previews/map/Claude_road_barrier/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    4.5,
+    1.0
+  ]
+}

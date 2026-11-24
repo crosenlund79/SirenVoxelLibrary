@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "Claude_road_straight",
+  "base_id": "road_straight",
+  "creator": "Claude",
+  "name": "Straight Road",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_road_straight.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_road_straight.glb",
+    "glb_vertices": 368,
+    "glb_triangles": 184,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    8.5,
+    16.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "Road runs along Y; +Y is an arbitrary end (the tile is symmetric).",
+  "grid_size_cells": [
+    17,
+    32,
+    1
+  ],
+  "dimensions_m": [
+    8.5,
+    16.0,
+    0.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 544,
+  "condition": "worn",
+  "gameplay_use": "Regional-map infrastructure piece",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "asphalt",
+    "asphalt_dark",
+    "asphalt_deep",
+    "concrete_hi",
+    "curb",
+    "grass",
+    "grass_dry",
+    "iron_dark",
+    "line_yellow"
+  ],
+  "palette_roles": [
+    {
+      "index": 43,
+      "role": "iron_dark",
+      "hex": "#2E3232",
+      "voxels": 2
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 59
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 64
+    },
+    {
+      "index": 184,
+      "role": "grass_dry",
+      "hex": "#A79D6B",
+      "voxels": 5
+    },
+    {
+      "index": 194,
+      "role": "asphalt",
+      "hex": "#4F5151",
+      "voxels": 317
+    },
+    {
+      "index": 195,
+      "role": "asphalt_dark",
+      "hex": "#3F4142",
+      "voxels": 15
+    },
+    {
+      "index": 196,
+      "role": "asphalt_deep",
+      "hex": "#313334",
+      "voxels": 2
+    },
+    {
+      "index": 198,
+      "role": "line_yellow",
+      "hex": "#BFA352",
+      "voxels": 16
+    },
+    {
+      "index": 199,
+      "role": "curb",
+      "hex": "#A09F97",
+      "voxels": 64
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A two-lane suburban street. Years of patching show in darker squares, a pothole has opened in one lane and grass has started to creep over the sidewalk.",
+  "notes": [
+    "8.5 x 16 m (GPT reference 8 x 16 m): one cell wider so the centre line sits on a cell. Slab is one 0.5 m cell thick (reference 0.4 m)."
+  ],
+  "generator": "tools/claude/models/catalog/e2_map_infrastructure.py",
+  "spec": "docs/specs/map/Claude_road_straight.md",
+  "previews": {
+    "hero": "previews/map/Claude_road_straight/hero.png",
+    "front": "previews/map/Claude_road_straight/front.png",
+    "side": "previews/map/Claude_road_straight/side.png",
+    "scale": "previews/map/Claude_road_straight/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    8.5,
+    16.0
+  ]
+}

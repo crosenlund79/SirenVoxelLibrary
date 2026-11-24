@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "id": "Claude_shotgun_shell_box",
+  "base_id": "shotgun_shell_box",
+  "creator": "Claude",
+  "name": "Shotgun Shell Box",
+  "category": "combat",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_C",
+  "scale_family": "full",
+  "source": "Claude_shotgun_shell_box.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_shotgun_shell_box.glb",
+    "glb_vertices": 1140,
+    "glb_triangles": 570,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    9.0,
+    7.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "Working end / muzzle points +Y, top side up; lowest point on z = 0.",
+  "grid_size_cells": [
+    18,
+    14,
+    17
+  ],
+  "dimensions_m": [
+    0.225,
+    0.175,
+    0.2125
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1050,
+  "condition": "new",
+  "gameplay_use": "Shotgun ammo pickup",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "brass",
+    "card",
+    "card_deep",
+    "card_hi",
+    "label_cream",
+    "label_green",
+    "red",
+    "red_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 54,
+      "role": "brass",
+      "hex": "#A3874E",
+      "voxels": 58
+    },
+    {
+      "index": 82,
+      "role": "red",
+      "hex": "#9A594B",
+      "voxels": 228
+    },
+    {
+      "index": 83,
+      "role": "red_dark",
+      "hex": "#7B463B",
+      "voxels": 58
+    },
+    {
+      "index": 157,
+      "role": "card_hi",
+      "hex": "#C2A47A",
+      "voxels": 202
+    },
+    {
+      "index": 158,
+      "role": "card",
+      "hex": "#A88A62",
+      "voxels": 16
+    },
+    {
+      "index": 160,
+      "role": "card_deep",
+      "hex": "#6A573E",
+      "voxels": 112
+    },
+    {
+      "index": 229,
+      "role": "label_green",
+      "hex": "#5F7752",
+      "voxels": 294
+    },
+    {
+      "index": 231,
+      "role": "label_cream",
+      "hex": "#D9CFB3",
+      "voxels": 82
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A fresh box of shotgun shells from a hardware store's back shelf, opened for the first time: the lid is folded back and two shells have been taken out and set down in front of it.",
+  "notes": [
+    "Cardboard box of shells, open, shells with brass bases.",
+    "Shells are spaced one cell apart (a slight stylisation) so each brass head reads separately; the open lid makes the model taller than GPT's 14 cm reference."
+  ],
+  "generator": "tools/claude/models/catalog/c1_combat.py",
+  "spec": "docs/specs/combat/Claude_shotgun_shell_box.md",
+  "previews": {
+    "hero": "previews/combat/Claude_shotgun_shell_box/hero.png",
+    "front": "previews/combat/Claude_shotgun_shell_box/front.png",
+    "side": "previews/combat/Claude_shotgun_shell_box/side.png",
+    "scale": "previews/combat/Claude_shotgun_shell_box/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_C.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.225,
+    0.175
+  ]
+}

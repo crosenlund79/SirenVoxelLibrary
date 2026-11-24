@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "id": "Claude_concrete_foundation",
+  "base_id": "concrete_foundation",
+  "creator": "Claude",
+  "name": "Concrete Foundation",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_concrete_foundation.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_concrete_foundation.glb",
+    "glb_vertices": 168,
+    "glb_triangles": 84,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    5.0,
+    5.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the outside face; the module fills its full span.",
+  "grid_size_cells": [
+    10,
+    10,
+    4
+  ],
+  "dimensions_m": [
+    1.0,
+    1.0,
+    0.4
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 243,
+  "condition": "new",
+  "gameplay_use": "Concrete foundation module",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "concrete",
+    "concrete_dark",
+    "concrete_hi",
+    "galv",
+    "pine_aged",
+    "pine_dark",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 6
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 1
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 2
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 2
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 98
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 34
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 100
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A slab section poured last month for a shed that never got built: floated top, a chamfered outside edge, two anchor bolts waiting for a sill plate, and the screed board the builder left on it when the sirens went quiet.",
+  "notes": [
+    "1.0 x 1.0 x 0.3 m module; bolts stand 0.1 m above the slab (bounds 0.4 m).",
+    "Only the outside (+Y) edge is chamfered so slabs tiled in a row stay flat; at 0.1 m cells the 45-degree chamfer is a one-cell step."
+  ],
+  "generator": "tools/claude/models/catalog/b3_construction.py",
+  "spec": "docs/specs/construction/Claude_concrete_foundation.md",
+  "previews": {
+    "hero": "previews/construction/Claude_concrete_foundation/hero.png",
+    "front": "previews/construction/Claude_concrete_foundation/front.png",
+    "side": "previews/construction/Claude_concrete_foundation/side.png",
+    "scale": "previews/construction/Claude_concrete_foundation/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.0,
+    1.0
+  ]
+}

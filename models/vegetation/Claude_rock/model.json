@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "Claude_rock",
+  "base_id": "rock",
+  "creator": "Claude",
+  "name": "Rock",
+  "category": "vegetation",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_rock.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_rock.glb",
+    "glb_vertices": 1032,
+    "glb_triangles": 516,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    7.5,
+    5.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "No functional front; character details face the default camera (-X/+Y).",
+  "grid_size_cells": [
+    15,
+    10,
+    9
+  ],
+  "dimensions_m": [
+    0.75,
+    0.5,
+    0.45
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 472,
+  "condition": "n/a",
+  "gameplay_use": "Ground dressing",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "concrete",
+    "concrete_hi",
+    "gravel",
+    "lichen",
+    "moss",
+    "moss_dark",
+    "stone",
+    "stone_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 30,
+      "role": "lichen",
+      "hex": "#8E9979",
+      "voxels": 20
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 40
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 72
+    },
+    {
+      "index": 109,
+      "role": "stone",
+      "hex": "#827E76",
+      "voxels": 35
+    },
+    {
+      "index": 110,
+      "role": "stone_dark",
+      "hex": "#68645E",
+      "voxels": 193
+    },
+    {
+      "index": 111,
+      "role": "moss",
+      "hex": "#646C4F",
+      "voxels": 13
+    },
+    {
+      "index": 112,
+      "role": "moss_dark",
+      "hex": "#4E5540",
+      "voxels": 13
+    },
+    {
+      "index": 200,
+      "role": "gravel",
+      "hex": "#8C877D",
+      "voxels": 86
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 0.7 x 0.55 x 0.44 m.",
+  "story": "A lump of granite turned up when the estate was built and left at the edge of a verge as a marker. Decades of weather have rounded its edges and lichen has taken the top; an old frost split left one flat face.",
+  "notes": [
+    "Weathered granite rock with lichen."
+  ],
+  "generator": "tools/claude/models/catalog/d1_vegetation.py",
+  "spec": "docs/specs/vegetation/Claude_rock.md",
+  "previews": {
+    "hero": "previews/vegetation/Claude_rock/hero.png",
+    "front": "previews/vegetation/Claude_rock/front.png",
+    "side": "previews/vegetation/Claude_rock/side.png",
+    "scale": "previews/vegetation/Claude_rock/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.75,
+    0.5
+  ]
+}

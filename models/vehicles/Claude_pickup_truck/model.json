@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "id": "Claude_pickup_truck",
+  "base_id": "pickup_truck",
+  "creator": "Claude",
+  "name": "Pickup Truck",
+  "category": "vehicles",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_pickup_truck.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_pickup_truck.glb",
+    "glb_vertices": 3828,
+    "glb_triangles": 1914,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count. Body panels, pillars and 0.8 m wheels need 0.1 m cells; the game's structure grid is also 0.1 m.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    10.0,
+    27.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre between the axles (wheel centres at y = 13.5 and y = 41.5).",
+  "front_note": "The vehicle's nose is +Y.",
+  "grid_size_cells": [
+    20,
+    51,
+    17
+  ],
+  "dimensions_m": [
+    2.0,
+    5.1,
+    1.7
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 3600,
+  "condition": "abandoned",
+  "gameplay_use": "Street prop",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "blue_deep",
+    "bottle_cap",
+    "charcoal",
+    "chrome",
+    "glass_dark",
+    "glass_deep",
+    "glass_hi",
+    "label_blue",
+    "label_cream",
+    "maroon",
+    "maroon_dark",
+    "olive",
+    "olive_dark",
+    "red_dark",
+    "rust_dark",
+    "rust_deep",
+    "screen",
+    "signal_red_dark",
+    "soot",
+    "steel_dark",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 76
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 48
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 354
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 272
+    },
+    {
+      "index": 45,
+      "role": "soot",
+      "hex": "#1B1D1D",
+      "voxels": 100
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 64
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 2
+    },
+    {
+      "index": 83,
+      "role": "red_dark",
+      "hex": "#7B463B",
+      "voxels": 456
+    },
+    {
+      "index": 86,
+      "role": "olive",
+      "hex": "#777B55",
+      "voxels": 8
+    },
+    {
+      "index": 87,
+      "role": "olive_dark",
+      "hex": "#5F6244",
+      "voxels": 26
+    },
+    {
+      "index": 101,
+      "role": "blue_deep",
+      "hex": "#3E4C56",
+      "voxels": 52
+    },
+    {
+      "index": 120,
+      "role": "chrome",
+      "hex": "#C4C9C7",
+      "voxels": 140
+    },
+    {
+      "index": 121,
+      "role": "glass_hi",
+      "hex": "#A7BDC2",
+      "voxels": 8
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 44
+    },
+    {
+      "index": 124,
+      "role": "glass_deep",
+      "hex": "#42535A",
+      "voxels": 120
+    },
+    {
+      "index": 125,
+      "role": "screen",
+      "hex": "#262C2F",
+      "voxels": 62
+    },
+    {
+      "index": 202,
+      "role": "signal_red_dark",
+      "hex": "#7E3229",
+      "voxels": 6
+    },
+    {
+      "index": 213,
+      "role": "maroon",
+      "hex": "#703F3C",
+      "voxels": 742
+    },
+    {
+      "index": 214,
+      "role": "maroon_dark",
+      "hex": "#57302E",
+      "voxels": 748
+    },
+    {
+      "index": 227,
+      "role": "bottle_cap",
+      "hex": "#4E6E86",
+      "voxels": 163
+    },
+    {
+      "index": 230,
+      "role": "label_blue",
+      "hex": "#556F8A",
+      "voxels": 101
+    },
+    {
+      "index": 231,
+      "role": "label_cream",
+      "hex": "#D9CFB3",
+      "voxels": 8
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 1.8 x 4.7 x 1.7 m centred on the pivot.",
+  "story": "An old full-size pickup that belonged to someone who fixed things for the neighbours. It was being loaded when it was left: tailgate dropped, a blue tarp half pulled over the side of the bed, one jerry can still standing by the gate. The maroon paint has oxidised pale on the bonnet and roof.",
+  "notes": [
+    "Length 5.1 m includes the dropped tailgate (4.6 m body)."
+  ],
+  "generator": "tools/claude/models/catalog/d3_vehicles.py",
+  "spec": "docs/specs/vehicles/Claude_pickup_truck.md",
+  "previews": {
+    "hero": "previews/vehicles/Claude_pickup_truck/hero.png",
+    "front": "previews/vehicles/Claude_pickup_truck/front.png",
+    "side": "previews/vehicles/Claude_pickup_truck/side.png",
+    "scale": "previews/vehicles/Claude_pickup_truck/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": []
+}

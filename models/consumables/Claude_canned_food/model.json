@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "Claude_canned_food",
+  "base_id": "canned_food",
+  "creator": "Claude",
+  "name": "Canned Food",
+  "category": "consumables",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_C",
+  "scale_family": "full",
+  "source": "Claude_canned_food.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_canned_food.glb",
+    "glb_vertices": 784,
+    "glb_triangles": 392,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    4.0,
+    4.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the label / opening side.",
+  "grid_size_cells": [
+    8,
+    8,
+    11
+  ],
+  "dimensions_m": [
+    0.1,
+    0.1,
+    0.1375
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 358,
+  "condition": "new",
+  "gameplay_use": "Inventory item canned_food (hunger +30)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "galv",
+    "label_cream",
+    "label_green",
+    "leaf_dark",
+    "leaf_mid",
+    "steel",
+    "steel_dark",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 20
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 57
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 52
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 32
+    },
+    {
+      "index": 179,
+      "role": "leaf_mid",
+      "hex": "#5C7044",
+      "voxels": 54
+    },
+    {
+      "index": 180,
+      "role": "leaf_dark",
+      "hex": "#495B37",
+      "voxels": 4
+    },
+    {
+      "index": 229,
+      "role": "label_green",
+      "hex": "#5F7752",
+      "voxels": 54
+    },
+    {
+      "index": 231,
+      "role": "label_cream",
+      "hex": "#D9CFB3",
+      "voxels": 85
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A tall tin of vegetables from the back of a pantry shelf, still sealed. It was knocked off the shelf at some point: one small dent creases the label near the base.",
+  "notes": [
+    "Tall food tin with a muted paper label (simple colour blocks, no text), ribbed side, one small dent."
+  ],
+  "generator": "tools/claude/models/catalog/c2_consumables.py",
+  "spec": "docs/specs/consumables/Claude_canned_food.md",
+  "previews": {
+    "hero": "previews/consumables/Claude_canned_food/hero.png",
+    "front": "previews/consumables/Claude_canned_food/front.png",
+    "side": "previews/consumables/Claude_canned_food/side.png",
+    "scale": "previews/consumables/Claude_canned_food/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_C.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.1,
+    0.1
+  ]
+}

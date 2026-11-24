@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "id": "Claude_apartment_block",
+  "base_id": "apartment_block",
+  "creator": "Claude",
+  "name": "Apartment Block",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_apartment_block.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_apartment_block.glb",
+    "glb_vertices": 2736,
+    "glb_triangles": 1368,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled. Storey bands, balconies and window rhythm survive at 0.5 m; railings are solid bands.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    12.0,
+    9.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    24,
+    18,
+    34
+  ],
+  "dimensions_m": [
+    12.0,
+    9.0,
+    17.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 3716,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Residential district)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "ash_dark",
+    "char",
+    "concrete",
+    "concrete_dark",
+    "concrete_hi",
+    "galv_hi",
+    "glass",
+    "glass_dark",
+    "grass",
+    "plaster",
+    "roof",
+    "sage",
+    "soot"
+  ],
+  "palette_roles": [
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 16
+    },
+    {
+      "index": 45,
+      "role": "soot",
+      "hex": "#1B1D1D",
+      "voxels": 16
+    },
+    {
+      "index": 62,
+      "role": "ash_dark",
+      "hex": "#66615C",
+      "voxels": 15
+    },
+    {
+      "index": 63,
+      "role": "char",
+      "hex": "#2B2522",
+      "voxels": 38
+    },
+    {
+      "index": 94,
+      "role": "plaster",
+      "hex": "#CCC5B6",
+      "voxels": 2188
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 180
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 392
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 242
+    },
+    {
+      "index": 122,
+      "role": "glass",
+      "hex": "#829A9F",
+      "voxels": 8
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 334
+    },
+    {
+      "index": 146,
+      "role": "sage",
+      "hex": "#7A887B",
+      "voxels": 63
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 48
+    },
+    {
+      "index": 218,
+      "role": "roof",
+      "hex": "#5A5E61",
+      "voxels": 176
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A five-storey council block of twenty flats around a central stair core. A fire gutted one third-floor flat in the first days; the rest were locked and left.",
+  "notes": [
+    "Five-storey flat-roof block with balcony bands and a stair core."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_apartment_block.md",
+  "previews": {
+    "hero": "previews/map/Claude_apartment_block/hero.png",
+    "front": "previews/map/Claude_apartment_block/front.png",
+    "side": "previews/map/Claude_apartment_block/side.png",
+    "scale": "previews/map/Claude_apartment_block/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    12.0,
+    9.0
+  ]
+}

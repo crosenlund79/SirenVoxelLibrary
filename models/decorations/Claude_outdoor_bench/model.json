@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "id": "Claude_outdoor_bench",
+  "base_id": "outdoor_bench",
+  "creator": "Claude",
+  "name": "Outdoor Bench",
+  "category": "decorations",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_outdoor_bench.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_outdoor_bench.glb",
+    "glb_vertices": 1000,
+    "glb_triangles": 500,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    15.5,
+    6.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y faces the street or the person using it.",
+  "grid_size_cells": [
+    31,
+    12,
+    17
+  ],
+  "dimensions_m": [
+    1.55,
+    0.6,
+    0.85
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 496,
+  "condition": "worn",
+  "gameplay_use": "Park/street prop",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "brass",
+    "brass_hi",
+    "break_fresh",
+    "iron",
+    "iron_dark",
+    "iron_edge",
+    "rust_deep",
+    "wgrey",
+    "wgrey_hi",
+    "wgrey_mid",
+    "wgrey_warm",
+    "wgrey_wet"
+  ],
+  "palette_roles": [
+    {
+      "index": 9,
+      "role": "wgrey_hi",
+      "hex": "#A59E91",
+      "voxels": 118
+    },
+    {
+      "index": 10,
+      "role": "wgrey",
+      "hex": "#8B8478",
+      "voxels": 113
+    },
+    {
+      "index": 11,
+      "role": "wgrey_mid",
+      "hex": "#766F64",
+      "voxels": 52
+    },
+    {
+      "index": 15,
+      "role": "wgrey_warm",
+      "hex": "#94806A",
+      "voxels": 58
+    },
+    {
+      "index": 16,
+      "role": "wgrey_wet",
+      "hex": "#524C45",
+      "voxels": 22
+    },
+    {
+      "index": 25,
+      "role": "break_fresh",
+      "hex": "#C9B08A",
+      "voxels": 2
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 40
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 78
+    },
+    {
+      "index": 43,
+      "role": "iron_dark",
+      "hex": "#2E3232",
+      "voxels": 8
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 2
+    },
+    {
+      "index": 53,
+      "role": "brass_hi",
+      "hex": "#C2A468",
+      "voxels": 1
+    },
+    {
+      "index": 54,
+      "role": "brass",
+      "hex": "#A3874E",
+      "voxels": 2
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 1.55 x 0.6 x 0.45 m (seat) plus a back plane.",
+  "story": "A memorial park bench facing the pond path. The slats have silvered and split, one back slat broke in the middle and sags, and the little brass plaque is the only part someone still polished.",
+  "notes": [
+    "Park bench with weathered slats and dark cast ends."
+  ],
+  "generator": "tools/claude/models/catalog/d2_street.py",
+  "spec": "docs/specs/decorations/Claude_outdoor_bench.md",
+  "previews": {
+    "hero": "previews/decorations/Claude_outdoor_bench/hero.png",
+    "front": "previews/decorations/Claude_outdoor_bench/front.png",
+    "side": "previews/decorations/Claude_outdoor_bench/side.png",
+    "scale": "previews/decorations/Claude_outdoor_bench/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.35,
+    0.55
+  ]
+}

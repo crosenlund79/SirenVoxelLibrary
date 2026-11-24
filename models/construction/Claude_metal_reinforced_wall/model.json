@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "id": "Claude_metal_reinforced_wall",
+  "base_id": "metal_reinforced_wall",
+  "creator": "Claude",
+  "name": "Metal-Reinforced Wall",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_metal_reinforced_wall.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_metal_reinforced_wall.glb",
+    "glb_vertices": 896,
+    "glb_triangles": 448,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    5.0,
+    1.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the outside face; the module fills its full span.",
+  "grid_size_cells": [
+    10,
+    3,
+    26
+  ],
+  "dimensions_m": [
+    1.0,
+    0.3,
+    2.6
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 538,
+  "condition": "improvised",
+  "gameplay_use": "Upgrade 'Metal sheathing'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "almond",
+    "almond_dark",
+    "cream_shadow",
+    "galv",
+    "galv_dark",
+    "galv_hi",
+    "iron_warm",
+    "pine_aged",
+    "pine_dark",
+    "pine_light",
+    "pine_mid",
+    "rust_dark",
+    "rust_deep",
+    "sage_dark",
+    "sage_deep",
+    "siding_cream",
+    "steel",
+    "steel_dark",
+    "steel_light",
+    "wgrey",
+    "wgrey_dark",
+    "wgrey_deep",
+    "wgrey_hi",
+    "wgrey_mid",
+    "wgrey_warm"
+  ],
+  "palette_roles": [
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 3
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 91
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 27
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 8
+    },
+    {
+      "index": 9,
+      "role": "wgrey_hi",
+      "hex": "#A59E91",
+      "voxels": 21
+    },
+    {
+      "index": 10,
+      "role": "wgrey",
+      "hex": "#8B8478",
+      "voxels": 50
+    },
+    {
+      "index": 11,
+      "role": "wgrey_mid",
+      "hex": "#766F64",
+      "voxels": 44
+    },
+    {
+      "index": 12,
+      "role": "wgrey_dark",
+      "hex": "#5E5850",
+      "voxels": 46
+    },
+    {
+      "index": 13,
+      "role": "wgrey_deep",
+      "hex": "#46423C",
+      "voxels": 26
+    },
+    {
+      "index": 15,
+      "role": "wgrey_warm",
+      "hex": "#94806A",
+      "voxels": 3
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 4
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 13
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 6
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 6
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 26
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 30
+    },
+    {
+      "index": 47,
+      "role": "iron_warm",
+      "hex": "#4A4440",
+      "voxels": 27
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 4
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 21
+    },
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 13
+    },
+    {
+      "index": 118,
+      "role": "almond",
+      "hex": "#CFC5AC",
+      "voxels": 35
+    },
+    {
+      "index": 119,
+      "role": "almond_dark",
+      "hex": "#AFA58D",
+      "voxels": 7
+    },
+    {
+      "index": 147,
+      "role": "sage_dark",
+      "hex": "#637064",
+      "voxels": 7
+    },
+    {
+      "index": 148,
+      "role": "sage_deep",
+      "hex": "#4C574D",
+      "voxels": 13
+    },
+    {
+      "index": 221,
+      "role": "siding_cream",
+      "hex": "#C9C2AE",
+      "voxels": 7
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The scavenged-board wall after its owners got scared: they bolted whatever steel they could carry over the outside - a galvanised roofing sheet, a rusty plate and an old almond appliance panel - and left the top boards bare.",
+  "notes": [
+    "2.6 m tall; 0.3 m deep (0.2 m wall + 0.1 m of sheathing)."
+  ],
+  "generator": "tools/claude/models/catalog/b3_construction.py",
+  "spec": "docs/specs/construction/Claude_metal_reinforced_wall.md",
+  "previews": {
+    "hero": "previews/construction/Claude_metal_reinforced_wall/hero.png",
+    "front": "previews/construction/Claude_metal_reinforced_wall/front.png",
+    "side": "previews/construction/Claude_metal_reinforced_wall/side.png",
+    "scale": "previews/construction/Claude_metal_reinforced_wall/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.0,
+    0.3
+  ],
+  "variant_of": "wooden_wall_section"
+}

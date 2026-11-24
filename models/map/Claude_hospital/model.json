@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "id": "Claude_hospital",
+  "base_id": "hospital",
+  "creator": "Claude",
+  "name": "Hospital",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_hospital.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_hospital.glb",
+    "glb_vertices": 3260,
+    "glb_triangles": 1630,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    20.0,
+    18.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    40,
+    36,
+    26
+  ],
+  "dimensions_m": [
+    20.0,
+    18.0,
+    13.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 5686,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Medical)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "asphalt",
+    "asphalt_dark",
+    "black",
+    "concrete",
+    "concrete_dark",
+    "concrete_hi",
+    "galv_hi",
+    "glass",
+    "glass_dark",
+    "grass",
+    "line_white",
+    "paint_white",
+    "plaster",
+    "roof",
+    "signal_red",
+    "signal_red_dark",
+    "steel",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 20
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 56
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 22
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 19
+    },
+    {
+      "index": 94,
+      "role": "plaster",
+      "hex": "#CCC5B6",
+      "voxels": 2300
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 839
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 132
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 590
+    },
+    {
+      "index": 122,
+      "role": "glass",
+      "hex": "#829A9F",
+      "voxels": 40
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 470
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 80
+    },
+    {
+      "index": 194,
+      "role": "asphalt",
+      "hex": "#4F5151",
+      "voxels": 500
+    },
+    {
+      "index": 195,
+      "role": "asphalt_dark",
+      "hex": "#3F4142",
+      "voxels": 130
+    },
+    {
+      "index": 197,
+      "role": "line_white",
+      "hex": "#CDCBC1",
+      "voxels": 76
+    },
+    {
+      "index": 201,
+      "role": "signal_red",
+      "hex": "#A8463B",
+      "voxels": 62
+    },
+    {
+      "index": 202,
+      "role": "signal_red_dark",
+      "hex": "#7E3229",
+      "voxels": 13
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 100
+    },
+    {
+      "index": 218,
+      "role": "roof",
+      "hex": "#5A5E61",
+      "voxels": 237
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The regional hospital, overwhelmed in the first week and evacuated by helicopter in the second. The ambulances were left under the emergency canopy.",
+  "notes": [
+    "Footprint 20 x 18 m (GPT reference 18 x 16 m): a 7 m helipad ring needs an 8 x 8 m tower roof, and the wings need room for the emergency canopy."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_hospital.md",
+  "previews": {
+    "hero": "previews/map/Claude_hospital/hero.png",
+    "front": "previews/map/Claude_hospital/front.png",
+    "side": "previews/map/Claude_hospital/side.png",
+    "scale": "previews/map/Claude_hospital/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    20.0,
+    18.0
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "id": "Claude_water_bottle",
+  "base_id": "water_bottle",
+  "creator": "Claude",
+  "name": "Water Bottle",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_water_bottle.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_water_bottle.glb",
+    "glb_vertices": 1184,
+    "glb_triangles": 592,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    3.5,
+    3.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the working / interaction side.",
+  "grid_size_cells": [
+    7,
+    7,
+    23
+  ],
+  "dimensions_m": [
+    0.0875,
+    0.0875,
+    0.2875
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 510,
+  "condition": "new",
+  "gameplay_use": "Inventory item water (hydration +30)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "blue_hi",
+    "bluegrey",
+    "bluegrey_hi",
+    "bottle",
+    "bottle_cap",
+    "bottle_hi",
+    "label_blue",
+    "label_cream"
+  ],
+  "palette_roles": [
+    {
+      "index": 73,
+      "role": "bluegrey_hi",
+      "hex": "#8698A1",
+      "voxels": 32
+    },
+    {
+      "index": 74,
+      "role": "bluegrey",
+      "hex": "#687A82",
+      "voxels": 21
+    },
+    {
+      "index": 97,
+      "role": "blue_hi",
+      "hex": "#8497A4",
+      "voxels": 1
+    },
+    {
+      "index": 225,
+      "role": "bottle_hi",
+      "hex": "#A3BBC4",
+      "voxels": 96
+    },
+    {
+      "index": 226,
+      "role": "bottle",
+      "hex": "#7F9CA8",
+      "voxels": 224
+    },
+    {
+      "index": 227,
+      "role": "bottle_cap",
+      "hex": "#4E6E86",
+      "voxels": 16
+    },
+    {
+      "index": 230,
+      "role": "label_blue",
+      "hex": "#556F8A",
+      "voxels": 24
+    },
+    {
+      "index": 231,
+      "role": "label_cream",
+      "hex": "#D9CFB3",
+      "voxels": 96
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "One of the last sealed bottles from the corner shop's stockroom, still full and unopened.",
+  "notes": [
+    "1.5 L plastic bottle in pale blue-grey (opaque stylisation), cap, ribbed waist, plain label band.",
+    "8.75 cm diameter (7 cells, a clean pixel circle) is the real size of a 1.5 L bottle; the reference's 10 cm is a coarse-cell size."
+  ],
+  "generator": "tools/claude/models/catalog/b2_survival_gear.py",
+  "spec": "docs/specs/survival/Claude_water_bottle.md",
+  "previews": {
+    "hero": "previews/survival/Claude_water_bottle/hero.png",
+    "front": "previews/survival/Claude_water_bottle/front.png",
+    "side": "previews/survival/Claude_water_bottle/side.png",
+    "scale": "previews/survival/Claude_water_bottle/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.0875,
+    0.0875
+  ]
+}

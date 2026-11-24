@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "id": "Claude_damaged_wooden_wall",
+  "base_id": "damaged_wooden_wall",
+  "creator": "Claude",
+  "name": "Damaged Wooden Wall",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_damaged_wooden_wall.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_damaged_wooden_wall.glb",
+    "glb_vertices": 1060,
+    "glb_triangles": 530,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    5.0,
+    1.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the outside face; the module fills its full span.",
+  "grid_size_cells": [
+    10,
+    4,
+    26
+  ],
+  "dimensions_m": [
+    1.0,
+    0.4,
+    2.6
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 348,
+  "condition": "damaged",
+  "gameplay_use": "Damage reference for wooden_wall_section",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "break_fresh",
+    "cream_shadow",
+    "iron",
+    "pine_aged",
+    "pine_dark",
+    "pine_light",
+    "pine_mid",
+    "sage_dark",
+    "sage_deep",
+    "siding_cream",
+    "snag_light",
+    "wgrey",
+    "wgrey_dark",
+    "wgrey_deep",
+    "wgrey_hi",
+    "wgrey_mid",
+    "wgrey_warm"
+  ],
+  "palette_roles": [
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 4
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 89
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 23
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 8
+    },
+    {
+      "index": 9,
+      "role": "wgrey_hi",
+      "hex": "#A59E91",
+      "voxels": 18
+    },
+    {
+      "index": 10,
+      "role": "wgrey",
+      "hex": "#8B8478",
+      "voxels": 44
+    },
+    {
+      "index": 11,
+      "role": "wgrey_mid",
+      "hex": "#766F64",
+      "voxels": 49
+    },
+    {
+      "index": 12,
+      "role": "wgrey_dark",
+      "hex": "#5E5850",
+      "voxels": 44
+    },
+    {
+      "index": 13,
+      "role": "wgrey_deep",
+      "hex": "#46423C",
+      "voxels": 22
+    },
+    {
+      "index": 15,
+      "role": "wgrey_warm",
+      "hex": "#94806A",
+      "voxels": 3
+    },
+    {
+      "index": 22,
+      "role": "snag_light",
+      "hex": "#BFB39F",
+      "voxels": 2
+    },
+    {
+      "index": 25,
+      "role": "break_fresh",
+      "hex": "#C9B08A",
+      "voxels": 10
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 1
+    },
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 8
+    },
+    {
+      "index": 147,
+      "role": "sage_dark",
+      "hex": "#637064",
+      "voxels": 7
+    },
+    {
+      "index": 148,
+      "role": "sage_deep",
+      "hex": "#4C574D",
+      "voxels": 13
+    },
+    {
+      "index": 221,
+      "role": "siding_cream",
+      "hex": "#C9C2AE",
+      "voxels": 3
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The same scavenged-board wall after something heavy came through it: four boards were smashed out of the left bay, the noggin behind them snapped, the pine offcut swung down on its last nail and the broken pieces still lie at the foot.",
+  "notes": [
+    "Same 1.0 x 2.6 m wall as the intact module; debris at the foot adds 0.2 m of depth in front (bounds 0.4 m)."
+  ],
+  "generator": "tools/claude/models/catalog/b3_construction.py",
+  "spec": "docs/specs/construction/Claude_damaged_wooden_wall.md",
+  "previews": {
+    "hero": "previews/construction/Claude_damaged_wooden_wall/hero.png",
+    "front": "previews/construction/Claude_damaged_wooden_wall/front.png",
+    "side": "previews/construction/Claude_damaged_wooden_wall/side.png",
+    "scale": "previews/construction/Claude_damaged_wooden_wall/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.0,
+    0.2
+  ],
+  "variant_of": "wooden_wall_section"
+}

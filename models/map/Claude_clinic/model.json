@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "id": "Claude_clinic",
+  "base_id": "clinic",
+  "creator": "Claude",
+  "name": "Medical Clinic",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_clinic.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_clinic.glb",
+    "glb_vertices": 824,
+    "glb_triangles": 412,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    11.0,
+    11.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    22,
+    22,
+    12
+  ],
+  "dimensions_m": [
+    11.0,
+    11.0,
+    6.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1330,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Medical Clinic (current destination))",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "asphalt",
+    "asphalt_dark",
+    "black",
+    "bluegrey",
+    "concrete_dark",
+    "concrete_hi",
+    "galv_hi",
+    "glass",
+    "glass_dark",
+    "lamp_red",
+    "line_white",
+    "paint_white",
+    "plaster",
+    "roof",
+    "signal_red",
+    "steel"
+  ],
+  "palette_roles": [
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 10
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 22
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 6
+    },
+    {
+      "index": 74,
+      "role": "bluegrey",
+      "hex": "#687A82",
+      "voxels": 41
+    },
+    {
+      "index": 94,
+      "role": "plaster",
+      "hex": "#CCC5B6",
+      "voxels": 386
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 176
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 154
+    },
+    {
+      "index": 122,
+      "role": "glass",
+      "hex": "#829A9F",
+      "voxels": 24
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 20
+    },
+    {
+      "index": 194,
+      "role": "asphalt",
+      "hex": "#4F5151",
+      "voxels": 210
+    },
+    {
+      "index": 195,
+      "role": "asphalt_dark",
+      "hex": "#3F4142",
+      "voxels": 54
+    },
+    {
+      "index": 197,
+      "role": "line_white",
+      "hex": "#CDCBC1",
+      "voxels": 15
+    },
+    {
+      "index": 201,
+      "role": "signal_red",
+      "hex": "#A8463B",
+      "voxels": 27
+    },
+    {
+      "index": 208,
+      "role": "lamp_red",
+      "hex": "#B04B43",
+      "voxels": 4
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 68
+    },
+    {
+      "index": 218,
+      "role": "roof",
+      "hex": "#5A5E61",
+      "voxels": 113
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The walk-in medical clinic where people queued for days after the sirens stopped. The ambulance under the canopy never left; the doors are chained from inside.",
+  "notes": [
+    "Single-storey clinic with cross sign and ambulance canopy."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_clinic.md",
+  "previews": {
+    "hero": "previews/map/Claude_clinic/hero.png",
+    "front": "previews/map/Claude_clinic/front.png",
+    "side": "previews/map/Claude_clinic/side.png",
+    "scale": "previews/map/Claude_clinic/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    11.0,
+    11.0
+  ]
+}

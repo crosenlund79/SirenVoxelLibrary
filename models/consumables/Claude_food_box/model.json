@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "Claude_food_box",
+  "base_id": "food_box",
+  "creator": "Claude",
+  "name": "Food Box",
+  "category": "consumables",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_C",
+  "scale_family": "full",
+  "source": "Claude_food_box.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_food_box.glb",
+    "glb_vertices": 472,
+    "glb_triangles": 236,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    10.0,
+    4.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the label / opening side.",
+  "grid_size_cells": [
+    20,
+    9,
+    24
+  ],
+  "dimensions_m": [
+    0.25,
+    0.1125,
+    0.3
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1348,
+  "condition": "used",
+  "gameplay_use": "Food pickup (crackers/cereal)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "card",
+    "card_hi",
+    "cream_shadow",
+    "label_cream",
+    "mustard",
+    "mustard_dark",
+    "paper",
+    "terra"
+  ],
+  "palette_roles": [
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 22
+    },
+    {
+      "index": 95,
+      "role": "paper",
+      "hex": "#DDD6C6",
+      "voxels": 120
+    },
+    {
+      "index": 138,
+      "role": "mustard",
+      "hex": "#AA8847",
+      "voxels": 701
+    },
+    {
+      "index": 139,
+      "role": "mustard_dark",
+      "hex": "#876B38",
+      "voxels": 46
+    },
+    {
+      "index": 142,
+      "role": "terra",
+      "hex": "#925A41",
+      "voxels": 75
+    },
+    {
+      "index": 157,
+      "role": "card_hi",
+      "hex": "#C2A47A",
+      "voxels": 208
+    },
+    {
+      "index": 158,
+      "role": "card",
+      "hex": "#A88A62",
+      "voxels": 36
+    },
+    {
+      "index": 231,
+      "role": "label_cream",
+      "hex": "#D9CFB3",
+      "voxels": 140
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A family box of crackers torn open in a hurry: the back flap stands up, the front flap is folded out, the waxed inner bag is crumpled at the top and the front corner is creased where it was squeezed into a backpack.",
+  "notes": [
+    "Cardboard cereal/cracker box with a muted printed panel, top flap open, a crease."
+  ],
+  "generator": "tools/claude/models/catalog/c2_consumables.py",
+  "spec": "docs/specs/consumables/Claude_food_box.md",
+  "previews": {
+    "hero": "previews/consumables/Claude_food_box/hero.png",
+    "front": "previews/consumables/Claude_food_box/front.png",
+    "side": "previews/consumables/Claude_food_box/side.png",
+    "scale": "previews/consumables/Claude_food_box/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_C.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.25,
+    0.1125
+  ]
+}

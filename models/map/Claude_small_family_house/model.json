@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "id": "Claude_small_family_house",
+  "base_id": "small_family_house",
+  "creator": "Claude",
+  "name": "Small Family House",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_small_family_house.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_small_family_house.glb",
+    "glb_vertices": 928,
+    "glb_triangles": 464,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled. A 45-degree gable reads clearly as a pitched roof at map scale.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    9.0,
+    9.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    18,
+    18,
+    14
+  ],
+  "dimensions_m": [
+    9.0,
+    9.0,
+    7.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1112,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Nearby Homes)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "concrete",
+    "concrete_dark",
+    "grass",
+    "grass_dry",
+    "grass_hi",
+    "leaf",
+    "paint_white",
+    "pine_light",
+    "red",
+    "red_dark",
+    "shingle_brown",
+    "siding_blue",
+    "wgrey",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 30
+    },
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 8
+    },
+    {
+      "index": 10,
+      "role": "wgrey",
+      "hex": "#8B8478",
+      "voxels": 36
+    },
+    {
+      "index": 82,
+      "role": "red",
+      "hex": "#9A594B",
+      "voxels": 26
+    },
+    {
+      "index": 83,
+      "role": "red_dark",
+      "hex": "#7B463B",
+      "voxels": 2
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 6
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 154
+    },
+    {
+      "index": 178,
+      "role": "leaf",
+      "hex": "#6F8551",
+      "voxels": 8
+    },
+    {
+      "index": 182,
+      "role": "grass_hi",
+      "hex": "#94A066",
+      "voxels": 54
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 74
+    },
+    {
+      "index": 184,
+      "role": "grass_dry",
+      "hex": "#A79D6B",
+      "voxels": 16
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 6
+    },
+    {
+      "index": 220,
+      "role": "shingle_brown",
+      "hex": "#6B5A4D",
+      "voxels": 370
+    },
+    {
+      "index": 222,
+      "role": "siding_blue",
+      "hex": "#8D9DA2",
+      "voxels": 322
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A one-storey starter home on a small lot. The family boarded every window and left in the first week; the lawn has gone to seed around the porch.",
+  "notes": [
+    "Gable-roof single-storey house with porch and chimney."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_small_family_house.md",
+  "previews": {
+    "hero": "previews/map/Claude_small_family_house/hero.png",
+    "front": "previews/map/Claude_small_family_house/front.png",
+    "side": "previews/map/Claude_small_family_house/side.png",
+    "scale": "previews/map/Claude_small_family_house/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    9.0,
+    9.0
+  ]
+}

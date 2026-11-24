@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "Claude_snack_package",
+  "base_id": "snack_package",
+  "creator": "Claude",
+  "name": "Snack Package",
+  "category": "consumables",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_C",
+  "scale_family": "full",
+  "source": "Claude_snack_package.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_snack_package.glb",
+    "glb_vertices": 944,
+    "glb_triangles": 472,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    6.0,
+    3.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the label / opening side.",
+  "grid_size_cells": [
+    12,
+    7,
+    17
+  ],
+  "dimensions_m": [
+    0.15,
+    0.0875,
+    0.2125
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 531,
+  "condition": "new",
+  "gameplay_use": "Inventory item snacks (hunger +12)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "label_cream",
+    "terra",
+    "terra_dark",
+    "terra_hi"
+  ],
+  "palette_roles": [
+    {
+      "index": 141,
+      "role": "terra_hi",
+      "hex": "#AA6E52",
+      "voxels": 12
+    },
+    {
+      "index": 142,
+      "role": "terra",
+      "hex": "#925A41",
+      "voxels": 435
+    },
+    {
+      "index": 143,
+      "role": "terra_dark",
+      "hex": "#744733",
+      "voxels": 48
+    },
+    {
+      "index": 231,
+      "role": "label_cream",
+      "hex": "#D9CFB3",
+      "voxels": 36
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A sealed bag of crisps from a petrol-station shelf, still puffed with air. It is untouched; only the film has crinkled where it was packed in the box.",
+  "notes": [
+    "Pillow-shaped crinkled snack bag with crimped ends and a plain colour panel.",
+    "Stands on its bottom crimp in a display pose."
+  ],
+  "generator": "tools/claude/models/catalog/c2_consumables.py",
+  "spec": "docs/specs/consumables/Claude_snack_package.md",
+  "previews": {
+    "hero": "previews/consumables/Claude_snack_package/hero.png",
+    "front": "previews/consumables/Claude_snack_package/front.png",
+    "side": "previews/consumables/Claude_snack_package/side.png",
+    "scale": "previews/consumables/Claude_snack_package/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_C.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.15,
+    0.0875
+  ]
+}

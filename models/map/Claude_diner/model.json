@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "id": "Claude_diner",
+  "base_id": "diner",
+  "creator": "Claude",
+  "name": "Diner",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_diner.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_diner.glb",
+    "glb_vertices": 1004,
+    "glb_triangles": 502,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    11.0,
+    8.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    22,
+    16,
+    13
+  ],
+  "dimensions_m": [
+    11.0,
+    8.0,
+    6.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 917,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Food)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "asphalt",
+    "chrome",
+    "concrete_dark",
+    "concrete_hi",
+    "galv_hi",
+    "glass",
+    "glass_dark",
+    "grass",
+    "label_cream",
+    "line_white",
+    "maroon",
+    "paint_white",
+    "steel",
+    "steel_dark",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 198
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 1
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 32
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 4
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 16
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 140
+    },
+    {
+      "index": 120,
+      "role": "chrome",
+      "hex": "#C4C9C7",
+      "voxels": 140
+    },
+    {
+      "index": 122,
+      "role": "glass",
+      "hex": "#829A9F",
+      "voxels": 8
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 32
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 44
+    },
+    {
+      "index": 194,
+      "role": "asphalt",
+      "hex": "#4F5151",
+      "voxels": 121
+    },
+    {
+      "index": 197,
+      "role": "line_white",
+      "hex": "#CDCBC1",
+      "voxels": 19
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 52
+    },
+    {
+      "index": 213,
+      "role": "maroon",
+      "hex": "#703F3C",
+      "voxels": 100
+    },
+    {
+      "index": 231,
+      "role": "label_cream",
+      "hex": "#D9CFB3",
+      "voxels": 10
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A stainless roadside diner on the county road. Everything was left mid-shift: the booths are set, the lights are off, the place is otherwise intact.",
+  "notes": [
+    "Long diner with ribbon windows and a roof sign pole."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_diner.md",
+  "previews": {
+    "hero": "previews/map/Claude_diner/hero.png",
+    "front": "previews/map/Claude_diner/front.png",
+    "side": "previews/map/Claude_diner/side.png",
+    "scale": "previews/map/Claude_diner/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    11.0,
+    8.0
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "id": "Claude_leafless_deciduous",
+  "base_id": "leafless_deciduous",
+  "creator": "Claude",
+  "name": "Leafless Deciduous Tree",
+  "category": "vegetation",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_leafless_deciduous.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_leafless_deciduous.glb",
+    "glb_vertices": 5856,
+    "glb_triangles": 2928,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    16.5,
+    17.5,
+    0.0
+  ],
+  "pivot_note": "Trunk base centre at ground level.",
+  "front_note": "No functional front; character details face the default camera (-X/+Y).",
+  "grid_size_cells": [
+    34,
+    34,
+    48
+  ],
+  "dimensions_m": [
+    3.4,
+    3.4,
+    4.8
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 888,
+  "condition": "dead",
+  "gameplay_use": "Yard/street tree (game dead_tree)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "bark",
+    "bark_dark",
+    "bark_deep",
+    "bark_hi",
+    "bark_mid",
+    "break_fresh",
+    "card_dark",
+    "card_hi",
+    "snag",
+    "snag_dark",
+    "snag_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 17,
+      "role": "bark_hi",
+      "hex": "#8D837A",
+      "voxels": 451
+    },
+    {
+      "index": 18,
+      "role": "bark",
+      "hex": "#73695F",
+      "voxels": 147
+    },
+    {
+      "index": 19,
+      "role": "bark_mid",
+      "hex": "#5F564E",
+      "voxels": 161
+    },
+    {
+      "index": 20,
+      "role": "bark_dark",
+      "hex": "#4B443E",
+      "voxels": 87
+    },
+    {
+      "index": 21,
+      "role": "bark_deep",
+      "hex": "#37322E",
+      "voxels": 18
+    },
+    {
+      "index": 22,
+      "role": "snag_light",
+      "hex": "#BFB39F",
+      "voxels": 1
+    },
+    {
+      "index": 23,
+      "role": "snag",
+      "hex": "#A79B87",
+      "voxels": 5
+    },
+    {
+      "index": 24,
+      "role": "snag_dark",
+      "hex": "#8A7F6E",
+      "voxels": 4
+    },
+    {
+      "index": 25,
+      "role": "break_fresh",
+      "hex": "#C9B08A",
+      "voxels": 1
+    },
+    {
+      "index": 157,
+      "role": "card_hi",
+      "hex": "#C2A47A",
+      "voxels": 8
+    },
+    {
+      "index": 159,
+      "role": "card_dark",
+      "hex": "#8A714F",
+      "voxels": 5
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Capsule r=0.18 m, h=1.9 m at the pivot (trunk); crown non-colliding.",
+  "story": "An old yard oak that died the summer before everything stopped. Nobody came to fell it: a storm has already snapped one low limb, bracket fungus is eating the trunk and the bark is lifting off the big limbs in pale patches.",
+  "notes": [
+    "Limbs and twig fans are a hand-authored table, voxelised from metres."
+  ],
+  "generator": "tools/claude/models/catalog/d1_vegetation.py",
+  "spec": "docs/specs/vegetation/Claude_leafless_deciduous.md",
+  "previews": {
+    "hero": "previews/vegetation/Claude_leafless_deciduous/hero.png",
+    "front": "previews/vegetation/Claude_leafless_deciduous/front.png",
+    "side": "previews/vegetation/Claude_leafless_deciduous/side.png",
+    "scale": "previews/vegetation/Claude_leafless_deciduous/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": []
+}

@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "id": "Claude_healthy_pine",
+  "base_id": "healthy_pine",
+  "creator": "Claude",
+  "name": "Healthy Pine",
+  "category": "vegetation",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_healthy_pine.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_healthy_pine.glb",
+    "glb_vertices": 10572,
+    "glb_triangles": 5286,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    12.0,
+    13.0,
+    0.0
+  ],
+  "pivot_note": "Trunk base centre at ground level; the crown is slightly lopsided toward the lee (+X) side.",
+  "front_note": "No functional front; character details face the default camera (-X/+Y).",
+  "grid_size_cells": [
+    27,
+    26,
+    51
+  ],
+  "dimensions_m": [
+    2.7,
+    2.6,
+    5.1
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 3437,
+  "condition": "living",
+  "gameplay_use": "Forest/yard tree",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "bark",
+    "bark_dark",
+    "bark_deep",
+    "bark_mid",
+    "conifer",
+    "conifer_dark",
+    "conifer_deep",
+    "conifer_hi",
+    "conifer_mid",
+    "needle_dark",
+    "needle_dry",
+    "needle_olive",
+    "needle_rust",
+    "snag"
+  ],
+  "palette_roles": [
+    {
+      "index": 18,
+      "role": "bark",
+      "hex": "#73695F",
+      "voxels": 56
+    },
+    {
+      "index": 19,
+      "role": "bark_mid",
+      "hex": "#5F564E",
+      "voxels": 122
+    },
+    {
+      "index": 20,
+      "role": "bark_dark",
+      "hex": "#4B443E",
+      "voxels": 20
+    },
+    {
+      "index": 21,
+      "role": "bark_deep",
+      "hex": "#37322E",
+      "voxels": 17
+    },
+    {
+      "index": 23,
+      "role": "snag",
+      "hex": "#A79B87",
+      "voxels": 2
+    },
+    {
+      "index": 26,
+      "role": "needle_olive",
+      "hex": "#6E7251",
+      "voxels": 12
+    },
+    {
+      "index": 27,
+      "role": "needle_dry",
+      "hex": "#877A53",
+      "voxels": 20
+    },
+    {
+      "index": 28,
+      "role": "needle_rust",
+      "hex": "#86684C",
+      "voxels": 23
+    },
+    {
+      "index": 29,
+      "role": "needle_dark",
+      "hex": "#50573F",
+      "voxels": 24
+    },
+    {
+      "index": 185,
+      "role": "conifer_hi",
+      "hex": "#627D5C",
+      "voxels": 429
+    },
+    {
+      "index": 186,
+      "role": "conifer",
+      "hex": "#4E6849",
+      "voxels": 554
+    },
+    {
+      "index": 187,
+      "role": "conifer_mid",
+      "hex": "#41583F",
+      "voxels": 297
+    },
+    {
+      "index": 188,
+      "role": "conifer_dark",
+      "hex": "#344835",
+      "voxels": 963
+    },
+    {
+      "index": 189,
+      "role": "conifer_deep",
+      "hex": "#283629",
+      "voxels": 898
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Capsule r=0.15 m, h=5.1 m at the pivot (trunk); foliage non-colliding.",
+  "story": "A self-sown pine at the back of a garden that nobody got round to taking down. It is thriving now: dense dark tiers, the windward side clipped short by winter storms, one low limb on the path side browning where road salt splashed it.",
+  "notes": [
+    "Same metric whorl-table method as Claude_pine_dead_small (its dead sibling).",
+    "Prevailing wind modelled from -X like the dead pine."
+  ],
+  "generator": "tools/claude/models/catalog/d1_vegetation.py",
+  "spec": "docs/specs/vegetation/Claude_healthy_pine.md",
+  "previews": {
+    "hero": "previews/vegetation/Claude_healthy_pine/hero.png",
+    "front": "previews/vegetation/Claude_healthy_pine/front.png",
+    "side": "previews/vegetation/Claude_healthy_pine/side.png",
+    "scale": "previews/vegetation/Claude_healthy_pine/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": []
+}

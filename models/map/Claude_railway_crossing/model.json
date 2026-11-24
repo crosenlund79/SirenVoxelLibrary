@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "id": "Claude_railway_crossing",
+  "base_id": "railway_crossing",
+  "creator": "Claude",
+  "name": "Railway Crossing",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_railway_crossing.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_railway_crossing.glb",
+    "glb_vertices": 1044,
+    "glb_triangles": 522,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    12.5,
+    12.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    25,
+    25,
+    8
+  ],
+  "dimensions_m": [
+    12.5,
+    12.5,
+    4.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 693,
+  "condition": "worn",
+  "gameplay_use": "Regional-map infrastructure piece",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "asphalt",
+    "charcoal",
+    "concrete_dark",
+    "concrete_hi",
+    "curb",
+    "galv",
+    "galv_dark",
+    "galv_hi",
+    "grass",
+    "gravel",
+    "lamp_red",
+    "line_yellow",
+    "paint_white",
+    "signal_red",
+    "steel",
+    "steel_light",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 30
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 24
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 26
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 6
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 4
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 4
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 4
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 36
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 65
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 180
+    },
+    {
+      "index": 194,
+      "role": "asphalt",
+      "hex": "#4F5151",
+      "voxels": 190
+    },
+    {
+      "index": 198,
+      "role": "line_yellow",
+      "hex": "#BFA352",
+      "voxels": 8
+    },
+    {
+      "index": 199,
+      "role": "curb",
+      "hex": "#A09F97",
+      "voxels": 36
+    },
+    {
+      "index": 200,
+      "role": "gravel",
+      "hex": "#8C877D",
+      "voxels": 54
+    },
+    {
+      "index": 201,
+      "role": "signal_red",
+      "hex": "#A8463B",
+      "voxels": 8
+    },
+    {
+      "index": 208,
+      "role": "lamp_red",
+      "hex": "#B04B43",
+      "voxels": 4
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 14
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A level crossing on the freight line out of town. The barriers came down when the power failed and have stayed down ever since.",
+  "notes": [
+    "Height 4 m (GPT reference 0.6 m): the brief's crossing signals and barrier arms cannot fit in a 0.6 m slab; the road slab itself stays one cell thick.",
+    "12.5 x 12.5 m tile (reference 12 x 12 m) to centre the 17-cell road section."
+  ],
+  "generator": "tools/claude/models/catalog/e2_map_infrastructure.py",
+  "spec": "docs/specs/map/Claude_railway_crossing.md",
+  "previews": {
+    "hero": "previews/map/Claude_railway_crossing/hero.png",
+    "front": "previews/map/Claude_railway_crossing/front.png",
+    "side": "previews/map/Claude_railway_crossing/side.png",
+    "scale": "previews/map/Claude_railway_crossing/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    12.5,
+    12.5
+  ]
+}

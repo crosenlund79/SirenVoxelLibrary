@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "id": "Claude_tool_chest",
+  "base_id": "tool_chest",
+  "creator": "Claude",
+  "name": "Tool Chest",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_tool_chest.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_tool_chest.glb",
+    "glb_vertices": 1340,
+    "glb_triangles": 670,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.025,
+  "resolution_tier": "fine",
+  "resolution_rationale": "2.5 cm cells: a handheld or small gear item whose handles, straps and blades would be 2-4x too thick at 5 cm. At 5 cm a 0.47 m chest is nine cells tall: its drawers, pulls and casters would be single cells. At 2.5 cm the four drawers, full-width pulls, swivel casters and the open drawer's contents read; the voxel count stays modest.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    19.0,
+    7.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the working / interaction side.",
+  "grid_size_cells": [
+    35,
+    20,
+    19
+  ],
+  "dimensions_m": [
+    0.875,
+    0.5,
+    0.475
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 2542,
+  "condition": "used",
+  "gameplay_use": "Tool storage",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "blue",
+    "blue_dark",
+    "blue_deep",
+    "blue_hi",
+    "blue_mid",
+    "charcoal",
+    "chrome",
+    "iron",
+    "red",
+    "red_dark",
+    "red_deep",
+    "red_hi",
+    "soot",
+    "steel",
+    "steel_dark",
+    "steel_hi",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 33,
+      "role": "steel_hi",
+      "hex": "#ADB4B2",
+      "voxels": 6
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 55
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 26
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 192
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 212
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 32
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 150
+    },
+    {
+      "index": 45,
+      "role": "soot",
+      "hex": "#1B1D1D",
+      "voxels": 1
+    },
+    {
+      "index": 81,
+      "role": "red_hi",
+      "hex": "#B26D5C",
+      "voxels": 3
+    },
+    {
+      "index": 82,
+      "role": "red",
+      "hex": "#9A594B",
+      "voxels": 1138
+    },
+    {
+      "index": 83,
+      "role": "red_dark",
+      "hex": "#7B463B",
+      "voxels": 565
+    },
+    {
+      "index": 84,
+      "role": "red_deep",
+      "hex": "#5C352D",
+      "voxels": 26
+    },
+    {
+      "index": 97,
+      "role": "blue_hi",
+      "hex": "#8497A4",
+      "voxels": 6
+    },
+    {
+      "index": 98,
+      "role": "blue",
+      "hex": "#697D8B",
+      "voxels": 16
+    },
+    {
+      "index": 99,
+      "role": "blue_mid",
+      "hex": "#5D707D",
+      "voxels": 5
+    },
+    {
+      "index": 100,
+      "role": "blue_dark",
+      "hex": "#4E5F6B",
+      "voxels": 12
+    },
+    {
+      "index": 101,
+      "role": "blue_deep",
+      "hex": "#3E4C56",
+      "voxels": 5
+    },
+    {
+      "index": 120,
+      "role": "chrome",
+      "hex": "#C4C9C7",
+      "voxels": 92
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 0.8 x 0.36 x 0.475 m on the body; handle, rag and open drawer are overhangs.",
+  "story": "A mechanic's rolling chest from the auto shop on the corner, dragged home for the generator tools. The top drawer was left open with a few spanners in it; a greasy shop rag still hangs over the side handle.",
+  "notes": [
+    "Rolling mechanic's tool chest in dusty red, stacked drawers with one open, casters, side handle.",
+    "Depth includes the open drawer (+0.12 m beyond the closed pulls)."
+  ],
+  "generator": "tools/claude/models/catalog/b1_storage_tools.py",
+  "spec": "docs/specs/survival/Claude_tool_chest.md",
+  "previews": {
+    "hero": "previews/survival/Claude_tool_chest/hero.png",
+    "front": "previews/survival/Claude_tool_chest/front.png",
+    "side": "previews/survival/Claude_tool_chest/side.png",
+    "scale": "previews/survival/Claude_tool_chest/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.8,
+    0.35
+  ]
+}

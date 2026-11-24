@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "id": "Claude_gun_shop",
+  "base_id": "gun_shop",
+  "creator": "Claude",
+  "name": "Gun Shop",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_gun_shop.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_gun_shop.glb",
+    "glb_vertices": 704,
+    "glb_triangles": 352,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    8.0,
+    9.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    16,
+    18,
+    10
+  ],
+  "dimensions_m": [
+    8.0,
+    9.0,
+    5.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 884,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Weapons)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "asphalt",
+    "charcoal",
+    "concrete",
+    "concrete_dark",
+    "concrete_hi",
+    "galv",
+    "galv_hi",
+    "glass_dark",
+    "khaki",
+    "khaki_dark",
+    "line_white",
+    "olive_dark",
+    "roof",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 14
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 22
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 4
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 4
+    },
+    {
+      "index": 87,
+      "role": "olive_dark",
+      "hex": "#5F6244",
+      "voxels": 10
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 208
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 152
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 208
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 36
+    },
+    {
+      "index": 175,
+      "role": "khaki",
+      "hex": "#9C8D6E",
+      "voxels": 8
+    },
+    {
+      "index": 176,
+      "role": "khaki_dark",
+      "hex": "#7B6F57",
+      "voxels": 8
+    },
+    {
+      "index": 194,
+      "role": "asphalt",
+      "hex": "#4F5151",
+      "voxels": 86
+    },
+    {
+      "index": 197,
+      "role": "line_white",
+      "hex": "#CDCBC1",
+      "voxels": 16
+    },
+    {
+      "index": 218,
+      "role": "roof",
+      "hex": "#5A5E61",
+      "voxels": 108
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "An independent gun shop in a strip of small units. The owner barred everything that opened, sandbagged a chicane at the door and held out for a week before the shop went dark.",
+  "notes": [
+    "Small fortified store with barred windows."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_gun_shop.md",
+  "previews": {
+    "hero": "previews/map/Claude_gun_shop/hero.png",
+    "front": "previews/map/Claude_gun_shop/front.png",
+    "side": "previews/map/Claude_gun_shop/side.png",
+    "scale": "previews/map/Claude_gun_shop/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    8.0,
+    9.0
+  ]
+}

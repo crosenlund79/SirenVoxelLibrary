@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "id": "Claude_hunting_rifle",
+  "base_id": "hunting_rifle",
+  "creator": "Claude",
+  "name": "Hunting Rifle",
+  "category": "combat",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_C",
+  "scale_family": "full",
+  "source": "Claude_hunting_rifle.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_hunting_rifle.glb",
+    "glb_vertices": 1456,
+    "glb_triangles": 728,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it. Overridden from the manifest's 2.5 cm to 1.25 cm so the whole firearms family shares one voxel rhythm with the pistol, revolver and SMG: at 2.5 cm the barrel, magazine tube, trigger guard and scope would each be a single cell and the weapon would lose its value structure.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    3.0,
+    43.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "Working end / muzzle points +Y, top side up; lowest point on z = 0.",
+  "grid_size_cells": [
+    6,
+    86,
+    19
+  ],
+  "dimensions_m": [
+    0.075,
+    1.075,
+    0.2375
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1545,
+  "condition": "used",
+  "gameplay_use": "Planned weapon",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "charcoal",
+    "glass_dark",
+    "glass_deep",
+    "iron",
+    "iron_edge",
+    "leather",
+    "leather_dark",
+    "pine_aged",
+    "pine_dark",
+    "steel",
+    "steel_dark",
+    "wood_deep",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 154
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 560
+    },
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 68
+    },
+    {
+      "index": 7,
+      "role": "wood_deep",
+      "hex": "#46362B",
+      "voxels": 30
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 97
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 89
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 122
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 73
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 62
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 186
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 4
+    },
+    {
+      "index": 124,
+      "role": "glass_deep",
+      "hex": "#42535A",
+      "voxels": 4
+    },
+    {
+      "index": 154,
+      "role": "leather",
+      "hex": "#7A553C",
+      "voxels": 90
+    },
+    {
+      "index": 155,
+      "role": "leather_dark",
+      "hex": "#5E402E",
+      "voxels": 6
+    }
+  ],
+  "attachments": {
+    "grip": {
+      "description": "Main hand on the pistol grip.",
+      "voxel": [
+        1,
+        20,
+        7
+      ],
+      "offset_m_from_pivot": [
+        -0.0188,
+        -0.2812,
+        0.0938
+      ]
+    },
+    "support": {
+      "description": "Support hand under the fore-end.",
+      "voxel": [
+        1,
+        50,
+        8
+      ],
+      "offset_m_from_pivot": [
+        -0.0188,
+        0.0938,
+        0.1062
+      ]
+    },
+    "sling_rear": {
+      "description": "Rear sling swivel.",
+      "voxel": [
+        1,
+        9,
+        4
+      ],
+      "offset_m_from_pivot": [
+        -0.0188,
+        -0.4188,
+        0.0562
+      ]
+    },
+    "sling_front": {
+      "description": "Front sling swivel.",
+      "voxel": [
+        1,
+        56,
+        7
+      ],
+      "offset_m_from_pivot": [
+        -0.0188,
+        0.1688,
+        0.0938
+      ]
+    }
+  },
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A deer rifle kept in a locked cabinet by a man who hunted one weekend a year. It came out of the cabinet the night the sirens stopped; the leather sling is stiff and cracked, the walnut is still oiled, the scope caps are lost.",
+  "notes": [
+    "Generic bolt-action rifle with a scope, wooden stock and a sling.",
+    "Held orientation: the sling hangs below the stock, so its lowest point is z = 0."
+  ],
+  "generator": "tools/claude/models/catalog/c1_combat.py",
+  "spec": "docs/specs/combat/Claude_hunting_rifle.md",
+  "previews": {
+    "hero": "previews/combat/Claude_hunting_rifle/hero.png",
+    "front": "previews/combat/Claude_hunting_rifle/front.png",
+    "side": "previews/combat/Claude_hunting_rifle/side.png",
+    "scale": "previews/combat/Claude_hunting_rifle/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_C.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.075,
+    1.075
+  ]
+}

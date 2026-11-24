@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "id": "Claude_first_aid_box",
+  "base_id": "first_aid_box",
+  "creator": "Claude",
+  "name": "Wall First-Aid Box",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_first_aid_box.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_first_aid_box.glb",
+    "glb_vertices": 1064,
+    "glb_triangles": 532,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    15.0,
+    0.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the back (wall) face.",
+  "front_note": "+Y faces into the room; the back face is flat for the wall.",
+  "grid_size_cells": [
+    30,
+    19,
+    18
+  ],
+  "dimensions_m": [
+    0.375,
+    0.2375,
+    0.225
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 2693,
+  "condition": "used",
+  "gameplay_use": "Wall-mounted medical supply",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "charcoal",
+    "cream",
+    "cream_hi",
+    "cream_shadow",
+    "label_blue",
+    "paint_white",
+    "paint_white_shadow",
+    "paper",
+    "porcelain",
+    "porcelain_mid",
+    "porcelain_shadow",
+    "rust_deep",
+    "signal_red_dark",
+    "steel",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 17
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 5
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 7
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 24
+    },
+    {
+      "index": 89,
+      "role": "cream_hi",
+      "hex": "#E4DCCB",
+      "voxels": 12
+    },
+    {
+      "index": 90,
+      "role": "cream",
+      "hex": "#D7CDB9",
+      "voxels": 36
+    },
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 4
+    },
+    {
+      "index": 95,
+      "role": "paper",
+      "hex": "#DDD6C6",
+      "voxels": 50
+    },
+    {
+      "index": 114,
+      "role": "porcelain",
+      "hex": "#DAD6CC",
+      "voxels": 36
+    },
+    {
+      "index": 115,
+      "role": "porcelain_mid",
+      "hex": "#C5C0B5",
+      "voxels": 195
+    },
+    {
+      "index": 116,
+      "role": "porcelain_shadow",
+      "hex": "#ABA69B",
+      "voxels": 448
+    },
+    {
+      "index": 202,
+      "role": "signal_red_dark",
+      "hex": "#7E3229",
+      "voxels": 156
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 1352
+    },
+    {
+      "index": 210,
+      "role": "paint_white_shadow",
+      "hex": "#B0AEA6",
+      "voxels": 339
+    },
+    {
+      "index": 230,
+      "role": "label_blue",
+      "hex": "#556F8A",
+      "voxels": 12
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 0.375 x 0.11 x 0.225 m against the wall; the open door is an overhang.",
+  "story": "The white first-aid box from the school corridor wall, its door hanging open after someone took the painkillers and most of the dressings in a hurry. A bandage roll, a bottle of iodine and a few gauze packs are left.",
+  "notes": [
+    "Wall-mounted white steel first-aid box with a red cross, door ajar; wall-mount pivot.",
+    "Depth includes the door swung ~20 degrees open."
+  ],
+  "generator": "tools/claude/models/catalog/b2_survival_gear.py",
+  "spec": "docs/specs/survival/Claude_first_aid_box.md",
+  "previews": {
+    "hero": "previews/survival/Claude_first_aid_box/hero.png",
+    "front": "previews/survival/Claude_first_aid_box/front.png",
+    "side": "previews/survival/Claude_first_aid_box/side.png",
+    "scale": "previews/survival/Claude_first_aid_box/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "mount": {
+    "type": "wall",
+    "recommended_bottom_height_m": 1.3
+  }
+}

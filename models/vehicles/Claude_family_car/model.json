@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "id": "Claude_family_car",
+  "base_id": "family_car",
+  "creator": "Claude",
+  "name": "Family Car",
+  "category": "vehicles",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_family_car.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_family_car.glb",
+    "glb_vertices": 2840,
+    "glb_triangles": 1420,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count. Body panels, pillars and 0.65 m wheels need 0.1 m cells to keep round wheels and a readable glasshouse; the game's structure grid is also 0.1 m.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    9.5,
+    21.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre between the axles (wheel centres at y = 8 and y = 33).",
+  "front_note": "The vehicle's nose is +Y.",
+  "grid_size_cells": [
+    19,
+    42,
+    14
+  ],
+  "dimensions_m": [
+    1.9,
+    4.2,
+    1.4
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 2884,
+  "condition": "abandoned",
+  "gameplay_use": "Driveway/street prop (game car)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "bluegrey",
+    "bluegrey_dark",
+    "bluegrey_deep",
+    "bluegrey_hi",
+    "charcoal",
+    "chrome",
+    "glass_dark",
+    "glass_deep",
+    "glass_hi",
+    "label_cream",
+    "olive",
+    "olive_dark",
+    "olive_hi",
+    "screen",
+    "signal_red_dark",
+    "slate",
+    "slate_dark",
+    "slate_deep",
+    "soot",
+    "steel_dark",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 46
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 5
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 119
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 183
+    },
+    {
+      "index": 45,
+      "role": "soot",
+      "hex": "#1B1D1D",
+      "voxels": 122
+    },
+    {
+      "index": 73,
+      "role": "bluegrey_hi",
+      "hex": "#8698A1",
+      "voxels": 518
+    },
+    {
+      "index": 74,
+      "role": "bluegrey",
+      "hex": "#687A82",
+      "voxels": 660
+    },
+    {
+      "index": 75,
+      "role": "bluegrey_dark",
+      "hex": "#53636A",
+      "voxels": 139
+    },
+    {
+      "index": 76,
+      "role": "bluegrey_deep",
+      "hex": "#404C52",
+      "voxels": 586
+    },
+    {
+      "index": 85,
+      "role": "olive_hi",
+      "hex": "#8E926A",
+      "voxels": 16
+    },
+    {
+      "index": 86,
+      "role": "olive",
+      "hex": "#777B55",
+      "voxels": 24
+    },
+    {
+      "index": 87,
+      "role": "olive_dark",
+      "hex": "#5F6244",
+      "voxels": 14
+    },
+    {
+      "index": 120,
+      "role": "chrome",
+      "hex": "#C4C9C7",
+      "voxels": 4
+    },
+    {
+      "index": 121,
+      "role": "glass_hi",
+      "hex": "#A7BDC2",
+      "voxels": 6
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 65
+    },
+    {
+      "index": 124,
+      "role": "glass_deep",
+      "hex": "#42535A",
+      "voxels": 82
+    },
+    {
+      "index": 125,
+      "role": "screen",
+      "hex": "#262C2F",
+      "voxels": 101
+    },
+    {
+      "index": 130,
+      "role": "slate",
+      "hex": "#5E6D74",
+      "voxels": 36
+    },
+    {
+      "index": 131,
+      "role": "slate_dark",
+      "hex": "#4B585E",
+      "voxels": 49
+    },
+    {
+      "index": 132,
+      "role": "slate_deep",
+      "hex": "#3A4449",
+      "voxels": 91
+    },
+    {
+      "index": 202,
+      "role": "signal_red_dark",
+      "hex": "#7E3229",
+      "voxels": 12
+    },
+    {
+      "index": 231,
+      "role": "label_cream",
+      "hex": "#D9CFB3",
+      "voxels": 6
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 1.75 x 4.2 x 1.4 m centred on the pivot.",
+  "story": "A blue-grey family hatchback left on the street when the family went on foot. The front tyre on the kerb side has gone flat, a summer of dust has settled on every top surface, and through the rear window, left open a crack too wide, a packed bag is still on the back seat.",
+  "notes": [
+    "Unbranded hatchback/sedan in faded blue-grey, flat tyre, dust, a bag on the back seat."
+  ],
+  "generator": "tools/claude/models/catalog/d3_vehicles.py",
+  "spec": "docs/specs/vehicles/Claude_family_car.md",
+  "previews": {
+    "hero": "previews/vehicles/Claude_family_car/hero.png",
+    "front": "previews/vehicles/Claude_family_car/front.png",
+    "side": "previews/vehicles/Claude_family_car/side.png",
+    "scale": "previews/vehicles/Claude_family_car/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": []
+}

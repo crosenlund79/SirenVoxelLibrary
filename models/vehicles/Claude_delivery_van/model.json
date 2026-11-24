@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "id": "Claude_delivery_van",
+  "base_id": "delivery_van",
+  "creator": "Claude",
+  "name": "Delivery Van",
+  "category": "vehicles",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_delivery_van.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_delivery_van.glb",
+    "glb_vertices": 3676,
+    "glb_triangles": 1838,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count. Body panels, pillars and 0.65 m wheels need 0.1 m cells; the game's structure grid is also 0.1 m.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    18.5,
+    27.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre between the axles (wheel centres at y = 13.5 and y = 41.5 of the body), not the bounding-box centre.",
+  "front_note": "The vehicle's nose is +Y.",
+  "grid_size_cells": [
+    29,
+    52,
+    25
+  ],
+  "dimensions_m": [
+    2.9,
+    5.2,
+    2.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 6642,
+  "condition": "abandoned",
+  "gameplay_use": "Street prop",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "card",
+    "card_dark",
+    "card_hi",
+    "charcoal",
+    "galv_dark",
+    "glass_dark",
+    "glass_deep",
+    "glass_hi",
+    "label_cream",
+    "paint_white",
+    "paint_white_shadow",
+    "pine_aged",
+    "porcelain_deep",
+    "porcelain_mid",
+    "porcelain_shadow",
+    "screen",
+    "signal_red_dark",
+    "soot",
+    "steel_dark",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 570
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 54
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 15
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 185
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 153
+    },
+    {
+      "index": 45,
+      "role": "soot",
+      "hex": "#1B1D1D",
+      "voxels": 72
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 340
+    },
+    {
+      "index": 115,
+      "role": "porcelain_mid",
+      "hex": "#C5C0B5",
+      "voxels": 146
+    },
+    {
+      "index": 116,
+      "role": "porcelain_shadow",
+      "hex": "#ABA69B",
+      "voxels": 124
+    },
+    {
+      "index": 117,
+      "role": "porcelain_deep",
+      "hex": "#8D897F",
+      "voxels": 832
+    },
+    {
+      "index": 121,
+      "role": "glass_hi",
+      "hex": "#A7BDC2",
+      "voxels": 12
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 39
+    },
+    {
+      "index": 124,
+      "role": "glass_deep",
+      "hex": "#42535A",
+      "voxels": 156
+    },
+    {
+      "index": 125,
+      "role": "screen",
+      "hex": "#262C2F",
+      "voxels": 152
+    },
+    {
+      "index": 157,
+      "role": "card_hi",
+      "hex": "#C2A47A",
+      "voxels": 151
+    },
+    {
+      "index": 158,
+      "role": "card",
+      "hex": "#A88A62",
+      "voxels": 217
+    },
+    {
+      "index": 159,
+      "role": "card_dark",
+      "hex": "#8A714F",
+      "voxels": 48
+    },
+    {
+      "index": 202,
+      "role": "signal_red_dark",
+      "hex": "#7E3229",
+      "voxels": 10
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 2382
+    },
+    {
+      "index": 210,
+      "role": "paint_white_shadow",
+      "hex": "#B0AEA6",
+      "voxels": 978
+    },
+    {
+      "index": 231,
+      "role": "label_cream",
+      "hex": "#D9CFB3",
+      "voxels": 6
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 1.9 x 5.1 x 2.5 m centred on the pivot; the open doors separately if needed.",
+  "story": "A plain white delivery van stopped mid-round. The driver opened the back for the next drop and never came back: one rear door swung right out, the other folded against the side, parcels still stacked inside and one fallen against the bumper. Grime has run down from the roof edges.",
+  "notes": [
+    "The open left door adds 0.9 m to the width at the rear (3.0 m with the door, 2.1 m across the mirrors)."
+  ],
+  "generator": "tools/claude/models/catalog/d3_vehicles.py",
+  "spec": "docs/specs/vehicles/Claude_delivery_van.md",
+  "previews": {
+    "hero": "previews/vehicles/Claude_delivery_van/hero.png",
+    "front": "previews/vehicles/Claude_delivery_van/front.png",
+    "side": "previews/vehicles/Claude_delivery_van/side.png",
+    "scale": "previews/vehicles/Claude_delivery_van/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": []
+}

@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "id": "Claude_water_barrel",
+  "base_id": "water_barrel",
+  "creator": "Claude",
+  "name": "Water Barrel",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_water_barrel.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_water_barrel.glb",
+    "glb_vertices": 1648,
+    "glb_triangles": 824,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    6.0,
+    6.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the working / interaction side.",
+  "grid_size_cells": [
+    12,
+    14,
+    22
+  ],
+  "dimensions_m": [
+    0.6,
+    0.7,
+    1.1
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1175,
+  "condition": "used",
+  "gameplay_use": "Water storage",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "algae",
+    "algae_dark",
+    "blue_dark",
+    "bluegrey",
+    "bluegrey_dark",
+    "bluegrey_deep",
+    "bluegrey_hi",
+    "brass",
+    "brass_dark",
+    "brass_hi",
+    "concrete",
+    "concrete_dark",
+    "concrete_hi",
+    "cream",
+    "cream_mid",
+    "teal_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 53,
+      "role": "brass_hi",
+      "hex": "#C2A468",
+      "voxels": 2
+    },
+    {
+      "index": 54,
+      "role": "brass",
+      "hex": "#A3874E",
+      "voxels": 2
+    },
+    {
+      "index": 55,
+      "role": "brass_dark",
+      "hex": "#786439",
+      "voxels": 2
+    },
+    {
+      "index": 71,
+      "role": "algae",
+      "hex": "#5D6A4E",
+      "voxels": 2
+    },
+    {
+      "index": 72,
+      "role": "algae_dark",
+      "hex": "#4A553E",
+      "voxels": 2
+    },
+    {
+      "index": 73,
+      "role": "bluegrey_hi",
+      "hex": "#8698A1",
+      "voxels": 204
+    },
+    {
+      "index": 74,
+      "role": "bluegrey",
+      "hex": "#687A82",
+      "voxels": 573
+    },
+    {
+      "index": 75,
+      "role": "bluegrey_dark",
+      "hex": "#53636A",
+      "voxels": 186
+    },
+    {
+      "index": 76,
+      "role": "bluegrey_deep",
+      "hex": "#404C52",
+      "voxels": 1
+    },
+    {
+      "index": 90,
+      "role": "cream",
+      "hex": "#D7CDB9",
+      "voxels": 4
+    },
+    {
+      "index": 91,
+      "role": "cream_mid",
+      "hex": "#C7BCA6",
+      "voxels": 1
+    },
+    {
+      "index": 100,
+      "role": "blue_dark",
+      "hex": "#4E5F6B",
+      "voxels": 4
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 63
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 59
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 69
+    },
+    {
+      "index": 151,
+      "role": "teal_dark",
+      "hex": "#445A59",
+      "voxels": 1
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A 200-litre food drum scrounged from the bakery, set on two cinder blocks by the back door. Someone drilled in a brass garden tap; it drips, and the drum and the block beneath are green where it does. A tin mug lives on the lid.",
+  "notes": [
+    "200 L blue-grey plastic drum on two cinder blocks with screw bungs and a retrofitted brass tap.",
+    "Taller than the reference: a real 200 L drum is ~0.85 m on its own and the blocks add 0.2 m."
+  ],
+  "generator": "tools/claude/models/catalog/b2_survival_gear.py",
+  "spec": "docs/specs/survival/Claude_water_barrel.md",
+  "previews": {
+    "hero": "previews/survival/Claude_water_barrel/hero.png",
+    "front": "previews/survival/Claude_water_barrel/front.png",
+    "side": "previews/survival/Claude_water_barrel/side.png",
+    "scale": "previews/survival/Claude_water_barrel/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.6,
+    0.6
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "Claude_garden_table",
+  "base_id": "garden_table",
+  "creator": "Claude",
+  "name": "Garden Table",
+  "category": "decorations",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_garden_table.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_garden_table.glb",
+    "glb_vertices": 1056,
+    "glb_triangles": 528,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    11.0,
+    7.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y faces the street or the person using it.",
+  "grid_size_cells": [
+    22,
+    14,
+    15
+  ],
+  "dimensions_m": [
+    1.1,
+    0.7,
+    0.75
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 724,
+  "condition": "worn",
+  "gameplay_use": "Yard prop",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "dead_leaf",
+    "dead_leaf_dark",
+    "green_faded",
+    "lichen",
+    "paint_white",
+    "paint_white_shadow",
+    "porcelain_deep",
+    "porcelain_mid",
+    "porcelain_shadow"
+  ],
+  "palette_roles": [
+    {
+      "index": 30,
+      "role": "lichen",
+      "hex": "#8E9979",
+      "voxels": 8
+    },
+    {
+      "index": 70,
+      "role": "green_faded",
+      "hex": "#8A9A8C",
+      "voxels": 42
+    },
+    {
+      "index": 115,
+      "role": "porcelain_mid",
+      "hex": "#C5C0B5",
+      "voxels": 57
+    },
+    {
+      "index": 116,
+      "role": "porcelain_shadow",
+      "hex": "#ABA69B",
+      "voxels": 18
+    },
+    {
+      "index": 117,
+      "role": "porcelain_deep",
+      "hex": "#8D897F",
+      "voxels": 20
+    },
+    {
+      "index": 190,
+      "role": "dead_leaf",
+      "hex": "#9C7F55",
+      "voxels": 2
+    },
+    {
+      "index": 191,
+      "role": "dead_leaf_dark",
+      "hex": "#7A6243",
+      "voxels": 2
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 205
+    },
+    {
+      "index": 210,
+      "role": "paint_white_shadow",
+      "hex": "#B0AEA6",
+      "voxels": 370
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 1.1 x 0.7 x 0.75 m.",
+  "story": "A white resin patio table left out through every season. Rain pooled along its moulded grooves and around the umbrella hole and grew green algae there; the legs are streaked on their shaded side, and last autumn's leaves still sit on the top.",
+  "notes": [
+    "Weathered white plastic patio table with algae streaks and an umbrella hole."
+  ],
+  "generator": "tools/claude/models/catalog/d2_street.py",
+  "spec": "docs/specs/decorations/Claude_garden_table.md",
+  "previews": {
+    "hero": "previews/decorations/Claude_garden_table/hero.png",
+    "front": "previews/decorations/Claude_garden_table/front.png",
+    "side": "previews/decorations/Claude_garden_table/side.png",
+    "scale": "previews/decorations/Claude_garden_table/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.1,
+    0.7
+  ]
+}

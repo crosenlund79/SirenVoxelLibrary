@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "Claude_cooking_pot",
+  "base_id": "cooking_pot",
+  "creator": "Claude",
+  "name": "Cooking Pot",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_cooking_pot.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_cooking_pot.glb",
+    "glb_vertices": 1212,
+    "glb_triangles": 606,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.025,
+  "resolution_tier": "fine",
+  "resolution_rationale": "2.5 cm cells: a handheld or small gear item whose handles, straps and blades would be 2-4x too thick at 5 cm.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    7.0,
+    6.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the working / interaction side.",
+  "grid_size_cells": [
+    14,
+    12,
+    11
+  ],
+  "dimensions_m": [
+    0.35,
+    0.3,
+    0.275
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 650,
+  "condition": "worn",
+  "gameplay_use": "Cooking on stoves/campfires",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "charcoal",
+    "galv",
+    "galv_dark",
+    "galv_hi",
+    "iron",
+    "iron_dark",
+    "soot",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 4
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 1
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 3
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 86
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 305
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 21
+    },
+    {
+      "index": 43,
+      "role": "iron_dark",
+      "hex": "#2E3232",
+      "voxels": 70
+    },
+    {
+      "index": 45,
+      "role": "soot",
+      "hex": "#1B1D1D",
+      "voxels": 136
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 24
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A thin aluminium stockpot that has cooked every meal over the backyard fire since the outage. The bottom is black with soot, a dent on one side from being dropped, and the lid sits slightly crooked.",
+  "notes": [
+    "Battered aluminium stockpot with lid and two side handles, dented, soot-black on the bottom."
+  ],
+  "generator": "tools/claude/models/catalog/b2_survival_gear.py",
+  "spec": "docs/specs/survival/Claude_cooking_pot.md",
+  "previews": {
+    "hero": "previews/survival/Claude_cooking_pot/hero.png",
+    "front": "previews/survival/Claude_cooking_pot/front.png",
+    "side": "previews/survival/Claude_cooking_pot/side.png",
+    "scale": "previews/survival/Claude_cooking_pot/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.3,
+    0.3
+  ]
+}

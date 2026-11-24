@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "Claude_boulder",
+  "base_id": "boulder",
+  "creator": "Claude",
+  "name": "Boulder",
+  "category": "vegetation",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_boulder.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_boulder.glb",
+    "glb_vertices": 1920,
+    "glb_triangles": 960,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    9.5,
+    8.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "No functional front; character details face the default camera (-X/+Y).",
+  "grid_size_cells": [
+    19,
+    16,
+    13
+  ],
+  "dimensions_m": [
+    1.9,
+    1.6,
+    1.3
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1079,
+  "condition": "n/a",
+  "gameplay_use": "Landscape cover",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "concrete",
+    "concrete_hi",
+    "grass",
+    "grass_dry",
+    "grass_hi",
+    "gravel",
+    "moss",
+    "moss_dark",
+    "soil_dark",
+    "stone",
+    "stone_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 32,
+      "role": "soil_dark",
+      "hex": "#3B342E",
+      "voxels": 10
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 68
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 108
+    },
+    {
+      "index": 109,
+      "role": "stone",
+      "hex": "#827E76",
+      "voxels": 120
+    },
+    {
+      "index": 110,
+      "role": "stone_dark",
+      "hex": "#68645E",
+      "voxels": 252
+    },
+    {
+      "index": 111,
+      "role": "moss",
+      "hex": "#646C4F",
+      "voxels": 230
+    },
+    {
+      "index": 112,
+      "role": "moss_dark",
+      "hex": "#4E5540",
+      "voxels": 94
+    },
+    {
+      "index": 182,
+      "role": "grass_hi",
+      "hex": "#94A066",
+      "voxels": 1
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 4
+    },
+    {
+      "index": 184,
+      "role": "grass_dry",
+      "hex": "#A79D6B",
+      "voxels": 2
+    },
+    {
+      "index": 200,
+      "role": "gravel",
+      "hex": "#8C877D",
+      "voxels": 190
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Convex hull of the voxels, or a box 1.85 x 1.55 x 1.25 m.",
+  "story": "A glacial erratic the developers built the park around rather than move. Its north side is furred with moss, frost has opened a fissure down the front, and a grass tuft has seeded in the crack.",
+  "notes": [
+    "Large boulder with moss on the north side and a fissure."
+  ],
+  "generator": "tools/claude/models/catalog/d1_vegetation.py",
+  "spec": "docs/specs/vegetation/Claude_boulder.md",
+  "previews": {
+    "hero": "previews/vegetation/Claude_boulder/hero.png",
+    "front": "previews/vegetation/Claude_boulder/front.png",
+    "side": "previews/vegetation/Claude_boulder/side.png",
+    "scale": "previews/vegetation/Claude_boulder/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.9,
+    1.6
+  ]
+}

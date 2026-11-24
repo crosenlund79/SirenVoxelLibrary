@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "id": "Claude_tree_stump",
+  "base_id": "tree_stump",
+  "creator": "Claude",
+  "name": "Tree Stump",
+  "category": "vegetation",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_tree_stump.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_tree_stump.glb",
+    "glb_vertices": 1184,
+    "glb_triangles": 592,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    7.5,
+    6.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "No functional front; character details face the default camera (-X/+Y).",
+  "grid_size_cells": [
+    15,
+    14,
+    10
+  ],
+  "dimensions_m": [
+    0.75,
+    0.7,
+    0.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 477,
+  "condition": "dead",
+  "gameplay_use": "Forest/logging dressing",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "bark",
+    "bark_dark",
+    "bark_mid",
+    "leaf",
+    "leaf_hi",
+    "leaf_mid",
+    "moss",
+    "moss_dark",
+    "pine_aged",
+    "pine_dark",
+    "pine_light",
+    "pine_mid",
+    "twig",
+    "wood_deep",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 12
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 14
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 13
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 7
+    },
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 1
+    },
+    {
+      "index": 7,
+      "role": "wood_deep",
+      "hex": "#46362B",
+      "voxels": 5
+    },
+    {
+      "index": 18,
+      "role": "bark",
+      "hex": "#73695F",
+      "voxels": 42
+    },
+    {
+      "index": 19,
+      "role": "bark_mid",
+      "hex": "#5F564E",
+      "voxels": 219
+    },
+    {
+      "index": 20,
+      "role": "bark_dark",
+      "hex": "#4B443E",
+      "voxels": 121
+    },
+    {
+      "index": 111,
+      "role": "moss",
+      "hex": "#646C4F",
+      "voxels": 23
+    },
+    {
+      "index": 112,
+      "role": "moss_dark",
+      "hex": "#4E5540",
+      "voxels": 10
+    },
+    {
+      "index": 177,
+      "role": "leaf_hi",
+      "hex": "#869B63",
+      "voxels": 1
+    },
+    {
+      "index": 178,
+      "role": "leaf",
+      "hex": "#6F8551",
+      "voxels": 3
+    },
+    {
+      "index": 179,
+      "role": "leaf_mid",
+      "hex": "#5C7044",
+      "voxels": 2
+    },
+    {
+      "index": 192,
+      "role": "twig",
+      "hex": "#6A5A47",
+      "voxels": 4
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Cylinder r=0.3 m, h=0.5 m.",
+  "story": "A street tree felled by the council a season before the sirens stopped; the stump was never ground out. The cut has weathered but still shows its rings, the felling hinge and a drying crack, and a sucker is trying to regrow.",
+  "notes": [
+    "Saw-cut stump with rings and root flare."
+  ],
+  "generator": "tools/claude/models/catalog/d1_vegetation.py",
+  "spec": "docs/specs/vegetation/Claude_tree_stump.md",
+  "previews": {
+    "hero": "previews/vegetation/Claude_tree_stump/hero.png",
+    "front": "previews/vegetation/Claude_tree_stump/front.png",
+    "side": "previews/vegetation/Claude_tree_stump/side.png",
+    "scale": "previews/vegetation/Claude_tree_stump/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.55,
+    0.55
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "Claude_road_curve",
+  "base_id": "road_curve",
+  "creator": "Claude",
+  "name": "Road Curve",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_road_curve.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_road_curve.glb",
+    "glb_vertices": 664,
+    "glb_triangles": 332,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    12.5,
+    12.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "Road enters at the +Y edge and leaves at the -X edge, centred on each edge like the straight tile.",
+  "grid_size_cells": [
+    25,
+    25,
+    1
+  ],
+  "dimensions_m": [
+    12.5,
+    12.5,
+    0.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 625,
+  "condition": "worn",
+  "gameplay_use": "Regional-map infrastructure piece",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "asphalt",
+    "concrete_hi",
+    "curb",
+    "grass",
+    "grass_dry",
+    "line_yellow"
+  ],
+  "palette_roles": [
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 35
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 329
+    },
+    {
+      "index": 184,
+      "role": "grass_dry",
+      "hex": "#A79D6B",
+      "voxels": 3
+    },
+    {
+      "index": 194,
+      "role": "asphalt",
+      "hex": "#4F5151",
+      "voxels": 205
+    },
+    {
+      "index": 198,
+      "role": "line_yellow",
+      "hex": "#BFA352",
+      "voxels": 10
+    },
+    {
+      "index": 199,
+      "role": "curb",
+      "hex": "#A09F97",
+      "voxels": 43
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A 90-degree bend where the street turns along the creek. Drivers cut the corner for years and wore the inside verge bare; the outer lane is patched.",
+  "notes": [
+    "12.5 x 12.5 m (GPT reference 12 x 12 m) so the 17-cell section stays centred on both edges."
+  ],
+  "generator": "tools/claude/models/catalog/e2_map_infrastructure.py",
+  "spec": "docs/specs/map/Claude_road_curve.md",
+  "previews": {
+    "hero": "previews/map/Claude_road_curve/hero.png",
+    "front": "previews/map/Claude_road_curve/front.png",
+    "side": "previews/map/Claude_road_curve/side.png",
+    "scale": "previews/map/Claude_road_curve/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    12.5,
+    12.5
+  ]
+}
