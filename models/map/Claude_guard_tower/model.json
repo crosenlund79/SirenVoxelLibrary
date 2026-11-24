@@ -13,8 +13,8 @@
   "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
   "derived": {
     "glb": "Claude_guard_tower.glb",
-    "glb_vertices": 1468,
-    "glb_triangles": 734,
+    "glb_vertices": 1436,
+    "glb_triangles": 718,
     "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
   },
   "voxel_size_m": 0.5,
@@ -45,7 +45,7 @@
     10.5
   ],
   "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
-  "occupied_voxels": 382,
+  "occupied_voxels": 400,
   "condition": "abandoned",
   "gameplay_use": "Regional-map destination (Weapons)",
   "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
@@ -78,13 +78,13 @@
       "index": 11,
       "role": "wgrey_mid",
       "hex": "#766F64",
-      "voxels": 96
+      "voxels": 116
     },
     {
       "index": 12,
       "role": "wgrey_dark",
       "hex": "#5E5850",
-      "voxels": 100
+      "voxels": 98
     },
     {
       "index": 13,

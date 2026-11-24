@@ -201,6 +201,22 @@ def flagpole(g, x, y, top, flag=("navy", "paint_white"), w=3):
     g.box(x + 1, y, top - 2, x + w, y, top - 2, flag[1])
 
 
+def brace(g, p0, p1, c):
+    """Straight member between two cell centres drawn as a face-connected staircase (a plain
+    3D line only touches itself diagonally and falls apart into loose cells)."""
+    p0, p1 = [int(v) for v in p0], [int(v) for v in p1]
+    n = max(abs(p1[k] - p0[k]) for k in range(3))
+    prev = list(p0)
+    g.set(*prev, c)
+    for t in range(1, n + 1):
+        q = [round(p0[k] + (p1[k] - p0[k]) * t / n) for k in range(3)]
+        for k in range(3):                       # step one axis at a time
+            if q[k] != prev[k]:
+                prev[k] = q[k]
+                g.set(*prev, c)
+    return g
+
+
 def sandbags(g, x0, y0, x1, y1, h=2, c="khaki", top="khaki_dark"):
     g.box(x0, y0, 1, x1, y1, h, c)
     for z in range(2, h + 1, 2):
@@ -762,13 +778,13 @@ def industrial_warehouse():
     opening(g, "+y", Y1, 15, 20, top - 3, top - 2, "steel_dark", inset=0)   # gable louvre
     # loading doors
     for x0 in (3, 27):
-        opening(g, "+y", Y1, x0, x0 + 5, 1, 6, "galv_hi", inset=0)
+        opening(g, "+y", Y1, x0, x0 + 5, 1, 6, "bluegrey", inset=0)
         g.paint(x0, Y1, 6, x0 + 5, Y1, 6, "steel")
         g.box(x0 - 1, Y1 + 1, 1, x0 - 1, Y1 + 1, 2, "hazard_yellow_dark")
         g.box(x0 + 6, Y1 + 1, 1, x0 + 6, Y1 + 1, 2, "hazard_yellow_dark")
     opening(g, "+y", Y1, 15, 20, 1, 6, "black")          # torn-open middle door
-    g.box(15, Y1, 5, 20, Y1, 6, "galv_hi")
-    g.box(15, Y1 + 1, 3, 16, Y1 + 1, 4, "galv_hi")        # bent corner hanging out
+    g.box(15, Y1, 5, 20, Y1, 6, "bluegrey")
+    g.box(15, Y1, 3, 16, Y1, 4, "bluegrey_dark")          # torn corner sagging into the gap
     g.box(13, Y1 + 1, 1, 13, Y1 + 1, 2, "hazard_yellow_dark")
     opening(g, "+y", Y1, 10, 11, 1, 4, "steel_dark")     # personnel door
     # clerestory windows
@@ -1283,7 +1299,7 @@ def guard_tower():
                      ((1, 6, 0), (1, 1, 5)), ((6, 1, 0), (6, 6, 5)),
                      ((6, 1, 5), (1, 1, 11)), ((1, 6, 5), (6, 6, 11)),
                      ((1, 1, 5), (1, 6, 11)), ((6, 6, 5), (6, 1, 11))):
-        g.line(p0, p1, "wgrey_mid")
+        brace(g, p0, p1, "wgrey_mid")
     # cabin
     g.box(0, 0, 12, 7, 7, 12, "wgrey_dark")               # floor
     g.box(0, 0, 13, 7, 7, 14, "wgrey")                    # solid lower wall

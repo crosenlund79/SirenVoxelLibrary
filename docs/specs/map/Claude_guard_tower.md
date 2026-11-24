@@ -21,7 +21,7 @@ Tall braced timber stilt frame carrying a box cabin with an open window band and
 - Width (X): 4.0 m
 - Depth (Y): 4.0 m
 - Height (Z): 10.5 m
-- Grid: 8 x 8 x 21 cells at 0.5 m (map tier), 382 occupied voxels
+- Grid: 8 x 8 x 21 cells at 0.5 m (map tier), 400 occupied voxels
 - Front direction: +Y (library voxel)
 - Front: +Y is the street side / main entrance.
 - Pivot: Bottom centre of the occupied footprint at ground level. (pivot_voxel [4.0, 4.0, 0.0])

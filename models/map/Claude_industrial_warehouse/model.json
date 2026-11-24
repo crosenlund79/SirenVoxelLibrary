@@ -13,8 +13,8 @@
   "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
   "derived": {
     "glb": "Claude_industrial_warehouse.glb",
-    "glb_vertices": 1592,
-    "glb_triangles": 796,
+    "glb_vertices": 1580,
+    "glb_triangles": 790,
     "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
   },
   "voxel_size_m": 0.5,
@@ -45,13 +45,15 @@
     10.5
   ],
   "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
-  "occupied_voxels": 3780,
+  "occupied_voxels": 3776,
   "condition": "abandoned",
   "gameplay_use": "Regional-map destination (Construction)",
   "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
   "palette_version": 2,
   "material_roles": [
     "black",
+    "bluegrey",
+    "bluegrey_dark",
     "concrete",
     "concrete_dark",
     "galv",
@@ -83,19 +85,19 @@
       "index": 38,
       "role": "black",
       "hex": "#252A2B",
-      "voxels": 30
+      "voxels": 28
     },
     {
       "index": 39,
       "role": "galv_hi",
       "hex": "#B5BAB5",
-      "voxels": 84
+      "voxels": 8
     },
     {
       "index": 40,
       "role": "galv",
       "hex": "#989E9A",
-      "voxels": 1122
+      "voxels": 1120
     },
     {
       "index": 46,
@@ -114,6 +116,18 @@
       "role": "green_dark",
       "hex": "#46584F",
       "voxels": 10
+    },
+    {
+      "index": 74,
+      "role": "bluegrey",
+      "hex": "#687A82",
+      "voxels": 72
+    },
+    {
+      "index": 75,
+      "role": "bluegrey_dark",
+      "hex": "#53636A",
+      "voxels": 4
     },
     {
       "index": 106,
