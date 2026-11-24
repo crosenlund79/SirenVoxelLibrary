@@ -4,11 +4,11 @@ Generated 2026-11-24 15:55 UTC by `tools/compare/build_compare.py` from `catalog
 
 GPT object types: **179**. Claude coverage:
 
-- independent Claude model: **117**
+- independent Claude model: **141**
 - existing Claude model reused: **1**
 - existing Claude model (alias): **5**
 - needs revision: **0**
-- missing: **56**
+- missing: **32**
 - Claude-only extras (no GPT counterpart): **0**
 
 | Batch | Base ID | GPT | Claude | Status | Note |
@@ -103,30 +103,30 @@ GPT object types: **179**. Claude coverage:
 | B | `broken_brick_wall` | `GPT_broken_brick_wall` | `Claude_broken_brick_wall` | independent Claude model |  |
 | B | `destroyed_barricade` | `GPT_destroyed_barricade` | `Claude_destroyed_barricade` | independent Claude model |  |
 | B | `cooking_pot` | `GPT_cooking_pot` | `Claude_cooking_pot` | independent Claude model |  |
-| C | `revolver` | `GPT_revolver` | — | missing |  |
-| C | `shotgun` | `GPT_shotgun` | — | missing |  |
-| C | `hunting_rifle` | `GPT_hunting_rifle` | — | missing |  |
-| C | `compact_smg` | `GPT_compact_smg` | — | missing |  |
-| C | `baseball_bat` | `GPT_baseball_bat` | — | missing |  |
-| C | `ammunition_box` | `GPT_ammunition_box` | — | missing |  |
-| C | `shotgun_shell_box` | `GPT_shotgun_shell_box` | — | missing |  |
-| C | `loose_ammo_pickup` | `GPT_loose_ammo_pickup` | — | missing |  |
-| C | `protective_vest` | `GPT_protective_vest` | — | missing |  |
-| C | `helmet` | `GPT_helmet` | — | missing |  |
-| C | `canned_food` | `GPT_canned_food` | — | missing |  |
-| C | `soup_can` | `GPT_soup_can` | — | missing |  |
-| C | `food_box` | `GPT_food_box` | — | missing |  |
-| C | `snack_package` | `GPT_snack_package` | — | missing |  |
-| C | `large_water_container` | `GPT_large_water_container` | — | missing |  |
-| C | `food_storage_crate` | `GPT_food_storage_crate` | — | missing |  |
-| C | `small_cooler` | `GPT_small_cooler` | — | missing |  |
-| C | `bandage_roll` | `GPT_bandage_roll` | — | missing |  |
-| C | `first_aid_kit` | `GPT_first_aid_kit` | — | missing |  |
-| C | `medicine_bottle` | `GPT_medicine_bottle` | — | missing |  |
-| C | `tablet_packet` | `GPT_tablet_packet` | — | missing |  |
-| C | `medical_bag` | `GPT_medical_bag` | — | missing |  |
-| C | `emergency_supply_box` | `GPT_emergency_supply_box` | — | missing |  |
-| C | `handgun` | `GPT_handgun` | — | missing |  |
+| C | `revolver` | `GPT_revolver` | `Claude_revolver` | independent Claude model |  |
+| C | `shotgun` | `GPT_shotgun` | `Claude_shotgun` | independent Claude model |  |
+| C | `hunting_rifle` | `GPT_hunting_rifle` | `Claude_hunting_rifle` | independent Claude model |  |
+| C | `compact_smg` | `GPT_compact_smg` | `Claude_compact_smg` | independent Claude model |  |
+| C | `baseball_bat` | `GPT_baseball_bat` | `Claude_baseball_bat` | independent Claude model |  |
+| C | `ammunition_box` | `GPT_ammunition_box` | `Claude_ammunition_box` | independent Claude model |  |
+| C | `shotgun_shell_box` | `GPT_shotgun_shell_box` | `Claude_shotgun_shell_box` | independent Claude model |  |
+| C | `loose_ammo_pickup` | `GPT_loose_ammo_pickup` | `Claude_loose_ammo_pickup` | independent Claude model |  |
+| C | `protective_vest` | `GPT_protective_vest` | `Claude_protective_vest` | independent Claude model |  |
+| C | `helmet` | `GPT_helmet` | `Claude_helmet` | independent Claude model |  |
+| C | `canned_food` | `GPT_canned_food` | `Claude_canned_food` | independent Claude model |  |
+| C | `soup_can` | `GPT_soup_can` | `Claude_soup_can` | independent Claude model |  |
+| C | `food_box` | `GPT_food_box` | `Claude_food_box` | independent Claude model |  |
+| C | `snack_package` | `GPT_snack_package` | `Claude_snack_package` | independent Claude model |  |
+| C | `large_water_container` | `GPT_large_water_container` | `Claude_large_water_container` | independent Claude model |  |
+| C | `food_storage_crate` | `GPT_food_storage_crate` | `Claude_food_storage_crate` | independent Claude model |  |
+| C | `small_cooler` | `GPT_small_cooler` | `Claude_small_cooler` | independent Claude model |  |
+| C | `bandage_roll` | `GPT_bandage_roll` | `Claude_bandage_roll` | independent Claude model |  |
+| C | `first_aid_kit` | `GPT_first_aid_kit` | `Claude_first_aid_kit` | independent Claude model |  |
+| C | `medicine_bottle` | `GPT_medicine_bottle` | `Claude_medicine_bottle` | independent Claude model |  |
+| C | `tablet_packet` | `GPT_tablet_packet` | `Claude_tablet_packet` | independent Claude model |  |
+| C | `medical_bag` | `GPT_medical_bag` | `Claude_medical_bag` | independent Claude model |  |
+| C | `emergency_supply_box` | `GPT_emergency_supply_box` | `Claude_emergency_supply_box` | independent Claude model |  |
+| C | `handgun` | `GPT_handgun` | `Claude_handgun` | independent Claude model |  |
 | D | `healthy_pine` | `GPT_healthy_pine` | `Claude_healthy_pine` | independent Claude model |  |
 | D | `dead_pine` | `GPT_dead_pine` | `Claude_pine_dead_small` | existing Claude model (alias) |  |
 | D | `leafless_deciduous` | `GPT_leafless_deciduous` | `Claude_leafless_deciduous` | independent Claude model |  |
