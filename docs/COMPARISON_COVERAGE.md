@@ -1,14 +1,14 @@
 # GPT vs Claude coverage
 
-Generated 2026-11-24 12:31 UTC by `tools/compare/build_compare.py` from `catalog.json`.
+Generated 2026-11-24 15:52 UTC by `tools/compare/build_compare.py` from `catalog.json`.
 
 GPT object types: **179**. Claude coverage:
 
-- independent Claude model: **43**
+- independent Claude model: **173**
 - existing Claude model reused: **1**
 - existing Claude model (alias): **5**
 - needs revision: **0**
-- missing: **130**
+- missing: **0**
 - Claude-only extras (no GPT counterpart): **0**
 
 | Batch | Base ID | GPT | Claude | Status | Note |
@@ -54,139 +54,139 @@ GPT object types: **179**. Claude coverage:
 | A | `dining_table` | `GPT_dining_table` | `Claude_dining_table` | existing Claude model reused |  |
 | A | `dining_chair` | `GPT_dining_chair` | `Claude_dining_chair` | independent Claude model |  |
 | B | `workbench` | `GPT_workbench` | `Claude_workbench_worn` | existing Claude model (alias) |  |
-| B | `wooden_storage_crate` | `GPT_wooden_storage_crate` | — | missing |  |
-| B | `metal_storage_cabinet` | `GPT_metal_storage_cabinet` | — | missing |  |
-| B | `tool_chest` | `GPT_tool_chest` | — | missing |  |
-| B | `toolbox` | `GPT_toolbox` | — | missing |  |
-| B | `hammer` | `GPT_hammer` | — | missing |  |
-| B | `crowbar` | `GPT_crowbar` | — | missing |  |
-| B | `hatchet` | `GPT_hatchet` | — | missing |  |
-| B | `shovel` | `GPT_shovel` | — | missing |  |
-| B | `pickaxe` | `GPT_pickaxe` | — | missing |  |
-| B | `saw` | `GPT_saw` | — | missing |  |
-| B | `flashlight` | `GPT_flashlight` | — | missing |  |
-| B | `battery_lantern` | `GPT_battery_lantern` | — | missing |  |
-| B | `candle` | `GPT_candle` | — | missing |  |
-| B | `camping_stove` | `GPT_camping_stove` | — | missing |  |
+| B | `wooden_storage_crate` | `GPT_wooden_storage_crate` | `Claude_wooden_storage_crate` | independent Claude model |  |
+| B | `metal_storage_cabinet` | `GPT_metal_storage_cabinet` | `Claude_metal_storage_cabinet` | independent Claude model |  |
+| B | `tool_chest` | `GPT_tool_chest` | `Claude_tool_chest` | independent Claude model |  |
+| B | `toolbox` | `GPT_toolbox` | `Claude_toolbox` | independent Claude model |  |
+| B | `hammer` | `GPT_hammer` | `Claude_hammer` | independent Claude model |  |
+| B | `crowbar` | `GPT_crowbar` | `Claude_crowbar` | independent Claude model |  |
+| B | `hatchet` | `GPT_hatchet` | `Claude_hatchet` | independent Claude model |  |
+| B | `shovel` | `GPT_shovel` | `Claude_shovel` | independent Claude model |  |
+| B | `pickaxe` | `GPT_pickaxe` | `Claude_pickaxe` | independent Claude model |  |
+| B | `saw` | `GPT_saw` | `Claude_saw` | independent Claude model |  |
+| B | `flashlight` | `GPT_flashlight` | `Claude_flashlight` | independent Claude model |  |
+| B | `battery_lantern` | `GPT_battery_lantern` | `Claude_battery_lantern` | independent Claude model |  |
+| B | `candle` | `GPT_candle` | `Claude_candle` | independent Claude model |  |
+| B | `camping_stove` | `GPT_camping_stove` | `Claude_camping_stove` | independent Claude model |  |
 | B | `wood_stove` | `GPT_wood_stove` | `Claude_wood_stove_compact` | existing Claude model (alias) |  |
-| B | `improvised_forge` | `GPT_improvised_forge` | — | missing |  |
+| B | `improvised_forge` | `GPT_improvised_forge` | `Claude_improvised_forge` | independent Claude model |  |
 | B | `rainwater_collector` | `GPT_rainwater_collector` | `Claude_rain_collector_basic` | existing Claude model (alias) |  |
-| B | `water_barrel` | `GPT_water_barrel` | — | missing |  |
-| B | `jerry_can` | `GPT_jerry_can` | — | missing |  |
-| B | `water_bottle` | `GPT_water_bottle` | — | missing |  |
-| B | `backpack` | `GPT_backpack` | — | missing |  |
-| B | `basic_generator` | `GPT_basic_generator` | — | missing |  |
-| B | `fuel_container` | `GPT_fuel_container` | — | missing |  |
-| B | `portable_battery` | `GPT_portable_battery` | — | missing |  |
-| B | `first_aid_box` | `GPT_first_aid_box` | — | missing |  |
-| B | `wooden_wall_section` | `GPT_wooden_wall_section` | — | missing |  |
-| B | `wooden_floor_section` | `GPT_wooden_floor_section` | — | missing |  |
-| B | `wooden_foundation_support` | `GPT_wooden_foundation_support` | — | missing |  |
-| B | `wooden_post` | `GPT_wooden_post` | — | missing |  |
-| B | `wooden_beam` | `GPT_wooden_beam` | — | missing |  |
-| B | `wooden_door` | `GPT_wooden_door` | — | missing |  |
-| B | `window_frame` | `GPT_window_frame` | — | missing |  |
-| B | `wooden_barricade` | `GPT_wooden_barricade` | — | missing |  |
-| B | `reinforced_wooden_barricade` | `GPT_reinforced_wooden_barricade` | — | missing |  |
-| B | `wooden_stairs` | `GPT_wooden_stairs` | — | missing |  |
-| B | `stone_wall_section` | `GPT_stone_wall_section` | — | missing |  |
-| B | `stone_foundation` | `GPT_stone_foundation` | — | missing |  |
-| B | `brick_wall_section` | `GPT_brick_wall_section` | — | missing |  |
-| B | `concrete_foundation` | `GPT_concrete_foundation` | — | missing |  |
-| B | `concrete_wall_section` | `GPT_concrete_wall_section` | — | missing |  |
-| B | `metal_reinforced_wall` | `GPT_metal_reinforced_wall` | — | missing |  |
-| B | `metal_door` | `GPT_metal_door` | — | missing |  |
-| B | `metal_support_beam` | `GPT_metal_support_beam` | — | missing |  |
-| B | `steel_reinforcement_panel` | `GPT_steel_reinforcement_panel` | — | missing |  |
-| B | `metal_fence_gate` | `GPT_metal_fence_gate` | — | missing |  |
-| B | `damaged_wooden_wall` | `GPT_damaged_wooden_wall` | — | missing |  |
-| B | `broken_brick_wall` | `GPT_broken_brick_wall` | — | missing |  |
-| B | `destroyed_barricade` | `GPT_destroyed_barricade` | — | missing |  |
-| B | `cooking_pot` | `GPT_cooking_pot` | — | missing |  |
-| C | `revolver` | `GPT_revolver` | — | missing |  |
-| C | `shotgun` | `GPT_shotgun` | — | missing |  |
-| C | `hunting_rifle` | `GPT_hunting_rifle` | — | missing |  |
-| C | `compact_smg` | `GPT_compact_smg` | — | missing |  |
-| C | `baseball_bat` | `GPT_baseball_bat` | — | missing |  |
-| C | `ammunition_box` | `GPT_ammunition_box` | — | missing |  |
-| C | `shotgun_shell_box` | `GPT_shotgun_shell_box` | — | missing |  |
-| C | `loose_ammo_pickup` | `GPT_loose_ammo_pickup` | — | missing |  |
-| C | `protective_vest` | `GPT_protective_vest` | — | missing |  |
-| C | `helmet` | `GPT_helmet` | — | missing |  |
-| C | `canned_food` | `GPT_canned_food` | — | missing |  |
-| C | `soup_can` | `GPT_soup_can` | — | missing |  |
-| C | `food_box` | `GPT_food_box` | — | missing |  |
-| C | `snack_package` | `GPT_snack_package` | — | missing |  |
-| C | `large_water_container` | `GPT_large_water_container` | — | missing |  |
-| C | `food_storage_crate` | `GPT_food_storage_crate` | — | missing |  |
-| C | `small_cooler` | `GPT_small_cooler` | — | missing |  |
-| C | `bandage_roll` | `GPT_bandage_roll` | — | missing |  |
-| C | `first_aid_kit` | `GPT_first_aid_kit` | — | missing |  |
-| C | `medicine_bottle` | `GPT_medicine_bottle` | — | missing |  |
-| C | `tablet_packet` | `GPT_tablet_packet` | — | missing |  |
-| C | `medical_bag` | `GPT_medical_bag` | — | missing |  |
-| C | `emergency_supply_box` | `GPT_emergency_supply_box` | — | missing |  |
-| C | `handgun` | `GPT_handgun` | — | missing |  |
-| D | `healthy_pine` | `GPT_healthy_pine` | — | missing |  |
+| B | `water_barrel` | `GPT_water_barrel` | `Claude_water_barrel` | independent Claude model |  |
+| B | `jerry_can` | `GPT_jerry_can` | `Claude_jerry_can` | independent Claude model |  |
+| B | `water_bottle` | `GPT_water_bottle` | `Claude_water_bottle` | independent Claude model |  |
+| B | `backpack` | `GPT_backpack` | `Claude_backpack` | independent Claude model |  |
+| B | `basic_generator` | `GPT_basic_generator` | `Claude_basic_generator` | independent Claude model |  |
+| B | `fuel_container` | `GPT_fuel_container` | `Claude_fuel_container` | independent Claude model |  |
+| B | `portable_battery` | `GPT_portable_battery` | `Claude_portable_battery` | independent Claude model |  |
+| B | `first_aid_box` | `GPT_first_aid_box` | `Claude_first_aid_box` | independent Claude model |  |
+| B | `wooden_wall_section` | `GPT_wooden_wall_section` | `Claude_wooden_wall_section` | independent Claude model |  |
+| B | `wooden_floor_section` | `GPT_wooden_floor_section` | `Claude_wooden_floor_section` | independent Claude model |  |
+| B | `wooden_foundation_support` | `GPT_wooden_foundation_support` | `Claude_wooden_foundation_support` | independent Claude model |  |
+| B | `wooden_post` | `GPT_wooden_post` | `Claude_wooden_post` | independent Claude model |  |
+| B | `wooden_beam` | `GPT_wooden_beam` | `Claude_wooden_beam` | independent Claude model |  |
+| B | `wooden_door` | `GPT_wooden_door` | `Claude_wooden_door` | independent Claude model |  |
+| B | `window_frame` | `GPT_window_frame` | `Claude_window_frame` | independent Claude model |  |
+| B | `wooden_barricade` | `GPT_wooden_barricade` | `Claude_wooden_barricade` | independent Claude model |  |
+| B | `reinforced_wooden_barricade` | `GPT_reinforced_wooden_barricade` | `Claude_reinforced_wooden_barricade` | independent Claude model |  |
+| B | `wooden_stairs` | `GPT_wooden_stairs` | `Claude_wooden_stairs` | independent Claude model |  |
+| B | `stone_wall_section` | `GPT_stone_wall_section` | `Claude_stone_wall_section` | independent Claude model |  |
+| B | `stone_foundation` | `GPT_stone_foundation` | `Claude_stone_foundation` | independent Claude model |  |
+| B | `brick_wall_section` | `GPT_brick_wall_section` | `Claude_brick_wall_section` | independent Claude model |  |
+| B | `concrete_foundation` | `GPT_concrete_foundation` | `Claude_concrete_foundation` | independent Claude model |  |
+| B | `concrete_wall_section` | `GPT_concrete_wall_section` | `Claude_concrete_wall_section` | independent Claude model |  |
+| B | `metal_reinforced_wall` | `GPT_metal_reinforced_wall` | `Claude_metal_reinforced_wall` | independent Claude model |  |
+| B | `metal_door` | `GPT_metal_door` | `Claude_metal_door` | independent Claude model |  |
+| B | `metal_support_beam` | `GPT_metal_support_beam` | `Claude_metal_support_beam` | independent Claude model |  |
+| B | `steel_reinforcement_panel` | `GPT_steel_reinforcement_panel` | `Claude_steel_reinforcement_panel` | independent Claude model |  |
+| B | `metal_fence_gate` | `GPT_metal_fence_gate` | `Claude_metal_fence_gate` | independent Claude model |  |
+| B | `damaged_wooden_wall` | `GPT_damaged_wooden_wall` | `Claude_damaged_wooden_wall` | independent Claude model |  |
+| B | `broken_brick_wall` | `GPT_broken_brick_wall` | `Claude_broken_brick_wall` | independent Claude model |  |
+| B | `destroyed_barricade` | `GPT_destroyed_barricade` | `Claude_destroyed_barricade` | independent Claude model |  |
+| B | `cooking_pot` | `GPT_cooking_pot` | `Claude_cooking_pot` | independent Claude model |  |
+| C | `revolver` | `GPT_revolver` | `Claude_revolver` | independent Claude model |  |
+| C | `shotgun` | `GPT_shotgun` | `Claude_shotgun` | independent Claude model |  |
+| C | `hunting_rifle` | `GPT_hunting_rifle` | `Claude_hunting_rifle` | independent Claude model |  |
+| C | `compact_smg` | `GPT_compact_smg` | `Claude_compact_smg` | independent Claude model |  |
+| C | `baseball_bat` | `GPT_baseball_bat` | `Claude_baseball_bat` | independent Claude model |  |
+| C | `ammunition_box` | `GPT_ammunition_box` | `Claude_ammunition_box` | independent Claude model |  |
+| C | `shotgun_shell_box` | `GPT_shotgun_shell_box` | `Claude_shotgun_shell_box` | independent Claude model |  |
+| C | `loose_ammo_pickup` | `GPT_loose_ammo_pickup` | `Claude_loose_ammo_pickup` | independent Claude model |  |
+| C | `protective_vest` | `GPT_protective_vest` | `Claude_protective_vest` | independent Claude model |  |
+| C | `helmet` | `GPT_helmet` | `Claude_helmet` | independent Claude model |  |
+| C | `canned_food` | `GPT_canned_food` | `Claude_canned_food` | independent Claude model |  |
+| C | `soup_can` | `GPT_soup_can` | `Claude_soup_can` | independent Claude model |  |
+| C | `food_box` | `GPT_food_box` | `Claude_food_box` | independent Claude model |  |
+| C | `snack_package` | `GPT_snack_package` | `Claude_snack_package` | independent Claude model |  |
+| C | `large_water_container` | `GPT_large_water_container` | `Claude_large_water_container` | independent Claude model |  |
+| C | `food_storage_crate` | `GPT_food_storage_crate` | `Claude_food_storage_crate` | independent Claude model |  |
+| C | `small_cooler` | `GPT_small_cooler` | `Claude_small_cooler` | independent Claude model |  |
+| C | `bandage_roll` | `GPT_bandage_roll` | `Claude_bandage_roll` | independent Claude model |  |
+| C | `first_aid_kit` | `GPT_first_aid_kit` | `Claude_first_aid_kit` | independent Claude model |  |
+| C | `medicine_bottle` | `GPT_medicine_bottle` | `Claude_medicine_bottle` | independent Claude model |  |
+| C | `tablet_packet` | `GPT_tablet_packet` | `Claude_tablet_packet` | independent Claude model |  |
+| C | `medical_bag` | `GPT_medical_bag` | `Claude_medical_bag` | independent Claude model |  |
+| C | `emergency_supply_box` | `GPT_emergency_supply_box` | `Claude_emergency_supply_box` | independent Claude model |  |
+| C | `handgun` | `GPT_handgun` | `Claude_handgun` | independent Claude model |  |
+| D | `healthy_pine` | `GPT_healthy_pine` | `Claude_healthy_pine` | independent Claude model |  |
 | D | `dead_pine` | `GPT_dead_pine` | `Claude_pine_dead_small` | existing Claude model (alias) |  |
-| D | `leafless_deciduous` | `GPT_leafless_deciduous` | — | missing |  |
-| D | `small_leafy_tree` | `GPT_small_leafy_tree` | — | missing |  |
-| D | `bush` | `GPT_bush` | — | missing |  |
-| D | `dead_shrub` | `GPT_dead_shrub` | — | missing |  |
-| D | `grass_clump` | `GPT_grass_clump` | — | missing |  |
-| D | `fallen_log` | `GPT_fallen_log` | — | missing |  |
-| D | `tree_stump` | `GPT_tree_stump` | — | missing |  |
-| D | `rock` | `GPT_rock` | — | missing |  |
-| D | `boulder` | `GPT_boulder` | — | missing |  |
-| D | `trash_bin` | `GPT_trash_bin` | — | missing |  |
-| D | `mailbox` | `GPT_mailbox` | — | missing |  |
-| D | `outdoor_bench` | `GPT_outdoor_bench` | — | missing |  |
-| D | `garden_table` | `GPT_garden_table` | — | missing |  |
-| D | `wooden_fence` | `GPT_wooden_fence` | — | missing |  |
-| D | `metal_fence` | `GPT_metal_fence` | — | missing |  |
-| D | `streetlight` | `GPT_streetlight` | — | missing |  |
-| D | `road_sign` | `GPT_road_sign` | — | missing |  |
-| D | `traffic_cone` | `GPT_traffic_cone` | — | missing |  |
-| D | `wooden_pallet` | `GPT_wooden_pallet` | — | missing |  |
-| D | `utility_pole` | `GPT_utility_pole` | — | missing |  |
-| D | `abandoned_bicycle` | `GPT_abandoned_bicycle` | — | missing |  |
-| D | `family_car` | `GPT_family_car` | — | missing |  |
-| D | `pickup_truck` | `GPT_pickup_truck` | — | missing |  |
-| D | `police_car` | `GPT_police_car` | — | missing |  |
-| D | `delivery_van` | `GPT_delivery_van` | — | missing |  |
-| D | `utility_truck` | `GPT_utility_truck` | — | missing |  |
-| E | `small_family_house` | `GPT_small_family_house` | — | missing |  |
-| E | `large_suburban_house` | `GPT_large_suburban_house` | — | missing |  |
-| E | `apartment_block` | `GPT_apartment_block` | — | missing |  |
-| E | `convenience_store` | `GPT_convenience_store` | — | missing |  |
-| E | `supermarket` | `GPT_supermarket` | — | missing |  |
-| E | `diner` | `GPT_diner` | — | missing |  |
-| E | `restaurant` | `GPT_restaurant` | — | missing |  |
-| E | `fast_food` | `GPT_fast_food` | — | missing |  |
-| E | `hardware_store` | `GPT_hardware_store` | — | missing |  |
-| E | `lumberyard` | `GPT_lumberyard` | — | missing |  |
-| E | `industrial_warehouse` | `GPT_industrial_warehouse` | — | missing |  |
-| E | `scrapyard_building` | `GPT_scrapyard_building` | — | missing |  |
-| E | `gun_shop` | `GPT_gun_shop` | — | missing |  |
-| E | `shooting_range` | `GPT_shooting_range` | — | missing |  |
-| E | `police_station` | `GPT_police_station` | — | missing |  |
-| E | `clinic` | `GPT_clinic` | — | missing |  |
-| E | `pharmacy` | `GPT_pharmacy` | — | missing |  |
-| E | `veterinary_clinic` | `GPT_veterinary_clinic` | — | missing |  |
-| E | `hospital` | `GPT_hospital` | — | missing |  |
-| E | `military_outpost` | `GPT_military_outpost` | — | missing |  |
-| E | `guard_tower` | `GPT_guard_tower` | — | missing |  |
-| E | `quarry_structure` | `GPT_quarry_structure` | — | missing |  |
-| E | `gas_station` | `GPT_gas_station` | — | missing |  |
-| E | `road_straight` | `GPT_road_straight` | — | missing |  |
-| E | `road_curve` | `GPT_road_curve` | — | missing |  |
-| E | `road_intersection` | `GPT_road_intersection` | — | missing |  |
-| E | `bridge` | `GPT_bridge` | — | missing |  |
-| E | `railway_crossing` | `GPT_railway_crossing` | — | missing |  |
-| E | `harbor_dock` | `GPT_harbor_dock` | — | missing |  |
-| E | `pier` | `GPT_pier` | — | missing |  |
-| E | `seawall` | `GPT_seawall` | — | missing |  |
-| E | `road_barrier` | `GPT_road_barrier` | — | missing |  |
+| D | `leafless_deciduous` | `GPT_leafless_deciduous` | `Claude_leafless_deciduous` | independent Claude model |  |
+| D | `small_leafy_tree` | `GPT_small_leafy_tree` | `Claude_small_leafy_tree` | independent Claude model |  |
+| D | `bush` | `GPT_bush` | `Claude_bush` | independent Claude model |  |
+| D | `dead_shrub` | `GPT_dead_shrub` | `Claude_dead_shrub` | independent Claude model |  |
+| D | `grass_clump` | `GPT_grass_clump` | `Claude_grass_clump` | independent Claude model |  |
+| D | `fallen_log` | `GPT_fallen_log` | `Claude_fallen_log` | independent Claude model |  |
+| D | `tree_stump` | `GPT_tree_stump` | `Claude_tree_stump` | independent Claude model |  |
+| D | `rock` | `GPT_rock` | `Claude_rock` | independent Claude model |  |
+| D | `boulder` | `GPT_boulder` | `Claude_boulder` | independent Claude model |  |
+| D | `trash_bin` | `GPT_trash_bin` | `Claude_trash_bin` | independent Claude model |  |
+| D | `mailbox` | `GPT_mailbox` | `Claude_mailbox` | independent Claude model |  |
+| D | `outdoor_bench` | `GPT_outdoor_bench` | `Claude_outdoor_bench` | independent Claude model |  |
+| D | `garden_table` | `GPT_garden_table` | `Claude_garden_table` | independent Claude model |  |
+| D | `wooden_fence` | `GPT_wooden_fence` | `Claude_wooden_fence` | independent Claude model |  |
+| D | `metal_fence` | `GPT_metal_fence` | `Claude_metal_fence` | independent Claude model |  |
+| D | `streetlight` | `GPT_streetlight` | `Claude_streetlight` | independent Claude model |  |
+| D | `road_sign` | `GPT_road_sign` | `Claude_road_sign` | independent Claude model |  |
+| D | `traffic_cone` | `GPT_traffic_cone` | `Claude_traffic_cone` | independent Claude model |  |
+| D | `wooden_pallet` | `GPT_wooden_pallet` | `Claude_wooden_pallet` | independent Claude model |  |
+| D | `utility_pole` | `GPT_utility_pole` | `Claude_utility_pole` | independent Claude model |  |
+| D | `abandoned_bicycle` | `GPT_abandoned_bicycle` | `Claude_abandoned_bicycle` | independent Claude model |  |
+| D | `family_car` | `GPT_family_car` | `Claude_family_car` | independent Claude model |  |
+| D | `pickup_truck` | `GPT_pickup_truck` | `Claude_pickup_truck` | independent Claude model |  |
+| D | `police_car` | `GPT_police_car` | `Claude_police_car` | independent Claude model |  |
+| D | `delivery_van` | `GPT_delivery_van` | `Claude_delivery_van` | independent Claude model |  |
+| D | `utility_truck` | `GPT_utility_truck` | `Claude_utility_truck` | independent Claude model |  |
+| E | `small_family_house` | `GPT_small_family_house` | `Claude_small_family_house` | independent Claude model |  |
+| E | `large_suburban_house` | `GPT_large_suburban_house` | `Claude_large_suburban_house` | independent Claude model |  |
+| E | `apartment_block` | `GPT_apartment_block` | `Claude_apartment_block` | independent Claude model |  |
+| E | `convenience_store` | `GPT_convenience_store` | `Claude_convenience_store` | independent Claude model |  |
+| E | `supermarket` | `GPT_supermarket` | `Claude_supermarket` | independent Claude model |  |
+| E | `diner` | `GPT_diner` | `Claude_diner` | independent Claude model |  |
+| E | `restaurant` | `GPT_restaurant` | `Claude_restaurant` | independent Claude model |  |
+| E | `fast_food` | `GPT_fast_food` | `Claude_fast_food` | independent Claude model |  |
+| E | `hardware_store` | `GPT_hardware_store` | `Claude_hardware_store` | independent Claude model |  |
+| E | `lumberyard` | `GPT_lumberyard` | `Claude_lumberyard` | independent Claude model |  |
+| E | `industrial_warehouse` | `GPT_industrial_warehouse` | `Claude_industrial_warehouse` | independent Claude model |  |
+| E | `scrapyard_building` | `GPT_scrapyard_building` | `Claude_scrapyard_building` | independent Claude model |  |
+| E | `gun_shop` | `GPT_gun_shop` | `Claude_gun_shop` | independent Claude model |  |
+| E | `shooting_range` | `GPT_shooting_range` | `Claude_shooting_range` | independent Claude model |  |
+| E | `police_station` | `GPT_police_station` | `Claude_police_station` | independent Claude model |  |
+| E | `clinic` | `GPT_clinic` | `Claude_clinic` | independent Claude model |  |
+| E | `pharmacy` | `GPT_pharmacy` | `Claude_pharmacy` | independent Claude model |  |
+| E | `veterinary_clinic` | `GPT_veterinary_clinic` | `Claude_veterinary_clinic` | independent Claude model |  |
+| E | `hospital` | `GPT_hospital` | `Claude_hospital` | independent Claude model |  |
+| E | `military_outpost` | `GPT_military_outpost` | `Claude_military_outpost` | independent Claude model |  |
+| E | `guard_tower` | `GPT_guard_tower` | `Claude_guard_tower` | independent Claude model |  |
+| E | `quarry_structure` | `GPT_quarry_structure` | `Claude_quarry_structure` | independent Claude model |  |
+| E | `gas_station` | `GPT_gas_station` | `Claude_gas_station` | independent Claude model |  |
+| E | `road_straight` | `GPT_road_straight` | `Claude_road_straight` | independent Claude model |  |
+| E | `road_curve` | `GPT_road_curve` | `Claude_road_curve` | independent Claude model |  |
+| E | `road_intersection` | `GPT_road_intersection` | `Claude_road_intersection` | independent Claude model |  |
+| E | `bridge` | `GPT_bridge` | `Claude_bridge` | independent Claude model |  |
+| E | `railway_crossing` | `GPT_railway_crossing` | `Claude_railway_crossing` | independent Claude model |  |
+| E | `harbor_dock` | `GPT_harbor_dock` | `Claude_harbor_dock` | independent Claude model |  |
+| E | `pier` | `GPT_pier` | `Claude_pier` | independent Claude model |  |
+| E | `seawall` | `GPT_seawall` | `Claude_seawall` | independent Claude model |  |
+| E | `road_barrier` | `GPT_road_barrier` | `Claude_road_barrier` | independent Claude model |  |
 | F | `survivor` | `GPT_survivor` | `Claude_survivor` | independent Claude model |  |
 | F | `ordinary_psycho` | `GPT_ordinary_psycho` | `Claude_ordinary_psycho` | independent Claude model |  |
 | F | `runner` | `GPT_runner` | `Claude_runner` | independent Claude model |  |
