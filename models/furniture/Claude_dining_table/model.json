@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "id": "Claude_dining_table",
+  "base_id": "dining_table",
+  "creator": "Claude",
+  "name": "Family Oak Dining Table",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_dining_table.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_dining_table.glb",
+    "glb_vertices": 640,
+    "glb_triangles": 320,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "0.05 m matches the other household furniture (pilot bed and workbench), so tables, chairs and beds share one voxel rhythm in a room. A 5 cm top, 10 cm legs and apron are real joinery sizes; at 0.10 m the top would be a 10 cm slab and the stretcher would disappear.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    16.0,
+    9.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the 1.60 x 0.90 m footprint.",
+  "front_note": "+Y is the long side with the polished places; the table is symmetric enough to be placed either way round.",
+  "grid_size_cells": [
+    32,
+    18,
+    15
+  ],
+  "dimensions_m": [
+    1.6,
+    0.9,
+    0.75
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1048,
+  "condition": "used",
+  "gameplay_use": "Dining-room furniture; a work and eating surface in the defended house; cover/obstacle; set dressing for kitchen and dining scenes.",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "pine_aged",
+    "pine_hi",
+    "pine_light",
+    "pine_mid"
+  ],
+  "palette_roles": [
+    {
+      "index": 1,
+      "role": "pine_hi",
+      "hex": "#CDA77D",
+      "voxels": 20
+    },
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 341
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 522
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 165
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 1.60 x 0.90 x 0.75 m at the pivot (or four leg boxes + top slab).",
+  "story": "An everyday family table, well used and looked after: forearm-polished places along the front, a faint mug ring nobody sanded out and a stretcher polished by restless feet. Left clean when the family went; plates and candles are separate models.",
+  "notes": [
+    "Table height 0.75 m; knee clearance under the apron 0.60 m.",
+    "Seats six: two per long side and one at each end."
+  ],
+  "generator": "tools/claude/models/dining_table.py",
+  "spec": "docs/specs/furniture/Claude_dining_table.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_dining_table/hero.png",
+    "front": "previews/furniture/Claude_dining_table/front.png",
+    "side": "previews/furniture/Claude_dining_table/side.png",
+    "scale": "previews/furniture/Claude_dining_table/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.6,
+    0.9
+  ],
+  "pairs_with": [
+    "Claude_dining_chair",
+    "Claude_crockery_set"
+  ]
+}
