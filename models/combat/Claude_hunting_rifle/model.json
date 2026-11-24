@@ -13,8 +13,8 @@
   "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
   "derived": {
     "glb": "Claude_hunting_rifle.glb",
-    "glb_vertices": 1456,
-    "glb_triangles": 728,
+    "glb_vertices": 1452,
+    "glb_triangles": 726,
     "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
   },
   "voxel_size_m": 0.0125,
@@ -45,7 +45,7 @@
     0.2375
   ],
   "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
-  "occupied_voxels": 1545,
+  "occupied_voxels": 1563,
   "condition": "used",
   "gameplay_use": "Planned weapon",
   "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
@@ -143,7 +143,7 @@
       "index": 154,
       "role": "leather",
       "hex": "#7A553C",
-      "voxels": 90
+      "voxels": 108
     },
     {
       "index": 155,

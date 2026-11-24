@@ -288,14 +288,13 @@ def octagon_y(g, y0, y1, x0, z0, c):
 
 def sling_y(g, ya, za, yb, zb, sag, x0, x1, c):
     """A hanging strap along Y between two swivels (cells), sagging `sag` cells; one cell
-    thick, with vertical runs filled so the strap stays face-connected."""
+    thick, with each height step filled vertically so the strap stays face-connected."""
     prev = None
     for y in range(ya, yb + 1):
         u = (y - ya) / (yb - ya)
         z = round(za + (zb - za) * u - sag * 4 * u * (1 - u))
-        if prev is not None and abs(z - prev) > 1:
-            lo, hi = sorted((z, prev))
-            g.box(x0, y - 1, lo + 1, x1, y - 1, hi - 1, c)
+        if prev is not None and z != prev:       # vertical run so each step shares a face
+            g.box(x0, y, min(z, prev), x1, y, max(z, prev), c)
         g.box(x0, y, z, x1, y, z, c)
         prev = z
 
@@ -595,7 +594,7 @@ def shotgun_shell_box():
             g.box(x0, y0, 6, x0 + 1, y0 + 1, 6, "brass")
             g.paint(x0, y0, 5, x0 + 1, y0 + 1, 5, "red_dark")
     # lid: hinged at the back rim, standing open and leaning back one cell near the top
-    g.box(ox, oy - 1, 6, ox + W - 1, oy - 1, 10, "card_hi")
+    g.box(ox, oy - 1, 5, ox + W - 1, oy - 1, 10, "card_hi")   # hinged on the back rim
     g.box(ox, oy - 2, 11, ox + W - 1, oy - 2, 15, "card_hi")
     g.paint(ox, oy - 2, 11, ox + W - 1, oy - 2, 15, "card_hi")
     for (y, z0, z1) in ((oy - 2, 6, 10), (oy - 3, 11, 15)):
@@ -694,10 +693,10 @@ def protective_vest():
 
     for z in range(0, 14):                            # body below the armholes
         outline(z, 0, W - 1)
-    g.clear(0, y0, 0, 0, y0, 13)                      # soften the four vertical corners
-    g.clear(W - 1, y0, 0, W - 1, y0, 13)
-    g.clear(0, y1, 0, 0, y1, 13)
-    g.clear(W - 1, y1, 0, W - 1, y1, 13)
+    for (xc, yc, xi, yi) in ((0, y0, 1, y0 + 1), (W - 1, y0, W - 2, y0 + 1),
+                             (0, y1, 1, y1 - 1), (W - 1, y1, W - 2, y1 - 1)):
+        g.clear(xc, yc, 0, xc, yc, 13)                # soften the four vertical corners,
+        g.box(xi, yi, 0, xi, yi, 13, base)            # keeping the shell face-connected
     for z in range(14, 19):                           # armholes: panels narrow, sides open
         k = 1 if z < 16 else 2
         outline(z, k, W - 1 - k, sides=False)

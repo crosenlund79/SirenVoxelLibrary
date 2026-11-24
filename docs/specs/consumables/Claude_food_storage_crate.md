@@ -28,7 +28,7 @@ See the generator docstring and previews.
 - Resolution rationale: 1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it. Overridden from 2.5 cm to 1.25 cm so the tins and jars inside are built at the same scale and roundness as the canned_food and soup_can pickups (6-7 cell circles, not 3-cell squares).
 
 ## Materials and colors
-`galv`, `glass`, `glass_hi`, `iron_warm`, `label_cream`, `label_green`, `label_red`, `mustard_dark`, `red_dark`, `rust`, `sage`, `sage_dark`, `sage_hi`, `steel_dark`, `steel_light`
+`galv`, `glass_hi`, `iron_warm`, `label_cream`, `label_green`, `label_red`, `mustard_dark`, `red_dark`, `rust`, `sage`, `sage_dark`, `sage_hi`, `steel_dark`, `steel_light`
 
 ## Details included
 - Grey-green plastic crate with two bands of vent slots and end hand-holds

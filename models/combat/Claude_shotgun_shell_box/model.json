@@ -45,7 +45,7 @@
     0.2125
   ],
   "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
-  "occupied_voxels": 1050,
+  "occupied_voxels": 1066,
   "condition": "new",
   "gameplay_use": "Shotgun ammo pickup",
   "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
@@ -83,7 +83,7 @@
       "index": 157,
       "role": "card_hi",
       "hex": "#C2A47A",
-      "voxels": 202
+      "voxels": 218
     },
     {
       "index": 158,
