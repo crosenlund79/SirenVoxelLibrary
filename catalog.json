@@ -24,7 +24,8 @@
         1.1
       ],
       "occupied_voxels": 2427,
-      "game_integrations": []
+      "game_integrations": [],
+      "batch": "Claude_pilot_001"
     },
     {
       "id": "Claude_rain_collector_basic",
@@ -47,7 +48,8 @@
         1.6
       ],
       "occupied_voxels": 2390,
-      "game_integrations": []
+      "game_integrations": [],
+      "batch": "Claude_pilot_001"
     },
     {
       "id": "Claude_wood_stove_compact",
@@ -70,7 +72,8 @@
         1.0
       ],
       "occupied_voxels": 1267,
-      "game_integrations": []
+      "game_integrations": [],
+      "batch": "Claude_pilot_001"
     },
     {
       "id": "Claude_single_bed_unmade",
@@ -93,7 +96,8 @@
         0.75
       ],
       "occupied_voxels": 3709,
-      "game_integrations": []
+      "game_integrations": [],
+      "batch": "Claude_pilot_001"
     },
     {
       "id": "Claude_pine_dead_small",
@@ -116,7 +120,190 @@
         4.4
       ],
       "occupied_voxels": 400,
-      "game_integrations": []
+      "game_integrations": [],
+      "batch": "Claude_pilot_001"
+    },
+    {
+      "id": "Claude_brute",
+      "base_id": "brute",
+      "creator": "Claude",
+      "name": "Brute",
+      "category": "characters",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/characters/Claude_brute/Claude_brute.vox",
+      "metadata_path": "models/characters/Claude_brute/model.json",
+      "preview_path": "previews/characters/Claude_brute/",
+      "derived_paths": [
+        "models/characters/Claude_brute/Claude_brute.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.95,
+        0.45,
+        2.1
+      ],
+      "occupied_voxels": 1775,
+      "game_integrations": [],
+      "batch": "Claude_catalog_F",
+      "scale_family": "full",
+      "condition": "n/a"
+    },
+    {
+      "id": "Claude_ordinary_psycho",
+      "base_id": "ordinary_psycho",
+      "creator": "Claude",
+      "name": "Ordinary Psycho",
+      "category": "characters",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/characters/Claude_ordinary_psycho/Claude_ordinary_psycho.vox",
+      "metadata_path": "models/characters/Claude_ordinary_psycho/model.json",
+      "preview_path": "previews/characters/Claude_ordinary_psycho/",
+      "derived_paths": [
+        "models/characters/Claude_ordinary_psycho/Claude_ordinary_psycho.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.55,
+        0.5,
+        1.8
+      ],
+      "occupied_voxels": 864,
+      "game_integrations": [],
+      "batch": "Claude_catalog_F",
+      "scale_family": "full",
+      "condition": "n/a"
+    },
+    {
+      "id": "Claude_runner",
+      "base_id": "runner",
+      "creator": "Claude",
+      "name": "Runner",
+      "category": "characters",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/characters/Claude_runner/Claude_runner.vox",
+      "metadata_path": "models/characters/Claude_runner/model.json",
+      "preview_path": "previews/characters/Claude_runner/",
+      "derived_paths": [
+        "models/characters/Claude_runner/Claude_runner.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.55,
+        0.6,
+        1.75
+      ],
+      "occupied_voxels": 594,
+      "game_integrations": [],
+      "batch": "Claude_catalog_F",
+      "scale_family": "full",
+      "condition": "n/a"
+    },
+    {
+      "id": "Claude_suicide_bomber",
+      "base_id": "suicide_bomber",
+      "creator": "Claude",
+      "name": "Suicide Bomber",
+      "category": "characters",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/characters/Claude_suicide_bomber/Claude_suicide_bomber.vox",
+      "metadata_path": "models/characters/Claude_suicide_bomber/model.json",
+      "preview_path": "previews/characters/Claude_suicide_bomber/",
+      "derived_paths": [
+        "models/characters/Claude_suicide_bomber/Claude_suicide_bomber.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.75,
+        0.55,
+        1.9
+      ],
+      "occupied_voxels": 1269,
+      "game_integrations": [],
+      "batch": "Claude_catalog_F",
+      "scale_family": "full",
+      "condition": "n/a"
+    },
+    {
+      "id": "Claude_survivor",
+      "base_id": "survivor",
+      "creator": "Claude",
+      "name": "Player Survivor",
+      "category": "characters",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/characters/Claude_survivor/Claude_survivor.vox",
+      "metadata_path": "models/characters/Claude_survivor/model.json",
+      "preview_path": "previews/characters/Claude_survivor/",
+      "derived_paths": [
+        "models/characters/Claude_survivor/Claude_survivor.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.65,
+        0.5,
+        1.75
+      ],
+      "occupied_voxels": 1006,
+      "game_integrations": [],
+      "batch": "Claude_catalog_F",
+      "scale_family": "full",
+      "condition": "n/a"
+    },
+    {
+      "id": "Claude_dining_table",
+      "base_id": "dining_table",
+      "creator": "Claude",
+      "name": "Family Oak Dining Table",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_dining_table/Claude_dining_table.vox",
+      "metadata_path": "models/furniture/Claude_dining_table/model.json",
+      "preview_path": "previews/furniture/Claude_dining_table/",
+      "derived_paths": [
+        "models/furniture/Claude_dining_table/Claude_dining_table.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.6,
+        0.9,
+        0.75
+      ],
+      "occupied_voxels": 1048,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_sofa",
+      "base_id": "sofa",
+      "creator": "Claude",
+      "name": "Three-Seat Sofa",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_sofa/Claude_sofa.vox",
+      "metadata_path": "models/furniture/Claude_sofa/model.json",
+      "preview_path": "previews/furniture/Claude_sofa/",
+      "derived_paths": [
+        "models/furniture/Claude_sofa/Claude_sofa.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        2.3,
+        1.0,
+        0.85
+      ],
+      "occupied_voxels": 3733,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
     }
   ]
 }

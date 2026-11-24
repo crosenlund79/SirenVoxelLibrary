@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "id": "Claude_survivor",
+  "base_id": "survivor",
+  "creator": "Claude",
+  "name": "Player Survivor",
+  "category": "characters",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_F",
+  "scale_family": "full",
+  "source": "Claude_survivor.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_survivor.glb",
+    "glb_vertices": 1748,
+    "glb_triangles": 874,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    6.5,
+    7.0,
+    0.0
+  ],
+  "pivot_note": "Between the feet at ground level.",
+  "front_note": "The character faces +Y in a neutral standing display pose.",
+  "grid_size_cells": [
+    13,
+    10,
+    35
+  ],
+  "dimensions_m": [
+    0.65,
+    0.5,
+    1.75
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1006,
+  "condition": "n/a",
+  "gameplay_use": "Player character reference",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "brass_dark",
+    "card_deep",
+    "charcoal",
+    "galv_dark",
+    "hair_black",
+    "hair_brown",
+    "khaki",
+    "khaki_dark",
+    "leather",
+    "leather_dark",
+    "olive",
+    "olive_dark",
+    "rust",
+    "rust_dark",
+    "skin1",
+    "skin1_hi",
+    "skin1_shadow",
+    "slate",
+    "slate_dark",
+    "slate_deep",
+    "wool",
+    "wool_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 11
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 36
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 2
+    },
+    {
+      "index": 50,
+      "role": "rust",
+      "hex": "#B36E44",
+      "voxels": 46
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 40
+    },
+    {
+      "index": 55,
+      "role": "brass_dark",
+      "hex": "#786439",
+      "voxels": 2
+    },
+    {
+      "index": 86,
+      "role": "olive",
+      "hex": "#777B55",
+      "voxels": 108
+    },
+    {
+      "index": 87,
+      "role": "olive_dark",
+      "hex": "#5F6244",
+      "voxels": 39
+    },
+    {
+      "index": 103,
+      "role": "wool",
+      "hex": "#9A8E7C",
+      "voxels": 31
+    },
+    {
+      "index": 104,
+      "role": "wool_dark",
+      "hex": "#7E7363",
+      "voxels": 21
+    },
+    {
+      "index": 130,
+      "role": "slate",
+      "hex": "#5E6D74",
+      "voxels": 19
+    },
+    {
+      "index": 131,
+      "role": "slate_dark",
+      "hex": "#4B585E",
+      "voxels": 236
+    },
+    {
+      "index": 132,
+      "role": "slate_deep",
+      "hex": "#3A4449",
+      "voxels": 38
+    },
+    {
+      "index": 154,
+      "role": "leather",
+      "hex": "#7A553C",
+      "voxels": 35
+    },
+    {
+      "index": 155,
+      "role": "leather_dark",
+      "hex": "#5E402E",
+      "voxels": 83
+    },
+    {
+      "index": 160,
+      "role": "card_deep",
+      "hex": "#6A573E",
+      "voxels": 20
+    },
+    {
+      "index": 161,
+      "role": "skin1_hi",
+      "hex": "#DDB99E",
+      "voxels": 1
+    },
+    {
+      "index": 162,
+      "role": "skin1",
+      "hex": "#C9A085",
+      "voxels": 44
+    },
+    {
+      "index": 163,
+      "role": "skin1_shadow",
+      "hex": "#AC846B",
+      "voxels": 9
+    },
+    {
+      "index": 169,
+      "role": "hair_black",
+      "hex": "#2A2524",
+      "voxels": 2
+    },
+    {
+      "index": 170,
+      "role": "hair_brown",
+      "hex": "#594230",
+      "voxels": 12
+    },
+    {
+      "index": 175,
+      "role": "khaki",
+      "hex": "#9C8D6E",
+      "voxels": 8
+    },
+    {
+      "index": 176,
+      "role": "khaki_dark",
+      "hex": "#7B6F57",
+      "voxels": 163
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Upright capsule about 0.3 m in radius and dimensions_m[2] tall, centred on the pivot; static reference figure, no rig.",
+  "story": "Someone who was ordinary before the sirens stopped: a dark work jacket, cargo trousers worn pale at the knees from kneeling, the orange beanie and scarf they were wearing that morning, and a pack they now never take off.",
+  "notes": [
+    "Dark jacket, orange beanie and scarf (the one warm accent), brown strap, olive backpack (matches the game).",
+    "Height is the 1.75 m player height. Narrower than the 0.85 m reference because the arms hang only slightly away from the body; deeper than 0.36 m because the pack and bedroll add ~0.15 m behind it."
+  ],
+  "generator": "tools/claude/models/catalog/f1_characters.py",
+  "spec": "docs/specs/characters/Claude_survivor.md",
+  "previews": {
+    "hero": "previews/characters/Claude_survivor/hero.png",
+    "front": "previews/characters/Claude_survivor/front.png",
+    "side": "previews/characters/Claude_survivor/side.png",
+    "scale": "previews/characters/Claude_survivor/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_F.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": []
+}
