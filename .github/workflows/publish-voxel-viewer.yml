@@ -8,6 +8,7 @@ on:
       - 'catalog.json'
       - 'models/**'
       - 'previews/**'
+      - 'catalog/**'
       - '.github/workflows/publish-voxel-viewer.yml'
   workflow_dispatch:
 
@@ -37,6 +38,8 @@ jobs:
           cp catalog.json _site/catalog.json
           if [ -d models ]; then cp -R models _site/models; fi
           if [ -d previews ]; then cp -R previews _site/previews; fi
+          if [ -d catalog ]; then cp -R catalog _site/catalog; fi
+          if [ -d docs ]; then cp -R docs _site/docs; fi
           touch _site/.nojekyll
           cat > _site/index.html <<'EOF'
           <!doctype html>
@@ -48,7 +51,7 @@ jobs:
               <title>SirenVoxelLibrary — Voxel Viewer</title>
             </head>
             <body>
-              <p><a href="viewer/">Open SirenVoxelLibrary Viewer</a></p>
+              <p><a href="viewer/">Open SirenVoxelLibrary Viewer</a> · <a href="catalog/">Browse the catalog</a></p>
             </body>
           </html>
           EOF

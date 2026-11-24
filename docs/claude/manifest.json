@@ -1,0 +1,3506 @@
+{
+ "schema_version": 1,
+ "description": "Claude master asset manifest for the SirenVoxelLibrary catalog. A manifest entry is a plan, not a model: creation status is derived from files on disk by tools/claude/manifest.py.",
+ "sources": [
+  "User commission 2026-11-24 (complete catalog)",
+  "Sirens Went Quiet branch claude/practical-heisenberg-mjc1xx @ 32830df (items.gd, build_pieces.gd, prop_kit.gd, expedition_data.gd, experiment-003/ASSIGNMENT.md)"
+ ],
+ "assets": [
+  {
+   "base_id": "sofa",
+   "name": "Three-Seat Sofa",
+   "batch": "catalog_A",
+   "family": "A1_living",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    2.2,
+    0.9,
+    0.85
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Living-room furniture; cover; game prop 'sofa'",
+   "brief": "Slate-blue fabric three-seater on low wooden feet; sagging middle cushion, one seat cushion pushed askew, a folded blanket over one arm, armrest fronts rubbed darker.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "armchair",
+   "name": "Armchair",
+   "batch": "catalog_A",
+   "family": "A1_living",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.9,
+    0.9,
+    0.9
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Living-room furniture; game prop 'armchair'",
+   "brief": "Rust/terracotta upholstered armchair (the game's rust armchair) with a split seam on one arm, flattened seat cushion, faded headrest.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "coffee_table",
+   "name": "Coffee Table",
+   "batch": "catalog_A",
+   "family": "A1_living",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    1.1,
+    0.6,
+    0.45
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Living-room table; game prop 'coffee_table'",
+   "brief": "Low oak coffee table with a lower shelf holding a few magazines/newspapers; one corner chipped.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "television",
+   "name": "Flat Television",
+   "batch": "catalog_A",
+   "family": "A1_living",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.25,
+    0.62
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Dead TV on a stand; living-room dressing",
+   "brief": "Unbranded ~43-inch flat TV on a centre foot, dark screen with a hairline crack across one corner, dust on top edge. No logo.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "tv_cabinet",
+   "name": "TV Cabinet",
+   "batch": "catalog_A",
+   "family": "A1_living",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    1.6,
+    0.45,
+    0.5
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Media cabinet; game prop 'tv_stand'",
+   "brief": "Low walnut media cabinet: two doors and an open middle bay holding a set-top box and loose cables; one door off its top hinge.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "bookshelf",
+   "name": "Bookshelf",
+   "batch": "catalog_A",
+   "family": "A1_living",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.9,
+    0.32,
+    1.9
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Storage furniture; game prop 'bookshelf'",
+   "brief": "Oak-veneer five-shelf bookcase, books in muted colours leaning and in gaps where some were taken, a small box and a framed photo.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "side_table",
+   "name": "Side Table",
+   "batch": "catalog_A",
+   "family": "A1_living",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.5,
+    0.5,
+    0.55
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "lightly_used",
+   "gameplay_use": "Small table beside sofa/bed",
+   "brief": "Nearly new square side table with one drawer and a coaster; clean contrast to the worn pieces.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "floor_lamp",
+   "name": "Floor Lamp",
+   "batch": "catalog_A",
+   "family": "A1_living",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.4,
+    0.4,
+    1.6
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Dead floor lamp; game prop 'floor_lamp'",
+   "brief": "Dark metal pole lamp on a weighted round base with a linen drum shade, shade slightly tilted; cord trailing.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "storage_cabinet_small",
+   "name": "Small Storage Cabinet",
+   "batch": "catalog_A",
+   "family": "A1_living",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.8,
+    0.4,
+    0.9
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Lootable cabinet",
+   "brief": "Painted sage two-door cabinet, one door ajar, paint worn through around the handle, a shelf of folded towels visible.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "rug",
+   "name": "Living-Room Rug",
+   "batch": "catalog_A",
+   "family": "A1_living",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    2.4,
+    1.7,
+    0.05
+   ],
+   "cell_m": 0.025,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Floor rug; game prop 'rug'",
+   "brief": "Flat-woven rug with a simple border pattern in muted tones, one corner folded over, a scuffed walking path across it.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "dining_table",
+   "name": "Family Oak Dining Table",
+   "batch": "catalog_A",
+   "family": "A0_reference",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    1.6,
+    0.9,
+    0.75
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Dining table; game prop 'dining_table'",
+   "brief": "Reference model built by the lead: oak top with breadboard ends, apron, H-stretcher; edge wear.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "dining_chair",
+   "name": "Dining Chair",
+   "batch": "catalog_A",
+   "family": "A2_dining_bedroom",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.45,
+    0.5,
+    0.9
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Dining chair; game prop 'chair'",
+   "brief": "Spindle-back chair that does NOT quite match the oak table: painted sage, paint worn off the seat front and back rail, one replaced darker spindle.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "stool",
+   "name": "Stool",
+   "batch": "catalog_A",
+   "family": "A2_dining_bedroom",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.38,
+    0.38,
+    0.7
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Kitchen stool; game prop 'stool'",
+   "brief": "Four-legged wooden kitchen stool with a footrest ring and a round-ish seat worn pale in the middle.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "sideboard",
+   "name": "Sideboard",
+   "batch": "catalog_A",
+   "family": "A2_dining_bedroom",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    1.6,
+    0.45,
+    0.85
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Dining storage; lootable",
+   "brief": "Walnut sideboard with three drawers over two doors, one drawer pulled out, a bowl and a face-down picture frame on top.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "shelf_small",
+   "name": "Small Shelf",
+   "batch": "catalog_A",
+   "family": "A2_dining_bedroom",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.3,
+    1.0
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Small standing shelf for dishes/jars",
+   "brief": "Small free-standing open shelf (3 shelves) holding a few jars and stacked plates; slightly racked out of square.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "single_bed",
+   "name": "Single Bed",
+   "batch": "catalog_A",
+   "family": "existing",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    1.05,
+    2.0,
+    0.75
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Bed",
+   "brief": "Covered by the pilot candidate.",
+   "existing_claude": "Claude_single_bed_unmade"
+  },
+  {
+   "base_id": "double_bed",
+   "name": "Double Bed",
+   "batch": "catalog_A",
+   "family": "A2_dining_bedroom",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    1.6,
+    2.1,
+    0.95
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Main bed; game prop 'bed'",
+   "brief": "Wooden double bed with headboard, mauve bedding (game colour) pulled up hastily, two pillows, one side slept in.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "nightstand",
+   "name": "Nightstand",
+   "batch": "catalog_A",
+   "family": "A2_dining_bedroom",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.45,
+    0.4,
+    0.55
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Bedside table; game prop 'nightstand'",
+   "brief": "Drawer over an open shelf, an alarm clock and a paperback on top, drawer a little open.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "wardrobe",
+   "name": "Wardrobe",
+   "batch": "catalog_A",
+   "family": "A2_dining_bedroom",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    1.2,
+    0.6,
+    2.0
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Clothes storage; lootable; game prop 'wardrobe'",
+   "brief": "Two-door wardrobe, one door ajar showing hanging clothes, a suitcase on top, kick marks at the base.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "dresser",
+   "name": "Dresser",
+   "batch": "catalog_A",
+   "family": "A2_dining_bedroom",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    1.1,
+    0.5,
+    0.85
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Chest of drawers; lootable; game prop 'dresser'",
+   "brief": "Chest of four drawers, the top drawer pulled out and emptied in a hurry, a sleeve hanging out of another.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "desk_small",
+   "name": "Small Desk",
+   "batch": "catalog_A",
+   "family": "A2_dining_bedroom",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    1.1,
+    0.55,
+    0.75
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Desk / work surface",
+   "brief": "Simple desk with a drawer pedestal, a closed laptop and a mug; one drawer open.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "desk_chair",
+   "name": "Desk Chair",
+   "batch": "catalog_A",
+   "family": "A2_dining_bedroom",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.6,
+    0.95
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Office chair",
+   "brief": "Swivel office chair: five-star base with castors, padded seat with a torn edge, backrest tilted.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "refrigerator",
+   "name": "Refrigerator",
+   "batch": "catalog_A",
+   "family": "A3_kitchen",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.7,
+    0.7,
+    1.8
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Fridge-freezer; lootable; game prop 'fridge'",
+   "brief": "Old almond fridge-freezer, freezer above, a few magnets and a note, door seal hanging, rust bloom at the base.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "stove_oven",
+   "name": "Stove / Oven",
+   "batch": "catalog_A",
+   "family": "A3_kitchen",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.62,
+    1.05
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Cooker; game prop 'stove'",
+   "brief": "White enamel range with four burners and grates, oven door with a dark window and handle bar, knob row, backguard; grease stains.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "kitchen_counter",
+   "name": "Kitchen Counter",
+   "batch": "catalog_A",
+   "family": "A3_kitchen",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.62,
+    0.92
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Modular base unit; game prop 'counter'",
+   "brief": "1 m base cabinet in the game's sage kitchen colour with a wood worktop, drawer over two doors, a toe kick; edges worn at the handles.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "kitchen_sink",
+   "name": "Kitchen Sink",
+   "batch": "catalog_A",
+   "family": "A3_kitchen",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.62,
+    1.1
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Sink unit; game prop 'sink_counter'",
+   "brief": "Matching 1 m sink base unit with a steel basin, swan-neck tap and a dish rack; a dry stain in the sink.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "wall_cabinet",
+   "name": "Wall Cabinet",
+   "batch": "catalog_A",
+   "family": "A3_kitchen",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.8,
+    0.35,
+    0.7
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Wall-mounted kitchen cabinet",
+   "brief": "Sage wall cabinet, one door open showing plates and cups; wall-mount pivot documented.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "pantry_shelf",
+   "name": "Pantry Shelf",
+   "batch": "catalog_A",
+   "family": "A3_kitchen",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.9,
+    0.4,
+    1.8
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "abandoned",
+   "gameplay_use": "Food storage; scavenging target",
+   "brief": "Freestanding pantry shelving, mostly emptied: a few cans and jars, a split flour sack, an empty cardboard tray.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "crockery_set",
+   "name": "Dining Crockery Set",
+   "batch": "catalog_A",
+   "family": "A3_kitchen",
+   "category": "household",
+   "scale": "full",
+   "target_dims_m": [
+    0.45,
+    0.3,
+    0.15
+   ],
+   "cell_m": 0.025,
+   "priority": "P3",
+   "condition": "used",
+   "gameplay_use": "Table dressing; kitchen clutter",
+   "brief": "Stack of plates with a bowl, a mug and a glass beside it on a folded tea towel (keeps the set one connected piece).",
+   "existing_claude": null
+  },
+  {
+   "base_id": "cooking_pot",
+   "name": "Cooking Pot",
+   "batch": "catalog_A",
+   "family": "A3_kitchen",
+   "category": "household",
+   "scale": "full",
+   "target_dims_m": [
+    0.36,
+    0.26,
+    0.22
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Cooking on stoves/campfires",
+   "brief": "Battered aluminium stockpot with lid and two side handles, dented, soot-black on the bottom.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "frying_pan",
+   "name": "Frying Pan",
+   "batch": "catalog_A",
+   "family": "A3_kitchen",
+   "category": "household",
+   "scale": "full",
+   "target_dims_m": [
+    0.48,
+    0.28,
+    0.07
+   ],
+   "cell_m": 0.025,
+   "priority": "P3",
+   "condition": "used",
+   "gameplay_use": "Cooking utensil; improvised melee",
+   "brief": "Cast-iron skillet with a long handle, dark seasoned surface, slight rust on the rim.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "kettle",
+   "name": "Kettle",
+   "batch": "catalog_A",
+   "family": "A3_kitchen",
+   "category": "household",
+   "scale": "full",
+   "target_dims_m": [
+    0.24,
+    0.18,
+    0.26
+   ],
+   "cell_m": 0.0125,
+   "priority": "P3",
+   "condition": "worn",
+   "gameplay_use": "Boiling water on a stove",
+   "brief": "Stovetop enamel kettle, cream with a dark handle and spout, chipped enamel, soot on the base.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "cutting_board",
+   "name": "Wooden Cutting Board",
+   "batch": "catalog_A",
+   "family": "A3_kitchen",
+   "category": "household",
+   "scale": "full",
+   "target_dims_m": [
+    0.4,
+    0.26,
+    0.03
+   ],
+   "cell_m": 0.0125,
+   "priority": "P3",
+   "condition": "used",
+   "gameplay_use": "Kitchen dressing",
+   "brief": "Worn wooden board with knife marks, a hanging hole and a small paring knife on it.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "toilet",
+   "name": "Toilet",
+   "batch": "catalog_A",
+   "family": "A4_bath_utility",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.4,
+    0.7,
+    0.8
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Bathroom fixture; game prop 'toilet'",
+   "brief": "Ceramic toilet, lid up, cistern with flush button, a faint stain line; plain and believable.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "bathtub",
+   "name": "Bathtub",
+   "batch": "catalog_A",
+   "family": "A4_bath_utility",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    1.7,
+    0.75,
+    0.58
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Bathroom fixture; water storage; game prop 'bathtub'",
+   "brief": "Enamel built-in tub with front panel, tap at one end, partly filled with stored water (opaque water colour) - the survivors used it as a tank.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "bathroom_sink",
+   "name": "Bathroom Sink",
+   "batch": "catalog_A",
+   "family": "A4_bath_utility",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.48,
+    0.88
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Vanity; game prop 'vanity'",
+   "brief": "Vanity unit with ceramic basin and tap, cupboard doors, a toothbrush cup; one door hanging open.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "medicine_cabinet",
+   "name": "Medicine Cabinet",
+   "batch": "catalog_A",
+   "family": "A4_bath_utility",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.5,
+    0.15,
+    0.6
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "abandoned",
+   "gameplay_use": "Lootable medical storage (wall)",
+   "brief": "Wall-mounted mirrored cabinet with the door swung open, shelves rifled with two bottles left.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "washing_machine",
+   "name": "Washing Machine",
+   "batch": "catalog_A",
+   "family": "A4_bath_utility",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.6,
+    0.85
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Utility appliance; game prop 'washer'",
+   "brief": "White front-loader with round porthole door, detergent drawer and dial; a sock caught in the seal.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "clothes_dryer",
+   "name": "Clothes Dryer",
+   "batch": "catalog_A",
+   "family": "A4_bath_utility",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.6,
+    0.85
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Utility appliance; game prop 'dryer'",
+   "brief": "Almond tumble dryer, visibly different from the washer: big flat door, vent hose out the back, lint and a dented side.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "water_heater",
+   "name": "Water Heater",
+   "batch": "catalog_A",
+   "family": "A4_bath_utility",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.6,
+    1.6
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Utility; emergency water source; game prop 'water_heater'",
+   "brief": "Cylindrical tank heater with pipes and valves on top, relief valve and drain valve, data plate, rust streak below the drain.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "laundry_basket",
+   "name": "Laundry Basket",
+   "batch": "catalog_A",
+   "family": "A4_bath_utility",
+   "category": "household",
+   "scale": "full",
+   "target_dims_m": [
+    0.55,
+    0.4,
+    0.45
+   ],
+   "cell_m": 0.05,
+   "priority": "P3",
+   "condition": "used",
+   "gameplay_use": "Utility dressing",
+   "brief": "Perforated plastic laundry basket with clothes heaped and a sleeve over the rim.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "potted_plant",
+   "name": "Potted Plant",
+   "batch": "catalog_A",
+   "family": "A4_bath_utility",
+   "category": "household",
+   "scale": "full",
+   "target_dims_m": [
+    0.5,
+    0.5,
+    1.1
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "dead",
+   "gameplay_use": "Living-room dressing; game prop 'plant'",
+   "brief": "Neglected large-leaf house plant in a ceramic pot, half the leaves dried brown and fallen onto the floor.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "cardboard_boxes",
+   "name": "Cardboard Boxes",
+   "batch": "catalog_A",
+   "family": "A4_bath_utility",
+   "category": "household",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.6,
+    0.7
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Clutter/obstacle; game prop 'boxes'",
+   "brief": "A stack of taped moving boxes, the top one opened and pulled through - signs of a hurried departure.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "canned_food",
+   "name": "Canned Food",
+   "batch": "catalog_A",
+   "family": "A5_consumables",
+   "category": "consumables",
+   "scale": "full",
+   "target_dims_m": [
+    0.075,
+    0.075,
+    0.11
+   ],
+   "cell_m": 0.0125,
+   "priority": "P1",
+   "condition": "new",
+   "gameplay_use": "Inventory item canned_food (hunger +30)",
+   "brief": "Tall food tin with a muted paper label (simple colour blocks, no text), ribbed side, one small dent.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "soup_can",
+   "name": "Soup Can",
+   "batch": "catalog_A",
+   "family": "A5_consumables",
+   "category": "consumables",
+   "scale": "full",
+   "target_dims_m": [
+    0.07,
+    0.07,
+    0.1
+   ],
+   "cell_m": 0.0125,
+   "priority": "P2",
+   "condition": "new",
+   "gameplay_use": "Food pickup variant",
+   "brief": "Squat soup can with a red-and-cream label band and a ring-pull lid - reads differently from canned_food.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "food_box",
+   "name": "Food Box",
+   "batch": "catalog_A",
+   "family": "A5_consumables",
+   "category": "consumables",
+   "scale": "full",
+   "target_dims_m": [
+    0.19,
+    0.07,
+    0.28
+   ],
+   "cell_m": 0.0125,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Food pickup (crackers/cereal)",
+   "brief": "Cardboard cereal/cracker box with a muted printed panel, top flap open, a crease.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "snack_package",
+   "name": "Snack Package",
+   "batch": "catalog_A",
+   "family": "A5_consumables",
+   "category": "consumables",
+   "scale": "full",
+   "target_dims_m": [
+    0.15,
+    0.06,
+    0.2
+   ],
+   "cell_m": 0.0125,
+   "priority": "P1",
+   "condition": "new",
+   "gameplay_use": "Inventory item snacks (hunger +12)",
+   "brief": "Pillow-shaped crinkled snack bag with crimped ends and a plain colour panel.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "water_bottle",
+   "name": "Water Bottle",
+   "batch": "catalog_A",
+   "family": "A5_consumables",
+   "category": "consumables",
+   "scale": "full",
+   "target_dims_m": [
+    0.09,
+    0.09,
+    0.32
+   ],
+   "cell_m": 0.0125,
+   "priority": "P1",
+   "condition": "new",
+   "gameplay_use": "Inventory item water (hydration +30)",
+   "brief": "1.5 L plastic bottle in pale blue-grey (opaque stylisation), cap, ribbed waist, plain label band.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "water_container_large",
+   "name": "Large Water Container",
+   "batch": "catalog_A",
+   "family": "A5_consumables",
+   "category": "consumables",
+   "scale": "full",
+   "target_dims_m": [
+    0.3,
+    0.25,
+    0.45
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Bulk water storage",
+   "brief": "20 L stackable blue plastic water container with moulded handle and a spigot cap.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "food_storage_crate",
+   "name": "Food Storage Crate",
+   "batch": "catalog_A",
+   "family": "A5_consumables",
+   "category": "consumables",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.4,
+    0.35
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Pantry/stockpile storage",
+   "brief": "Ventilated plastic stacking crate holding cans and jars, lid leaning against it.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "cooler_small",
+   "name": "Small Cooler",
+   "batch": "catalog_A",
+   "family": "A5_consumables",
+   "category": "consumables",
+   "scale": "full",
+   "target_dims_m": [
+    0.5,
+    0.32,
+    0.36
+   ],
+   "cell_m": 0.025,
+   "priority": "P3",
+   "condition": "worn",
+   "gameplay_use": "Food storage",
+   "brief": "Picnic cooler with faded teal body, pale lid and swing handle, scuffed corners.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "workbench",
+   "name": "Workbench",
+   "batch": "catalog_B",
+   "family": "existing",
+   "category": "furniture",
+   "scale": "full",
+   "target_dims_m": [
+    1.7,
+    0.7,
+    0.9
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Building station",
+   "brief": "Covered by the pilot candidate.",
+   "existing_claude": "Claude_workbench_worn"
+  },
+  {
+   "base_id": "wooden_storage_crate",
+   "name": "Wooden Storage Crate",
+   "batch": "catalog_B",
+   "family": "B1_workshop",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.6,
+    0.6
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "improvised",
+   "gameplay_use": "Build piece 'Storage crate' (3 planks + 4 nails)",
+   "brief": "Player-built crate of mismatched scavenged boards with a hinged lid and rope handles; nail heads visible.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "metal_storage_cabinet",
+   "name": "Metal Storage Cabinet",
+   "batch": "catalog_B",
+   "family": "B1_workshop",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.9,
+    0.45,
+    1.8
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Secure storage",
+   "brief": "Grey steel two-door cabinet, one door dented, padlock hasp, louvres, scratches at the handle.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "tool_chest",
+   "name": "Tool Chest",
+   "batch": "catalog_B",
+   "family": "B1_workshop",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.7,
+    0.45,
+    1.0
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Tool storage",
+   "brief": "Rolling mechanic's tool chest in dusty red, stacked drawers with one open, casters, side handle.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "toolbox",
+   "name": "Toolbox",
+   "batch": "catalog_B",
+   "family": "B1_workshop",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.45,
+    0.22,
+    0.24
+   ],
+   "cell_m": 0.0125,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Tool storage pickup",
+   "brief": "Blue-grey steel cantilever toolbox with the trays opened, a few tool handles visible (distinct from the red box on the pilot workbench).",
+   "existing_claude": null
+  },
+  {
+   "base_id": "rainwater_collector",
+   "name": "Rainwater Collector",
+   "batch": "catalog_B",
+   "family": "existing",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    1.0,
+    1.6
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "improvised",
+   "gameplay_use": "Build piece 'Rain collector' (+1 water each dawn)",
+   "brief": "Covered by the pilot candidate.",
+   "existing_claude": "Claude_rain_collector_basic"
+  },
+  {
+   "base_id": "wood_burning_stove",
+   "name": "Wood-Burning Stove",
+   "batch": "catalog_B",
+   "family": "existing",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.8,
+    0.65,
+    1.0
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Heating/cooking without grid power",
+   "brief": "Covered by the pilot candidate.",
+   "existing_claude": "Claude_wood_stove_compact"
+  },
+  {
+   "base_id": "improvised_forge",
+   "name": "Improvised Forge",
+   "batch": "catalog_B",
+   "family": "B1_workshop",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.9,
+    0.6,
+    0.85
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "improvised",
+   "gameplay_use": "Metalworking station",
+   "brief": "Brake-drum forge welded onto a steel-pipe stand, an air pipe to a small blower, charcoal bed, tongs; workshop junk, not fantasy.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "water_barrel",
+   "name": "Water Barrel",
+   "batch": "catalog_B",
+   "family": "B1_workshop",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.6,
+    0.95
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Water storage",
+   "brief": "200 L blue-grey plastic drum on two cinder blocks with screw bungs and a retrofitted brass tap.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "generator_basic",
+   "name": "Basic Generator",
+   "batch": "catalog_B",
+   "family": "B1_workshop",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.45,
+    0.48
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Power",
+   "brief": "Open-frame portable generator: tube frame, fuel tank on top, engine block, outlet panel, pull-start.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "camping_stove",
+   "name": "Camping Stove",
+   "batch": "catalog_B",
+   "family": "B1_workshop",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.55,
+    0.35,
+    0.35
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Cooking without grid power",
+   "brief": "Two-burner suitcase camping stove, lid up as windshield, hose to a small gas cylinder.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "plank_bundle",
+   "name": "Plank Bundle",
+   "batch": "catalog_B",
+   "family": "B1_workshop",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    1.2,
+    0.4,
+    0.25
+   ],
+   "cell_m": 0.025,
+   "priority": "P1",
+   "condition": "improvised",
+   "gameplay_use": "Resource 'wood' (planks) pickup",
+   "brief": "Stack of mismatched scavenged boards (pine, grey, painted) tied with rope - the building resource.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "scrap_metal_pile",
+   "name": "Scrap Metal Pile",
+   "batch": "catalog_B",
+   "family": "B1_workshop",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.8,
+    0.6,
+    0.35
+   ],
+   "cell_m": 0.025,
+   "priority": "P1",
+   "condition": "damaged",
+   "gameplay_use": "Resource 'scrap' pickup",
+   "brief": "Small heap of bent sheet metal, pipe offcuts, a hubcap and rebar.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "hammer",
+   "name": "Claw Hammer",
+   "batch": "catalog_B",
+   "family": "B2_tools",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.03,
+    0.33,
+    0.13
+   ],
+   "cell_m": 0.0125,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Tool item 'hammer' (needed to build)",
+   "brief": "Claw hammer with hickory handle and steel head, grip darkened by hands.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "crowbar",
+   "name": "Crowbar",
+   "batch": "catalog_B",
+   "family": "B2_tools",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.04,
+    0.75,
+    0.12
+   ],
+   "cell_m": 0.025,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Tool item 'crowbar'; melee",
+   "brief": "Hex-bar crowbar with a curved claw end and chipped dusty-red paint.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "hatchet",
+   "name": "Hatchet",
+   "batch": "catalog_B",
+   "family": "B2_tools",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.04,
+    0.38,
+    0.17
+   ],
+   "cell_m": 0.0125,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Tool / melee",
+   "brief": "Hatchet with tape-wrapped wooden handle and a rust-flecked steel head.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "shovel",
+   "name": "Shovel",
+   "batch": "catalog_B",
+   "family": "B2_tools",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.25,
+    1.15,
+    0.1
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Digging tool",
+   "brief": "Round-point shovel with a wooden shaft and D-grip, dried dirt on the blade.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "pickaxe",
+   "name": "Pickaxe",
+   "batch": "catalog_B",
+   "family": "B2_tools",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.05,
+    0.9,
+    0.5
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Mining tool (quarry)",
+   "brief": "Pickaxe with a long wooden haft and a pointed/chisel head.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "saw",
+   "name": "Hand Saw",
+   "batch": "catalog_B",
+   "family": "B2_tools",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.03,
+    0.6,
+    0.15
+   ],
+   "cell_m": 0.0125,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Woodworking tool",
+   "brief": "Hand saw with a wooden D-handle and a tapering blade.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "flashlight",
+   "name": "Flashlight",
+   "batch": "catalog_B",
+   "family": "B2_tools",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.05,
+    0.25,
+    0.06
+   ],
+   "cell_m": 0.0125,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Tool item 'flashlight' (clinic access)",
+   "brief": "Rubber-gripped flashlight with a flared head and pale lens (no emissive), a lanyard loop.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "nail_box",
+   "name": "Nail Tin",
+   "batch": "catalog_B",
+   "family": "B2_tools",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.14,
+    0.12,
+    0.12
+   ],
+   "cell_m": 0.0125,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Resource 'nails' pickup",
+   "brief": "Old coffee tin full of mixed nails with a few spilled beside it.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "battery_lantern",
+   "name": "Battery Lantern",
+   "batch": "catalog_B",
+   "family": "B3_small_survival",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.16,
+    0.16,
+    0.3
+   ],
+   "cell_m": 0.0125,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Night light (game lantern)",
+   "brief": "Camping lantern with folding handle, frosted globe (opaque), dark base and top cap.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "candle",
+   "name": "Candle",
+   "batch": "catalog_B",
+   "family": "B3_small_survival",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.1,
+    0.1,
+    0.22
+   ],
+   "cell_m": 0.0125,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Night light (game candle)",
+   "brief": "Pillar candle half burned with wax drips, on a chipped saucer.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "jerry_can",
+   "name": "Jerry Can",
+   "batch": "catalog_B",
+   "family": "B3_small_survival",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.17,
+    0.35,
+    0.47
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Fuel/water container",
+   "brief": "Steel jerry can in olive drab with the three-handle top and X-pressing, chipped paint.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "fuel_container",
+   "name": "Fuel Container",
+   "batch": "catalog_B",
+   "family": "B3_small_survival",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.2,
+    0.4,
+    0.33
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Fuel for generator",
+   "brief": "Faded red plastic gas can with a flexible spout clipped on.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "portable_battery",
+   "name": "Portable Battery",
+   "batch": "catalog_B",
+   "family": "B3_small_survival",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.3,
+    0.2,
+    0.2
+   ],
+   "cell_m": 0.0125,
+   "priority": "P2",
+   "condition": "lightly_used",
+   "gameplay_use": "Power for lights/radio",
+   "brief": "Portable power station: dark case, carry handle, outlet panel and a small dark display.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "first_aid_box",
+   "name": "Wall First-Aid Box",
+   "batch": "catalog_B",
+   "family": "B3_small_survival",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.35,
+    0.12,
+    0.3
+   ],
+   "cell_m": 0.0125,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Wall-mounted medical supply",
+   "brief": "Wall-mounted white steel first-aid box with a red cross, door ajar; wall-mount pivot.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "backpack",
+   "name": "Backpack",
+   "batch": "catalog_B",
+   "family": "B3_small_survival",
+   "category": "survival",
+   "scale": "full",
+   "target_dims_m": [
+    0.35,
+    0.22,
+    0.5
+   ],
+   "cell_m": 0.025,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Tool item 'backpack' (+50% loot)",
+   "brief": "Olive canvas backpack (matches the player), rolled mat strapped on, side bottle pocket, scuffed base.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "wooden_wall_section",
+   "name": "Wooden Wall Section",
+   "batch": "catalog_B",
+   "family": "B4_construction_wood",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.2,
+    2.6
+   ],
+   "cell_m": 0.1,
+   "priority": "P1",
+   "condition": "improvised",
+   "gameplay_use": "Build piece 'Wooden wall' 1 m",
+   "brief": "1 m player-built wall: studs inside, mismatched horizontal scavenged boards outside (2 voxels tall), nail heads.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "wooden_floor_section",
+   "name": "Wooden Floor Section",
+   "batch": "catalog_B",
+   "family": "B4_construction_wood",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    1.0,
+    0.2
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "new",
+   "gameplay_use": "Floor module 1x1 m",
+   "brief": "Joists under plank decking, 1x1 m module.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "wooden_foundation_support",
+   "name": "Wooden Foundation Support",
+   "batch": "catalog_B",
+   "family": "B4_construction_wood",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    1.0,
+    0.6
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "new",
+   "gameplay_use": "Foundation module",
+   "brief": "Timber cribbing pier (log-cabin stacked sleepers) on a concrete pad.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "wooden_post",
+   "name": "Wooden Post",
+   "batch": "catalog_B",
+   "family": "B4_construction_wood",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    0.2,
+    0.2,
+    2.6
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "new",
+   "gameplay_use": "Structural post",
+   "brief": "Square post with a steel base plate and notched top.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "wooden_beam",
+   "name": "Wooden Beam",
+   "batch": "catalog_B",
+   "family": "B4_construction_wood",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    2.0,
+    0.2,
+    0.3
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "new",
+   "gameplay_use": "Structural beam",
+   "brief": "2 m timber beam with bolted steel end plates.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "wooden_door",
+   "name": "Wooden Door",
+   "batch": "catalog_B",
+   "family": "B4_construction_wood",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.16,
+    2.1
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Build piece 'Door' (frame 1.0 x 2.1 m)",
+   "brief": "Painted panel door in its frame with handle and hinges, paint worn at the lock side.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "window_frame",
+   "name": "Window Frame",
+   "batch": "catalog_B",
+   "family": "B4_construction_wood",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.3,
+    1.2
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Window opening module",
+   "brief": "Wooden window frame with sash bars, glass (opaque glass colour), sill that sticks out.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "wooden_barricade",
+   "name": "Wooden Barricade",
+   "batch": "catalog_B",
+   "family": "B4_construction_wood",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.22,
+    1.5
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "improvised",
+   "gameplay_use": "Build piece 'Barricade' 1 m",
+   "brief": "Mismatched planks nailed across two uprights with a brace foot.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "wooden_barricade_reinforced",
+   "name": "Reinforced Wooden Barricade",
+   "batch": "catalog_B",
+   "family": "B4_construction_wood",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.35,
+    1.6
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "improvised",
+   "gameplay_use": "Upgraded barricade",
+   "brief": "Double layer of planks, a third upright, angled props and scrap sheet-metal patches bolted on.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "wooden_stairs",
+   "name": "Simple Wooden Stairs",
+   "batch": "catalog_B",
+   "family": "B4_construction_wood",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    1.5,
+    1.0
+   ],
+   "cell_m": 0.1,
+   "priority": "P3",
+   "condition": "new",
+   "gameplay_use": "Porch/deck stairs",
+   "brief": "Five steps on two stringers rising to 1.0 m.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "wooden_wall_damaged",
+   "name": "Damaged Wooden Wall",
+   "batch": "catalog_B",
+   "family": "B4_construction_wood",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.2,
+    2.6
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "damaged",
+   "gameplay_use": "Damage reference for wooden_wall_section",
+   "brief": "Same wall with boards knocked out, splintered ends and a hole; variant of wooden_wall_section.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "barricade_destroyed",
+   "name": "Destroyed Barricade",
+   "batch": "catalog_B",
+   "family": "B4_construction_wood",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.6,
+    1.5
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "destroyed",
+   "gameplay_use": "Damage reference for wooden_barricade",
+   "brief": "One upright standing, planks broken and fallen; variant of wooden_barricade.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "stone_wall_section",
+   "name": "Stone Wall Section",
+   "batch": "catalog_B",
+   "family": "B5_construction_heavy",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.4,
+    2.6
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "new",
+   "gameplay_use": "Stone tier wall 1 m",
+   "brief": "Mortared fieldstone wall, stones of varied size and tone.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "stone_foundation",
+   "name": "Stone Foundation",
+   "batch": "catalog_B",
+   "family": "B5_construction_heavy",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    1.0,
+    0.5
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "new",
+   "gameplay_use": "Stone foundation module",
+   "brief": "Fieldstone foundation block with a flat top.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "brick_wall_section",
+   "name": "Brick Wall Section",
+   "batch": "catalog_B",
+   "family": "B5_construction_heavy",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.3,
+    2.6
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "new",
+   "gameplay_use": "Brick tier wall 1 m",
+   "brief": "Running-bond brick wall with tonal brick variation and a sill course.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "concrete_foundation",
+   "name": "Concrete Foundation",
+   "batch": "catalog_B",
+   "family": "B5_construction_heavy",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    1.0,
+    0.4
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "new",
+   "gameplay_use": "Concrete foundation module",
+   "brief": "Poured slab section with anchor bolts and a chamfered edge.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "concrete_wall_section",
+   "name": "Concrete Wall Section",
+   "batch": "catalog_B",
+   "family": "B5_construction_heavy",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.3,
+    2.6
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "new",
+   "gameplay_use": "Concrete block wall 1 m",
+   "brief": "Concrete-block (CMU) wall with a bond-beam top and a stain streak.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "metal_reinforced_wall",
+   "name": "Metal-Reinforced Wall",
+   "batch": "catalog_B",
+   "family": "B5_construction_heavy",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.3,
+    2.6
+   ],
+   "cell_m": 0.1,
+   "priority": "P1",
+   "condition": "improvised",
+   "gameplay_use": "Upgrade 'Metal sheathing'",
+   "brief": "Wooden wall with corrugated/scrap sheet metal bolted over the outside.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "metal_door",
+   "name": "Metal Door",
+   "batch": "catalog_B",
+   "family": "B5_construction_heavy",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.16,
+    2.1
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Upgraded door",
+   "brief": "Steel security door in a steel frame, riveted plates, peephole, heavy bar latch.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "metal_support_beam",
+   "name": "Metal Support Beam",
+   "batch": "catalog_B",
+   "family": "B5_construction_heavy",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    2.0,
+    0.2,
+    0.3
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Structural beam",
+   "brief": "Rusty steel I-beam with bolted end plates.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "steel_reinforcement_panel",
+   "name": "Steel Reinforcement Panel",
+   "batch": "catalog_B",
+   "family": "B5_construction_heavy",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.1,
+    1.3
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Bolt-on reinforcement for windows/walls",
+   "brief": "Steel plate in an angle-iron frame with a diagonal brace and bolt holes.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "metal_gate",
+   "name": "Metal Gate",
+   "batch": "catalog_B",
+   "family": "B5_construction_heavy",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.2,
+    0.1,
+    1.8
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Defensive gate / metal fence",
+   "brief": "Welded tube gate with vertical bars and cross brace, chain and padlock.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "brick_wall_broken",
+   "name": "Partially Broken Brick Wall",
+   "batch": "catalog_B",
+   "family": "B5_construction_heavy",
+   "category": "architecture",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.6,
+    2.6
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "damaged",
+   "gameplay_use": "Damage reference for brick_wall_section",
+   "brief": "Brick wall with the upper part knocked out and a rubble pile at the base; variant of brick_wall_section.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "handgun",
+   "name": "Handgun",
+   "batch": "catalog_C",
+   "family": "C1_firearms",
+   "category": "combat",
+   "scale": "full",
+   "target_dims_m": [
+    0.03,
+    0.2,
+    0.14
+   ],
+   "cell_m": 0.0125,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "The game's only weapon today (9 mm)",
+   "brief": "Generic semi-automatic pistol, dark polymer frame and steel slide; no brand, no mechanism detail.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "revolver",
+   "name": "Revolver",
+   "batch": "catalog_C",
+   "family": "C1_firearms",
+   "category": "combat",
+   "scale": "full",
+   "target_dims_m": [
+    0.04,
+    0.28,
+    0.15
+   ],
+   "cell_m": 0.0125,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Planned weapon",
+   "brief": "Generic six-shot revolver with a wooden grip and worn bluing.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "shotgun",
+   "name": "Shotgun",
+   "batch": "catalog_C",
+   "family": "C1_firearms",
+   "category": "combat",
+   "scale": "full",
+   "target_dims_m": [
+    0.05,
+    1.0,
+    0.2
+   ],
+   "cell_m": 0.025,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Planned second weapon (Experiment 003)",
+   "brief": "Generic pump shotgun with wooden stock and fore-end.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "hunting_rifle",
+   "name": "Hunting Rifle",
+   "batch": "catalog_C",
+   "family": "C1_firearms",
+   "category": "combat",
+   "scale": "full",
+   "target_dims_m": [
+    0.05,
+    1.1,
+    0.22
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Planned weapon",
+   "brief": "Generic bolt-action rifle with a scope, wooden stock and a sling.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "smg_compact",
+   "name": "Compact Submachine Gun",
+   "batch": "catalog_C",
+   "family": "C1_firearms",
+   "category": "combat",
+   "scale": "full",
+   "target_dims_m": [
+    0.04,
+    0.45,
+    0.22
+   ],
+   "cell_m": 0.0125,
+   "priority": "P3",
+   "condition": "used",
+   "gameplay_use": "Planned weapon (police/military loot)",
+   "brief": "Generic compact SMG with folded stock and straight magazine; dark finish.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "baseball_bat",
+   "name": "Baseball Bat",
+   "batch": "catalog_C",
+   "family": "C2_combat_gear",
+   "category": "combat",
+   "scale": "full",
+   "target_dims_m": [
+    0.07,
+    0.84,
+    0.07
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Melee weapon",
+   "brief": "Wooden bat with taped grip and a scuffed barrel.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "ammo_box",
+   "name": "Ammunition Box",
+   "batch": "catalog_C",
+   "family": "C2_combat_gear",
+   "category": "combat",
+   "scale": "full",
+   "target_dims_m": [
+    0.3,
+    0.15,
+    0.2
+   ],
+   "cell_m": 0.0125,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Ammo storage/pickup",
+   "brief": "Olive steel ammo can with a latch lid and carry handle.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "shotgun_shell_box",
+   "name": "Shotgun Shell Box",
+   "batch": "catalog_C",
+   "family": "C2_combat_gear",
+   "category": "combat",
+   "scale": "full",
+   "target_dims_m": [
+    0.12,
+    0.07,
+    0.07
+   ],
+   "cell_m": 0.0125,
+   "priority": "P2",
+   "condition": "new",
+   "gameplay_use": "Shotgun ammo pickup",
+   "brief": "Cardboard box of shells, open, shells with brass bases.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "ammo_pickup",
+   "name": "Loose Ammunition",
+   "batch": "catalog_C",
+   "family": "C2_combat_gear",
+   "category": "combat",
+   "scale": "full",
+   "target_dims_m": [
+    0.12,
+    0.1,
+    0.03
+   ],
+   "cell_m": 0.0125,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Inventory item 'ammo' (9 mm rounds) pickup",
+   "brief": "A pistol magazine with a handful of loose rounds touching it.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "protective_vest",
+   "name": "Protective Vest",
+   "batch": "catalog_C",
+   "family": "C2_combat_gear",
+   "category": "combat",
+   "scale": "full",
+   "target_dims_m": [
+    0.5,
+    0.3,
+    0.6
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Planned protective vest",
+   "brief": "Soft armour vest standing as if worn: dark navy carrier, velcro panel, side straps, a couple of pouches.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "helmet_simple",
+   "name": "Simple Helmet",
+   "batch": "catalog_C",
+   "family": "C2_combat_gear",
+   "category": "combat",
+   "scale": "full",
+   "target_dims_m": [
+    0.25,
+    0.28,
+    0.17
+   ],
+   "cell_m": 0.0125,
+   "priority": "P3",
+   "condition": "worn",
+   "gameplay_use": "Protective gear",
+   "brief": "Army-surplus style olive helmet with chin strap.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "bandage_roll",
+   "name": "Bandage Roll",
+   "batch": "catalog_C",
+   "family": "C3_medical",
+   "category": "medical",
+   "scale": "full",
+   "target_dims_m": [
+    0.09,
+    0.06,
+    0.08
+   ],
+   "cell_m": 0.0125,
+   "priority": "P1",
+   "condition": "new",
+   "gameplay_use": "Inventory item 'bandage' (health +20)",
+   "brief": "Rolled gauze bandage with a loose tail unrolled.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "first_aid_kit",
+   "name": "First-Aid Kit",
+   "batch": "catalog_C",
+   "family": "C3_medical",
+   "category": "medical",
+   "scale": "full",
+   "target_dims_m": [
+    0.25,
+    0.08,
+    0.18
+   ],
+   "cell_m": 0.0125,
+   "priority": "P1",
+   "condition": "used",
+   "gameplay_use": "Inventory item 'medkit' (health +50)",
+   "brief": "Off-white hard case with a red cross, latch and handle.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "medicine_bottle",
+   "name": "Medicine Bottle",
+   "batch": "catalog_C",
+   "family": "C3_medical",
+   "category": "medical",
+   "scale": "full",
+   "target_dims_m": [
+    0.05,
+    0.05,
+    0.1
+   ],
+   "cell_m": 0.0125,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Medicine pickup",
+   "brief": "Amber pharmacy bottle with white cap and plain label.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "tablet_packet",
+   "name": "Tablet Packet",
+   "batch": "catalog_C",
+   "family": "C3_medical",
+   "category": "medical",
+   "scale": "full",
+   "target_dims_m": [
+    0.12,
+    0.03,
+    0.07
+   ],
+   "cell_m": 0.0125,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Medicine pickup",
+   "brief": "Small carton with a blister strip sliding out.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "medical_bag",
+   "name": "Medical Bag",
+   "batch": "catalog_C",
+   "family": "C3_medical",
+   "category": "medical",
+   "scale": "full",
+   "target_dims_m": [
+    0.45,
+    0.25,
+    0.3
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "used",
+   "gameplay_use": "Medical loot container",
+   "brief": "Paramedic duffel with a red cross patch, zip pockets and strap.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "emergency_supply_box",
+   "name": "Emergency Supply Box",
+   "batch": "catalog_C",
+   "family": "C3_medical",
+   "category": "medical",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.4,
+    0.35
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "new",
+   "gameplay_use": "Supply crate",
+   "brief": "Sturdy plastic tote with a stencilled cross, lid strapped down.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "pine_healthy",
+   "name": "Healthy Pine",
+   "batch": "catalog_D",
+   "family": "D1_vegetation",
+   "category": "vegetation",
+   "scale": "full",
+   "target_dims_m": [
+    3.4,
+    3.4,
+    7.0
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "living",
+   "gameplay_use": "Forest/yard tree",
+   "brief": "Dense layered conifer with irregular whorls, dark green, rooted base.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "pine_dead",
+   "name": "Dead Pine",
+   "batch": "catalog_D",
+   "family": "existing",
+   "category": "vegetation",
+   "scale": "full",
+   "target_dims_m": [
+    2.2,
+    1.9,
+    4.4
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "dead",
+   "gameplay_use": "Yard tree",
+   "brief": "Covered by the pilot candidate.",
+   "existing_claude": "Claude_pine_dead_small"
+  },
+  {
+   "base_id": "tree_deciduous_leafless",
+   "name": "Leafless Deciduous Tree",
+   "batch": "catalog_D",
+   "family": "D1_vegetation",
+   "category": "vegetation",
+   "scale": "full",
+   "target_dims_m": [
+    5.0,
+    5.0,
+    6.0
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "dead",
+   "gameplay_use": "Yard/street tree (game dead_tree)",
+   "brief": "Bare broad-crowned tree with forked limbs and twig masses.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "tree_leafy_small",
+   "name": "Small Leafy Tree",
+   "batch": "catalog_D",
+   "family": "D1_vegetation",
+   "category": "vegetation",
+   "scale": "full",
+   "target_dims_m": [
+    3.0,
+    3.0,
+    3.5
+   ],
+   "cell_m": 0.1,
+   "priority": "P3",
+   "condition": "living",
+   "gameplay_use": "Garden tree",
+   "brief": "Small tree with clumped foliage masses, some yellowing.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "bush",
+   "name": "Bush",
+   "batch": "catalog_D",
+   "family": "D1_vegetation",
+   "category": "vegetation",
+   "scale": "full",
+   "target_dims_m": [
+    1.2,
+    1.0,
+    0.9
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "living",
+   "gameplay_use": "Yard shrub (game bush)",
+   "brief": "Leafy shrub clump with gaps and an uneven top.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "shrub_dead",
+   "name": "Dead Shrub",
+   "batch": "catalog_D",
+   "family": "D1_vegetation",
+   "category": "vegetation",
+   "scale": "full",
+   "target_dims_m": [
+    1.0,
+    0.9,
+    0.8
+   ],
+   "cell_m": 0.05,
+   "priority": "P3",
+   "condition": "dead",
+   "gameplay_use": "Yard dressing",
+   "brief": "Dry twiggy shrub with a few brown leaves.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "grass_clump",
+   "name": "Grass Clump",
+   "batch": "catalog_D",
+   "family": "D1_vegetation",
+   "category": "vegetation",
+   "scale": "full",
+   "target_dims_m": [
+    0.5,
+    0.5,
+    0.45
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "living",
+   "gameplay_use": "Ground dressing (game grass tufts)",
+   "brief": "Tuft of tall wild grass and weeds, green with dry tips.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "fallen_log",
+   "name": "Fallen Log",
+   "batch": "catalog_D",
+   "family": "D1_vegetation",
+   "category": "vegetation",
+   "scale": "full",
+   "target_dims_m": [
+    3.0,
+    0.5,
+    0.5
+   ],
+   "cell_m": 0.05,
+   "priority": "P3",
+   "condition": "dead",
+   "gameplay_use": "Forest dressing / cover",
+   "brief": "Log with bark, branch stubs, moss on top and a rotted end.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "tree_stump",
+   "name": "Tree Stump",
+   "batch": "catalog_D",
+   "family": "D1_vegetation",
+   "category": "vegetation",
+   "scale": "full",
+   "target_dims_m": [
+    0.7,
+    0.7,
+    0.5
+   ],
+   "cell_m": 0.05,
+   "priority": "P3",
+   "condition": "dead",
+   "gameplay_use": "Forest/logging dressing",
+   "brief": "Saw-cut stump with rings and root flare.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "rock",
+   "name": "Rock",
+   "batch": "catalog_D",
+   "family": "D1_vegetation",
+   "category": "vegetation",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.5,
+    0.35
+   ],
+   "cell_m": 0.05,
+   "priority": "P3",
+   "condition": "n/a",
+   "gameplay_use": "Ground dressing",
+   "brief": "Weathered granite rock with lichen.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "boulder",
+   "name": "Boulder",
+   "batch": "catalog_D",
+   "family": "D1_vegetation",
+   "category": "vegetation",
+   "scale": "full",
+   "target_dims_m": [
+    2.2,
+    1.8,
+    1.4
+   ],
+   "cell_m": 0.1,
+   "priority": "P3",
+   "condition": "n/a",
+   "gameplay_use": "Landscape cover",
+   "brief": "Large boulder with moss on the north side and a fissure.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "trash_bin",
+   "name": "Wheelie Bin",
+   "batch": "catalog_D",
+   "family": "D2_exterior",
+   "category": "exterior",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.72,
+    1.05
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Street prop (game trash_bin)",
+   "brief": "Dark green wheelie bin, lid ajar, wheels and axle, a bag poking out.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "mailbox",
+   "name": "Mailbox",
+   "batch": "catalog_D",
+   "family": "D2_exterior",
+   "category": "exterior",
+   "scale": "full",
+   "target_dims_m": [
+    0.3,
+    0.5,
+    1.2
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Yard prop (game mailbox)",
+   "brief": "Post-mounted mailbox, flag up, post leaning slightly.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "outdoor_bench",
+   "name": "Outdoor Bench",
+   "batch": "catalog_D",
+   "family": "D2_exterior",
+   "category": "exterior",
+   "scale": "full",
+   "target_dims_m": [
+    1.6,
+    0.6,
+    0.85
+   ],
+   "cell_m": 0.05,
+   "priority": "P3",
+   "condition": "worn",
+   "gameplay_use": "Park/street prop",
+   "brief": "Park bench with weathered slats and dark cast ends.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "garden_table",
+   "name": "Garden Table",
+   "batch": "catalog_D",
+   "family": "D2_exterior",
+   "category": "exterior",
+   "scale": "full",
+   "target_dims_m": [
+    0.9,
+    0.9,
+    0.72
+   ],
+   "cell_m": 0.05,
+   "priority": "P3",
+   "condition": "worn",
+   "gameplay_use": "Yard prop",
+   "brief": "Weathered white plastic patio table with algae streaks and an umbrella hole.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "wooden_fence_section",
+   "name": "Wooden Fence Section",
+   "batch": "catalog_D",
+   "family": "D2_exterior",
+   "category": "exterior",
+   "scale": "full",
+   "target_dims_m": [
+    2.0,
+    0.15,
+    1.5
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Yard boundary",
+   "brief": "Board-on-rail fence panel with one board missing and one leaning.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "metal_fence_section",
+   "name": "Metal Fence Section",
+   "batch": "catalog_D",
+   "family": "D2_exterior",
+   "category": "exterior",
+   "scale": "full",
+   "target_dims_m": [
+    2.5,
+    0.1,
+    1.8
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Yard/industrial boundary",
+   "brief": "Chain-link panel with galvanised posts and top rail, sagging corner.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "streetlight",
+   "name": "Streetlight",
+   "batch": "catalog_D",
+   "family": "D2_exterior",
+   "category": "exterior",
+   "scale": "full",
+   "target_dims_m": [
+    0.4,
+    1.5,
+    5.5
+   ],
+   "cell_m": 0.1,
+   "priority": "P1",
+   "condition": "worn",
+   "gameplay_use": "Street prop (game streetlight_dead)",
+   "brief": "Steel pole with curved arm and cobra-head lamp (dead).",
+   "existing_claude": null
+  },
+  {
+   "base_id": "road_sign",
+   "name": "Road Sign",
+   "batch": "catalog_D",
+   "family": "D2_exterior",
+   "category": "exterior",
+   "scale": "full",
+   "target_dims_m": [
+    0.75,
+    0.1,
+    2.4
+   ],
+   "cell_m": 0.05,
+   "priority": "P3",
+   "condition": "worn",
+   "gameplay_use": "Street prop",
+   "brief": "Stop sign on a slightly bent post.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "traffic_cone",
+   "name": "Traffic Cone",
+   "batch": "catalog_D",
+   "family": "D2_exterior",
+   "category": "exterior",
+   "scale": "full",
+   "target_dims_m": [
+    0.36,
+    0.36,
+    0.7
+   ],
+   "cell_m": 0.025,
+   "priority": "P3",
+   "condition": "worn",
+   "gameplay_use": "Street prop",
+   "brief": "Orange cone with pale reflective bands, scuffed.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "wooden_pallet",
+   "name": "Wooden Pallet",
+   "batch": "catalog_D",
+   "family": "D2_exterior",
+   "category": "exterior",
+   "scale": "full",
+   "target_dims_m": [
+    1.2,
+    0.8,
+    0.15
+   ],
+   "cell_m": 0.025,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Building material / prop",
+   "brief": "Weathered grey pallet, one deck board cracked.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "utility_pole",
+   "name": "Utility Pole",
+   "batch": "catalog_D",
+   "family": "D2_exterior",
+   "category": "exterior",
+   "scale": "full",
+   "target_dims_m": [
+    2.0,
+    0.3,
+    9.0
+   ],
+   "cell_m": 0.1,
+   "priority": "P3",
+   "condition": "worn",
+   "gameplay_use": "Street prop",
+   "brief": "Wooden pole with crossarm, insulators, a transformer can and a dangling cut wire.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "bicycle_abandoned",
+   "name": "Abandoned Bicycle",
+   "batch": "catalog_D",
+   "family": "D2_exterior",
+   "category": "exterior",
+   "scale": "full",
+   "target_dims_m": [
+    1.7,
+    0.5,
+    0.35
+   ],
+   "cell_m": 0.025,
+   "priority": "P3",
+   "condition": "abandoned",
+   "gameplay_use": "Street dressing",
+   "brief": "Bicycle lying on its side, front wheel bent.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "family_car",
+   "name": "Family Car",
+   "batch": "catalog_D",
+   "family": "D3_vehicles",
+   "category": "vehicles",
+   "scale": "full",
+   "target_dims_m": [
+    1.8,
+    4.5,
+    1.45
+   ],
+   "cell_m": 0.1,
+   "priority": "P1",
+   "condition": "abandoned",
+   "gameplay_use": "Driveway/street prop (game car)",
+   "brief": "Unbranded hatchback/sedan in faded blue-grey, flat tyre, dust, a bag on the back seat.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "pickup_truck",
+   "name": "Pickup Truck",
+   "batch": "catalog_D",
+   "family": "D3_vehicles",
+   "category": "vehicles",
+   "scale": "full",
+   "target_dims_m": [
+    2.0,
+    5.3,
+    1.85
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Street prop",
+   "brief": "Faded maroon pickup, tailgate down, tarp and jerry can in the bed.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "police_car",
+   "name": "Police Car",
+   "batch": "catalog_D",
+   "family": "D3_vehicles",
+   "category": "vehicles",
+   "scale": "full",
+   "target_dims_m": [
+    1.9,
+    4.9,
+    1.55
+   ],
+   "cell_m": 0.1,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Police-station dressing",
+   "brief": "Generic navy/white patrol car with an unlit lightbar and push bar, a door open. No real department text.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "delivery_van",
+   "name": "Delivery Van",
+   "batch": "catalog_D",
+   "family": "D3_vehicles",
+   "category": "vehicles",
+   "scale": "full",
+   "target_dims_m": [
+    2.0,
+    5.4,
+    2.4
+   ],
+   "cell_m": 0.1,
+   "priority": "P3",
+   "condition": "abandoned",
+   "gameplay_use": "Street prop",
+   "brief": "Plain white box van, rear doors open, no logos.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "utility_truck_abandoned",
+   "name": "Abandoned Utility Truck",
+   "batch": "catalog_D",
+   "family": "D3_vehicles",
+   "category": "vehicles",
+   "scale": "full",
+   "target_dims_m": [
+    2.3,
+    6.5,
+    3.0
+   ],
+   "cell_m": 0.1,
+   "priority": "P3",
+   "condition": "abandoned",
+   "gameplay_use": "Street prop",
+   "brief": "Bucket truck in faded safety orange with stowed boom, cones on the back, rust and a flat tyre.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_family_house_small",
+   "name": "Map: Small Family House",
+   "batch": "catalog_E",
+   "family": "E1_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    10,
+    9,
+    6.5
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Nearby Homes)",
+   "brief": "Gable-roof single-storey house with porch and chimney.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_suburban_house_large",
+   "name": "Map: Large Suburban House",
+   "batch": "catalog_E",
+   "family": "E1_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    16,
+    11,
+    8
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Nearby Homes)",
+   "brief": "Two-storey house with attached garage and hip roof.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_apartment_block",
+   "name": "Map: Apartment Block",
+   "batch": "catalog_E",
+   "family": "E1_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    30,
+    14,
+    16
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Residential district)",
+   "brief": "Five-storey flat-roof block with balcony bands and a stair core.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_convenience_store",
+   "name": "Map: Convenience Store",
+   "batch": "catalog_E",
+   "family": "E1_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    14,
+    10,
+    5
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Food)",
+   "brief": "Flat-roof shop with glass front and blank parapet sign.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_supermarket",
+   "name": "Map: Supermarket",
+   "batch": "catalog_E",
+   "family": "E1_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    40,
+    28,
+    8
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Grocery Store (current destination))",
+   "brief": "Big box store with entrance canopy, loading dock and cart corral.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_diner",
+   "name": "Map: Diner",
+   "batch": "catalog_E",
+   "family": "E1_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    16,
+    9,
+    5
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Food)",
+   "brief": "Long diner with ribbon windows and a roof sign pole.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_restaurant",
+   "name": "Map: Restaurant",
+   "batch": "catalog_E",
+   "family": "E1_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    18,
+    14,
+    7
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Food)",
+   "brief": "Pitched-roof restaurant with patio.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_fast_food",
+   "name": "Map: Fast-Food Restaurant",
+   "batch": "catalog_E",
+   "family": "E1_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    14,
+    12,
+    6
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Food)",
+   "brief": "Fast-food building with drive-through lane and tall blank pole sign.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_hardware_store",
+   "name": "Map: Hardware Store",
+   "batch": "catalog_E",
+   "family": "E1_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    30,
+    22,
+    8
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Hardware Store (current destination))",
+   "brief": "Store with fenced lumber/garden yard.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_lumberyard",
+   "name": "Map: Lumberyard / Sawmill",
+   "batch": "catalog_E",
+   "family": "E1_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    40,
+    30,
+    10
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Construction)",
+   "brief": "Open-sided saw shed, log piles, stacked lumber, conveyor.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_industrial_warehouse",
+   "name": "Map: Industrial Warehouse",
+   "batch": "catalog_E",
+   "family": "E1_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    40,
+    24,
+    10
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Construction)",
+   "brief": "Corrugated warehouse with loading doors and roof vents.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_scrapyard",
+   "name": "Map: Scrapyard",
+   "batch": "catalog_E",
+   "family": "E1_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    30,
+    24,
+    6
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Construction)",
+   "brief": "Office shed, fence, stacked wrecks and a crane.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_gun_shop",
+   "name": "Map: Gun Shop",
+   "batch": "catalog_E",
+   "family": "E2_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    12,
+    10,
+    5
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Weapons)",
+   "brief": "Small fortified store with barred windows.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_shooting_range",
+   "name": "Map: Shooting Range",
+   "batch": "catalog_E",
+   "family": "E2_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    30,
+    16,
+    5
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Weapons)",
+   "brief": "Long low building with outdoor lanes, berm and target frames.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_police_station",
+   "name": "Map: Police Station",
+   "batch": "catalog_E",
+   "family": "E2_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    28,
+    18,
+    8
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Weapons)",
+   "brief": "Two-storey station with flagpole, navy band, radio mast and patrol cars.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_medical_clinic",
+   "name": "Map: Medical Clinic",
+   "batch": "catalog_E",
+   "family": "E2_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    18,
+    12,
+    5
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Medical Clinic (current destination))",
+   "brief": "Single-storey clinic with cross sign and ambulance canopy.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_pharmacy",
+   "name": "Map: Pharmacy",
+   "batch": "catalog_E",
+   "family": "E2_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    14,
+    12,
+    5
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Medical)",
+   "brief": "Corner pharmacy with green cross sign.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_veterinary_clinic",
+   "name": "Map: Veterinary Clinic",
+   "batch": "catalog_E",
+   "family": "E2_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    14,
+    10,
+    5
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Medical)",
+   "brief": "Small clinic with a fenced dog run.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_hospital",
+   "name": "Map: Hospital",
+   "batch": "catalog_E",
+   "family": "E2_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    50,
+    36,
+    20
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Medical)",
+   "brief": "Main tower with wings, rooftop helipad, ER canopy and cross sign.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_military_outpost",
+   "name": "Map: Military Outpost",
+   "batch": "catalog_E",
+   "family": "E2_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    34,
+    28,
+    5
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Weapons)",
+   "brief": "Isolated, guarded compound: prefab barracks, sandbag and barrier perimeter, gate, tents.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_guard_tower",
+   "name": "Map: Guard Tower",
+   "batch": "catalog_E",
+   "family": "E2_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    4,
+    4,
+    9
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Weapons)",
+   "brief": "Stilt watchtower with cabin and ladder.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_quarry",
+   "name": "Map: Quarry Structures",
+   "batch": "catalog_E",
+   "family": "E2_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    40,
+    32,
+    12
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Construction)",
+   "brief": "Crusher tower, conveyor, gravel piles and site office.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_gas_station",
+   "name": "Map: Gas Station",
+   "batch": "catalog_E",
+   "family": "E2_map_buildings",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    26,
+    20,
+    6
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "abandoned",
+   "gameplay_use": "Regional-map destination (Fuel)",
+   "brief": "Pump canopy, kiosk shop and blank price sign.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_road_straight",
+   "name": "Map: Straight Road",
+   "batch": "catalog_E",
+   "family": "E3_map_infrastructure",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    20,
+    20,
+    0.5
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Regional-map infrastructure piece",
+   "brief": "Two-lane road tile with dashed centre line, kerbs, sidewalks and verges.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_road_curve",
+   "name": "Map: Road Curve",
+   "batch": "catalog_E",
+   "family": "E3_map_infrastructure",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    20,
+    20,
+    0.5
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Regional-map infrastructure piece",
+   "brief": "90-degree road curve tile matching the straight tile.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_road_intersection",
+   "name": "Map: Intersection",
+   "batch": "catalog_E",
+   "family": "E3_map_infrastructure",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    20,
+    20,
+    0.5
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Regional-map infrastructure piece",
+   "brief": "Four-way junction tile with crosswalks.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_bridge",
+   "name": "Map: Bridge",
+   "batch": "catalog_E",
+   "family": "E3_map_infrastructure",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    12,
+    40,
+    8
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Regional-map infrastructure piece",
+   "brief": "Two-span concrete road bridge on piers with railings.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_railway_crossing",
+   "name": "Map: Railway Crossing",
+   "batch": "catalog_E",
+   "family": "E3_map_infrastructure",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    20,
+    20,
+    3
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Regional-map infrastructure piece",
+   "brief": "Road tile crossed by rails with crossing signals and barriers.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_harbor_dock",
+   "name": "Map: Harbour Dock",
+   "batch": "catalog_E",
+   "family": "E3_map_infrastructure",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    30,
+    20,
+    3
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Regional-map infrastructure piece",
+   "brief": "Concrete quay with bollards, a small crane and stacked crates.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_small_pier",
+   "name": "Map: Small Pier",
+   "batch": "catalog_E",
+   "family": "E3_map_infrastructure",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    6,
+    24,
+    2
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Regional-map infrastructure piece",
+   "brief": "Wooden pier on piles.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_seawall",
+   "name": "Map: Concrete Seawall",
+   "batch": "catalog_E",
+   "family": "E3_map_infrastructure",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    20,
+    6,
+    4
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Regional-map infrastructure piece",
+   "brief": "Stepped concrete seawall section.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "map_road_barrier",
+   "name": "Map: Road Barrier",
+   "batch": "catalog_E",
+   "family": "E3_map_infrastructure",
+   "category": "regional",
+   "scale": "map",
+   "target_dims_m": [
+    20,
+    4,
+    2
+   ],
+   "cell_m": 0.5,
+   "priority": "P2",
+   "condition": "worn",
+   "gameplay_use": "Regional-map infrastructure piece",
+   "brief": "Checkpoint roadblock: concrete barriers, boom gate and cones.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "player_survivor",
+   "name": "Player Survivor",
+   "batch": "catalog_F",
+   "family": "F1_characters",
+   "category": "characters",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.4,
+    1.75
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "n/a",
+   "gameplay_use": "Player character reference",
+   "brief": "Dark jacket, orange beanie and scarf (the one warm accent), brown strap, olive backpack (matches the game).",
+   "existing_claude": null
+  },
+  {
+   "base_id": "psycho_ordinary",
+   "name": "Ordinary Psycho",
+   "batch": "catalog_F",
+   "family": "F1_characters",
+   "category": "characters",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.5,
+    1.72
+   ],
+   "cell_m": 0.05,
+   "priority": "P1",
+   "condition": "n/a",
+   "gameplay_use": "Enemy archetype (current)",
+   "brief": "Disturbed ordinary person, not a zombie: hunched, limping, arms hanging forward, torn office clothes, stains.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "psycho_runner",
+   "name": "Runner",
+   "batch": "catalog_F",
+   "family": "F1_characters",
+   "category": "characters",
+   "scale": "full",
+   "target_dims_m": [
+    0.6,
+    0.6,
+    1.7
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "n/a",
+   "gameplay_use": "Enemy archetype: fast, fragile",
+   "brief": "Lean figure in torn running clothes, forward-leaning sprint pose, light silhouette.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "psycho_brute",
+   "name": "Brute",
+   "batch": "catalog_F",
+   "family": "F1_characters",
+   "category": "characters",
+   "scale": "full",
+   "target_dims_m": [
+    0.9,
+    0.6,
+    1.95
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "n/a",
+   "gameplay_use": "Enemy archetype: slow, tough",
+   "brief": "Heavy figure with broad shoulders, thick arms, work overalls and apron.",
+   "existing_claude": null
+  },
+  {
+   "base_id": "psycho_bomber",
+   "name": "Suicide Bomber",
+   "batch": "catalog_F",
+   "family": "F1_characters",
+   "category": "characters",
+   "scale": "full",
+   "target_dims_m": [
+    0.7,
+    0.55,
+    1.75
+   ],
+   "cell_m": 0.05,
+   "priority": "P2",
+   "condition": "n/a",
+   "gameplay_use": "Enemy archetype: targets walls, telegraphed",
+   "brief": "Figure with a fictional hazard harness: striped canisters and a warning beacon on a back frame. No realistic explosive detail.",
+   "existing_claude": null
+  }
+ ]
+}

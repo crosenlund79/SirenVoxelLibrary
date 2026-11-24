@@ -86,28 +86,106 @@ _ROWS: list[list[tuple[str, str]]] = [
      ("stone_dark", "#68645E"), ("moss", "#646C4F"), ("moss_dark", "#4E5540")],
 ]
 
-PALETTE_ROLES: dict[str, int] = {}
-_RGB: list[tuple[int, int, int]] = []
-for r, row in enumerate(_ROWS):
-    assert len(row) <= 8
-    for c in range(8):
-        idx = r * 8 + c + 1
-        if c < len(row):
-            name, hexv = row[c]
-            assert name not in PALETTE_ROLES, name
-            PALETTE_ROLES[name] = idx
-            _RGB.append(tuple(int(hexv[i:i + 2], 16) for i in (1, 3, 5)))
-        else:  # unused slot in a material row: neutral grey
-            _RGB.append((128, 128, 128))
-# Remaining slots: a smooth neutral ramp so the palette stays usable in an editor.
-while len(_RGB) < 255:
-    k = len(_RGB) - len(_ROWS) * 8
-    n = 255 - len(_ROWS) * 8
-    v = int(round(250 - 230 * k / max(1, n - 1)))
-    _RGB.append((v, v, v))
+# ---------------------------------------------------------------------------
+# Palette v2 (catalog): rows 15-29 append new material families. Rows 1-14 are the
+# pilot palette and never change, so pilot colours keep their exact indices.
+# ---------------------------------------------------------------------------
+_ROWS_V2: list[list[tuple[str, str]]] = [
+    # 113-120 ceramic, enamel and old "almond" appliances
+    [("porcelain_hi", "#EAE7DF"), ("porcelain", "#DAD6CC"), ("porcelain_mid", "#C5C0B5"),
+     ("porcelain_shadow", "#ABA69B"), ("porcelain_deep", "#8D897F"), ("almond", "#CFC5AC"),
+     ("almond_dark", "#AFA58D"), ("chrome", "#C4C9C7")],
+    # 121-128 glass, screens, mirror, lamp glass (opaque stylisation, no transparency)
+    [("glass_hi", "#A7BDC2"), ("glass", "#829A9F"), ("glass_dark", "#5E7378"),
+     ("glass_deep", "#42535A"), ("screen", "#262C2F"), ("screen_sheen", "#48555A"),
+     ("mirror", "#BAC6C6"), ("bulb_warm", "#E2CF9C")],
+    # 129-136 upholstery: slate (sofa) and mauve (bedding) - matches the game's prop colours
+    [("slate_hi", "#74848B"), ("slate", "#5E6D74"), ("slate_dark", "#4B585E"),
+     ("slate_deep", "#3A4449"), ("mauve_hi", "#BFA3A0"), ("mauve", "#A98C89"),
+     ("mauve_dark", "#8C7270"), ("mauve_deep", "#6C5856")],
+    # 137-144 upholstery: mustard and terracotta / rust fabric
+    [("mustard_hi", "#C3A05A"), ("mustard", "#AA8847"), ("mustard_dark", "#876B38"),
+     ("mustard_deep", "#63502C"), ("terra_hi", "#AA6E52"), ("terra", "#925A41"),
+     ("terra_dark", "#744733"), ("terra_deep", "#573628")],
+    # 145-152 kitchen sage and faded teal paint
+    [("sage_hi", "#93A193"), ("sage", "#7A887B"), ("sage_dark", "#637064"),
+     ("sage_deep", "#4C574D"), ("teal_hi", "#6F8C8A"), ("teal", "#587372"),
+     ("teal_dark", "#445A59"), ("teal_deep", "#334443")],
+    # 153-160 leather and cardboard
+    [("leather_hi", "#94694B"), ("leather", "#7A553C"), ("leather_dark", "#5E402E"),
+     ("leather_deep", "#432E22"), ("card_hi", "#C2A47A"), ("card", "#A88A62"),
+     ("card_dark", "#8A714F"), ("card_deep", "#6A573E")],
+    # 161-168 skin tones (three ramps) and a pallid tone for the psychos
+    [("skin1_hi", "#DDB99E"), ("skin1", "#C9A085"), ("skin1_shadow", "#AC846B"),
+     ("skin2", "#A97A5D"), ("skin2_shadow", "#8B6249"), ("skin3", "#74513D"),
+     ("skin3_shadow", "#5A3E2F"), ("skin_pallid", "#B9AFA0")],
+    # 169-176 hair and everyday clothing
+    [("hair_black", "#2A2524"), ("hair_brown", "#594230"), ("hair_grey", "#8C8781"),
+     ("denim_hi", "#6A7C8E"), ("denim", "#536476"), ("denim_dark", "#414F5E"),
+     ("khaki", "#9C8D6E"), ("khaki_dark", "#7B6F57")],
+    # 177-184 living leaves and grass
+    [("leaf_hi", "#869B63"), ("leaf", "#6F8551"), ("leaf_mid", "#5C7044"),
+     ("leaf_dark", "#495B37"), ("leaf_deep", "#37452B"), ("grass_hi", "#94A066"),
+     ("grass", "#7B8851"), ("grass_dry", "#A79D6B")],
+    # 185-192 healthy conifer greens, dead leaves and twigs
+    [("conifer_hi", "#627D5C"), ("conifer", "#4E6849"), ("conifer_mid", "#41583F"),
+     ("conifer_dark", "#344835"), ("conifer_deep", "#283629"), ("dead_leaf", "#9C7F55"),
+     ("dead_leaf_dark", "#7A6243"), ("twig", "#6A5A47")],
+    # 193-200 asphalt, road paint, kerbs and gravel
+    [("asphalt_hi", "#626463"), ("asphalt", "#4F5151"), ("asphalt_dark", "#3F4142"),
+     ("asphalt_deep", "#313334"), ("line_white", "#CDCBC1"), ("line_yellow", "#BFA352"),
+     ("curb", "#A09F97"), ("gravel", "#8C877D")],
+    # 201-208 signal accents - rare and purposeful (medical cross, hazard, cones, lightbars)
+    [("signal_red", "#A8463B"), ("signal_red_dark", "#7E3229"), ("hazard_yellow", "#C8A63F"),
+     ("hazard_yellow_dark", "#9A7E2D"), ("safety_orange", "#C26C36"),
+     ("safety_orange_dark", "#91512A"), ("lamp_blue", "#4E78A3"), ("lamp_red", "#B04B43")],
+    # 209-216 vehicle and painted-metal finishes
+    [("paint_white", "#D0CEC6"), ("paint_white_shadow", "#B0AEA6"), ("navy", "#3E4A5B"),
+     ("navy_dark", "#2F3846"), ("maroon", "#703F3C"), ("maroon_dark", "#57302E"),
+     ("beige", "#AA9D80"), ("beige_dark", "#8B8068")],
+    # 217-224 roofing and siding (construction and map buildings)
+    [("roof_hi", "#6E7274"), ("roof", "#5A5E61"), ("roof_dark", "#474B4E"),
+     ("shingle_brown", "#6B5A4D"), ("siding_cream", "#C9C2AE"), ("siding_blue", "#8D9DA2"),
+     ("siding_sage", "#94A091"), ("siding_yellow", "#BBAA80")],
+    # 225-232 plastics, labels and foil
+    [("bottle_hi", "#A3BBC4"), ("bottle", "#7F9CA8"), ("bottle_cap", "#4E6E86"),
+     ("label_red", "#9C4A3A"), ("label_green", "#5F7752"), ("label_blue", "#556F8A"),
+     ("label_cream", "#D9CFB3"), ("foil", "#9EA3A1")],
+]
 
-PALETTE_RGB = np.array([(0, 0, 0)] + _RGB, dtype=np.uint8)  # index 0 = empty
-assert PALETTE_RGB.shape == (256, 3)
+
+def _build_palette(rows):
+    roles: dict[str, int] = {}
+    rgb: list[tuple[int, int, int]] = []
+    for r, row in enumerate(rows):
+        assert len(row) <= 8
+        for c in range(8):
+            idx = r * 8 + c + 1
+            if c < len(row):
+                name, hexv = row[c]
+                assert name not in roles, name
+                roles[name] = idx
+                rgb.append(tuple(int(hexv[i:i + 2], 16) for i in (1, 3, 5)))
+            else:  # unused slot in a material row: neutral grey
+                rgb.append((128, 128, 128))
+    # Remaining slots: a smooth neutral ramp so the palette stays usable in an editor.
+    while len(rgb) < 255:
+        k = len(rgb) - len(rows) * 8
+        n = 255 - len(rows) * 8
+        v = int(round(250 - 230 * k / max(1, n - 1)))
+        rgb.append((v, v, v))
+    pal = np.array([(0, 0, 0)] + rgb, dtype=np.uint8)  # index 0 = empty
+    assert pal.shape == (256, 3)
+    return roles, pal
+
+
+# v1: the pilot palette (Claude_pilot_001 files embed exactly this).
+_ROLES_V1, PALETTE_RGB_V1 = _build_palette(_ROWS)
+# v2: the catalog palette = v1 rows + the new rows. Default for every new model.
+PALETTE_ROLES, PALETTE_RGB = _build_palette(_ROWS + _ROWS_V2)
+assert np.array_equal(PALETTE_RGB[1:113], PALETTE_RGB_V1[1:113])
+assert len({tuple(c) for c in PALETTE_RGB[1:]}) == 255, "palette v2 colours must be unique"
+PALETTES = {1: PALETTE_RGB_V1, 2: PALETTE_RGB}
 
 
 def P(name: str) -> int:
@@ -120,6 +198,12 @@ def role_of(index: int) -> str | None:
         if v == index:
             return k
     return None
+
+
+def palette_table() -> list[dict]:
+    """All named palette roles (index, role, hex) - for documentation."""
+    return [{"index": i, "role": k, "hex": "#%02X%02X%02X" % tuple(PALETTE_RGB[i])}
+            for k, i in sorted(PALETTE_ROLES.items(), key=lambda kv: kv[1])]
 
 
 def hash01(*args: int, seed: int = 0) -> float:
@@ -310,3 +394,87 @@ def vox_to_grid(info) -> np.ndarray:
     vx = info["voxels"]
     g[vx[:, 0], vx[:, 1], vx[:, 2]] = vx[:, 3]
     return g
+
+
+# ---------------------------------------------------------------------------
+# Extra drawing helpers (catalog). Methods are attached to Grid so generators
+# can call g.cyl_x(...), g.ellipsoid(...), etc. All ranges are inclusive cells.
+# ---------------------------------------------------------------------------
+def _cyl_axis(self, axis: int, ca: float, cb: float, r: float, t0: int, t1: int, c,
+              wall: float | None = None):
+    """Cylinder along `axis` (0=x, 1=y, 2=z); (ca, cb) is the centre in the other two
+    axes (in increasing axis order), in cell units (use n + 0.5 for a cell centre)."""
+    lo, hi = min(t0, t1), max(t0, t1)
+    for (i, j) in self.disc_cells(ca, cb, r):
+        if wall is not None and math.hypot(i + 0.5 - ca, j + 0.5 - cb) < r - wall:
+            continue
+        if axis == 0:
+            self.box(lo, i, j, hi, i, j, c)
+        elif axis == 1:
+            self.box(i, lo, j, i, hi, j, c)
+        else:
+            self.box(i, j, lo, i, j, hi, c)
+
+
+def _cyl_x(self, cy, cz, r, x0, x1, c, wall=None):
+    """Horizontal cylinder along X; centre (cy, cz) in cell units."""
+    _cyl_axis(self, 0, cy, cz, r, x0, x1, c, wall)
+
+
+def _cyl_y(self, cx, cz, r, y0, y1, c, wall=None):
+    """Horizontal cylinder along Y; centre (cx, cz) in cell units."""
+    _cyl_axis(self, 1, cx, cz, r, y0, y1, c, wall)
+
+
+def _ellipsoid(self, cx, cy, cz, rx, ry, rz, c, shell: float | None = None, only_empty=False):
+    """Ellipsoid centred at (cx, cy, cz) in cell units (cell centres at n + 0.5).
+    shell: keep only cells within that normalised thickness of the surface (0..1)."""
+    for x in range(int(math.floor(cx - rx)), int(math.ceil(cx + rx)) + 1):
+        for y in range(int(math.floor(cy - ry)), int(math.ceil(cy + ry)) + 1):
+            for z in range(int(math.floor(cz - rz)), int(math.ceil(cz + rz)) + 1):
+                d = (((x + 0.5 - cx) / rx) ** 2 + ((y + 0.5 - cy) / ry) ** 2 +
+                     ((z + 0.5 - cz) / rz) ** 2)
+                if d > 1.0:
+                    continue
+                if shell is not None and d < (1.0 - shell) ** 2:
+                    continue
+                if only_empty and self.get(x, y, z):
+                    continue
+                self.set(x, y, z, c)
+
+
+def _rbox(self, x0, y0, z0, x1, y1, z1, c, r: int = 1):
+    """Box whose four vertical edges are chamfered by r cells (softens silhouettes)."""
+    self.box(x0, y0, z0, x1, y1, z1, c)
+    for k in range(r):
+        cut = r - k
+        for (xa, xb) in ((x0 + k, x0 + k), (x1 - k, x1 - k)):
+            for (ya, yb) in ((y0, y0 + cut - 1), (y1 - cut + 1, y1)):
+                self.clear(xa, ya, z0, xb, yb, z1)
+
+
+def _place(self, other, x, y, z, skip_empty=True):
+    """Paste another Grid / ndarray with its minimum corner at (x, y, z)."""
+    a = other.v if hasattr(other, "v") else np.asarray(other)
+    nx, ny, nz = self.v.shape
+    for (i, j, k) in np.argwhere(a > 0) if skip_empty else np.argwhere(np.ones_like(a)):
+        X, Y, Z = x + i, y + j, z + k
+        if 0 <= X < nx and 0 <= Y < ny and 0 <= Z < nz:
+            self.v[X, Y, Z] = a[i, j, k]
+
+
+def _mirror_x(self, x_mid2: int):
+    """Mirror the occupied cells across the plane x = x_mid2 / 2 (in cell-edge units),
+    only filling empty target cells. E.g. a model spanning 0..19 uses x_mid2 = 19."""
+    for (i, j, k) in np.argwhere(self.v > 0):
+        t = x_mid2 - i
+        if 0 <= t < self.v.shape[0] and not self.v[t, j, k]:
+            self.v[t, j, k] = self.v[i, j, k]
+
+
+Grid.cyl_x = _cyl_x
+Grid.cyl_y = _cyl_y
+Grid.ellipsoid = _ellipsoid
+Grid.rbox = _rbox
+Grid.place = _place
+Grid.mirror_x = _mirror_x

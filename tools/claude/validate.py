@@ -1,6 +1,6 @@
 """Validate Claude's candidates against the library rules (docs/EXPORT_RULES.md section 5).
 
-    python3 tools/claude/validate.py [--json out.json]
+    python3 tools/claude/validate.py [ids...] [--batch catalog_A] [--fast] [--json out.json]
 
 Required: numpy. Optional independent checks run when available and are reported as
 'skipped' otherwise:
@@ -83,7 +83,8 @@ def check_vox(meta, path):
     assert len(np.unique(keys)) == len(vox), "duplicate voxel coordinates"
     assert (vox[:, 3] >= 1).all(), "colour index 0 used for an occupied voxel"
     assert (pal[vox[:, 3], 3] == 255).all(), "voxel references an undefined palette entry"
-    assert np.array_equal(pal[1:, :3], vk.PALETTE_RGB[1:]), "palette differs from Claude palette"
+    pv = meta.get("palette_version", 1)
+    assert np.array_equal(pal[1:, :3], vk.PALETTES[pv][1:]), f"palette differs from Claude palette v{pv}"
     grid = vk.vox_to_grid(info)
     cell = meta["voxel_size_m"]
     assert len(vox) == meta["occupied_voxels"], (len(vox), meta["occupied_voxels"])
@@ -101,7 +102,20 @@ def check_vox(meta, path):
                 "ground_cells": int(base.sum()), "components_6conn": comps[:5],
                 "single_connected_piece": len(comps) == 1,
                 "palette_indices_used": int(len(np.unique(vox[:, 3])))})
-    assert len(comps) == 1, f"disconnected pieces: {comps[:6]}"
+    allowed = int(meta.get("allowed_components", 1))
+    if allowed > 1:
+        assert meta.get("components_reason"), "allowed_components needs components_reason"
+        res["single_connected_piece"] = f"{len(comps)} pieces, documented: {meta['components_reason']}"
+    assert len(comps) <= allowed, f"disconnected pieces: {comps[:6]} (allowed {allowed})"
+    # art lint: interior cells that can never be seen (all 6 neighbours occupied)
+    occ = np.pad(grid > 0, 1)
+    core = occ[1:-1, 1:-1, 1:-1]
+    hidden = core.copy()
+    for ax in range(3):
+        for sh in (1, -1):
+            hidden &= np.roll(occ, sh, axis=ax)[1:-1, 1:-1, 1:-1]
+    res["hidden_interior_voxels"] = int(hidden.sum())
+    res["hidden_ratio"] = round(float(hidden.sum()) / len(vox), 3)
     return res, grid, pal
 
 
@@ -244,43 +258,97 @@ def check_naming(m, meta):
     a = meta["id"]
     assert a == f"Claude_{meta['base_id']}" and meta["creator"] == "Claude"
     assert meta["source"] == f"{a}.vox" and meta["derived"]["glb"] == f"{a}.glb"
-    assert m["source_path"] == f"models/{meta['category']}/{a}/{a}.vox"
-    assert meta["status"] == "candidate" and m["status"] == "candidate", "must stay candidate"
+    assert meta["status"] == "candidate", "must stay candidate"
+    if m is not None:
+        assert m["source_path"] == f"models/{meta['category']}/{a}/{a}.vox"
+        assert m["status"] == "candidate", "catalog entry must stay candidate"
+    if meta.get("spec"):
+        assert (ROOT / meta["spec"]).exists(), f"missing spec {meta['spec']}"
     for v in ("hero", "front", "side", "scale"):
         p = ROOT / "previews" / meta["category"] / a / f"{v}.png"
         assert p.exists(), f"missing preview {p}"
     return "pass"
 
 
+BUDGET = {0.0125: 12000, 0.025: 15000, 0.05: 20000, 0.1: 30000, 0.2: 30000, 0.5: 30000}
+PILOT = {"workbench_worn", "rain_collector_basic", "wood_stove_compact", "single_bed_unmade",
+         "pine_dead_small"}
+
+
+def lint(meta, vres):
+    """Art/tech warnings that do not fail the build but must be looked at."""
+    w = []
+    n = meta["occupied_voxels"]
+    budget = BUDGET.get(meta["voxel_size_m"], 20000)
+    if n > budget:
+        w.append(f"{n} voxels exceeds the {budget} guide for {meta['voxel_size_m']} m cells")
+    if n > 80000:
+        w.append("over the viewer's 80,000-voxel part cap")
+    if vres.get("hidden_ratio", 0) > 0.25:
+        w.append(f"{vres['hidden_ratio']:.0%} of voxels are invisible interior fill - hollow it out")
+    if n < 40:
+        w.append("fewer than 40 voxels - is it readable?")
+    return w
+
+
 def main():
+    args = sys.argv[1:]
+    fast = "--fast" in args
+    skip = {args[args.index(f) + 1] for f in ("--json", "--batch") if f in args}
+    want = [a for a in args if not a.startswith("--") and a not in skip]
+    batch = args[args.index("--batch") + 1] if "--batch" in args else None
     cat = json.loads((ROOT / "catalog.json").read_text())
+    by_id = {m["id"]: m for m in cat["models"]}
     report = {"models": {}, "catalog": {}}
     ok = True
     creators = Counter(m["creator"] for m in cat["models"])
     report["catalog"] = {"entries_by_creator": dict(creators)}
-    for m in cat["models"]:
-        if m["creator"] != "Claude":
-            continue           # never inspect or touch the rival's files
-        meta = json.loads((ROOT / m["metadata_path"]).read_text())
-        path = ROOT / m["source_path"]
+    metas = []
+    for mp in sorted(ROOT.glob("models/*/Claude_*/model.json")):
+        meta = json.loads(mp.read_text())
+        if want and meta["base_id"] not in want and meta["id"] not in want:
+            continue
+        if batch and meta.get("batch") not in (batch, f"Claude_{batch}"):
+            continue
+        metas.append((mp, meta))
+    for mp, meta in metas:
+        m = by_id.get(meta["id"])          # catalog entry, if synced yet
+        path = mp.parent / meta["source"]
         r = {}
         try:
             r["naming_and_status"] = check_naming(m, meta)
             r["vox"], grid, pal = check_vox(meta, path)
             r["py_vox_io"] = check_pyvox(path, grid, pal)
-            r["goxel_import"] = check_goxel(path, grid, pal)
-            r["glb"] = check_glb(meta, ROOT / m["derived_paths"][0], grid, pal)
-            r["result"] = "pass"
+            r["goxel_import"] = "skipped (--fast)" if fast else check_goxel(path, grid, pal)
+            glb = mp.parent / meta["derived"]["glb"]
+            if fast:
+                os.environ.pop("GLTF_VALIDATOR_DIR", None)
+            r["glb"] = check_glb(meta, glb, grid, pal)
+            if not fast:
+                assert r["glb"]["khronos_gltf_validator"].startswith(("pass", "skipped")), \
+                    r["glb"]["khronos_gltf_validator"]
+            r["warnings"] = lint(meta, r["vox"])
+            r["result"] = "pass" + (f" ({len(r['warnings'])} warnings)" if r["warnings"] else "")
         except AssertionError as e:
             ok = False
             r["result"] = f"FAIL: {e}"
         report["models"][meta["id"]] = r
-        print(f"{meta['id']:32s} {r['result']}")
-    sheet = ROOT / "previews" / "batches" / "Claude_pilot_001.png"
-    report["contact_sheet"] = "present" if sheet.exists() else "MISSING"
-    if "--json" in sys.argv:
-        Path(sys.argv[sys.argv.index("--json") + 1]).write_text(json.dumps(report, indent=2))
-    print(json.dumps(report, indent=1, default=str)[:6000])
+        print(f"{meta['id']:40s} {r['result']}")
+        for w in r.get("warnings", []):
+            print(f"{'':40s}   warning: {w}")
+    # catalog consistency (only when the whole library is checked)
+    if not want and not batch:
+        on_disk = {meta["id"] for _, meta in metas}
+        in_cat = {m["id"] for m in cat["models"] if m["creator"] == "Claude"}
+        report["catalog"]["claude_missing_from_catalog"] = sorted(on_disk - in_cat)
+        report["catalog"]["claude_catalog_without_files"] = sorted(in_cat - on_disk)
+        if on_disk != in_cat:
+            ok = False
+            print("catalog mismatch:", report["catalog"])
+    if "--json" in args:
+        Path(args[args.index("--json") + 1]).write_text(json.dumps(report, indent=2, default=str))
+    passed = sum(1 for r in report["models"].values() if r["result"].startswith("pass"))
+    print(f"{passed}/{len(report['models'])} models pass")
     sys.exit(0 if ok else 1)
 
 
