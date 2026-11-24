@@ -21,14 +21,14 @@ Big corrugated front-gabled shed with three tall loading doors (one torn open) a
 - Width (X): 18.0 m
 - Depth (Y): 14.0 m
 - Height (Z): 10.5 m
-- Grid: 36 x 28 x 21 cells at 0.5 m (map tier), 3,780 occupied voxels
+- Grid: 36 x 28 x 21 cells at 0.5 m (map tier), 3,776 occupied voxels
 - Front direction: +Y (library voxel)
 - Front: +Y is the street side / main entrance.
 - Pivot: Bottom centre of the occupied footprint at ground level. (pivot_voxel [18.0, 14.0, 0.0])
 - Resolution rationale: 50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.
 
 ## Materials and colors
-`black`, `concrete`, `concrete_dark`, `galv`, `galv_dark`, `galv_hi`, `glass_dark`, `gravel`, `green`, `green_dark`, `hazard_yellow_dark`, `roof_hi`, `steel`, `steel_dark`
+`black`, `bluegrey`, `bluegrey_dark`, `concrete`, `concrete_dark`, `galv`, `galv_dark`, `galv_hi`, `glass_dark`, `gravel`, `green`, `green_dark`, `hazard_yellow_dark`, `roof_hi`, `steel`, `steel_dark`
 
 ## Details included
 - Corrugated steel walls on a concrete base, panel seams every 2 m

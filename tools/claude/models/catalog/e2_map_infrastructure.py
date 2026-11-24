@@ -303,8 +303,8 @@ def harbor_dock():
     S0, S1 = 17, 20                                        # steps between two fenders
     for x in (5, 14):
         g.box(x, 0, 1, x + 1, 0, 2, "black")
-    for y in (2, 10, 18, 26):                              # bollards
-        g.set(X0 + 1, y, 3, "iron")
+    for y in (2, 10, 18, 26):                              # bollards (camera side
+        g.set(X0 + 1, y if y != 18 else 15, 3, "iron")     # skips the cut-in steps)
         g.set(X1 - 1, y, 3, "iron")
     # steps down to the water on the -X side
     g.clear(X0, S0, 1, X0 + 1, S1, 2)

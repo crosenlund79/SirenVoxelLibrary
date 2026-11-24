@@ -3814,6 +3814,838 @@
       "batch": "Claude_catalog_C",
       "scale_family": "full",
       "condition": "used"
+    },
+    {
+      "id": "Claude_apartment_block",
+      "base_id": "apartment_block",
+      "creator": "Claude",
+      "name": "Apartment Block",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_apartment_block/Claude_apartment_block.vox",
+      "metadata_path": "models/map/Claude_apartment_block/model.json",
+      "preview_path": "previews/map/Claude_apartment_block/",
+      "derived_paths": [
+        "models/map/Claude_apartment_block/Claude_apartment_block.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        12.0,
+        9.0,
+        17.0
+      ],
+      "occupied_voxels": 3716,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_bridge",
+      "base_id": "bridge",
+      "creator": "Claude",
+      "name": "Bridge",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_bridge/Claude_bridge.vox",
+      "metadata_path": "models/map/Claude_bridge/model.json",
+      "preview_path": "previews/map/Claude_bridge/",
+      "derived_paths": [
+        "models/map/Claude_bridge/Claude_bridge.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        8.5,
+        20.0,
+        2.5
+      ],
+      "occupied_voxels": 955,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_clinic",
+      "base_id": "clinic",
+      "creator": "Claude",
+      "name": "Medical Clinic",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_clinic/Claude_clinic.vox",
+      "metadata_path": "models/map/Claude_clinic/model.json",
+      "preview_path": "previews/map/Claude_clinic/",
+      "derived_paths": [
+        "models/map/Claude_clinic/Claude_clinic.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        11.0,
+        11.0,
+        6.0
+      ],
+      "occupied_voxels": 1330,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_convenience_store",
+      "base_id": "convenience_store",
+      "creator": "Claude",
+      "name": "Convenience Store",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_convenience_store/Claude_convenience_store.vox",
+      "metadata_path": "models/map/Claude_convenience_store/model.json",
+      "preview_path": "previews/map/Claude_convenience_store/",
+      "derived_paths": [
+        "models/map/Claude_convenience_store/Claude_convenience_store.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        8.0,
+        9.0,
+        5.0
+      ],
+      "occupied_voxels": 814,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_diner",
+      "base_id": "diner",
+      "creator": "Claude",
+      "name": "Diner",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_diner/Claude_diner.vox",
+      "metadata_path": "models/map/Claude_diner/model.json",
+      "preview_path": "previews/map/Claude_diner/",
+      "derived_paths": [
+        "models/map/Claude_diner/Claude_diner.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        11.0,
+        8.0,
+        6.5
+      ],
+      "occupied_voxels": 917,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_fast_food",
+      "base_id": "fast_food",
+      "creator": "Claude",
+      "name": "Fast-Food Restaurant",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_fast_food/Claude_fast_food.vox",
+      "metadata_path": "models/map/Claude_fast_food/model.json",
+      "preview_path": "previews/map/Claude_fast_food/",
+      "derived_paths": [
+        "models/map/Claude_fast_food/Claude_fast_food.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        9.0,
+        10.0,
+        6.0
+      ],
+      "occupied_voxels": 807,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_gas_station",
+      "base_id": "gas_station",
+      "creator": "Claude",
+      "name": "Gas Station",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_gas_station/Claude_gas_station.vox",
+      "metadata_path": "models/map/Claude_gas_station/model.json",
+      "preview_path": "previews/map/Claude_gas_station/",
+      "derived_paths": [
+        "models/map/Claude_gas_station/Claude_gas_station.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        13.0,
+        12.0,
+        5.0
+      ],
+      "occupied_voxels": 1397,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_guard_tower",
+      "base_id": "guard_tower",
+      "creator": "Claude",
+      "name": "Guard Tower",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_guard_tower/Claude_guard_tower.vox",
+      "metadata_path": "models/map/Claude_guard_tower/model.json",
+      "preview_path": "previews/map/Claude_guard_tower/",
+      "derived_paths": [
+        "models/map/Claude_guard_tower/Claude_guard_tower.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        4.0,
+        4.0,
+        10.5
+      ],
+      "occupied_voxels": 400,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_gun_shop",
+      "base_id": "gun_shop",
+      "creator": "Claude",
+      "name": "Gun Shop",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_gun_shop/Claude_gun_shop.vox",
+      "metadata_path": "models/map/Claude_gun_shop/model.json",
+      "preview_path": "previews/map/Claude_gun_shop/",
+      "derived_paths": [
+        "models/map/Claude_gun_shop/Claude_gun_shop.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        8.0,
+        9.0,
+        5.0
+      ],
+      "occupied_voxels": 884,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_harbor_dock",
+      "base_id": "harbor_dock",
+      "creator": "Claude",
+      "name": "Harbour Dock",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_harbor_dock/Claude_harbor_dock.vox",
+      "metadata_path": "models/map/Claude_harbor_dock/model.json",
+      "preview_path": "previews/map/Claude_harbor_dock/",
+      "derived_paths": [
+        "models/map/Claude_harbor_dock/Claude_harbor_dock.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        10.0,
+        16.0,
+        5.0
+      ],
+      "occupied_voxels": 1385,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_hardware_store",
+      "base_id": "hardware_store",
+      "creator": "Claude",
+      "name": "Hardware Store",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_hardware_store/Claude_hardware_store.vox",
+      "metadata_path": "models/map/Claude_hardware_store/model.json",
+      "preview_path": "previews/map/Claude_hardware_store/",
+      "derived_paths": [
+        "models/map/Claude_hardware_store/Claude_hardware_store.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        13.0,
+        11.0,
+        7.0
+      ],
+      "occupied_voxels": 1597,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_hospital",
+      "base_id": "hospital",
+      "creator": "Claude",
+      "name": "Hospital",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_hospital/Claude_hospital.vox",
+      "metadata_path": "models/map/Claude_hospital/model.json",
+      "preview_path": "previews/map/Claude_hospital/",
+      "derived_paths": [
+        "models/map/Claude_hospital/Claude_hospital.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        20.0,
+        18.0,
+        13.0
+      ],
+      "occupied_voxels": 5686,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_industrial_warehouse",
+      "base_id": "industrial_warehouse",
+      "creator": "Claude",
+      "name": "Industrial Warehouse",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_industrial_warehouse/Claude_industrial_warehouse.vox",
+      "metadata_path": "models/map/Claude_industrial_warehouse/model.json",
+      "preview_path": "previews/map/Claude_industrial_warehouse/",
+      "derived_paths": [
+        "models/map/Claude_industrial_warehouse/Claude_industrial_warehouse.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        18.0,
+        14.0,
+        10.5
+      ],
+      "occupied_voxels": 3776,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_large_suburban_house",
+      "base_id": "large_suburban_house",
+      "creator": "Claude",
+      "name": "Large Suburban House",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_large_suburban_house/Claude_large_suburban_house.vox",
+      "metadata_path": "models/map/Claude_large_suburban_house/model.json",
+      "preview_path": "previews/map/Claude_large_suburban_house/",
+      "derived_paths": [
+        "models/map/Claude_large_suburban_house/Claude_large_suburban_house.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        11.5,
+        10.0,
+        9.0
+      ],
+      "occupied_voxels": 1758,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_lumberyard",
+      "base_id": "lumberyard",
+      "creator": "Claude",
+      "name": "Lumberyard / Sawmill",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_lumberyard/Claude_lumberyard.vox",
+      "metadata_path": "models/map/Claude_lumberyard/model.json",
+      "preview_path": "previews/map/Claude_lumberyard/",
+      "derived_paths": [
+        "models/map/Claude_lumberyard/Claude_lumberyard.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        15.0,
+        14.0,
+        5.5
+      ],
+      "occupied_voxels": 1982,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_military_outpost",
+      "base_id": "military_outpost",
+      "creator": "Claude",
+      "name": "Military Outpost",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_military_outpost/Claude_military_outpost.vox",
+      "metadata_path": "models/map/Claude_military_outpost/model.json",
+      "preview_path": "previews/map/Claude_military_outpost/",
+      "derived_paths": [
+        "models/map/Claude_military_outpost/Claude_military_outpost.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        14.0,
+        14.0,
+        8.0
+      ],
+      "occupied_voxels": 1919,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_pharmacy",
+      "base_id": "pharmacy",
+      "creator": "Claude",
+      "name": "Pharmacy",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_pharmacy/Claude_pharmacy.vox",
+      "metadata_path": "models/map/Claude_pharmacy/model.json",
+      "preview_path": "previews/map/Claude_pharmacy/",
+      "derived_paths": [
+        "models/map/Claude_pharmacy/Claude_pharmacy.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        8.0,
+        9.5,
+        5.5
+      ],
+      "occupied_voxels": 976,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_pier",
+      "base_id": "pier",
+      "creator": "Claude",
+      "name": "Small Pier",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_pier/Claude_pier.vox",
+      "metadata_path": "models/map/Claude_pier/model.json",
+      "preview_path": "previews/map/Claude_pier/",
+      "derived_paths": [
+        "models/map/Claude_pier/Claude_pier.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        4.0,
+        15.0,
+        1.5
+      ],
+      "occupied_voxels": 318,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_police_station",
+      "base_id": "police_station",
+      "creator": "Claude",
+      "name": "Police Station",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_police_station/Claude_police_station.vox",
+      "metadata_path": "models/map/Claude_police_station/model.json",
+      "preview_path": "previews/map/Claude_police_station/",
+      "derived_paths": [
+        "models/map/Claude_police_station/Claude_police_station.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        16.0,
+        12.0,
+        9.5
+      ],
+      "occupied_voxels": 2298,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_quarry_structure",
+      "base_id": "quarry_structure",
+      "creator": "Claude",
+      "name": "Quarry Structures",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_quarry_structure/Claude_quarry_structure.vox",
+      "metadata_path": "models/map/Claude_quarry_structure/model.json",
+      "preview_path": "previews/map/Claude_quarry_structure/",
+      "derived_paths": [
+        "models/map/Claude_quarry_structure/Claude_quarry_structure.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        15.0,
+        12.0,
+        7.0
+      ],
+      "occupied_voxels": 1751,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_railway_crossing",
+      "base_id": "railway_crossing",
+      "creator": "Claude",
+      "name": "Railway Crossing",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_railway_crossing/Claude_railway_crossing.vox",
+      "metadata_path": "models/map/Claude_railway_crossing/model.json",
+      "preview_path": "previews/map/Claude_railway_crossing/",
+      "derived_paths": [
+        "models/map/Claude_railway_crossing/Claude_railway_crossing.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        12.5,
+        12.5,
+        4.0
+      ],
+      "occupied_voxels": 693,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_restaurant",
+      "base_id": "restaurant",
+      "creator": "Claude",
+      "name": "Restaurant",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_restaurant/Claude_restaurant.vox",
+      "metadata_path": "models/map/Claude_restaurant/model.json",
+      "preview_path": "previews/map/Claude_restaurant/",
+      "derived_paths": [
+        "models/map/Claude_restaurant/Claude_restaurant.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        9.0,
+        10.0,
+        5.5
+      ],
+      "occupied_voxels": 1166,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_road_barrier",
+      "base_id": "road_barrier",
+      "creator": "Claude",
+      "name": "Road Barrier",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_road_barrier/Claude_road_barrier.vox",
+      "metadata_path": "models/map/Claude_road_barrier/model.json",
+      "preview_path": "previews/map/Claude_road_barrier/",
+      "derived_paths": [
+        "models/map/Claude_road_barrier/Claude_road_barrier.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        4.5,
+        1.0,
+        1.5
+      ],
+      "occupied_voxels": 23,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_road_curve",
+      "base_id": "road_curve",
+      "creator": "Claude",
+      "name": "Road Curve",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_road_curve/Claude_road_curve.vox",
+      "metadata_path": "models/map/Claude_road_curve/model.json",
+      "preview_path": "previews/map/Claude_road_curve/",
+      "derived_paths": [
+        "models/map/Claude_road_curve/Claude_road_curve.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        12.5,
+        12.5,
+        0.5
+      ],
+      "occupied_voxels": 625,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_road_intersection",
+      "base_id": "road_intersection",
+      "creator": "Claude",
+      "name": "Intersection",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_road_intersection/Claude_road_intersection.vox",
+      "metadata_path": "models/map/Claude_road_intersection/model.json",
+      "preview_path": "previews/map/Claude_road_intersection/",
+      "derived_paths": [
+        "models/map/Claude_road_intersection/Claude_road_intersection.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        12.5,
+        12.5,
+        0.5
+      ],
+      "occupied_voxels": 625,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_road_straight",
+      "base_id": "road_straight",
+      "creator": "Claude",
+      "name": "Straight Road",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_road_straight/Claude_road_straight.vox",
+      "metadata_path": "models/map/Claude_road_straight/model.json",
+      "preview_path": "previews/map/Claude_road_straight/",
+      "derived_paths": [
+        "models/map/Claude_road_straight/Claude_road_straight.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        8.5,
+        16.0,
+        0.5
+      ],
+      "occupied_voxels": 544,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_scrapyard_building",
+      "base_id": "scrapyard_building",
+      "creator": "Claude",
+      "name": "Scrapyard",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_scrapyard_building/Claude_scrapyard_building.vox",
+      "metadata_path": "models/map/Claude_scrapyard_building/model.json",
+      "preview_path": "previews/map/Claude_scrapyard_building/",
+      "derived_paths": [
+        "models/map/Claude_scrapyard_building/Claude_scrapyard_building.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        13.0,
+        10.0,
+        6.5
+      ],
+      "occupied_voxels": 1337,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_seawall",
+      "base_id": "seawall",
+      "creator": "Claude",
+      "name": "Concrete Seawall",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_seawall/Claude_seawall.vox",
+      "metadata_path": "models/map/Claude_seawall/model.json",
+      "preview_path": "previews/map/Claude_seawall/",
+      "derived_paths": [
+        "models/map/Claude_seawall/Claude_seawall.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        10.0,
+        1.5,
+        2.0
+      ],
+      "occupied_voxels": 180,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_shooting_range",
+      "base_id": "shooting_range",
+      "creator": "Claude",
+      "name": "Shooting Range",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_shooting_range/Claude_shooting_range.vox",
+      "metadata_path": "models/map/Claude_shooting_range/model.json",
+      "preview_path": "previews/map/Claude_shooting_range/",
+      "derived_paths": [
+        "models/map/Claude_shooting_range/Claude_shooting_range.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        16.0,
+        11.0,
+        5.5
+      ],
+      "occupied_voxels": 1763,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_small_family_house",
+      "base_id": "small_family_house",
+      "creator": "Claude",
+      "name": "Small Family House",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_small_family_house/Claude_small_family_house.vox",
+      "metadata_path": "models/map/Claude_small_family_house/model.json",
+      "preview_path": "previews/map/Claude_small_family_house/",
+      "derived_paths": [
+        "models/map/Claude_small_family_house/Claude_small_family_house.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        9.0,
+        9.0,
+        7.0
+      ],
+      "occupied_voxels": 1112,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_supermarket",
+      "base_id": "supermarket",
+      "creator": "Claude",
+      "name": "Supermarket",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_supermarket/Claude_supermarket.vox",
+      "metadata_path": "models/map/Claude_supermarket/model.json",
+      "preview_path": "previews/map/Claude_supermarket/",
+      "derived_paths": [
+        "models/map/Claude_supermarket/Claude_supermarket.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        20.0,
+        15.0,
+        7.0
+      ],
+      "occupied_voxels": 3056,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_veterinary_clinic",
+      "base_id": "veterinary_clinic",
+      "creator": "Claude",
+      "name": "Veterinary Clinic",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_veterinary_clinic/Claude_veterinary_clinic.vox",
+      "metadata_path": "models/map/Claude_veterinary_clinic/model.json",
+      "preview_path": "previews/map/Claude_veterinary_clinic/",
+      "derived_paths": [
+        "models/map/Claude_veterinary_clinic/Claude_veterinary_clinic.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        10.0,
+        10.0,
+        7.0
+      ],
+      "occupied_voxels": 1214,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
     }
   ]
 }
