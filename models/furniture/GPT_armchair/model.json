@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "GPT_armchair",
+  "base_id": "armchair",
+  "creator": "GPT",
+  "name": "armchair",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_armchair.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    9.5,
+    9.5,
+    0
+  ],
+  "dimensions_m": [
+    0.95,
+    0.95,
+    0.95
+  ],
+  "occupied_voxels": 2813,
+  "material_roles": [
+    "charcoal",
+    "darkwood",
+    "olive",
+    "brick",
+    "rust",
+    "cloth"
+  ],
+  "game_integration": [],
+  "notes": "First-pass stylized catalog candidate; sofa variation single. Independent GPT geometry. MagicaVoxel GUI validation pending."
+}

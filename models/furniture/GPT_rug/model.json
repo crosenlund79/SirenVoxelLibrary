@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "GPT_rug",
+  "base_id": "rug",
+  "creator": "GPT",
+  "name": "rug",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_rug.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    24,
+    17.5,
+    0
+  ],
+  "dimensions_m": [
+    2.4,
+    1.75,
+    0.15
+  ],
+  "occupied_voxels": 4008,
+  "material_roles": [
+    "brick",
+    "cloth"
+  ],
+  "game_integration": [],
+  "notes": "First-pass stylized catalog candidate; rug variation standard. Independent GPT geometry. MagicaVoxel GUI validation pending."
+}

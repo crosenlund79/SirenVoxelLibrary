@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "GPT_coffee_table",
+  "base_id": "coffee_table",
+  "creator": "GPT",
+  "name": "coffee table",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_coffee_table.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    11.5,
+    6.5,
+    0
+  ],
+  "dimensions_m": [
+    1.15,
+    0.65,
+    0.5
+  ],
+  "occupied_voxels": 621,
+  "material_roles": [
+    "lightwood",
+    "wood",
+    "darkwood"
+  ],
+  "game_integration": [],
+  "notes": "First-pass stylized catalog candidate; table variation standard. Independent GPT geometry. MagicaVoxel GUI validation pending."
+}

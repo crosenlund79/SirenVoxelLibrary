@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "GPT_small_shelf",
+  "base_id": "small_shelf",
+  "creator": "GPT",
+  "name": "small shelf",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_small_shelf.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    8.5,
+    3.5,
+    0
+  ],
+  "dimensions_m": [
+    0.85,
+    0.35,
+    1.25
+  ],
+  "occupied_voxels": 950,
+  "material_roles": [
+    "lightwood",
+    "darkwood",
+    "olive",
+    "brick",
+    "blue"
+  ],
+  "game_integration": [],
+  "notes": "First-pass stylized catalog candidate; shelf variation standard. Independent GPT geometry. MagicaVoxel GUI validation pending."
+}

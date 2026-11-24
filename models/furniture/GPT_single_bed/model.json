@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "GPT_single_bed",
+  "base_id": "single_bed",
+  "creator": "GPT",
+  "name": "single bed",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_single_bed.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    10.5,
+    21,
+    0
+  ],
+  "dimensions_m": [
+    1.05,
+    2.1,
+    0.85
+  ],
+  "occupied_voxels": 6371,
+  "material_roles": [
+    "plaster",
+    "wood",
+    "darkwood",
+    "slate",
+    "cloth",
+    "blue"
+  ],
+  "game_integration": [],
+  "notes": "First-pass stylized catalog candidate; bed variation standard. Independent GPT geometry. MagicaVoxel GUI validation pending."
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "GPT_sofa",
+  "base_id": "sofa",
+  "creator": "GPT",
+  "name": "sofa",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_sofa.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    24,
+    9.5,
+    0
+  ],
+  "dimensions_m": [
+    2.4,
+    0.95,
+    0.9
+  ],
+  "occupied_voxels": 6820,
+  "material_roles": [
+    "charcoal",
+    "darkwood",
+    "olive",
+    "slate",
+    "cloth",
+    "blue"
+  ],
+  "game_integration": [],
+  "notes": "First-pass stylized catalog candidate; sofa variation standard. Independent GPT geometry. MagicaVoxel GUI validation pending."
+}

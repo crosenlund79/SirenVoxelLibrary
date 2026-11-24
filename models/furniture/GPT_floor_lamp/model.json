@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "GPT_floor_lamp",
+  "base_id": "floor_lamp",
+  "creator": "GPT",
+  "name": "floor lamp",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_floor_lamp.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    4,
+    4,
+    0
+  ],
+  "dimensions_m": [
+    0.4,
+    0.4,
+    1.7
+  ],
+  "occupied_voxels": 340,
+  "material_roles": [
+    "steel",
+    "darkwood",
+    "cloth"
+  ],
+  "game_integration": [],
+  "notes": "First-pass stylized catalog candidate; lamp variation standard. Independent GPT geometry. MagicaVoxel GUI validation pending."
+}

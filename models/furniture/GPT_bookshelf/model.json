@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "GPT_bookshelf",
+  "base_id": "bookshelf",
+  "creator": "GPT",
+  "name": "bookshelf",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_bookshelf.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    12.5,
+    4,
+    0
+  ],
+  "dimensions_m": [
+    1.25,
+    0.4,
+    1.85
+  ],
+  "occupied_voxels": 2860,
+  "material_roles": [
+    "lightwood",
+    "darkwood",
+    "olive",
+    "brick",
+    "blue"
+  ],
+  "game_integration": [],
+  "notes": "First-pass stylized catalog candidate; shelf variation standard. Independent GPT geometry. MagicaVoxel GUI validation pending."
+}
