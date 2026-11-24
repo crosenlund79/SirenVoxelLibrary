@@ -1,19 +1,19 @@
 # GPT vs Claude coverage
 
-Generated 2026-11-24 11:28 UTC by `tools/compare/build_compare.py` from `catalog.json`.
+Generated 2026-11-24 11:53 UTC by `tools/compare/build_compare.py` from `catalog.json`.
 
 GPT object types: **179**. Claude coverage:
 
-- independent Claude model: **0**
-- existing Claude model reused: **0**
+- independent Claude model: **6**
+- existing Claude model reused: **1**
 - existing Claude model (alias): **5**
 - needs revision: **0**
-- missing: **174**
+- missing: **167**
 - Claude-only extras (no GPT counterpart): **0**
 
 | Batch | Base ID | GPT | Claude | Status | Note |
 |---|---|---|---|---|---|
-| A | `sofa` | `GPT_sofa` | — | missing |  |
+| A | `sofa` | `GPT_sofa` | `Claude_sofa` | independent Claude model |  |
 | A | `armchair` | `GPT_armchair` | — | missing |  |
 | A | `coffee_table` | `GPT_coffee_table` | — | missing |  |
 | A | `television` | `GPT_television` | — | missing |  |
@@ -51,7 +51,7 @@ GPT object types: **179**. Claude coverage:
 | A | `clothes_dryer` | `GPT_clothes_dryer` | — | missing |  |
 | A | `water_heater` | `GPT_water_heater` | — | missing |  |
 | A | `laundry_basket` | `GPT_laundry_basket` | — | missing |  |
-| A | `dining_table` | `GPT_dining_table` | — | missing |  |
+| A | `dining_table` | `GPT_dining_table` | `Claude_dining_table` | existing Claude model reused |  |
 | A | `dining_chair` | `GPT_dining_chair` | — | missing |  |
 | B | `workbench` | `GPT_workbench` | `Claude_workbench_worn` | existing Claude model (alias) |  |
 | B | `wooden_storage_crate` | `GPT_wooden_storage_crate` | — | missing |  |
@@ -187,8 +187,8 @@ GPT object types: **179**. Claude coverage:
 | E | `pier` | `GPT_pier` | — | missing |  |
 | E | `seawall` | `GPT_seawall` | — | missing |  |
 | E | `road_barrier` | `GPT_road_barrier` | — | missing |  |
-| F | `survivor` | `GPT_survivor` | — | missing |  |
-| F | `ordinary_psycho` | `GPT_ordinary_psycho` | — | missing |  |
-| F | `runner` | `GPT_runner` | — | missing |  |
-| F | `brute` | `GPT_brute` | — | missing |  |
-| F | `suicide_bomber` | `GPT_suicide_bomber` | — | missing |  |
+| F | `survivor` | `GPT_survivor` | `Claude_survivor` | independent Claude model |  |
+| F | `ordinary_psycho` | `GPT_ordinary_psycho` | `Claude_ordinary_psycho` | independent Claude model |  |
+| F | `runner` | `GPT_runner` | `Claude_runner` | independent Claude model |  |
+| F | `brute` | `GPT_brute` | `Claude_brute` | independent Claude model |  |
+| F | `suicide_bomber` | `GPT_suicide_bomber` | `Claude_suicide_bomber` | independent Claude model |  |
