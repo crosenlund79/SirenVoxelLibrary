@@ -275,10 +275,9 @@ def jar(g, x0, y0, z0, h, fill):
     """A glass jar (6 cells round): opaque glass tinted by its contents, dark screw lid."""
     for (i, j) in g.disc_cells(3.0, 3.0, 3.0):
         g.box(x0 + i, y0 + j, z0, x0 + i, y0 + j, z0 + h - 3, fill)
-        g.set(x0 + i, y0 + j, z0 + h - 2, "glass")
+        g.set(x0 + i, y0 + j, z0 + h - 2, "glass_hi")   # clear glass shoulder above the fill
     for (i, j) in g.disc_cells(3.0, 3.0, 2.2):
         g.set(x0 + i, y0 + j, z0 + h - 1, "iron_warm")
-    rim(g, 3.0, 3.0, 3.0, z0 + h - 2, "glass_hi", x0, y0)
 
 
 @model("food_storage_crate", name="Food Storage Crate", cell=0.0125,

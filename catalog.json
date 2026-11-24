@@ -3190,6 +3190,630 @@
       "batch": "Claude_catalog_B",
       "scale_family": "full",
       "condition": "improvised"
+    },
+    {
+      "id": "Claude_ammunition_box",
+      "base_id": "ammunition_box",
+      "creator": "Claude",
+      "name": "Ammunition Box",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_ammunition_box/Claude_ammunition_box.vox",
+      "metadata_path": "models/combat/Claude_ammunition_box/model.json",
+      "preview_path": "previews/combat/Claude_ammunition_box/",
+      "derived_paths": [
+        "models/combat/Claude_ammunition_box/Claude_ammunition_box.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.2875,
+        0.175,
+        0.175
+      ],
+      "occupied_voxels": 1264,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_baseball_bat",
+      "base_id": "baseball_bat",
+      "creator": "Claude",
+      "name": "Baseball Bat",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_baseball_bat/Claude_baseball_bat.vox",
+      "metadata_path": "models/combat/Claude_baseball_bat/model.json",
+      "preview_path": "previews/combat/Claude_baseball_bat/",
+      "derived_paths": [
+        "models/combat/Claude_baseball_bat/Claude_baseball_bat.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.075,
+        0.775,
+        0.075
+      ],
+      "occupied_voxels": 864,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_compact_smg",
+      "base_id": "compact_smg",
+      "creator": "Claude",
+      "name": "Compact Submachine Gun",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_compact_smg/Claude_compact_smg.vox",
+      "metadata_path": "models/combat/Claude_compact_smg/model.json",
+      "preview_path": "previews/combat/Claude_compact_smg/",
+      "derived_paths": [
+        "models/combat/Claude_compact_smg/Claude_compact_smg.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.0625,
+        0.5,
+        0.225
+      ],
+      "occupied_voxels": 908,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_helmet",
+      "base_id": "helmet",
+      "creator": "Claude",
+      "name": "Simple Helmet",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_helmet/Claude_helmet.vox",
+      "metadata_path": "models/combat/Claude_helmet/model.json",
+      "preview_path": "previews/combat/Claude_helmet/",
+      "derived_paths": [
+        "models/combat/Claude_helmet/Claude_helmet.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.3625,
+        0.325,
+        0.1625
+      ],
+      "occupied_voxels": 1651,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_hunting_rifle",
+      "base_id": "hunting_rifle",
+      "creator": "Claude",
+      "name": "Hunting Rifle",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_hunting_rifle/Claude_hunting_rifle.vox",
+      "metadata_path": "models/combat/Claude_hunting_rifle/model.json",
+      "preview_path": "previews/combat/Claude_hunting_rifle/",
+      "derived_paths": [
+        "models/combat/Claude_hunting_rifle/Claude_hunting_rifle.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.075,
+        1.075,
+        0.2375
+      ],
+      "occupied_voxels": 1563,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_loose_ammo_pickup",
+      "base_id": "loose_ammo_pickup",
+      "creator": "Claude",
+      "name": "Loose Ammunition",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_loose_ammo_pickup/Claude_loose_ammo_pickup.vox",
+      "metadata_path": "models/combat/Claude_loose_ammo_pickup/model.json",
+      "preview_path": "previews/combat/Claude_loose_ammo_pickup/",
+      "derived_paths": [
+        "models/combat/Claude_loose_ammo_pickup/Claude_loose_ammo_pickup.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.2,
+        0.1,
+        0.0375
+      ],
+      "occupied_voxels": 105,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_protective_vest",
+      "base_id": "protective_vest",
+      "creator": "Claude",
+      "name": "Protective Vest",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_protective_vest/Claude_protective_vest.vox",
+      "metadata_path": "models/combat/Claude_protective_vest/model.json",
+      "preview_path": "previews/combat/Claude_protective_vest/",
+      "derived_paths": [
+        "models/combat/Claude_protective_vest/Claude_protective_vest.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.525,
+        0.3,
+        0.6
+      ],
+      "occupied_voxels": 1202,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_revolver",
+      "base_id": "revolver",
+      "creator": "Claude",
+      "name": "Revolver",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_revolver/Claude_revolver.vox",
+      "metadata_path": "models/combat/Claude_revolver/model.json",
+      "preview_path": "previews/combat/Claude_revolver/",
+      "derived_paths": [
+        "models/combat/Claude_revolver/Claude_revolver.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.05,
+        0.2125,
+        0.1625
+      ],
+      "occupied_voxels": 260,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_shotgun",
+      "base_id": "shotgun",
+      "creator": "Claude",
+      "name": "Pump Shotgun",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_shotgun/Claude_shotgun.vox",
+      "metadata_path": "models/combat/Claude_shotgun/model.json",
+      "preview_path": "previews/combat/Claude_shotgun/",
+      "derived_paths": [
+        "models/combat/Claude_shotgun/Claude_shotgun.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.05,
+        1.0,
+        0.175
+      ],
+      "occupied_voxels": 1294,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_shotgun_shell_box",
+      "base_id": "shotgun_shell_box",
+      "creator": "Claude",
+      "name": "Shotgun Shell Box",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_shotgun_shell_box/Claude_shotgun_shell_box.vox",
+      "metadata_path": "models/combat/Claude_shotgun_shell_box/model.json",
+      "preview_path": "previews/combat/Claude_shotgun_shell_box/",
+      "derived_paths": [
+        "models/combat/Claude_shotgun_shell_box/Claude_shotgun_shell_box.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.225,
+        0.175,
+        0.2125
+      ],
+      "occupied_voxels": 1066,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_bandage_roll",
+      "base_id": "bandage_roll",
+      "creator": "Claude",
+      "name": "Bandage Roll",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_bandage_roll/Claude_bandage_roll.vox",
+      "metadata_path": "models/consumables/Claude_bandage_roll/model.json",
+      "preview_path": "previews/consumables/Claude_bandage_roll/",
+      "derived_paths": [
+        "models/consumables/Claude_bandage_roll/Claude_bandage_roll.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.125,
+        0.1625,
+        0.1
+      ],
+      "occupied_voxels": 389,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_canned_food",
+      "base_id": "canned_food",
+      "creator": "Claude",
+      "name": "Canned Food",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_canned_food/Claude_canned_food.vox",
+      "metadata_path": "models/consumables/Claude_canned_food/model.json",
+      "preview_path": "previews/consumables/Claude_canned_food/",
+      "derived_paths": [
+        "models/consumables/Claude_canned_food/Claude_canned_food.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.1,
+        0.1,
+        0.1375
+      ],
+      "occupied_voxels": 358,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_emergency_supply_box",
+      "base_id": "emergency_supply_box",
+      "creator": "Claude",
+      "name": "Emergency Supply Box",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_emergency_supply_box/Claude_emergency_supply_box.vox",
+      "metadata_path": "models/consumables/Claude_emergency_supply_box/model.json",
+      "preview_path": "previews/consumables/Claude_emergency_supply_box/",
+      "derived_paths": [
+        "models/consumables/Claude_emergency_supply_box/Claude_emergency_supply_box.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.55,
+        0.375,
+        0.4
+      ],
+      "occupied_voxels": 1452,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_first_aid_kit",
+      "base_id": "first_aid_kit",
+      "creator": "Claude",
+      "name": "First-Aid Kit",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_first_aid_kit/Claude_first_aid_kit.vox",
+      "metadata_path": "models/consumables/Claude_first_aid_kit/model.json",
+      "preview_path": "previews/consumables/Claude_first_aid_kit/",
+      "derived_paths": [
+        "models/consumables/Claude_first_aid_kit/Claude_first_aid_kit.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.375,
+        0.1375,
+        0.2625
+      ],
+      "occupied_voxels": 1912,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_food_box",
+      "base_id": "food_box",
+      "creator": "Claude",
+      "name": "Food Box",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_food_box/Claude_food_box.vox",
+      "metadata_path": "models/consumables/Claude_food_box/model.json",
+      "preview_path": "previews/consumables/Claude_food_box/",
+      "derived_paths": [
+        "models/consumables/Claude_food_box/Claude_food_box.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.25,
+        0.1125,
+        0.3
+      ],
+      "occupied_voxels": 1348,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_food_storage_crate",
+      "base_id": "food_storage_crate",
+      "creator": "Claude",
+      "name": "Food Storage Crate",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_food_storage_crate/Claude_food_storage_crate.vox",
+      "metadata_path": "models/consumables/Claude_food_storage_crate/model.json",
+      "preview_path": "previews/consumables/Claude_food_storage_crate/",
+      "derived_paths": [
+        "models/consumables/Claude_food_storage_crate/Claude_food_storage_crate.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.45,
+        0.3625,
+        0.325
+      ],
+      "occupied_voxels": 7627,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_large_water_container",
+      "base_id": "large_water_container",
+      "creator": "Claude",
+      "name": "Large Water Container",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_large_water_container/Claude_large_water_container.vox",
+      "metadata_path": "models/consumables/Claude_large_water_container/model.json",
+      "preview_path": "previews/consumables/Claude_large_water_container/",
+      "derived_paths": [
+        "models/consumables/Claude_large_water_container/Claude_large_water_container.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.275,
+        0.275,
+        0.45
+      ],
+      "occupied_voxels": 819,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_medical_bag",
+      "base_id": "medical_bag",
+      "creator": "Claude",
+      "name": "Medical Bag",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_medical_bag/Claude_medical_bag.vox",
+      "metadata_path": "models/consumables/Claude_medical_bag/model.json",
+      "preview_path": "previews/consumables/Claude_medical_bag/",
+      "derived_paths": [
+        "models/consumables/Claude_medical_bag/Claude_medical_bag.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.4125,
+        0.2375,
+        0.3125
+      ],
+      "occupied_voxels": 3269,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_medicine_bottle",
+      "base_id": "medicine_bottle",
+      "creator": "Claude",
+      "name": "Medicine Bottle",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_medicine_bottle/Claude_medicine_bottle.vox",
+      "metadata_path": "models/consumables/Claude_medicine_bottle/model.json",
+      "preview_path": "previews/consumables/Claude_medicine_bottle/",
+      "derived_paths": [
+        "models/consumables/Claude_medicine_bottle/Claude_medicine_bottle.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.1,
+        0.1,
+        0.1875
+      ],
+      "occupied_voxels": 484,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_small_cooler",
+      "base_id": "small_cooler",
+      "creator": "Claude",
+      "name": "Small Cooler",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_small_cooler/Claude_small_cooler.vox",
+      "metadata_path": "models/consumables/Claude_small_cooler/model.json",
+      "preview_path": "previews/consumables/Claude_small_cooler/",
+      "derived_paths": [
+        "models/consumables/Claude_small_cooler/Claude_small_cooler.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.45,
+        0.325,
+        0.3
+      ],
+      "occupied_voxels": 938,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_snack_package",
+      "base_id": "snack_package",
+      "creator": "Claude",
+      "name": "Snack Package",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_snack_package/Claude_snack_package.vox",
+      "metadata_path": "models/consumables/Claude_snack_package/model.json",
+      "preview_path": "previews/consumables/Claude_snack_package/",
+      "derived_paths": [
+        "models/consumables/Claude_snack_package/Claude_snack_package.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.15,
+        0.0875,
+        0.2125
+      ],
+      "occupied_voxels": 531,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_soup_can",
+      "base_id": "soup_can",
+      "creator": "Claude",
+      "name": "Soup Can",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_soup_can/Claude_soup_can.vox",
+      "metadata_path": "models/consumables/Claude_soup_can/model.json",
+      "preview_path": "previews/consumables/Claude_soup_can/",
+      "derived_paths": [
+        "models/consumables/Claude_soup_can/Claude_soup_can.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.0875,
+        0.0875,
+        0.1
+      ],
+      "occupied_voxels": 218,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_tablet_packet",
+      "base_id": "tablet_packet",
+      "creator": "Claude",
+      "name": "Tablet Packet",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_tablet_packet/Claude_tablet_packet.vox",
+      "metadata_path": "models/consumables/Claude_tablet_packet/model.json",
+      "preview_path": "previews/consumables/Claude_tablet_packet/",
+      "derived_paths": [
+        "models/consumables/Claude_tablet_packet/Claude_tablet_packet.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.2,
+        0.0875,
+        0.075
+      ],
+      "occupied_voxels": 219,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_handgun",
+      "base_id": "handgun",
+      "creator": "Claude",
+      "name": "Handgun",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_handgun/Claude_handgun.vox",
+      "metadata_path": "models/survival/Claude_handgun/model.json",
+      "preview_path": "previews/survival/Claude_handgun/",
+      "derived_paths": [
+        "models/survival/Claude_handgun/Claude_handgun.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.0375,
+        0.2375,
+        0.1625
+      ],
+      "occupied_voxels": 321,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
     }
   ]
 }

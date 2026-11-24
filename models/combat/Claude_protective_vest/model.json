@@ -13,8 +13,8 @@
   "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
   "derived": {
     "glb": "Claude_protective_vest.glb",
-    "glb_vertices": 1204,
-    "glb_triangles": 602,
+    "glb_vertices": 1260,
+    "glb_triangles": 630,
     "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
   },
   "voxel_size_m": 0.025,
@@ -45,7 +45,7 @@
     0.6
   ],
   "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
-  "occupied_voxels": 1146,
+  "occupied_voxels": 1202,
   "condition": "used",
   "gameplay_use": "Planned protective vest",
   "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
@@ -94,13 +94,13 @@
       "index": 211,
       "role": "navy",
       "hex": "#3E4A5B",
-      "voxels": 833
+      "voxels": 885
     },
     {
       "index": 212,
       "role": "navy_dark",
       "hex": "#2F3846",
-      "voxels": 159
+      "voxels": 163
     }
   ],
   "attachments": {},

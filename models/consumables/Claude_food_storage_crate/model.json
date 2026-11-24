@@ -52,7 +52,6 @@
   "palette_version": 2,
   "material_roles": [
     "galv",
-    "glass",
     "glass_hi",
     "iron_warm",
     "label_cream",
@@ -108,13 +107,7 @@
       "index": 121,
       "role": "glass_hi",
       "hex": "#A7BDC2",
-      "voxels": 48
-    },
-    {
-      "index": 122,
-      "role": "glass",
-      "hex": "#829A9F",
-      "voxels": 36
+      "voxels": 84
     },
     {
       "index": 139,
