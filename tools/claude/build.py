@@ -97,11 +97,11 @@ def build_one(base_id: str, allow_pilot: bool = False) -> dict:
 
     if "pivot_cells" in res:
         px, py, _ = res["pivot_cells"]
-        pivot = [px - off[0], py - off[1], 0.0]
+        pivot = [float(px - off[0]), float(py - off[1]), 0.0]
         footprint = None
     else:
         (x0, x1), (y0, y1) = res["footprint_cells"]
-        pivot = [(x0 + x1 + 1) / 2 - off[0], (y0 + y1 + 1) / 2 - off[1], 0.0]
+        pivot = [float((x0 + x1 + 1) / 2 - off[0]), float((y0 + y1 + 1) / 2 - off[1]), 0.0]
         footprint = [round((x1 - x0 + 1) * cell, 4), round((y1 - y0 + 1) * cell, 4)]
 
     asset_id = f"{CREATOR}_{base_id}"
