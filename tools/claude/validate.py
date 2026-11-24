@@ -93,8 +93,9 @@ def check_vox(meta, path):
     cell = meta["voxel_size_m"]
     assert len(vox) == meta["occupied_voxels"], (len(vox), meta["occupied_voxels"])
     assert list(size) == meta["grid_size_cells"], (size, meta["grid_size_cells"])
-    dims = [round(s * cell, 3) for s in size]
-    assert dims == meta["dimensions_m"], (dims, meta["dimensions_m"])
+    dims = [round(s * cell, 4) for s in size]      # build.py writes 4 decimals (1.25 cm tier)
+    assert all(abs(a - b) < 1e-6 for a, b in zip(dims, meta["dimensions_m"])), \
+        (dims, meta["dimensions_m"])
     lo, hi = vox[:, :3].min(0), vox[:, :3].max(0)
     assert (lo == 0).all() and (hi == np.array(size) - 1).all(), "bounds are not tight to occupancy"
     px, py, pz = meta["pivot_voxel"]
