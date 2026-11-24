@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "id": "Claude_convenience_store",
+  "base_id": "convenience_store",
+  "creator": "Claude",
+  "name": "Convenience Store",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_convenience_store.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_convenience_store.glb",
+    "glb_vertices": 456,
+    "glb_triangles": 228,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    8.0,
+    9.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    16,
+    18,
+    10
+  ],
+  "dimensions_m": [
+    8.0,
+    9.0,
+    5.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 814,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Food)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "asphalt",
+    "concrete_dark",
+    "concrete_hi",
+    "galv_dark",
+    "galv_hi",
+    "glass",
+    "glass_dark",
+    "label_blue",
+    "line_white",
+    "paint_white",
+    "pine_light",
+    "plaster",
+    "roof",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 10
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 33
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 6
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 3
+    },
+    {
+      "index": 94,
+      "role": "plaster",
+      "hex": "#CCC5B6",
+      "voxels": 285
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 62
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 140
+    },
+    {
+      "index": 122,
+      "role": "glass",
+      "hex": "#829A9F",
+      "voxels": 8
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 25
+    },
+    {
+      "index": 194,
+      "role": "asphalt",
+      "hex": "#4F5151",
+      "voxels": 96
+    },
+    {
+      "index": 197,
+      "role": "line_white",
+      "hex": "#CDCBC1",
+      "voxels": 20
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 6
+    },
+    {
+      "index": 218,
+      "role": "roof",
+      "hex": "#5A5E61",
+      "voxels": 96
+    },
+    {
+      "index": 230,
+      "role": "label_blue",
+      "hex": "#556F8A",
+      "voxels": 24
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A corner convenience store that was looted on the second night: two of the front panes were smashed and later boarded by the owner, the ice chest is still chained by the door.",
+  "notes": [
+    "Flat-roof shop with glass front and blank parapet sign."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_convenience_store.md",
+  "previews": {
+    "hero": "previews/map/Claude_convenience_store/hero.png",
+    "front": "previews/map/Claude_convenience_store/front.png",
+    "side": "previews/map/Claude_convenience_store/side.png",
+    "scale": "previews/map/Claude_convenience_store/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    8.0,
+    9.0
+  ]
+}

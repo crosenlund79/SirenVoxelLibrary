@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "Claude_baseball_bat",
+  "base_id": "baseball_bat",
+  "creator": "Claude",
+  "name": "Baseball Bat",
+  "category": "combat",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_C",
+  "scale_family": "full",
+  "source": "Claude_baseball_bat.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_baseball_bat.glb",
+    "glb_vertices": 920,
+    "glb_triangles": 460,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it. Overridden from 2.5 cm to 1.25 cm: at 2.5 cm the bat is 3 cells thick and its taper from barrel to handle, the knob and the taped grip collapse into a stick.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    3.0,
+    31.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "Working end / muzzle points +Y, top side up; lowest point on z = 0.",
+  "grid_size_cells": [
+    6,
+    62,
+    6
+  ],
+  "dimensions_m": [
+    0.075,
+    0.775,
+    0.075
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 864,
+  "condition": "worn",
+  "gameplay_use": "Melee weapon",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "charcoal",
+    "pine_aged",
+    "pine_dark",
+    "pine_hi",
+    "pine_light",
+    "pine_mid",
+    "wgrey"
+  ],
+  "palette_roles": [
+    {
+      "index": 1,
+      "role": "pine_hi",
+      "hex": "#CDA77D",
+      "voxels": 104
+    },
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 589
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 40
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 41
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 3
+    },
+    {
+      "index": 10,
+      "role": "wgrey",
+      "hex": "#8B8478",
+      "voxels": 21
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 50
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 16
+    }
+  ],
+  "attachments": {
+    "grip": {
+      "description": "Both hands on the taped handle above the knob.",
+      "voxel": [
+        2,
+        8,
+        2
+      ],
+      "offset_m_from_pivot": [
+        -0.0062,
+        -0.2812,
+        0.0312
+      ]
+    }
+  },
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A youth-league ash bat from a garage shelf. Someone re-wrapped the handle with black electrical tape for a better grip; the barrel is scuffed grey and chipped on one side from striking concrete and fence posts.",
+  "notes": [
+    "Wooden bat with taped grip and a scuffed barrel.",
+    "Held orientation: barrel toward +Y, lying level; the barrel's underside is z = 0."
+  ],
+  "generator": "tools/claude/models/catalog/c1_combat.py",
+  "spec": "docs/specs/combat/Claude_baseball_bat.md",
+  "previews": {
+    "hero": "previews/combat/Claude_baseball_bat/hero.png",
+    "front": "previews/combat/Claude_baseball_bat/front.png",
+    "side": "previews/combat/Claude_baseball_bat/side.png",
+    "scale": "previews/combat/Claude_baseball_bat/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_C.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.075,
+    0.775
+  ]
+}

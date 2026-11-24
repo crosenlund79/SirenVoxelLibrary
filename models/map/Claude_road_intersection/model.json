@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "Claude_road_intersection",
+  "base_id": "road_intersection",
+  "creator": "Claude",
+  "name": "Intersection",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_road_intersection.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_road_intersection.glb",
+    "glb_vertices": 720,
+    "glb_triangles": 360,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    12.5,
+    12.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "Symmetric; arms leave every edge centred like the straight tile.",
+  "grid_size_cells": [
+    25,
+    25,
+    1
+  ],
+  "dimensions_m": [
+    12.5,
+    12.5,
+    0.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 625,
+  "condition": "worn",
+  "gameplay_use": "Regional-map infrastructure piece",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "asphalt",
+    "asphalt_dark",
+    "concrete_hi",
+    "curb",
+    "grass",
+    "line_white"
+  ],
+  "palette_roles": [
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 44
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 100
+    },
+    {
+      "index": 194,
+      "role": "asphalt",
+      "hex": "#4F5151",
+      "voxels": 367
+    },
+    {
+      "index": 195,
+      "role": "asphalt_dark",
+      "hex": "#3F4142",
+      "voxels": 6
+    },
+    {
+      "index": 197,
+      "role": "line_white",
+      "hex": "#CDCBC1",
+      "voxels": 60
+    },
+    {
+      "index": 199,
+      "role": "curb",
+      "hex": "#A09F97",
+      "voxels": 48
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A four-way junction at the centre of the subdivision. The traffic lights were on another tile; here only the zebra crossings and the corner kerbs remain, worn white where buses turned.",
+  "notes": [
+    "12.5 x 12.5 m (GPT reference 12 x 12 m) to keep the 17-cell section centred."
+  ],
+  "generator": "tools/claude/models/catalog/e2_map_infrastructure.py",
+  "spec": "docs/specs/map/Claude_road_intersection.md",
+  "previews": {
+    "hero": "previews/map/Claude_road_intersection/hero.png",
+    "front": "previews/map/Claude_road_intersection/front.png",
+    "side": "previews/map/Claude_road_intersection/side.png",
+    "scale": "previews/map/Claude_road_intersection/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    12.5,
+    12.5
+  ]
+}

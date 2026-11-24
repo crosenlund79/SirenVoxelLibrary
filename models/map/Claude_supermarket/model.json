@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "id": "Claude_supermarket",
+  "base_id": "supermarket",
+  "creator": "Claude",
+  "name": "Supermarket",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_supermarket.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_supermarket.glb",
+    "glb_vertices": 1180,
+    "glb_triangles": 590,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    20.0,
+    15.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    40,
+    30,
+    14
+  ],
+  "dimensions_m": [
+    20.0,
+    15.0,
+    7.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 3056,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Grocery Store (current destination))",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "asphalt",
+    "beige",
+    "black",
+    "card",
+    "card_dark",
+    "concrete",
+    "concrete_dark",
+    "concrete_hi",
+    "galv",
+    "galv_hi",
+    "glass",
+    "glass_dark",
+    "glass_deep",
+    "glass_hi",
+    "hazard_yellow_dark",
+    "label_cream",
+    "label_red",
+    "line_white",
+    "maroon",
+    "roof",
+    "steel",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 10
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 65
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 8
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 30
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 41
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 224
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 131
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 510
+    },
+    {
+      "index": 121,
+      "role": "glass_hi",
+      "hex": "#A7BDC2",
+      "voxels": 90
+    },
+    {
+      "index": 122,
+      "role": "glass",
+      "hex": "#829A9F",
+      "voxels": 16
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 55
+    },
+    {
+      "index": 124,
+      "role": "glass_deep",
+      "hex": "#42535A",
+      "voxels": 4
+    },
+    {
+      "index": 158,
+      "role": "card",
+      "hex": "#A88A62",
+      "voxels": 17
+    },
+    {
+      "index": 159,
+      "role": "card_dark",
+      "hex": "#8A714F",
+      "voxels": 4
+    },
+    {
+      "index": 194,
+      "role": "asphalt",
+      "hex": "#4F5151",
+      "voxels": 477
+    },
+    {
+      "index": 197,
+      "role": "line_white",
+      "hex": "#CDCBC1",
+      "voxels": 90
+    },
+    {
+      "index": 204,
+      "role": "hazard_yellow_dark",
+      "hex": "#9A7E2D",
+      "voxels": 3
+    },
+    {
+      "index": 213,
+      "role": "maroon",
+      "hex": "#703F3C",
+      "voxels": 56
+    },
+    {
+      "index": 215,
+      "role": "beige",
+      "hex": "#AA9D80",
+      "voxels": 869
+    },
+    {
+      "index": 218,
+      "role": "roof",
+      "hex": "#5A5E61",
+      "voxels": 326
+    },
+    {
+      "index": 228,
+      "role": "label_red",
+      "hex": "#9C4A3A",
+      "voxels": 22
+    },
+    {
+      "index": 231,
+      "role": "label_cream",
+      "hex": "#D9CFB3",
+      "voxels": 8
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The district supermarket, emptied shelf by shelf in the first fortnight. The carts are still corralled in the lot and a delivery was never unloaded at the side dock.",
+  "notes": [
+    "Footprint 20 x 15 m (GPT reference 17 x 13 m): the lot needs one full row of 5 m stalls plus the side dock to read as a supermarket."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_supermarket.md",
+  "previews": {
+    "hero": "previews/map/Claude_supermarket/hero.png",
+    "front": "previews/map/Claude_supermarket/front.png",
+    "side": "previews/map/Claude_supermarket/side.png",
+    "scale": "previews/map/Claude_supermarket/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    20.0,
+    15.0
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "Claude_road_sign",
+  "base_id": "road_sign",
+  "creator": "Claude",
+  "name": "Road Sign",
+  "category": "decorations",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_road_sign.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_road_sign.glb",
+    "glb_vertices": 628,
+    "glb_triangles": 314,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    6.5,
+    4.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y faces the street or the person using it.",
+  "grid_size_cells": [
+    13,
+    5,
+    49
+  ],
+  "dimensions_m": [
+    0.65,
+    0.25,
+    2.45
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 177,
+  "condition": "worn",
+  "gameplay_use": "Street prop",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "galv",
+    "galv_hi",
+    "paint_white_shadow",
+    "rust_deep",
+    "signal_red",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 2
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 3
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 41
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 2
+    },
+    {
+      "index": 201,
+      "role": "signal_red",
+      "hex": "#A8463B",
+      "voxels": 79
+    },
+    {
+      "index": 210,
+      "role": "paint_white_shadow",
+      "hex": "#B0AEA6",
+      "voxels": 50
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 0.06 x 0.06 x 2.4 m (post); the sign face is non-colliding.",
+  "story": "The stop sign at the end of the residential street. A reversing van clipped it and bent the post back; nobody came to straighten it, and the face is fading.",
+  "notes": [
+    "0.65 m octagon (the reference is 0.51 m; real stop signs are 0.6-0.75 m). At 11 cells the octagon read as a round no-entry sign."
+  ],
+  "generator": "tools/claude/models/catalog/d2_street.py",
+  "spec": "docs/specs/decorations/Claude_road_sign.md",
+  "previews": {
+    "hero": "previews/decorations/Claude_road_sign/hero.png",
+    "front": "previews/decorations/Claude_road_sign/front.png",
+    "side": "previews/decorations/Claude_road_sign/side.png",
+    "scale": "previews/decorations/Claude_road_sign/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": []
+}

@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "id": "Claude_basic_generator",
+  "base_id": "basic_generator",
+  "creator": "Claude",
+  "name": "Basic Generator",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_basic_generator.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_basic_generator.glb",
+    "glb_vertices": 2316,
+    "glb_triangles": 1158,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.025,
+  "resolution_tier": "fine",
+  "resolution_rationale": "2.5 cm cells: a handheld or small gear item whose handles, straps and blades would be 2-4x too thick at 5 cm.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    15.0,
+    10.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the working / interaction side.",
+  "grid_size_cells": [
+    30,
+    20,
+    25
+  ],
+  "dimensions_m": [
+    0.75,
+    0.5,
+    0.625
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 2997,
+  "condition": "used",
+  "gameplay_use": "Power",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "charcoal",
+    "glass_dark",
+    "iron",
+    "iron_edge",
+    "mustard",
+    "mustard_dark",
+    "mustard_deep",
+    "mustard_hi",
+    "porcelain_shadow",
+    "rust_dark",
+    "rust_deep",
+    "soot",
+    "steel",
+    "steel_dark",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 3
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 387
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 500
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 419
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 37
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 28
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 309
+    },
+    {
+      "index": 45,
+      "role": "soot",
+      "hex": "#1B1D1D",
+      "voxels": 178
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 114
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 8
+    },
+    {
+      "index": 116,
+      "role": "porcelain_shadow",
+      "hex": "#ABA69B",
+      "voxels": 20
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 3
+    },
+    {
+      "index": 137,
+      "role": "mustard_hi",
+      "hex": "#C3A05A",
+      "voxels": 288
+    },
+    {
+      "index": 138,
+      "role": "mustard",
+      "hex": "#AA8847",
+      "voxels": 346
+    },
+    {
+      "index": 139,
+      "role": "mustard_dark",
+      "hex": "#876B38",
+      "voxels": 355
+    },
+    {
+      "index": 140,
+      "role": "mustard_deep",
+      "hex": "#63502C",
+      "voxels": 2
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A small open-frame petrol generator bought for camping trips. It now runs a few hours each evening for the fridge and lights; the tank paint is stained under the filler, the muffler has rusted, and oil has blackened the engine base.",
+  "notes": [
+    "Open-frame portable generator: tube frame, fuel tank on top, engine block, outlet panel, pull-start."
+  ],
+  "generator": "tools/claude/models/catalog/b2_survival_gear.py",
+  "spec": "docs/specs/survival/Claude_basic_generator.md",
+  "previews": {
+    "hero": "previews/survival/Claude_basic_generator/hero.png",
+    "front": "previews/survival/Claude_basic_generator/front.png",
+    "side": "previews/survival/Claude_basic_generator/side.png",
+    "scale": "previews/survival/Claude_basic_generator/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.75,
+    0.5
+  ]
+}

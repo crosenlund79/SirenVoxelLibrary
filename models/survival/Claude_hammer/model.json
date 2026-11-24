@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "Claude_hammer",
+  "base_id": "hammer",
+  "creator": "Claude",
+  "name": "Claw Hammer",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_hammer.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_hammer.glb",
+    "glb_vertices": 304,
+    "glb_triangles": 152,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    6.0,
+    15.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "Lies on its side as it would rest on a bench: handle along Y, working end at +Y, lowest point on z = 0. Rotate to the hand for a held pose. The claw faces -X (camera side), the striking face +X.",
+  "grid_size_cells": [
+    12,
+    31,
+    3
+  ],
+  "dimensions_m": [
+    0.15,
+    0.3875,
+    0.0375
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 276,
+  "condition": "used",
+  "gameplay_use": "Tool item 'hammer' (needed to build)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "charcoal",
+    "pine_aged",
+    "pine_hi",
+    "pine_mid",
+    "sawdust",
+    "steel",
+    "steel_dark",
+    "steel_hi"
+  ],
+  "palette_roles": [
+    {
+      "index": 1,
+      "role": "pine_hi",
+      "hex": "#CDA77D",
+      "voxels": 14
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 28
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 56
+    },
+    {
+      "index": 8,
+      "role": "sawdust",
+      "hex": "#D6C19C",
+      "voxels": 70
+    },
+    {
+      "index": 33,
+      "role": "steel_hi",
+      "hex": "#ADB4B2",
+      "voxels": 9
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 14
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 1
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 84
+    }
+  ],
+  "attachments": {
+    "grip": {
+      "description": "Main hand around the darkened lower handle, about 8 cm from the butt.",
+      "voxel": [
+        6,
+        6,
+        1
+      ],
+      "offset_m_from_pivot": [
+        0.0062,
+        -0.1125,
+        0.0188
+      ]
+    }
+  },
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The everyday claw hammer from a kitchen drawer, now the one that builds every barricade. Years of the same hand have darkened the hickory grip; the face is polished bright and the black paint has worn off the claw from pulling nails.",
+  "notes": [
+    "Claw hammer with hickory handle and steel head, grip darkened by hands.",
+    "Height (Z) is the tool's real thickness lying on its side; the reference's larger Z is a coarse-cell minimum."
+  ],
+  "generator": "tools/claude/models/catalog/b1_storage_tools.py",
+  "spec": "docs/specs/survival/Claude_hammer.md",
+  "previews": {
+    "hero": "previews/survival/Claude_hammer/hero.png",
+    "front": "previews/survival/Claude_hammer/front.png",
+    "side": "previews/survival/Claude_hammer/side.png",
+    "scale": "previews/survival/Claude_hammer/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.15,
+    0.3875
+  ]
+}

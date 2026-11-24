@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "id": "Claude_mailbox",
+  "base_id": "mailbox",
+  "creator": "Claude",
+  "name": "Mailbox",
+  "category": "decorations",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_mailbox.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_mailbox.glb",
+    "glb_vertices": 552,
+    "glb_triangles": 276,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    4.0,
+    5.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y faces the street or the person using it.",
+  "grid_size_cells": [
+    8,
+    11,
+    26
+  ],
+  "dimensions_m": [
+    0.4,
+    0.55,
+    1.3
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 340,
+  "condition": "worn",
+  "gameplay_use": "Yard prop (game mailbox)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "galv",
+    "galv_dark",
+    "galv_hi",
+    "grass",
+    "grass_hi",
+    "label_cream",
+    "paper",
+    "rust_deep",
+    "signal_red",
+    "signal_red_dark",
+    "steel_dark",
+    "steel_light",
+    "wgrey",
+    "wgrey_dark",
+    "wgrey_mid",
+    "wgrey_wet"
+  ],
+  "palette_roles": [
+    {
+      "index": 10,
+      "role": "wgrey",
+      "hex": "#8B8478",
+      "voxels": 12
+    },
+    {
+      "index": 11,
+      "role": "wgrey_mid",
+      "hex": "#766F64",
+      "voxels": 48
+    },
+    {
+      "index": 12,
+      "role": "wgrey_dark",
+      "hex": "#5E5850",
+      "voxels": 40
+    },
+    {
+      "index": 16,
+      "role": "wgrey_wet",
+      "hex": "#524C45",
+      "voxels": 12
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 2
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 1
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 32
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 78
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 78
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 2
+    },
+    {
+      "index": 95,
+      "role": "paper",
+      "hex": "#DDD6C6",
+      "voxels": 7
+    },
+    {
+      "index": 182,
+      "role": "grass_hi",
+      "hex": "#94A066",
+      "voxels": 7
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 11
+    },
+    {
+      "index": 201,
+      "role": "signal_red",
+      "hex": "#A8463B",
+      "voxels": 2
+    },
+    {
+      "index": 202,
+      "role": "signal_red_dark",
+      "hex": "#7E3229",
+      "voxels": 7
+    },
+    {
+      "index": 231,
+      "role": "label_cream",
+      "hex": "#D9CFB3",
+      "voxels": 1
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 0.1 x 0.1 x 1.0 m (post) plus box 0.3 x 0.5 x 0.25 m on top.",
+  "story": "A roadside mailbox on a post the mower has clipped too many times. Its red flag is still up for a letter nobody collected, and the box has filled with undelivered mail until the door no longer shuts.",
+  "notes": [
+    "Post-mounted mailbox, flag up, post leaning slightly."
+  ],
+  "generator": "tools/claude/models/catalog/d2_street.py",
+  "spec": "docs/specs/decorations/Claude_mailbox.md",
+  "previews": {
+    "hero": "previews/decorations/Claude_mailbox/hero.png",
+    "front": "previews/decorations/Claude_mailbox/front.png",
+    "side": "previews/decorations/Claude_mailbox/side.png",
+    "scale": "previews/decorations/Claude_mailbox/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.1,
+    0.1
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "id": "Claude_police_car",
+  "base_id": "police_car",
+  "creator": "Claude",
+  "name": "Police Car",
+  "category": "vehicles",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_police_car.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_police_car.glb",
+    "glb_vertices": 3108,
+    "glb_triangles": 1554,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count. Body panels, pillars and 0.65 m wheels need 0.1 m cells; the game's structure grid is also 0.1 m.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    17.0,
+    24.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre between the axles (wheel centres at y = 10 and y = 37 of the body), not the bounding-box centre (the open door widens the -X side).",
+  "front_note": "The vehicle's nose is +Y.",
+  "grid_size_cells": [
+    27,
+    49,
+    15
+  ],
+  "dimensions_m": [
+    2.7,
+    4.9,
+    1.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 3092,
+  "condition": "abandoned",
+  "gameplay_use": "Police-station dressing",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "charcoal",
+    "chrome",
+    "glass_dark",
+    "glass_deep",
+    "glass_hi",
+    "iron_edge",
+    "label_cream",
+    "lamp_blue",
+    "lamp_red",
+    "navy",
+    "navy_dark",
+    "paint_white",
+    "paint_white_shadow",
+    "porcelain_shadow",
+    "screen",
+    "signal_red_dark",
+    "slate_dark",
+    "slate_deep",
+    "soot",
+    "steel_dark",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 44
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 9
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 137
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 190
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 10
+    },
+    {
+      "index": 45,
+      "role": "soot",
+      "hex": "#1B1D1D",
+      "voxels": 116
+    },
+    {
+      "index": 116,
+      "role": "porcelain_shadow",
+      "hex": "#ABA69B",
+      "voxels": 20
+    },
+    {
+      "index": 120,
+      "role": "chrome",
+      "hex": "#C4C9C7",
+      "voxels": 3
+    },
+    {
+      "index": 121,
+      "role": "glass_hi",
+      "hex": "#A7BDC2",
+      "voxels": 6
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 49
+    },
+    {
+      "index": 124,
+      "role": "glass_deep",
+      "hex": "#42535A",
+      "voxels": 85
+    },
+    {
+      "index": 125,
+      "role": "screen",
+      "hex": "#262C2F",
+      "voxels": 102
+    },
+    {
+      "index": 131,
+      "role": "slate_dark",
+      "hex": "#4B585E",
+      "voxels": 29
+    },
+    {
+      "index": 132,
+      "role": "slate_deep",
+      "hex": "#3A4449",
+      "voxels": 8
+    },
+    {
+      "index": 202,
+      "role": "signal_red_dark",
+      "hex": "#7E3229",
+      "voxels": 12
+    },
+    {
+      "index": 207,
+      "role": "lamp_blue",
+      "hex": "#4E78A3",
+      "voxels": 10
+    },
+    {
+      "index": 208,
+      "role": "lamp_red",
+      "hex": "#B04B43",
+      "voxels": 10
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 467
+    },
+    {
+      "index": 210,
+      "role": "paint_white_shadow",
+      "hex": "#B0AEA6",
+      "voxels": 179
+    },
+    {
+      "index": 211,
+      "role": "navy",
+      "hex": "#3E4A5B",
+      "voxels": 1089
+    },
+    {
+      "index": 212,
+      "role": "navy_dark",
+      "hex": "#2F3846",
+      "voxels": 513
+    },
+    {
+      "index": 231,
+      "role": "label_cream",
+      "hex": "#D9CFB3",
+      "voxels": 4
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 1.8 x 4.9 x 1.45 m centred on the pivot; the open door separately if needed.",
+  "story": "A patrol car abandoned at a roadblock that was never finished. The driver's door was flung open and left that way; the lightbar is dark, the push bar is scuffed from pushing stalled cars off the road, and there is no marking left that says which force it belonged to.",
+  "notes": [
+    "The open door adds 0.8 m to the width (2.8 m with the door, 2.0 m closed)."
+  ],
+  "generator": "tools/claude/models/catalog/d3_vehicles.py",
+  "spec": "docs/specs/vehicles/Claude_police_car.md",
+  "previews": {
+    "hero": "previews/vehicles/Claude_police_car/hero.png",
+    "front": "previews/vehicles/Claude_police_car/front.png",
+    "side": "previews/vehicles/Claude_police_car/side.png",
+    "scale": "previews/vehicles/Claude_police_car/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": []
+}

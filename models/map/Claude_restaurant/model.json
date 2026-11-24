@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "id": "Claude_restaurant",
+  "base_id": "restaurant",
+  "creator": "Claude",
+  "name": "Restaurant",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_restaurant.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_restaurant.glb",
+    "glb_vertices": 1224,
+    "glb_triangles": 612,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    9.0,
+    10.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    18,
+    20,
+    11
+  ],
+  "dimensions_m": [
+    9.0,
+    10.0,
+    5.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1166,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Food)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "ash_dark",
+    "char",
+    "concrete_dark",
+    "concrete_hi",
+    "cream_hi",
+    "cream_mid",
+    "glass",
+    "glass_dark",
+    "grass",
+    "leaf_mid",
+    "paint_white",
+    "red",
+    "red_dark",
+    "roof",
+    "sage",
+    "sage_dark",
+    "sage_hi",
+    "soot",
+    "steel_light",
+    "wgrey",
+    "wgrey_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 10,
+      "role": "wgrey",
+      "hex": "#8B8478",
+      "voxels": 98
+    },
+    {
+      "index": 12,
+      "role": "wgrey_dark",
+      "hex": "#5E5850",
+      "voxels": 9
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 7
+    },
+    {
+      "index": 45,
+      "role": "soot",
+      "hex": "#1B1D1D",
+      "voxels": 21
+    },
+    {
+      "index": 62,
+      "role": "ash_dark",
+      "hex": "#66615C",
+      "voxels": 71
+    },
+    {
+      "index": 63,
+      "role": "char",
+      "hex": "#2B2522",
+      "voxels": 45
+    },
+    {
+      "index": 82,
+      "role": "red",
+      "hex": "#9A594B",
+      "voxels": 326
+    },
+    {
+      "index": 83,
+      "role": "red_dark",
+      "hex": "#7B463B",
+      "voxels": 39
+    },
+    {
+      "index": 89,
+      "role": "cream_hi",
+      "hex": "#E4DCCB",
+      "voxels": 1
+    },
+    {
+      "index": 91,
+      "role": "cream_mid",
+      "hex": "#C7BCA6",
+      "voxels": 9
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 24
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 176
+    },
+    {
+      "index": 122,
+      "role": "glass",
+      "hex": "#829A9F",
+      "voxels": 8
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 21
+    },
+    {
+      "index": 145,
+      "role": "sage_hi",
+      "hex": "#93A193",
+      "voxels": 1
+    },
+    {
+      "index": 146,
+      "role": "sage",
+      "hex": "#7A887B",
+      "voxels": 9
+    },
+    {
+      "index": 147,
+      "role": "sage_dark",
+      "hex": "#637064",
+      "voxels": 3
+    },
+    {
+      "index": 179,
+      "role": "leaf_mid",
+      "hex": "#5C7044",
+      "voxels": 10
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 54
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 10
+    },
+    {
+      "index": 218,
+      "role": "roof",
+      "hex": "#5A5E61",
+      "voxels": 224
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A family restaurant with a timber patio. A kitchen fire burned out the camera-side end after the staff fled; the patio umbrellas were left open and one has blown over.",
+  "notes": [
+    "Pitched-roof restaurant with patio."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_restaurant.md",
+  "previews": {
+    "hero": "previews/map/Claude_restaurant/hero.png",
+    "front": "previews/map/Claude_restaurant/front.png",
+    "side": "previews/map/Claude_restaurant/side.png",
+    "scale": "previews/map/Claude_restaurant/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    9.0,
+    10.0
+  ]
+}

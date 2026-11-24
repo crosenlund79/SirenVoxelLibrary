@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "id": "Claude_streetlight",
+  "base_id": "streetlight",
+  "creator": "Claude",
+  "name": "Streetlight",
+  "category": "decorations",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_streetlight.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_streetlight.glb",
+    "glb_vertices": 544,
+    "glb_triangles": 272,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    2.0,
+    2.0,
+    0.0
+  ],
+  "pivot_note": "Centre of the pole base at ground level (not the bounding-box centre).",
+  "front_note": "+Y faces the street or the person using it.",
+  "grid_size_cells": [
+    4,
+    16,
+    43
+  ],
+  "dimensions_m": [
+    0.4,
+    1.6,
+    4.3
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 261,
+  "condition": "worn",
+  "gameplay_use": "Street prop (game streetlight_dead)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "charcoal",
+    "concrete",
+    "concrete_dark",
+    "galv",
+    "galv_dark",
+    "galv_hi",
+    "glass_dark",
+    "glass_deep",
+    "iron",
+    "rust_deep",
+    "soot",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 4
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 1
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 1
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 51
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 134
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 4
+    },
+    {
+      "index": 45,
+      "role": "soot",
+      "hex": "#1B1D1D",
+      "voxels": 1
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 36
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 5
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 12
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 4
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 1
+    },
+    {
+      "index": 124,
+      "role": "glass_deep",
+      "hex": "#42535A",
+      "voxels": 7
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Cylinder r=0.12 m, h=4.2 m at the pivot; the arm is non-colliding.",
+  "story": "The streetlight outside a row of houses, dark since the grid went down. Someone has prised off the access cover at its foot to strip the copper, and rust is creeping up from the base.",
+  "notes": [
+    "The arm reaches 1.4 m over the road as the brief's curved arm and cobra head require, so the footprint is 0.4 x 1.7 m (the reference is 0.45 x 0.35 m).",
+    "Height 4.3 m matches the reference."
+  ],
+  "generator": "tools/claude/models/catalog/d2_street.py",
+  "spec": "docs/specs/decorations/Claude_streetlight.md",
+  "previews": {
+    "hero": "previews/decorations/Claude_streetlight/hero.png",
+    "front": "previews/decorations/Claude_streetlight/front.png",
+    "side": "previews/decorations/Claude_streetlight/side.png",
+    "scale": "previews/decorations/Claude_streetlight/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": []
+}

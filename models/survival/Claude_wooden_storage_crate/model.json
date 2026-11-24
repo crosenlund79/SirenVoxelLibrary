@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "id": "Claude_wooden_storage_crate",
+  "base_id": "wooden_storage_crate",
+  "creator": "Claude",
+  "name": "Wooden Storage Crate",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_wooden_storage_crate.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_wooden_storage_crate.glb",
+    "glb_vertices": 716,
+    "glb_triangles": 358,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    9.0,
+    6.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the working / interaction side.",
+  "grid_size_cells": [
+    18,
+    13,
+    12
+  ],
+  "dimensions_m": [
+    0.9,
+    0.65,
+    0.6
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 943,
+  "condition": "improvised",
+  "gameplay_use": "Build piece 'Storage crate' (3 planks + 4 nails)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "iron",
+    "khaki",
+    "khaki_dark",
+    "pine_aged",
+    "pine_dark",
+    "pine_light",
+    "pine_mid",
+    "rust_deep",
+    "sage_dark",
+    "sage_deep",
+    "wgrey",
+    "wgrey_dark",
+    "wgrey_deep",
+    "wgrey_hi",
+    "wgrey_mid"
+  ],
+  "palette_roles": [
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 178
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 141
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 152
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 161
+    },
+    {
+      "index": 9,
+      "role": "wgrey_hi",
+      "hex": "#A59E91",
+      "voxels": 54
+    },
+    {
+      "index": 10,
+      "role": "wgrey",
+      "hex": "#8B8478",
+      "voxels": 88
+    },
+    {
+      "index": 11,
+      "role": "wgrey_mid",
+      "hex": "#766F64",
+      "voxels": 69
+    },
+    {
+      "index": 12,
+      "role": "wgrey_dark",
+      "hex": "#5E5850",
+      "voxels": 12
+    },
+    {
+      "index": 13,
+      "role": "wgrey_deep",
+      "hex": "#46423C",
+      "voxels": 8
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 31
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 3
+    },
+    {
+      "index": 147,
+      "role": "sage_dark",
+      "hex": "#637064",
+      "voxels": 14
+    },
+    {
+      "index": 148,
+      "role": "sage_deep",
+      "hex": "#4C574D",
+      "voxels": 12
+    },
+    {
+      "index": 175,
+      "role": "khaki",
+      "hex": "#9C8D6E",
+      "voxels": 12
+    },
+    {
+      "index": 176,
+      "role": "khaki_dark",
+      "hex": "#7B6F57",
+      "voxels": 8
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 0.85 x 0.62 x 0.6 m; rope handles and the lid lip are overhangs.",
+  "story": "Knocked together in the garage from backyard fence boards, a pallet and one sage-painted kitchen cabinet panel. The lid swings on two strap hinges taken off the garden gate, and the rope handles are cut from an old washing line.",
+  "notes": [
+    "Player-built crate of mismatched scavenged boards with a hinged lid and rope handles; nail heads visible."
+  ],
+  "generator": "tools/claude/models/catalog/b1_storage_tools.py",
+  "spec": "docs/specs/survival/Claude_wooden_storage_crate.md",
+  "previews": {
+    "hero": "previews/survival/Claude_wooden_storage_crate/hero.png",
+    "front": "previews/survival/Claude_wooden_storage_crate/front.png",
+    "side": "previews/survival/Claude_wooden_storage_crate/side.png",
+    "scale": "previews/survival/Claude_wooden_storage_crate/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.8,
+    0.6
+  ]
+}

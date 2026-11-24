@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "id": "Claude_flashlight",
+  "base_id": "flashlight",
+  "creator": "Claude",
+  "name": "Flashlight",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_flashlight.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_flashlight.glb",
+    "glb_vertices": 1180,
+    "glb_triangles": 590,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    3.5,
+    14.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "Lies on its side as it would rest on a table: lens points +Y, switch up, lowest point on z = 0.",
+  "grid_size_cells": [
+    7,
+    25,
+    7
+  ],
+  "dimensions_m": [
+    0.0875,
+    0.3125,
+    0.0875
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 433,
+  "condition": "used",
+  "gameplay_use": "Tool item 'flashlight' (clinic access)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "charcoal",
+    "glass_hi",
+    "iron_edge",
+    "mirror",
+    "mustard_dark",
+    "mustard_deep",
+    "ochre_dark",
+    "olive",
+    "steel_dark",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 16
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 1
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 96
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 80
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 2
+    },
+    {
+      "index": 86,
+      "role": "olive",
+      "hex": "#777B55",
+      "voxels": 12
+    },
+    {
+      "index": 96,
+      "role": "ochre_dark",
+      "hex": "#826A3A",
+      "voxels": 6
+    },
+    {
+      "index": 121,
+      "role": "glass_hi",
+      "hex": "#A7BDC2",
+      "voxels": 20
+    },
+    {
+      "index": 127,
+      "role": "mirror",
+      "hex": "#BAC6C6",
+      "voxels": 1
+    },
+    {
+      "index": 139,
+      "role": "mustard_dark",
+      "hex": "#876B38",
+      "voxels": 165
+    },
+    {
+      "index": 140,
+      "role": "mustard_deep",
+      "hex": "#63502C",
+      "voxels": 34
+    }
+  ],
+  "attachments": {
+    "grip": {
+      "description": "Main hand around the ribbed rubber grip, thumb on the switch.",
+      "voxel": [
+        3,
+        11,
+        3
+      ],
+      "offset_m_from_pivot": [
+        0.0,
+        -0.0375,
+        0.0438
+      ]
+    }
+  },
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The big rubber flashlight from the hall cupboard, the one that always worked in power cuts. Its lanyard is still looped from the last time someone carried it down to check the basement.",
+  "notes": [
+    "Rubber-gripped flashlight with a flared head and pale lens (no emissive), a lanyard loop.",
+    "Head is 8.75 cm across (7 cells): an odd cell count keeps the lens a clean circle; the reference's 10 cm is a coarse-cell size."
+  ],
+  "generator": "tools/claude/models/catalog/b2_survival_gear.py",
+  "spec": "docs/specs/survival/Claude_flashlight.md",
+  "previews": {
+    "hero": "previews/survival/Claude_flashlight/hero.png",
+    "front": "previews/survival/Claude_flashlight/front.png",
+    "side": "previews/survival/Claude_flashlight/side.png",
+    "scale": "previews/survival/Claude_flashlight/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.0875,
+    0.2625
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "id": "Claude_quarry_structure",
+  "base_id": "quarry_structure",
+  "creator": "Claude",
+  "name": "Quarry Structures",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_quarry_structure.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_quarry_structure.glb",
+    "glb_vertices": 1540,
+    "glb_triangles": 770,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    15.0,
+    12.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    30,
+    24,
+    14
+  ],
+  "dimensions_m": [
+    15.0,
+    12.0,
+    7.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1751,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Construction)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "almond",
+    "black",
+    "charcoal",
+    "concrete_dark",
+    "galv",
+    "glass_dark",
+    "gravel",
+    "khaki",
+    "moss",
+    "rust_dark",
+    "safety_orange_dark",
+    "steel",
+    "steel_dark",
+    "stone",
+    "stone_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 120
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 94
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 30
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 6
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 63
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 36
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 24
+    },
+    {
+      "index": 109,
+      "role": "stone",
+      "hex": "#827E76",
+      "voxels": 636
+    },
+    {
+      "index": 110,
+      "role": "stone_dark",
+      "hex": "#68645E",
+      "voxels": 202
+    },
+    {
+      "index": 111,
+      "role": "moss",
+      "hex": "#646C4F",
+      "voxels": 10
+    },
+    {
+      "index": 118,
+      "role": "almond",
+      "hex": "#CFC5AC",
+      "voxels": 80
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 8
+    },
+    {
+      "index": 175,
+      "role": "khaki",
+      "hex": "#9C8D6E",
+      "voxels": 50
+    },
+    {
+      "index": 200,
+      "role": "gravel",
+      "hex": "#8C877D",
+      "voxels": 332
+    },
+    {
+      "index": 206,
+      "role": "safety_orange_dark",
+      "hex": "#91512A",
+      "voxels": 60
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A gravel quarry's processing plant. The crusher stopped with a load still in its hopper; the stockpiles have started to grow weeds and the site office door hangs open.",
+  "notes": [
+    "Crusher tower, conveyor, gravel piles and site office."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_quarry_structure.md",
+  "previews": {
+    "hero": "previews/map/Claude_quarry_structure/hero.png",
+    "front": "previews/map/Claude_quarry_structure/front.png",
+    "side": "previews/map/Claude_quarry_structure/side.png",
+    "scale": "previews/map/Claude_quarry_structure/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    15.0,
+    12.0
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "id": "Claude_industrial_warehouse",
+  "base_id": "industrial_warehouse",
+  "creator": "Claude",
+  "name": "Industrial Warehouse",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_industrial_warehouse.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_industrial_warehouse.glb",
+    "glb_vertices": 1592,
+    "glb_triangles": 796,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    18.0,
+    14.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    36,
+    28,
+    21
+  ],
+  "dimensions_m": [
+    18.0,
+    14.0,
+    10.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 3780,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Construction)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "concrete",
+    "concrete_dark",
+    "galv",
+    "galv_dark",
+    "galv_hi",
+    "glass_dark",
+    "gravel",
+    "green",
+    "green_dark",
+    "hazard_yellow_dark",
+    "roof_hi",
+    "steel",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 12
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 28
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 30
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 84
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 1122
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 252
+    },
+    {
+      "index": 67,
+      "role": "green",
+      "hex": "#566C60",
+      "voxels": 12
+    },
+    {
+      "index": 68,
+      "role": "green_dark",
+      "hex": "#46584F",
+      "voxels": 10
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 432
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 680
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 64
+    },
+    {
+      "index": 200,
+      "role": "gravel",
+      "hex": "#8C877D",
+      "voxels": 72
+    },
+    {
+      "index": 204,
+      "role": "hazard_yellow_dark",
+      "hex": "#9A7E2D",
+      "voxels": 10
+    },
+    {
+      "index": 217,
+      "role": "roof_hi",
+      "hex": "#6E7274",
+      "voxels": 972
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A distribution warehouse on the industrial estate. Two loading doors are still locked; the middle one was torn open by a truck that reversed straight through it.",
+  "notes": [
+    "Corrugated warehouse with loading doors and roof vents."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_industrial_warehouse.md",
+  "previews": {
+    "hero": "previews/map/Claude_industrial_warehouse/hero.png",
+    "front": "previews/map/Claude_industrial_warehouse/front.png",
+    "side": "previews/map/Claude_industrial_warehouse/side.png",
+    "scale": "previews/map/Claude_industrial_warehouse/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    18.0,
+    14.0
+  ]
+}

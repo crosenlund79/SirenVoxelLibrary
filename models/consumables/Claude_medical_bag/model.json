@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "id": "Claude_medical_bag",
+  "base_id": "medical_bag",
+  "creator": "Claude",
+  "name": "Medical Bag",
+  "category": "consumables",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_C",
+  "scale_family": "full",
+  "source": "Claude_medical_bag.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_medical_bag.glb",
+    "glb_vertices": 1028,
+    "glb_triangles": 514,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it. Overridden from 2.5 cm to 1.25 cm (the medical family's tier): zips, webbing and the cross patch are 1-3 cm features that would all become 2.5 cm bars, and the cross would shrink to a 3-cell plus.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    16.5,
+    9.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the label / opening side.",
+  "grid_size_cells": [
+    33,
+    19,
+    25
+  ],
+  "dimensions_m": [
+    0.4125,
+    0.2375,
+    0.3125
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 3269,
+  "condition": "used",
+  "gameplay_use": "Medical loot container",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "blue_dark",
+    "blue_deep",
+    "charcoal",
+    "galv",
+    "iron",
+    "navy",
+    "navy_dark",
+    "paper",
+    "signal_red",
+    "steel",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 2
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 32
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 148
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 85
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 172
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 42
+    },
+    {
+      "index": 95,
+      "role": "paper",
+      "hex": "#DDD6C6",
+      "voxels": 48
+    },
+    {
+      "index": 100,
+      "role": "blue_dark",
+      "hex": "#4E5F6B",
+      "voxels": 4
+    },
+    {
+      "index": 101,
+      "role": "blue_deep",
+      "hex": "#3E4C56",
+      "voxels": 35
+    },
+    {
+      "index": 201,
+      "role": "signal_red",
+      "hex": "#A8463B",
+      "voxels": 33
+    },
+    {
+      "index": 211,
+      "role": "navy",
+      "hex": "#3E4A5B",
+      "voxels": 2127
+    },
+    {
+      "index": 212,
+      "role": "navy_dark",
+      "hex": "#2F3846",
+      "voxels": 541
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A paramedic's duffel left in the back of an ambulance at a roadblock. It has been opened and closed many times since: the zips are intact, the base is grimy and the reflective band has dulled.",
+  "notes": [
+    "Paramedic duffel with a red cross patch, zip pockets and strap."
+  ],
+  "generator": "tools/claude/models/catalog/c2_consumables.py",
+  "spec": "docs/specs/consumables/Claude_medical_bag.md",
+  "previews": {
+    "hero": "previews/consumables/Claude_medical_bag/hero.png",
+    "front": "previews/consumables/Claude_medical_bag/front.png",
+    "side": "previews/consumables/Claude_medical_bag/side.png",
+    "scale": "previews/consumables/Claude_medical_bag/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_C.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.4125,
+    0.2375
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "id": "Claude_improvised_forge",
+  "base_id": "improvised_forge",
+  "creator": "Claude",
+  "name": "Improvised Forge",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_improvised_forge.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_improvised_forge.glb",
+    "glb_vertices": 1792,
+    "glb_triangles": 896,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    11.0,
+    7.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the working / interaction side.",
+  "grid_size_cells": [
+    20,
+    13,
+    22
+  ],
+  "dimensions_m": [
+    1.0,
+    0.65,
+    1.1
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1012,
+  "condition": "improvised",
+  "gameplay_use": "Metalworking station",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "beige",
+    "beige_dark",
+    "black",
+    "card",
+    "card_dark",
+    "card_deep",
+    "card_hi",
+    "char",
+    "charcoal",
+    "coal",
+    "galv",
+    "galv_dark",
+    "galv_hi",
+    "iron",
+    "iron_edge",
+    "iron_warm",
+    "rust_dark",
+    "rust_deep",
+    "soot",
+    "steel",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 10
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 111
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 2
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 14
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 2
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 61
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 21
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 416
+    },
+    {
+      "index": 45,
+      "role": "soot",
+      "hex": "#1B1D1D",
+      "voxels": 23
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 50
+    },
+    {
+      "index": 47,
+      "role": "iron_warm",
+      "hex": "#4A4440",
+      "voxels": 76
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 6
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 47
+    },
+    {
+      "index": 60,
+      "role": "coal",
+      "hex": "#4A2E26",
+      "voxels": 3
+    },
+    {
+      "index": 63,
+      "role": "char",
+      "hex": "#2B2522",
+      "voxels": 12
+    },
+    {
+      "index": 157,
+      "role": "card_hi",
+      "hex": "#C2A47A",
+      "voxels": 28
+    },
+    {
+      "index": 158,
+      "role": "card",
+      "hex": "#A88A62",
+      "voxels": 57
+    },
+    {
+      "index": 159,
+      "role": "card_dark",
+      "hex": "#8A714F",
+      "voxels": 22
+    },
+    {
+      "index": 160,
+      "role": "card_deep",
+      "hex": "#6A573E",
+      "voxels": 5
+    },
+    {
+      "index": 215,
+      "role": "beige",
+      "hex": "#AA9D80",
+      "voxels": 23
+    },
+    {
+      "index": 216,
+      "role": "beige_dark",
+      "hex": "#8B8068",
+      "voxels": 23
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "Built in the garage after the outage by a neighbour who used to weld: a car brake drum on a steel-pipe stand, a furnace blower on an extension lead and a sheet of scrap steel as a heat shield. A length of rail is the anvil.",
+  "notes": [
+    "Brake-drum forge welded onto a steel-pipe stand, an air pipe to a small blower, charcoal bed, tongs; workshop junk, not fantasy."
+  ],
+  "generator": "tools/claude/models/catalog/b2_survival_gear.py",
+  "spec": "docs/specs/survival/Claude_improvised_forge.md",
+  "previews": {
+    "hero": "previews/survival/Claude_improvised_forge/hero.png",
+    "front": "previews/survival/Claude_improvised_forge/front.png",
+    "side": "previews/survival/Claude_improvised_forge/side.png",
+    "scale": "previews/survival/Claude_improvised_forge/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.9,
+    0.6
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "Claude_wooden_post",
+  "base_id": "wooden_post",
+  "creator": "Claude",
+  "name": "Wooden Post",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_wooden_post.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_wooden_post.glb",
+    "glb_vertices": 392,
+    "glb_triangles": 196,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig. A 0.2 m post is two cells wide at 0.1 m, so its steel base would be a 10 cm slab and the beam notch would remove half the post; at 0.05 m the base plate, stirrup flanges and a half-depth notch keep real proportions.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    3.0,
+    3.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the outside face; the module fills its full span.",
+  "grid_size_cells": [
+    6,
+    6,
+    50
+  ],
+  "dimensions_m": [
+    0.3,
+    0.3,
+    2.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 640,
+  "condition": "new",
+  "gameplay_use": "Structural post",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "galv",
+    "galv_hi",
+    "pine_aged",
+    "pine_dark",
+    "pine_hi",
+    "pine_light",
+    "pine_mid",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 1,
+      "role": "pine_hi",
+      "hex": "#CDA77D",
+      "voxels": 184
+    },
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 297
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 68
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 17
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 10
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 6
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 10
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 48
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A fresh 8x8 post from a pallet of yard lumber, set on a galvanised stirrup base bolted to the slab, its top already notched to take a beam that was never delivered.",
+  "notes": [
+    "0.3 x 0.3 x 2.5 m including the base plate; the post itself is 0.2 m square so it lands on the 0.1 m structure grid (reference 0.17 m)."
+  ],
+  "generator": "tools/claude/models/catalog/b3_construction.py",
+  "spec": "docs/specs/construction/Claude_wooden_post.md",
+  "previews": {
+    "hero": "previews/construction/Claude_wooden_post/hero.png",
+    "front": "previews/construction/Claude_wooden_post/front.png",
+    "side": "previews/construction/Claude_wooden_post/side.png",
+    "scale": "previews/construction/Claude_wooden_post/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.3,
+    0.3
+  ]
+}

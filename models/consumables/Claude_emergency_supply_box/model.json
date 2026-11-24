@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "Claude_emergency_supply_box",
+  "base_id": "emergency_supply_box",
+  "creator": "Claude",
+  "name": "Emergency Supply Box",
+  "category": "consumables",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_C",
+  "scale_family": "full",
+  "source": "Claude_emergency_supply_box.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_emergency_supply_box.glb",
+    "glb_vertices": 604,
+    "glb_triangles": 302,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.025,
+  "resolution_tier": "fine",
+  "resolution_rationale": "2.5 cm cells: a handheld or small gear item whose handles, straps and blades would be 2-4x too thick at 5 cm.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    11.0,
+    7.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the label / opening side.",
+  "grid_size_cells": [
+    22,
+    15,
+    16
+  ],
+  "dimensions_m": [
+    0.55,
+    0.375,
+    0.4
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1452,
+  "condition": "new",
+  "gameplay_use": "Supply crate",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "charcoal",
+    "signal_red",
+    "slate",
+    "slate_dark",
+    "slate_deep",
+    "slate_hi",
+    "steel",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 4
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 4
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 168
+    },
+    {
+      "index": 129,
+      "role": "slate_hi",
+      "hex": "#74848B",
+      "voxels": 60
+    },
+    {
+      "index": 130,
+      "role": "slate",
+      "hex": "#5E6D74",
+      "voxels": 216
+    },
+    {
+      "index": 131,
+      "role": "slate_dark",
+      "hex": "#4B585E",
+      "voxels": 712
+    },
+    {
+      "index": 132,
+      "role": "slate_deep",
+      "hex": "#3A4449",
+      "voxels": 248
+    },
+    {
+      "index": 201,
+      "role": "signal_red",
+      "hex": "#A8463B",
+      "voxels": 40
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A heavy-duty plastic tote packed by a careful neighbour as an emergency kit and strapped shut. It was never opened: the straps are tight, the plastic is clean and the stencilled crosses are crisp.",
+  "notes": [
+    "Sturdy plastic tote with a stencilled cross, lid strapped down."
+  ],
+  "generator": "tools/claude/models/catalog/c2_consumables.py",
+  "spec": "docs/specs/consumables/Claude_emergency_supply_box.md",
+  "previews": {
+    "hero": "previews/consumables/Claude_emergency_supply_box/hero.png",
+    "front": "previews/consumables/Claude_emergency_supply_box/front.png",
+    "side": "previews/consumables/Claude_emergency_supply_box/side.png",
+    "scale": "previews/consumables/Claude_emergency_supply_box/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_C.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.55,
+    0.375
+  ]
+}

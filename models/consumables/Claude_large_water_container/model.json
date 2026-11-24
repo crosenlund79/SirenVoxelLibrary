@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "Claude_large_water_container",
+  "base_id": "large_water_container",
+  "creator": "Claude",
+  "name": "Large Water Container",
+  "category": "consumables",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_C",
+  "scale_family": "full",
+  "source": "Claude_large_water_container.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_large_water_container.glb",
+    "glb_vertices": 428,
+    "glb_triangles": 214,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.025,
+  "resolution_tier": "fine",
+  "resolution_rationale": "2.5 cm cells: a handheld or small gear item whose handles, straps and blades would be 2-4x too thick at 5 cm.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    5.5,
+    5.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the label / opening side.",
+  "grid_size_cells": [
+    11,
+    11,
+    18
+  ],
+  "dimensions_m": [
+    0.275,
+    0.275,
+    0.45
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 819,
+  "condition": "used",
+  "gameplay_use": "Bulk water storage",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "blue_dark",
+    "bluegrey",
+    "bluegrey_deep",
+    "bottle",
+    "bottle_cap",
+    "charcoal",
+    "label_blue",
+    "navy"
+  ],
+  "palette_roles": [
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 1
+    },
+    {
+      "index": 74,
+      "role": "bluegrey",
+      "hex": "#687A82",
+      "voxels": 3
+    },
+    {
+      "index": 76,
+      "role": "bluegrey_deep",
+      "hex": "#404C52",
+      "voxels": 106
+    },
+    {
+      "index": 100,
+      "role": "blue_dark",
+      "hex": "#4E5F6B",
+      "voxels": 9
+    },
+    {
+      "index": 211,
+      "role": "navy",
+      "hex": "#3E4A5B",
+      "voxels": 6
+    },
+    {
+      "index": 226,
+      "role": "bottle",
+      "hex": "#7F9CA8",
+      "voxels": 12
+    },
+    {
+      "index": 227,
+      "role": "bottle_cap",
+      "hex": "#4E6E86",
+      "voxels": 652
+    },
+    {
+      "index": 230,
+      "role": "label_blue",
+      "hex": "#556F8A",
+      "voxels": 30
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A 20-litre camping water container that used to live in a car boot for summer trips. It has been refilled from the rain barrel many times; the base is scuffed and grey with grime and the spigot cap is a slightly different blue.",
+  "notes": [
+    "20 L stackable blue plastic water container with moulded handle and a spigot cap."
+  ],
+  "generator": "tools/claude/models/catalog/c2_consumables.py",
+  "spec": "docs/specs/consumables/Claude_large_water_container.md",
+  "previews": {
+    "hero": "previews/consumables/Claude_large_water_container/hero.png",
+    "front": "previews/consumables/Claude_large_water_container/front.png",
+    "side": "previews/consumables/Claude_large_water_container/side.png",
+    "scale": "previews/consumables/Claude_large_water_container/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_C.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.275,
+    0.275
+  ]
+}

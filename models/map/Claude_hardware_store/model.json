@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "id": "Claude_hardware_store",
+  "base_id": "hardware_store",
+  "creator": "Claude",
+  "name": "Hardware Store",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_hardware_store.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_hardware_store.glb",
+    "glb_vertices": 1180,
+    "glb_triangles": 590,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    13.0,
+    11.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    26,
+    22,
+    14
+  ],
+  "dimensions_m": [
+    13.0,
+    11.0,
+    7.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1597,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Hardware Store (current destination))",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "asphalt",
+    "beige",
+    "card",
+    "concrete_dark",
+    "concrete_hi",
+    "galv",
+    "galv_dark",
+    "galv_hi",
+    "glass",
+    "glass_dark",
+    "grass",
+    "gravel",
+    "green",
+    "green_dark",
+    "khaki",
+    "khaki_dark",
+    "leaf",
+    "leaf_mid",
+    "line_white",
+    "pine_light",
+    "pine_mid",
+    "roof",
+    "sawdust",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 41
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 21
+    },
+    {
+      "index": 8,
+      "role": "sawdust",
+      "hex": "#D6C19C",
+      "voxels": 18
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 77
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 6
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 50
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 93
+    },
+    {
+      "index": 67,
+      "role": "green",
+      "hex": "#566C60",
+      "voxels": 9
+    },
+    {
+      "index": 68,
+      "role": "green_dark",
+      "hex": "#46584F",
+      "voxels": 24
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 67
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 180
+    },
+    {
+      "index": 122,
+      "role": "glass",
+      "hex": "#829A9F",
+      "voxels": 12
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 36
+    },
+    {
+      "index": 158,
+      "role": "card",
+      "hex": "#A88A62",
+      "voxels": 3
+    },
+    {
+      "index": 175,
+      "role": "khaki",
+      "hex": "#9C8D6E",
+      "voxels": 6
+    },
+    {
+      "index": 176,
+      "role": "khaki_dark",
+      "hex": "#7B6F57",
+      "voxels": 4
+    },
+    {
+      "index": 178,
+      "role": "leaf",
+      "hex": "#6F8551",
+      "voxels": 6
+    },
+    {
+      "index": 179,
+      "role": "leaf_mid",
+      "hex": "#5C7044",
+      "voxels": 6
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 32
+    },
+    {
+      "index": 194,
+      "role": "asphalt",
+      "hex": "#4F5151",
+      "voxels": 148
+    },
+    {
+      "index": 197,
+      "role": "line_white",
+      "hex": "#CDCBC1",
+      "voxels": 20
+    },
+    {
+      "index": 200,
+      "role": "gravel",
+      "hex": "#8C877D",
+      "voxels": 160
+    },
+    {
+      "index": 215,
+      "role": "beige",
+      "hex": "#AA9D80",
+      "voxels": 448
+    },
+    {
+      "index": 218,
+      "role": "roof",
+      "hex": "#5A5E61",
+      "voxels": 130
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The town hardware store, stripped of generators, fuel cans and tarps early on. The lumber yard behind the fence was left nearly full; the gate chain was cut.",
+  "notes": [
+    "Store with fenced lumber/garden yard."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_hardware_store.md",
+  "previews": {
+    "hero": "previews/map/Claude_hardware_store/hero.png",
+    "front": "previews/map/Claude_hardware_store/front.png",
+    "side": "previews/map/Claude_hardware_store/side.png",
+    "scale": "previews/map/Claude_hardware_store/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    13.0,
+    11.0
+  ]
+}

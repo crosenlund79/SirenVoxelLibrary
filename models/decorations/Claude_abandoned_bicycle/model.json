@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "id": "Claude_abandoned_bicycle",
+  "base_id": "abandoned_bicycle",
+  "creator": "Claude",
+  "name": "Abandoned Bicycle",
+  "category": "decorations",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_abandoned_bicycle.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_abandoned_bicycle.glb",
+    "glb_vertices": 6648,
+    "glb_triangles": 3324,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.025,
+  "resolution_tier": "fine",
+  "resolution_rationale": "2.5 cm cells: a handheld or small gear item whose handles, straps and blades would be 2-4x too thick at 5 cm. Tubes, spokes and the rack need 2.5 cm cells; at 5 cm the frame is a thick outline with no wheel structure.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    33.0,
+    19.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y faces the street or the person using it.",
+  "grid_size_cells": [
+    65,
+    36,
+    14
+  ],
+  "dimensions_m": [
+    1.625,
+    0.9,
+    0.35
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1300,
+  "condition": "abandoned",
+  "gameplay_use": "Street dressing",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "charcoal",
+    "cream_deep",
+    "leather_deep",
+    "rust_dark",
+    "rust_deep",
+    "safety_orange_dark",
+    "steel",
+    "steel_dark",
+    "steel_light",
+    "teal",
+    "teal_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 102
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 130
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 197
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 26
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 566
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 17
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 17
+    },
+    {
+      "index": 93,
+      "role": "cream_deep",
+      "hex": "#988C77",
+      "voxels": 1
+    },
+    {
+      "index": 150,
+      "role": "teal",
+      "hex": "#587372",
+      "voxels": 153
+    },
+    {
+      "index": 151,
+      "role": "teal_dark",
+      "hex": "#445A59",
+      "voxels": 76
+    },
+    {
+      "index": 156,
+      "role": "leather_deep",
+      "hex": "#432E22",
+      "voxels": 4
+    },
+    {
+      "index": 206,
+      "role": "safety_orange_dark",
+      "hex": "#91512A",
+      "voxels": 11
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 1.65 x 0.95 x 0.1 m (flat); trip hazard only.",
+  "story": "A commuter's bike dropped on the pavement and never picked up. The front wheel folded when something drove over it; the chain has rusted and the saddle has split, but the rear rack still carries a frayed bungee.",
+  "notes": [
+    "Lying on its side as the brief says, so it is 1.65 m long, 0.95 m wide (the bike's height) and 0.33 m tall; the reference box (1.62 x 0.47 x 1.06 m) describes a standing bike."
+  ],
+  "generator": "tools/claude/models/catalog/d2_street.py",
+  "spec": "docs/specs/decorations/Claude_abandoned_bicycle.md",
+  "previews": {
+    "hero": "previews/decorations/Claude_abandoned_bicycle/hero.png",
+    "front": "previews/decorations/Claude_abandoned_bicycle/front.png",
+    "side": "previews/decorations/Claude_abandoned_bicycle/side.png",
+    "scale": "previews/decorations/Claude_abandoned_bicycle/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.65,
+    0.95
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "Claude_wooden_fence",
+  "base_id": "wooden_fence",
+  "creator": "Claude",
+  "name": "Wooden Fence Section",
+  "category": "decorations",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_wooden_fence.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_wooden_fence.glb",
+    "glb_vertices": 660,
+    "glb_triangles": 330,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    19.0,
+    1.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y faces the street or the person using it.",
+  "grid_size_cells": [
+    38,
+    3,
+    30
+  ],
+  "dimensions_m": [
+    1.9,
+    0.15,
+    1.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1261,
+  "condition": "worn",
+  "gameplay_use": "Yard boundary",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "wgrey",
+    "wgrey_dark",
+    "wgrey_deep",
+    "wgrey_green",
+    "wgrey_hi",
+    "wgrey_mid",
+    "wgrey_warm",
+    "wgrey_wet"
+  ],
+  "palette_roles": [
+    {
+      "index": 9,
+      "role": "wgrey_hi",
+      "hex": "#A59E91",
+      "voxels": 198
+    },
+    {
+      "index": 10,
+      "role": "wgrey",
+      "hex": "#8B8478",
+      "voxels": 325
+    },
+    {
+      "index": 11,
+      "role": "wgrey_mid",
+      "hex": "#766F64",
+      "voxels": 340
+    },
+    {
+      "index": 12,
+      "role": "wgrey_dark",
+      "hex": "#5E5850",
+      "voxels": 208
+    },
+    {
+      "index": 13,
+      "role": "wgrey_deep",
+      "hex": "#46423C",
+      "voxels": 25
+    },
+    {
+      "index": 14,
+      "role": "wgrey_green",
+      "hex": "#6C705F",
+      "voxels": 66
+    },
+    {
+      "index": 15,
+      "role": "wgrey_warm",
+      "hex": "#94806A",
+      "voxels": 66
+    },
+    {
+      "index": 16,
+      "role": "wgrey_wet",
+      "hex": "#524C45",
+      "voxels": 33
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 1.9 x 0.15 x 1.5 m (thin wall); the gap is cosmetic.",
+  "story": "A back-garden fence panel that has not been stained since it went up. One board was kicked out by a dog or a fox, and its neighbour lost its top nail and leans into the gap; the bottoms have gone green where rain splashes up.",
+  "notes": [
+    "Board-on-rail fence panel with one board missing and one leaning."
+  ],
+  "generator": "tools/claude/models/catalog/d2_street.py",
+  "spec": "docs/specs/decorations/Claude_wooden_fence.md",
+  "previews": {
+    "hero": "previews/decorations/Claude_wooden_fence/hero.png",
+    "front": "previews/decorations/Claude_wooden_fence/front.png",
+    "side": "previews/decorations/Claude_wooden_fence/side.png",
+    "scale": "previews/decorations/Claude_wooden_fence/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.9,
+    0.15
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "Claude_grass_clump",
+  "base_id": "grass_clump",
+  "creator": "Claude",
+  "name": "Grass Clump",
+  "category": "vegetation",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_grass_clump.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_grass_clump.glb",
+    "glb_vertices": 4388,
+    "glb_triangles": 2194,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.025,
+  "resolution_tier": "fine",
+  "resolution_rationale": "2.5 cm cells: a handheld or small gear item whose handles, straps and blades would be 2-4x too thick at 5 cm. Blades need 2.5 cm cells; at 5 cm the clump is a dozen thick sticks.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    13.0,
+    9.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "No functional front; character details face the default camera (-X/+Y).",
+  "grid_size_cells": [
+    26,
+    19,
+    18
+  ],
+  "dimensions_m": [
+    0.65,
+    0.475,
+    0.45
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 538,
+  "condition": "living",
+  "gameplay_use": "Ground dressing (game grass tufts)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "dead_leaf",
+    "dead_leaf_dark",
+    "grass",
+    "grass_dry",
+    "grass_hi",
+    "leaf",
+    "leaf_dark",
+    "leaf_hi",
+    "leaf_mid",
+    "soil_dark",
+    "twig"
+  ],
+  "palette_roles": [
+    {
+      "index": 32,
+      "role": "soil_dark",
+      "hex": "#3B342E",
+      "voxels": 25
+    },
+    {
+      "index": 177,
+      "role": "leaf_hi",
+      "hex": "#869B63",
+      "voxels": 3
+    },
+    {
+      "index": 178,
+      "role": "leaf",
+      "hex": "#6F8551",
+      "voxels": 15
+    },
+    {
+      "index": 179,
+      "role": "leaf_mid",
+      "hex": "#5C7044",
+      "voxels": 60
+    },
+    {
+      "index": 180,
+      "role": "leaf_dark",
+      "hex": "#495B37",
+      "voxels": 20
+    },
+    {
+      "index": 182,
+      "role": "grass_hi",
+      "hex": "#94A066",
+      "voxels": 99
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 227
+    },
+    {
+      "index": 184,
+      "role": "grass_dry",
+      "hex": "#A79D6B",
+      "voxels": 67
+    },
+    {
+      "index": 190,
+      "role": "dead_leaf",
+      "hex": "#9C7F55",
+      "voxels": 1
+    },
+    {
+      "index": 191,
+      "role": "dead_leaf_dark",
+      "hex": "#7A6243",
+      "voxels": 13
+    },
+    {
+      "index": 192,
+      "role": "twig",
+      "hex": "#6A5A47",
+      "voxels": 8
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "None (walk-through dressing).",
+  "story": "A tussock of rough grass that has seeded itself in a crack at the edge of a lawn nobody mows any more, with a broad-leaved weed and one tall seed stalk pushing through it.",
+  "notes": [
+    "Tuft of tall wild grass and weeds, green with dry tips."
+  ],
+  "generator": "tools/claude/models/catalog/d1_vegetation.py",
+  "spec": "docs/specs/vegetation/Claude_grass_clump.md",
+  "previews": {
+    "hero": "previews/vegetation/Claude_grass_clump/hero.png",
+    "front": "previews/vegetation/Claude_grass_clump/front.png",
+    "side": "previews/vegetation/Claude_grass_clump/side.png",
+    "scale": "previews/vegetation/Claude_grass_clump/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.2,
+    0.175
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "Claude_metal_support_beam",
+  "base_id": "metal_support_beam",
+  "creator": "Claude",
+  "name": "Metal Support Beam",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_metal_support_beam.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_metal_support_beam.glb",
+    "glb_vertices": 560,
+    "glb_triangles": 280,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    3.5,
+    3.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the outside face; the module fills its full span.",
+  "grid_size_cells": [
+    7,
+    7,
+    51
+  ],
+  "dimensions_m": [
+    0.35,
+    0.35,
+    2.55
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 743,
+  "condition": "worn",
+  "gameplay_use": "Structural beam",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "iron",
+    "iron_dark",
+    "iron_edge",
+    "rust_dark",
+    "rust_deep",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 34
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 170
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 226
+    },
+    {
+      "index": 43,
+      "role": "iron_dark",
+      "hex": "#2E3232",
+      "voxels": 173
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 15
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 125
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A rolled-steel column salvaged from a collapsed carport and stood up again on new bolts. Its paint is long gone; rust has taken the foot where water pooled and runs down from the cap plate.",
+  "notes": [
+    "Stands as a 2.55 m column (reference 0.23 x 0.23 x 2.46 m); end plates 0.35 m square."
+  ],
+  "generator": "tools/claude/models/catalog/b3_construction.py",
+  "spec": "docs/specs/construction/Claude_metal_support_beam.md",
+  "previews": {
+    "hero": "previews/construction/Claude_metal_support_beam/hero.png",
+    "front": "previews/construction/Claude_metal_support_beam/front.png",
+    "side": "previews/construction/Claude_metal_support_beam/side.png",
+    "scale": "previews/construction/Claude_metal_support_beam/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.35,
+    0.35
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "id": "Claude_fast_food",
+  "base_id": "fast_food",
+  "creator": "Claude",
+  "name": "Fast-Food Restaurant",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_fast_food.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_fast_food.glb",
+    "glb_vertices": 660,
+    "glb_triangles": 330,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    9.0,
+    10.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    18,
+    20,
+    12
+  ],
+  "dimensions_m": [
+    9.0,
+    10.0,
+    6.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 807,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Food)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "asphalt",
+    "asphalt_dark",
+    "charcoal",
+    "concrete_dark",
+    "concrete_hi",
+    "curb",
+    "galv_hi",
+    "glass",
+    "glass_dark",
+    "grass",
+    "line_white",
+    "line_yellow",
+    "plaster",
+    "roof",
+    "steel",
+    "steel_dark",
+    "terra",
+    "terra_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 9
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 21
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 16
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 4
+    },
+    {
+      "index": 94,
+      "role": "plaster",
+      "hex": "#CCC5B6",
+      "voxels": 174
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 26
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 100
+    },
+    {
+      "index": 122,
+      "role": "glass",
+      "hex": "#829A9F",
+      "voxels": 12
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 21
+    },
+    {
+      "index": 142,
+      "role": "terra",
+      "hex": "#925A41",
+      "voxels": 82
+    },
+    {
+      "index": 143,
+      "role": "terra_dark",
+      "hex": "#744733",
+      "voxels": 44
+    },
+    {
+      "index": 183,
+      "role": "grass",
+      "hex": "#7B8851",
+      "voxels": 36
+    },
+    {
+      "index": 194,
+      "role": "asphalt",
+      "hex": "#4F5151",
+      "voxels": 81
+    },
+    {
+      "index": 195,
+      "role": "asphalt_dark",
+      "hex": "#3F4142",
+      "voxels": 69
+    },
+    {
+      "index": 197,
+      "role": "line_white",
+      "hex": "#CDCBC1",
+      "voxels": 12
+    },
+    {
+      "index": 198,
+      "role": "line_yellow",
+      "hex": "#BFA352",
+      "voxels": 15
+    },
+    {
+      "index": 199,
+      "role": "curb",
+      "hex": "#A09F97",
+      "voxels": 21
+    },
+    {
+      "index": 218,
+      "role": "roof",
+      "hex": "#5A5E61",
+      "voxels": 64
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A drive-through burger restaurant at the edge of the strip. The drive-through lane is still marked, the menu board is blank and the tall pole sign lost its panel faces in the first storm.",
+  "notes": [
+    "Fast-food building with drive-through lane and tall blank pole sign."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_fast_food.md",
+  "previews": {
+    "hero": "previews/map/Claude_fast_food/hero.png",
+    "front": "previews/map/Claude_fast_food/front.png",
+    "side": "previews/map/Claude_fast_food/side.png",
+    "scale": "previews/map/Claude_fast_food/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    9.0,
+    10.0
+  ]
+}

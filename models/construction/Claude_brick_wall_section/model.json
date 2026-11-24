@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "id": "Claude_brick_wall_section",
+  "base_id": "brick_wall_section",
+  "creator": "Claude",
+  "name": "Brick Wall Section",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_brick_wall_section.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_brick_wall_section.glb",
+    "glb_vertices": 1392,
+    "glb_triangles": 696,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    5.0,
+    1.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the outside face; the module fills its full span.",
+  "grid_size_cells": [
+    10,
+    3,
+    26
+  ],
+  "dimensions_m": [
+    1.0,
+    0.3,
+    2.6
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 540,
+  "condition": "new",
+  "gameplay_use": "Brick tier wall 1 m",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "concrete",
+    "concrete_hi",
+    "maroon_dark",
+    "red",
+    "red_dark",
+    "red_deep",
+    "red_hi",
+    "terra",
+    "terra_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 81,
+      "role": "red_hi",
+      "hex": "#B26D5C",
+      "voxels": 76
+    },
+    {
+      "index": 82,
+      "role": "red",
+      "hex": "#9A594B",
+      "voxels": 116
+    },
+    {
+      "index": 83,
+      "role": "red_dark",
+      "hex": "#7B463B",
+      "voxels": 117
+    },
+    {
+      "index": 84,
+      "role": "red_deep",
+      "hex": "#5C352D",
+      "voxels": 18
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 20
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 10
+    },
+    {
+      "index": 142,
+      "role": "terra",
+      "hex": "#925A41",
+      "voxels": 96
+    },
+    {
+      "index": 143,
+      "role": "terra_dark",
+      "hex": "#744733",
+      "voxels": 67
+    },
+    {
+      "index": 214,
+      "role": "maroon_dark",
+      "hex": "#57302E",
+      "voxels": 20
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "Garden-wall brickwork laid new by someone who knew the trade: running bond in mixed reds, a dark engineering-brick plinth, a projecting rowlock sill course at window height, a soldier course and a cast coping.",
+  "notes": [
+    "At 0.1 m cells a true-scale brick is 2 x 1 cells and its 1 cm mortar joint is sub-cell, so the bond is carried by per-brick tone (no neighbour repeats) and the course features; a one-cell mortar line would double the joint area.",
+    "2.6 m tall like every full wall module; the bond repeats every 1 m so modules tile; 0.2 m body, 0.3 m at sill course and coping."
+  ],
+  "generator": "tools/claude/models/catalog/b3_construction.py",
+  "spec": "docs/specs/construction/Claude_brick_wall_section.md",
+  "previews": {
+    "hero": "previews/construction/Claude_brick_wall_section/hero.png",
+    "front": "previews/construction/Claude_brick_wall_section/front.png",
+    "side": "previews/construction/Claude_brick_wall_section/side.png",
+    "scale": "previews/construction/Claude_brick_wall_section/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.0,
+    0.3
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "id": "Claude_candle",
+  "base_id": "candle",
+  "creator": "Claude",
+  "name": "Candle",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_candle.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_candle.glb",
+    "glb_vertices": 1060,
+    "glb_triangles": 530,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    7.0,
+    7.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the working / interaction side.",
+  "grid_size_cells": [
+    14,
+    14,
+    15
+  ],
+  "dimensions_m": [
+    0.175,
+    0.175,
+    0.1875
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 517,
+  "condition": "used",
+  "gameplay_use": "Night light (game candle)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "char",
+    "charcoal",
+    "cream",
+    "cream_hi",
+    "cream_mid",
+    "cream_shadow",
+    "pine_hi",
+    "porcelain",
+    "porcelain_mid",
+    "sage",
+    "sage_dark",
+    "sage_hi"
+  ],
+  "palette_roles": [
+    {
+      "index": 1,
+      "role": "pine_hi",
+      "hex": "#CDA77D",
+      "voxels": 3
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 1
+    },
+    {
+      "index": 63,
+      "role": "char",
+      "hex": "#2B2522",
+      "voxels": 1
+    },
+    {
+      "index": 89,
+      "role": "cream_hi",
+      "hex": "#E4DCCB",
+      "voxels": 49
+    },
+    {
+      "index": 90,
+      "role": "cream",
+      "hex": "#D7CDB9",
+      "voxels": 199
+    },
+    {
+      "index": 91,
+      "role": "cream_mid",
+      "hex": "#C7BCA6",
+      "voxels": 11
+    },
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 1
+    },
+    {
+      "index": 114,
+      "role": "porcelain",
+      "hex": "#DAD6CC",
+      "voxels": 2
+    },
+    {
+      "index": 115,
+      "role": "porcelain_mid",
+      "hex": "#C5C0B5",
+      "voxels": 3
+    },
+    {
+      "index": 145,
+      "role": "sage_hi",
+      "hex": "#93A193",
+      "voxels": 47
+    },
+    {
+      "index": 146,
+      "role": "sage",
+      "hex": "#7A887B",
+      "voxels": 140
+    },
+    {
+      "index": 147,
+      "role": "sage_dark",
+      "hex": "#637064",
+      "voxels": 60
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "An ivory pillar candle on a chipped sage saucer from the kitchen. It has been lit every evening since the outage and is burned halfway, wax spilled down one side; the spent match was dropped on the saucer.",
+  "notes": [
+    "Pillar candle half burned with wax drips, on a chipped saucer."
+  ],
+  "generator": "tools/claude/models/catalog/b2_survival_gear.py",
+  "spec": "docs/specs/survival/Claude_candle.md",
+  "previews": {
+    "hero": "previews/survival/Claude_candle/hero.png",
+    "front": "previews/survival/Claude_candle/front.png",
+    "side": "previews/survival/Claude_candle/side.png",
+    "scale": "previews/survival/Claude_candle/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.175,
+    0.175
+  ]
+}

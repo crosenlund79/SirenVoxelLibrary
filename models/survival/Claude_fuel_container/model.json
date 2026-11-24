@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "Claude_fuel_container",
+  "base_id": "fuel_container",
+  "creator": "Claude",
+  "name": "Fuel Container",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_fuel_container.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_fuel_container.glb",
+    "glb_vertices": 652,
+    "glb_triangles": 326,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.025,
+  "resolution_tier": "fine",
+  "resolution_rationale": "2.5 cm cells: a handheld or small gear item whose handles, straps and blades would be 2-4x too thick at 5 cm.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    7.5,
+    4.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the working / interaction side.",
+  "grid_size_cells": [
+    14,
+    8,
+    19
+  ],
+  "dimensions_m": [
+    0.35,
+    0.2,
+    0.475
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 784,
+  "condition": "used",
+  "gameplay_use": "Fuel for generator",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "charcoal",
+    "iron",
+    "red",
+    "red_dark",
+    "red_deep",
+    "red_hi"
+  ],
+  "palette_roles": [
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 14
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 6
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 8
+    },
+    {
+      "index": 81,
+      "role": "red_hi",
+      "hex": "#B26D5C",
+      "voxels": 180
+    },
+    {
+      "index": 82,
+      "role": "red",
+      "hex": "#9A594B",
+      "voxels": 424
+    },
+    {
+      "index": 83,
+      "role": "red_dark",
+      "hex": "#7B463B",
+      "voxels": 141
+    },
+    {
+      "index": 84,
+      "role": "red_deep",
+      "hex": "#5C352D",
+      "voxels": 11
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The plastic petrol can from the lawnmower shelf. The red has faded to salmon where the sun hit it through the garage window; the flexible spout is clipped to its side, and a dribble of fuel has stained the front under the neck.",
+  "notes": [
+    "Faded red plastic gas can with a flexible spout clipped on."
+  ],
+  "generator": "tools/claude/models/catalog/b2_survival_gear.py",
+  "spec": "docs/specs/survival/Claude_fuel_container.md",
+  "previews": {
+    "hero": "previews/survival/Claude_fuel_container/hero.png",
+    "front": "previews/survival/Claude_fuel_container/front.png",
+    "side": "previews/survival/Claude_fuel_container/side.png",
+    "scale": "previews/survival/Claude_fuel_container/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.325,
+    0.2
+  ]
+}

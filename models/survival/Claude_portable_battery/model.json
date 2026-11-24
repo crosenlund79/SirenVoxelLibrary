@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "Claude_portable_battery",
+  "base_id": "portable_battery",
+  "creator": "Claude",
+  "name": "Portable Battery",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_portable_battery.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_portable_battery.glb",
+    "glb_vertices": 696,
+    "glb_triangles": 348,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    13.0,
+    7.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the working / interaction side.",
+  "grid_size_cells": [
+    26,
+    18,
+    19
+  ],
+  "dimensions_m": [
+    0.325,
+    0.225,
+    0.2375
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1957,
+  "condition": "lightly_used",
+  "gameplay_use": "Power for lights/radio",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "charcoal",
+    "iron_edge",
+    "porcelain_deep",
+    "porcelain_mid",
+    "screen",
+    "screen_sheen",
+    "steel",
+    "steel_dark",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 4
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 40
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 520
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 1026
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 246
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 85
+    },
+    {
+      "index": 115,
+      "role": "porcelain_mid",
+      "hex": "#C5C0B5",
+      "voxels": 11
+    },
+    {
+      "index": 117,
+      "role": "porcelain_deep",
+      "hex": "#8D897F",
+      "voxels": 1
+    },
+    {
+      "index": 125,
+      "role": "screen",
+      "hex": "#262C2F",
+      "voxels": 20
+    },
+    {
+      "index": 126,
+      "role": "screen_sheen",
+      "hex": "#48555A",
+      "voxels": 4
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A portable power station a neighbour bought for camping and lent out after the outage. It charges from the generator and runs a lamp and the radio; a phone cable is still plugged into the front.",
+  "notes": [
+    "Portable power station: dark case, carry handle, outlet panel and a small dark display.",
+    "Depth includes the phone cable trailing onto the floor; the case is 0.19 m."
+  ],
+  "generator": "tools/claude/models/catalog/b2_survival_gear.py",
+  "spec": "docs/specs/survival/Claude_portable_battery.md",
+  "previews": {
+    "hero": "previews/survival/Claude_portable_battery/hero.png",
+    "front": "previews/survival/Claude_portable_battery/front.png",
+    "side": "previews/survival/Claude_portable_battery/side.png",
+    "scale": "previews/survival/Claude_portable_battery/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.325,
+    0.1875
+  ]
+}

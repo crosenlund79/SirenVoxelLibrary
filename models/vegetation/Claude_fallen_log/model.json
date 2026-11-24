@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "Claude_fallen_log",
+  "base_id": "fallen_log",
+  "creator": "Claude",
+  "name": "Fallen Log",
+  "category": "vegetation",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_D",
+  "scale_family": "full",
+  "source": "Claude_fallen_log.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_fallen_log.glb",
+    "glb_vertices": 1716,
+    "glb_triangles": 858,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    26.0,
+    6.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "No functional front; character details face the default camera (-X/+Y).",
+  "grid_size_cells": [
+    52,
+    12,
+    11
+  ],
+  "dimensions_m": [
+    2.6,
+    0.6,
+    0.55
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1860,
+  "condition": "dead",
+  "gameplay_use": "Forest dressing / cover",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "bark",
+    "bark_dark",
+    "bark_deep",
+    "bark_mid",
+    "card_dark",
+    "moss",
+    "moss_dark",
+    "snag",
+    "snag_dark",
+    "snag_light",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 19
+    },
+    {
+      "index": 18,
+      "role": "bark",
+      "hex": "#73695F",
+      "voxels": 155
+    },
+    {
+      "index": 19,
+      "role": "bark_mid",
+      "hex": "#5F564E",
+      "voxels": 771
+    },
+    {
+      "index": 20,
+      "role": "bark_dark",
+      "hex": "#4B443E",
+      "voxels": 216
+    },
+    {
+      "index": 21,
+      "role": "bark_deep",
+      "hex": "#37322E",
+      "voxels": 356
+    },
+    {
+      "index": 22,
+      "role": "snag_light",
+      "hex": "#BFB39F",
+      "voxels": 20
+    },
+    {
+      "index": 23,
+      "role": "snag",
+      "hex": "#A79B87",
+      "voxels": 97
+    },
+    {
+      "index": 24,
+      "role": "snag_dark",
+      "hex": "#8A7F6E",
+      "voxels": 29
+    },
+    {
+      "index": 111,
+      "role": "moss",
+      "hex": "#646C4F",
+      "voxels": 109
+    },
+    {
+      "index": 112,
+      "role": "moss_dark",
+      "hex": "#4E5540",
+      "voxels": 61
+    },
+    {
+      "index": 159,
+      "role": "card_dark",
+      "hex": "#8A714F",
+      "voxels": 27
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Capsule along X, r=0.24 m, length 2.5 m.",
+  "story": "A trunk section that came down across the back of a park years ago and was never cleared. The root end has rotted hollow, moss has crept along the shaded top, and the far end shows the old splintered break.",
+  "notes": [
+    "Log with bark, branch stubs, moss on top and a rotted end."
+  ],
+  "generator": "tools/claude/models/catalog/d1_vegetation.py",
+  "spec": "docs/specs/vegetation/Claude_fallen_log.md",
+  "previews": {
+    "hero": "previews/vegetation/Claude_fallen_log/hero.png",
+    "front": "previews/vegetation/Claude_fallen_log/front.png",
+    "side": "previews/vegetation/Claude_fallen_log/side.png",
+    "scale": "previews/vegetation/Claude_fallen_log/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_D.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    2.6,
+    0.6
+  ]
+}

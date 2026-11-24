@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "id": "Claude_wooden_door",
+  "base_id": "wooden_door",
+  "creator": "Claude",
+  "name": "Wooden Door",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_wooden_door.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_wooden_door.glb",
+    "glb_vertices": 844,
+    "glb_triangles": 422,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    10.0,
+    2.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the outside face; the module fills its full span.",
+  "grid_size_cells": [
+    20,
+    4,
+    42
+  ],
+  "dimensions_m": [
+    1.0,
+    0.2,
+    2.1
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1894,
+  "condition": "used",
+  "gameplay_use": "Build piece 'Door' (frame 1.0 x 2.1 m)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "brass",
+    "brass_dark",
+    "cream",
+    "cream_mid",
+    "cream_shadow",
+    "pine_dark",
+    "pine_mid",
+    "teal",
+    "teal_dark",
+    "teal_hi",
+    "wgrey_dark",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 14
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 24
+    },
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 40
+    },
+    {
+      "index": 12,
+      "role": "wgrey_dark",
+      "hex": "#5E5850",
+      "voxels": 4
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 5
+    },
+    {
+      "index": 54,
+      "role": "brass",
+      "hex": "#A3874E",
+      "voxels": 8
+    },
+    {
+      "index": 55,
+      "role": "brass_dark",
+      "hex": "#786439",
+      "voxels": 23
+    },
+    {
+      "index": 90,
+      "role": "cream",
+      "hex": "#D7CDB9",
+      "voxels": 20
+    },
+    {
+      "index": 91,
+      "role": "cream_mid",
+      "hex": "#C7BCA6",
+      "voxels": 672
+    },
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 7
+    },
+    {
+      "index": 149,
+      "role": "teal_hi",
+      "hex": "#6F8C8A",
+      "voxels": 25
+    },
+    {
+      "index": 150,
+      "role": "teal",
+      "hex": "#587372",
+      "voxels": 742
+    },
+    {
+      "index": 151,
+      "role": "teal_dark",
+      "hex": "#445A59",
+      "voxels": 310
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A four-panel front door taken off a house down the street and rehung in a new frame to open outward, so it cannot be kicked in. Teal paint from three owners ago is rubbed back to bare wood around the handle.",
+  "notes": [
+    "Closed. Frame 1.0 x 2.1 m and 0.2 m deep so it sits flush in the timber wall; the leaf is set back one cell and the handle stays inside the frame depth."
+  ],
+  "generator": "tools/claude/models/catalog/b3_construction.py",
+  "spec": "docs/specs/construction/Claude_wooden_door.md",
+  "previews": {
+    "hero": "previews/construction/Claude_wooden_door/hero.png",
+    "front": "previews/construction/Claude_wooden_door/front.png",
+    "side": "previews/construction/Claude_wooden_door/side.png",
+    "scale": "previews/construction/Claude_wooden_door/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.0,
+    0.2
+  ]
+}

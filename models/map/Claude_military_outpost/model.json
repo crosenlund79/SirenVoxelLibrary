@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "id": "Claude_military_outpost",
+  "base_id": "military_outpost",
+  "creator": "Claude",
+  "name": "Military Outpost",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_E",
+  "scale_family": "full",
+  "source": "Claude_military_outpost.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_military_outpost.glb",
+    "glb_vertices": 1684,
+    "glb_triangles": 842,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.5,
+  "resolution_tier": "map",
+  "resolution_rationale": "50 cm cells: regional-map scale, real-world metres with far fewer voxels; only massing, roofs, entrances and one identifying feature are modelled.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    14.0,
+    14.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the street side / main entrance.",
+  "grid_size_cells": [
+    28,
+    28,
+    16
+  ],
+  "dimensions_m": [
+    14.0,
+    14.0,
+    8.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1919,
+  "condition": "abandoned",
+  "gameplay_use": "Regional-map destination (Weapons)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "card_dark",
+    "galv_dark",
+    "glass_dark",
+    "glass_deep",
+    "gravel",
+    "green",
+    "green_dark",
+    "khaki",
+    "khaki_dark",
+    "olive",
+    "olive_dark",
+    "paint_white",
+    "signal_red_dark",
+    "soil",
+    "steel_dark",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 31,
+      "role": "soil",
+      "hex": "#4F453C",
+      "voxels": 80
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 2
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 13
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 16
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 147
+    },
+    {
+      "index": 67,
+      "role": "green",
+      "hex": "#566C60",
+      "voxels": 5
+    },
+    {
+      "index": 68,
+      "role": "green_dark",
+      "hex": "#46584F",
+      "voxels": 5
+    },
+    {
+      "index": 86,
+      "role": "olive",
+      "hex": "#777B55",
+      "voxels": 308
+    },
+    {
+      "index": 87,
+      "role": "olive_dark",
+      "hex": "#5F6244",
+      "voxels": 199
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 16
+    },
+    {
+      "index": 124,
+      "role": "glass_deep",
+      "hex": "#42535A",
+      "voxels": 4
+    },
+    {
+      "index": 159,
+      "role": "card_dark",
+      "hex": "#8A714F",
+      "voxels": 200
+    },
+    {
+      "index": 175,
+      "role": "khaki",
+      "hex": "#9C8D6E",
+      "voxels": 108
+    },
+    {
+      "index": 176,
+      "role": "khaki_dark",
+      "hex": "#7B6F57",
+      "voxels": 108
+    },
+    {
+      "index": 200,
+      "role": "gravel",
+      "hex": "#8C877D",
+      "voxels": 704
+    },
+    {
+      "index": 202,
+      "role": "signal_red_dark",
+      "hex": "#7E3229",
+      "voxels": 2
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 2
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A forward checkpoint compound thrown up to hold the county road. The unit pulled out in a hurry: the boom is down, the tents still pitched and one truck left behind with a flat.",
+  "notes": [
+    "Isolated, guarded compound: prefab barracks, sandbag and barrier perimeter, gate, tents."
+  ],
+  "generator": "tools/claude/models/catalog/e1_map_buildings.py",
+  "spec": "docs/specs/map/Claude_military_outpost.md",
+  "previews": {
+    "hero": "previews/map/Claude_military_outpost/hero.png",
+    "front": "previews/map/Claude_military_outpost/front.png",
+    "side": "previews/map/Claude_military_outpost/side.png",
+    "scale": "previews/map/Claude_military_outpost/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_E.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    14.0,
+    14.0
+  ]
+}

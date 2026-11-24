@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "id": "Claude_wooden_foundation_support",
+  "base_id": "wooden_foundation_support",
+  "creator": "Claude",
+  "name": "Wooden Foundation Support",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_wooden_foundation_support.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_wooden_foundation_support.glb",
+    "glb_vertices": 1284,
+    "glb_triangles": 642,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig. Cribbing is read from its alternating crossed sleepers; at 0.1 m cells a 0.3 m pier is three cells and each sleeper a single cell, which reads as a chequered stick. At 0.05 m the 0.1 m sleepers keep their square ends and the overhang of each layer.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    3.5,
+    3.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the outside face; the module fills its full span.",
+  "grid_size_cells": [
+    7,
+    7,
+    24
+  ],
+  "dimensions_m": [
+    0.35,
+    0.35,
+    1.2
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 707,
+  "condition": "new",
+  "gameplay_use": "Foundation module",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "bark_dark",
+    "concrete",
+    "concrete_dark",
+    "concrete_hi",
+    "pine_dark",
+    "steel",
+    "steel_dark",
+    "steel_light",
+    "wood_deep",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 64
+    },
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 256
+    },
+    {
+      "index": 7,
+      "role": "wood_deep",
+      "hex": "#46362B",
+      "voxels": 160
+    },
+    {
+      "index": 20,
+      "role": "bark_dark",
+      "hex": "#4B443E",
+      "voxels": 80
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 4
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 3
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 18
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 45
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 28
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 49
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A cribbing pier stacked by a careful builder: old creosoted sleeper offcuts laid log-cabin fashion on a cast concrete pad, capped with a steel bearing plate.",
+  "notes": [
+    "0.35 x 0.35 x 1.2 m: a crib narrower than ~0.3 m cannot show alternating sleepers (reference 0.24 m square)."
+  ],
+  "generator": "tools/claude/models/catalog/b3_construction.py",
+  "spec": "docs/specs/construction/Claude_wooden_foundation_support.md",
+  "previews": {
+    "hero": "previews/construction/Claude_wooden_foundation_support/hero.png",
+    "front": "previews/construction/Claude_wooden_foundation_support/front.png",
+    "side": "previews/construction/Claude_wooden_foundation_support/side.png",
+    "scale": "previews/construction/Claude_wooden_foundation_support/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.35,
+    0.35
+  ]
+}

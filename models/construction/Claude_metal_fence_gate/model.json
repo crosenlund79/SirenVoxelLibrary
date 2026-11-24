@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "id": "Claude_metal_fence_gate",
+  "base_id": "metal_fence_gate",
+  "creator": "Claude",
+  "name": "Metal Gate",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_B",
+  "scale_family": "full",
+  "source": "Claude_metal_fence_gate.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_metal_fence_gate.glb",
+    "glb_vertices": 1220,
+    "glb_triangles": 610,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    11.5,
+    1.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the outside face; the module fills its full span.",
+  "grid_size_cells": [
+    23,
+    3,
+    40
+  ],
+  "dimensions_m": [
+    1.15,
+    0.15,
+    2.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 711,
+  "condition": "worn",
+  "gameplay_use": "Defensive gate / metal fence",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "brass",
+    "brass_dark",
+    "charcoal",
+    "green",
+    "green_dark",
+    "green_deep",
+    "green_light",
+    "rust_dark",
+    "rust_deep",
+    "steel",
+    "steel_dark",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 6
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 4
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 7
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 18
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 17
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 20
+    },
+    {
+      "index": 54,
+      "role": "brass",
+      "hex": "#A3874E",
+      "voxels": 2
+    },
+    {
+      "index": 55,
+      "role": "brass_dark",
+      "hex": "#786439",
+      "voxels": 2
+    },
+    {
+      "index": 66,
+      "role": "green_light",
+      "hex": "#69806F",
+      "voxels": 5
+    },
+    {
+      "index": 67,
+      "role": "green",
+      "hex": "#566C60",
+      "voxels": 12
+    },
+    {
+      "index": 68,
+      "role": "green_dark",
+      "hex": "#46584F",
+      "voxels": 176
+    },
+    {
+      "index": 69,
+      "role": "green_deep",
+      "hex": "#36443D",
+      "voxels": 442
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A welded tube gate from a builder's yard, hung between two square posts across a driveway. The latch broke long ago, so it is held with a chain and a brass padlock that has rubbed the paint off the stile.",
+  "notes": [
+    "1.15 x 2.0 m including both posts, 0.15 m deep with the chain."
+  ],
+  "generator": "tools/claude/models/catalog/b3_construction.py",
+  "spec": "docs/specs/construction/Claude_metal_fence_gate.md",
+  "previews": {
+    "hero": "previews/construction/Claude_metal_fence_gate/hero.png",
+    "front": "previews/construction/Claude_metal_fence_gate/front.png",
+    "side": "previews/construction/Claude_metal_fence_gate/side.png",
+    "scale": "previews/construction/Claude_metal_fence_gate/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_B.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.15,
+    0.15
+  ]
+}
