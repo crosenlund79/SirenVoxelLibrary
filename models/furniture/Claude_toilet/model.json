@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "Claude_toilet",
+  "base_id": "toilet",
+  "creator": "Claude",
+  "name": "Toilet",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_toilet.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_toilet.glb",
+    "glb_vertices": 1132,
+    "glb_triangles": 566,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    6.0,
+    7.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    12,
+    14,
+    16
+  ],
+  "dimensions_m": [
+    0.6,
+    0.7,
+    0.8
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 651,
+  "condition": "used",
+  "gameplay_use": "Bathroom fixture; game prop 'toilet'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "chrome",
+    "pine_light",
+    "pine_mid",
+    "porcelain",
+    "porcelain_deep",
+    "porcelain_hi",
+    "porcelain_mid",
+    "porcelain_shadow",
+    "steel",
+    "steel_light",
+    "water"
+  ],
+  "palette_roles": [
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 48
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 44
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 2
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 1
+    },
+    {
+      "index": 78,
+      "role": "water",
+      "hex": "#3E5359",
+      "voxels": 12
+    },
+    {
+      "index": 113,
+      "role": "porcelain_hi",
+      "hex": "#EAE7DF",
+      "voxels": 74
+    },
+    {
+      "index": 114,
+      "role": "porcelain",
+      "hex": "#DAD6CC",
+      "voxels": 338
+    },
+    {
+      "index": 115,
+      "role": "porcelain_mid",
+      "hex": "#C5C0B5",
+      "voxels": 92
+    },
+    {
+      "index": 116,
+      "role": "porcelain_shadow",
+      "hex": "#ABA69B",
+      "voxels": 12
+    },
+    {
+      "index": 117,
+      "role": "porcelain_deep",
+      "hex": "#8D897F",
+      "voxels": 18
+    },
+    {
+      "index": 120,
+      "role": "chrome",
+      "hex": "#C4C9C7",
+      "voxels": 10
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "An ordinary close-coupled toilet in a family bathroom, kept clean until the water stopped. The lid was left up; the last of the water in the bowl dried down and left a faint brown line where it stood for weeks.",
+  "notes": [
+    "0.55 x 0.70 x 0.80 m (GPT reference 0.58 x 0.69 x 0.78 m): the cistern is 0.55 m wide, the bowl 0.45 m."
+  ],
+  "generator": "tools/claude/models/catalog/a4_bath_utility.py",
+  "spec": "docs/specs/furniture/Claude_toilet.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_toilet/hero.png",
+    "front": "previews/furniture/Claude_toilet/front.png",
+    "side": "previews/furniture/Claude_toilet/side.png",
+    "scale": "previews/furniture/Claude_toilet/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.6,
+    0.75
+  ]
+}

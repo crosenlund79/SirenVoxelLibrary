@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "Claude_kettle",
+  "base_id": "kettle",
+  "creator": "Claude",
+  "name": "Enamel Stovetop Kettle",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_kettle.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_kettle.glb",
+    "glb_vertices": 1664,
+    "glb_triangles": 832,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    11.0,
+    8.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    22,
+    16,
+    22
+  ],
+  "dimensions_m": [
+    0.275,
+    0.2,
+    0.275
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1180,
+  "condition": "worn",
+  "gameplay_use": "Boiling water on a stove",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "char",
+    "charcoal",
+    "cream",
+    "cream_hi",
+    "cream_shadow",
+    "iron",
+    "iron_dark",
+    "iron_edge",
+    "soot",
+    "steel_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 36
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 18
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 32
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 6
+    },
+    {
+      "index": 42,
+      "role": "iron",
+      "hex": "#3C4040",
+      "voxels": 46
+    },
+    {
+      "index": 43,
+      "role": "iron_dark",
+      "hex": "#2E3232",
+      "voxels": 4
+    },
+    {
+      "index": 45,
+      "role": "soot",
+      "hex": "#1B1D1D",
+      "voxels": 208
+    },
+    {
+      "index": 63,
+      "role": "char",
+      "hex": "#2B2522",
+      "voxels": 111
+    },
+    {
+      "index": 89,
+      "role": "cream_hi",
+      "hex": "#E4DCCB",
+      "voxels": 162
+    },
+    {
+      "index": 90,
+      "role": "cream",
+      "hex": "#D7CDB9",
+      "voxels": 529
+    },
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 28
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A cream enamel kettle that lived on the back burner. Years of being banged onto the grate chipped the enamel round the base and the lid, and the flames left the bottom sooted black. Somebody boiled water in it for days after the power went.",
+  "notes": [
+    "0.275 x 0.20 x 0.275 m at 1.25 cm cells (GPT reference 0.26 x 0.24 x 0.28 m); the spout points -X toward the default camera and the handle arches along X."
+  ],
+  "generator": "tools/claude/models/catalog/a3_kitchen.py",
+  "spec": "docs/specs/furniture/Claude_kettle.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_kettle/hero.png",
+    "front": "previews/furniture/Claude_kettle/front.png",
+    "side": "previews/furniture/Claude_kettle/side.png",
+    "scale": "previews/furniture/Claude_kettle/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.275,
+    0.2
+  ]
+}

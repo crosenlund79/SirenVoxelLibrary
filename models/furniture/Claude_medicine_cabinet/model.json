@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "Claude_medicine_cabinet",
+  "base_id": "medicine_cabinet",
+  "creator": "Claude",
+  "name": "Mirrored Medicine Cabinet",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_medicine_cabinet.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_medicine_cabinet.glb",
+    "glb_vertices": 500,
+    "glb_triangles": 250,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    6.5,
+    0.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the back face (the cabinet body, not the open door). Hang with the back on the wall; bottom at about 1.20 m (over a 0.85 m vanity).",
+  "front_note": "+Y faces into the room; the back (y = 0) is flat for the wall.",
+  "grid_size_cells": [
+    14,
+    9,
+    15
+  ],
+  "dimensions_m": [
+    0.7,
+    0.45,
+    0.75
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 638,
+  "condition": "abandoned",
+  "gameplay_use": "Lootable medical storage (wall)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "chrome",
+    "glass",
+    "glass_hi",
+    "label_red",
+    "mirror",
+    "ochre",
+    "paint_white",
+    "paint_white_shadow",
+    "porcelain_hi",
+    "rust_deep",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 1
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 2
+    },
+    {
+      "index": 88,
+      "role": "ochre",
+      "hex": "#A98A4C",
+      "voxels": 2
+    },
+    {
+      "index": 113,
+      "role": "porcelain_hi",
+      "hex": "#EAE7DF",
+      "voxels": 3
+    },
+    {
+      "index": 120,
+      "role": "chrome",
+      "hex": "#C4C9C7",
+      "voxels": 1
+    },
+    {
+      "index": 121,
+      "role": "glass_hi",
+      "hex": "#A7BDC2",
+      "voxels": 27
+    },
+    {
+      "index": 122,
+      "role": "glass",
+      "hex": "#829A9F",
+      "voxels": 22
+    },
+    {
+      "index": 127,
+      "role": "mirror",
+      "hex": "#BAC6C6",
+      "voxels": 151
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 195
+    },
+    {
+      "index": 210,
+      "role": "paint_white_shadow",
+      "hex": "#B0AEA6",
+      "voxels": 233
+    },
+    {
+      "index": 228,
+      "role": "label_red",
+      "hex": "#9C4A3A",
+      "voxels": 1
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 0.65 x 0.20 x 0.75 m for the body; the open door adds a 0.05 x 0.30 m leaf at the right end.",
+  "story": "The bathroom cabinet was the first thing searched. Someone swept the shelves into a bag and left the right door hanging open; only an amber pill bottle and a plastic bottle that rolled to the back were left. Damp has started to lift the mirror silver along its bottom edge.",
+  "notes": [
+    "Closed body 0.65 x 0.20 x 0.75 m (GPT reference 0.65 x 0.22 x 0.74 m); the open right door adds 0.30 m of depth."
+  ],
+  "generator": "tools/claude/models/catalog/a4_bath_utility.py",
+  "spec": "docs/specs/furniture/Claude_medicine_cabinet.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_medicine_cabinet/hero.png",
+    "front": "previews/furniture/Claude_medicine_cabinet/front.png",
+    "side": "previews/furniture/Claude_medicine_cabinet/side.png",
+    "scale": "previews/furniture/Claude_medicine_cabinet/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "mount": {
+    "type": "wall",
+    "recommended_bottom_height_m": 1.2
+  }
+}

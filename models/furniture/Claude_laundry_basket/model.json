@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "id": "Claude_laundry_basket",
+  "base_id": "laundry_basket",
+  "creator": "Claude",
+  "name": "Laundry Basket",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_laundry_basket.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_laundry_basket.glb",
+    "glb_vertices": 1004,
+    "glb_triangles": 502,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    5.5,
+    4.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    11,
+    10,
+    10
+  ],
+  "dimensions_m": [
+    0.55,
+    0.5,
+    0.5
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 522,
+  "condition": "used",
+  "gameplay_use": "Utility dressing",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "bottle",
+    "bottle_hi",
+    "cream",
+    "cream_hi",
+    "cream_mid",
+    "cream_shadow",
+    "denim",
+    "denim_dark",
+    "mauve",
+    "mauve_dark",
+    "mauve_hi",
+    "mustard"
+  ],
+  "palette_roles": [
+    {
+      "index": 89,
+      "role": "cream_hi",
+      "hex": "#E4DCCB",
+      "voxels": 5
+    },
+    {
+      "index": 90,
+      "role": "cream",
+      "hex": "#D7CDB9",
+      "voxels": 11
+    },
+    {
+      "index": 91,
+      "role": "cream_mid",
+      "hex": "#C7BCA6",
+      "voxels": 4
+    },
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 62
+    },
+    {
+      "index": 133,
+      "role": "mauve_hi",
+      "hex": "#BFA3A0",
+      "voxels": 3
+    },
+    {
+      "index": 134,
+      "role": "mauve",
+      "hex": "#A98C89",
+      "voxels": 21
+    },
+    {
+      "index": 135,
+      "role": "mauve_dark",
+      "hex": "#8C7270",
+      "voxels": 25
+    },
+    {
+      "index": 138,
+      "role": "mustard",
+      "hex": "#AA8847",
+      "voxels": 2
+    },
+    {
+      "index": 173,
+      "role": "denim",
+      "hex": "#536476",
+      "voxels": 27
+    },
+    {
+      "index": 174,
+      "role": "denim_dark",
+      "hex": "#414F5E",
+      "voxels": 80
+    },
+    {
+      "index": 225,
+      "role": "bottle_hi",
+      "hex": "#A3BBC4",
+      "voxels": 146
+    },
+    {
+      "index": 226,
+      "role": "bottle",
+      "hex": "#7F9CA8",
+      "voxels": 136
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The family's laundry basket, still holding the last unwashed load: jeans, a towel, a mauve shirt with one sleeve flopped over the rim, and the other mustard sock from the pair caught in the washer.",
+  "notes": [
+    "0.55 x 0.50 x 0.50 m with the sleeve (GPT reference 0.57 x 0.43 x 0.49 m); the basket body is 0.55 x 0.45 x 0.40 m."
+  ],
+  "generator": "tools/claude/models/catalog/a4_bath_utility.py",
+  "spec": "docs/specs/furniture/Claude_laundry_basket.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_laundry_basket/hero.png",
+    "front": "previews/furniture/Claude_laundry_basket/front.png",
+    "side": "previews/furniture/Claude_laundry_basket/side.png",
+    "scale": "previews/furniture/Claude_laundry_basket/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.55,
+    0.45
+  ],
+  "pairs_with": [
+    "Claude_washing_machine"
+  ]
+}

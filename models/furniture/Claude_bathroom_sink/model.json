@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "id": "Claude_bathroom_sink",
+  "base_id": "bathroom_sink",
+  "creator": "Claude",
+  "name": "Bathroom Vanity",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_bathroom_sink.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_bathroom_sink.glb",
+    "glb_vertices": 984,
+    "glb_triangles": 492,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    6.0,
+    5.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    14,
+    15,
+    20
+  ],
+  "dimensions_m": [
+    0.7,
+    0.75,
+    1.0
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1089,
+  "condition": "worn",
+  "gameplay_use": "Vanity; game prop 'vanity'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "brass",
+    "brass_dark",
+    "card",
+    "card_dark",
+    "chrome",
+    "glass_hi",
+    "label_blue",
+    "paper",
+    "pine_mid",
+    "porcelain",
+    "porcelain_hi",
+    "porcelain_mid",
+    "rust_deep",
+    "steel_light",
+    "teal",
+    "teal_dark",
+    "teal_deep",
+    "teal_hi"
+  ],
+  "palette_roles": [
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 1
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 9
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 2
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 1
+    },
+    {
+      "index": 54,
+      "role": "brass",
+      "hex": "#A3874E",
+      "voxels": 2
+    },
+    {
+      "index": 55,
+      "role": "brass_dark",
+      "hex": "#786439",
+      "voxels": 2
+    },
+    {
+      "index": 95,
+      "role": "paper",
+      "hex": "#DDD6C6",
+      "voxels": 3
+    },
+    {
+      "index": 113,
+      "role": "porcelain_hi",
+      "hex": "#EAE7DF",
+      "voxels": 104
+    },
+    {
+      "index": 114,
+      "role": "porcelain",
+      "hex": "#DAD6CC",
+      "voxels": 84
+    },
+    {
+      "index": 115,
+      "role": "porcelain_mid",
+      "hex": "#C5C0B5",
+      "voxels": 26
+    },
+    {
+      "index": 120,
+      "role": "chrome",
+      "hex": "#C4C9C7",
+      "voxels": 10
+    },
+    {
+      "index": 121,
+      "role": "glass_hi",
+      "hex": "#A7BDC2",
+      "voxels": 2
+    },
+    {
+      "index": 149,
+      "role": "teal_hi",
+      "hex": "#6F8C8A",
+      "voxels": 81
+    },
+    {
+      "index": 150,
+      "role": "teal",
+      "hex": "#587372",
+      "voxels": 532
+    },
+    {
+      "index": 151,
+      "role": "teal_dark",
+      "hex": "#445A59",
+      "voxels": 204
+    },
+    {
+      "index": 152,
+      "role": "teal_deep",
+      "hex": "#334443",
+      "voxels": 16
+    },
+    {
+      "index": 158,
+      "role": "card",
+      "hex": "#A88A62",
+      "voxels": 1
+    },
+    {
+      "index": 159,
+      "role": "card_dark",
+      "hex": "#8A714F",
+      "voxels": 3
+    },
+    {
+      "index": 230,
+      "role": "label_blue",
+      "hex": "#556F8A",
+      "voxels": 6
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A teal-painted vanity from the family bathroom, past its best before anything happened: the top hinge of the right door pulled out of the damp chipboard and the door hangs open on the bottom one. A toothbrush is still in its cup, and the tap has left a brown drip stain down to the plug.",
+  "notes": [
+    "Closed body 0.60 x 0.55 x 0.85 m (GPT reference 0.62 x 0.52 x 0.83 m); the hanging door adds 0.30 m of depth at the right end, the tap and cup reach 0.95 m."
+  ],
+  "generator": "tools/claude/models/catalog/a4_bath_utility.py",
+  "spec": "docs/specs/furniture/Claude_bathroom_sink.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_bathroom_sink/hero.png",
+    "front": "previews/furniture/Claude_bathroom_sink/front.png",
+    "side": "previews/furniture/Claude_bathroom_sink/side.png",
+    "scale": "previews/furniture/Claude_bathroom_sink/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.6,
+    0.55
+  ]
+}

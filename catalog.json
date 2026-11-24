@@ -3125,6 +3125,474 @@
       "batch": "Claude_catalog_A",
       "scale_family": "full",
       "condition": "worn"
+    },
+    {
+      "id": "Claude_bathroom_sink",
+      "base_id": "bathroom_sink",
+      "creator": "Claude",
+      "name": "Bathroom Vanity",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_bathroom_sink/Claude_bathroom_sink.vox",
+      "metadata_path": "models/furniture/Claude_bathroom_sink/model.json",
+      "preview_path": "previews/furniture/Claude_bathroom_sink/",
+      "derived_paths": [
+        "models/furniture/Claude_bathroom_sink/Claude_bathroom_sink.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.7,
+        0.75,
+        1.0
+      ],
+      "occupied_voxels": 1089,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_bathtub",
+      "base_id": "bathtub",
+      "creator": "Claude",
+      "name": "Bathtub",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_bathtub/Claude_bathtub.vox",
+      "metadata_path": "models/furniture/Claude_bathtub/model.json",
+      "preview_path": "previews/furniture/Claude_bathtub/",
+      "derived_paths": [
+        "models/furniture/Claude_bathtub/Claude_bathtub.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.75,
+        0.75,
+        0.7
+      ],
+      "occupied_voxels": 2528,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_clothes_dryer",
+      "base_id": "clothes_dryer",
+      "creator": "Claude",
+      "name": "Almond Tumble Dryer",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_clothes_dryer/Claude_clothes_dryer.vox",
+      "metadata_path": "models/furniture/Claude_clothes_dryer/model.json",
+      "preview_path": "previews/furniture/Claude_clothes_dryer/",
+      "derived_paths": [
+        "models/furniture/Claude_clothes_dryer/Claude_clothes_dryer.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.75,
+        0.85,
+        0.85
+      ],
+      "occupied_voxels": 1101,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_cutting_board",
+      "base_id": "cutting_board",
+      "creator": "Claude",
+      "name": "Wooden Cutting Board",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_cutting_board/Claude_cutting_board.vox",
+      "metadata_path": "models/furniture/Claude_cutting_board/model.json",
+      "preview_path": "previews/furniture/Claude_cutting_board/",
+      "derived_paths": [
+        "models/furniture/Claude_cutting_board/Claude_cutting_board.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.425,
+        0.3,
+        0.05
+      ],
+      "occupied_voxels": 1643,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_dining_crockery",
+      "base_id": "dining_crockery",
+      "creator": "Claude",
+      "name": "Dining Crockery Set",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_dining_crockery/Claude_dining_crockery.vox",
+      "metadata_path": "models/furniture/Claude_dining_crockery/model.json",
+      "preview_path": "previews/furniture/Claude_dining_crockery/",
+      "derived_paths": [
+        "models/furniture/Claude_dining_crockery/Claude_dining_crockery.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.525,
+        0.3,
+        0.125
+      ],
+      "occupied_voxels": 595,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_frying_pan",
+      "base_id": "frying_pan",
+      "creator": "Claude",
+      "name": "Cast-Iron Skillet",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_frying_pan/Claude_frying_pan.vox",
+      "metadata_path": "models/furniture/Claude_frying_pan/model.json",
+      "preview_path": "previews/furniture/Claude_frying_pan/",
+      "derived_paths": [
+        "models/furniture/Claude_frying_pan/Claude_frying_pan.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.575,
+        0.275,
+        0.1
+      ],
+      "occupied_voxels": 226,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_kettle",
+      "base_id": "kettle",
+      "creator": "Claude",
+      "name": "Enamel Stovetop Kettle",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_kettle/Claude_kettle.vox",
+      "metadata_path": "models/furniture/Claude_kettle/model.json",
+      "preview_path": "previews/furniture/Claude_kettle/",
+      "derived_paths": [
+        "models/furniture/Claude_kettle/Claude_kettle.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.275,
+        0.2,
+        0.275
+      ],
+      "occupied_voxels": 1180,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_kitchen_counter",
+      "base_id": "kitchen_counter",
+      "creator": "Claude",
+      "name": "Kitchen Base Unit",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_kitchen_counter/Claude_kitchen_counter.vox",
+      "metadata_path": "models/furniture/Claude_kitchen_counter/model.json",
+      "preview_path": "previews/furniture/Claude_kitchen_counter/",
+      "derived_paths": [
+        "models/furniture/Claude_kitchen_counter/Claude_kitchen_counter.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.25,
+        0.7,
+        0.9
+      ],
+      "occupied_voxels": 1945,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_kitchen_oven",
+      "base_id": "kitchen_oven",
+      "creator": "Claude",
+      "name": "Stove / Oven",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_kitchen_oven/Claude_kitchen_oven.vox",
+      "metadata_path": "models/furniture/Claude_kitchen_oven/model.json",
+      "preview_path": "previews/furniture/Claude_kitchen_oven/",
+      "derived_paths": [
+        "models/furniture/Claude_kitchen_oven/Claude_kitchen_oven.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.7,
+        0.65,
+        1.0
+      ],
+      "occupied_voxels": 1212,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_kitchen_sink",
+      "base_id": "kitchen_sink",
+      "creator": "Claude",
+      "name": "Kitchen Sink Unit",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_kitchen_sink/Claude_kitchen_sink.vox",
+      "metadata_path": "models/furniture/Claude_kitchen_sink/model.json",
+      "preview_path": "previews/furniture/Claude_kitchen_sink/",
+      "derived_paths": [
+        "models/furniture/Claude_kitchen_sink/Claude_kitchen_sink.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.05,
+        0.65,
+        1.2
+      ],
+      "occupied_voxels": 1794,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_laundry_basket",
+      "base_id": "laundry_basket",
+      "creator": "Claude",
+      "name": "Laundry Basket",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_laundry_basket/Claude_laundry_basket.vox",
+      "metadata_path": "models/furniture/Claude_laundry_basket/model.json",
+      "preview_path": "previews/furniture/Claude_laundry_basket/",
+      "derived_paths": [
+        "models/furniture/Claude_laundry_basket/Claude_laundry_basket.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.55,
+        0.5,
+        0.5
+      ],
+      "occupied_voxels": 522,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_medicine_cabinet",
+      "base_id": "medicine_cabinet",
+      "creator": "Claude",
+      "name": "Mirrored Medicine Cabinet",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_medicine_cabinet/Claude_medicine_cabinet.vox",
+      "metadata_path": "models/furniture/Claude_medicine_cabinet/model.json",
+      "preview_path": "previews/furniture/Claude_medicine_cabinet/",
+      "derived_paths": [
+        "models/furniture/Claude_medicine_cabinet/Claude_medicine_cabinet.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.7,
+        0.45,
+        0.75
+      ],
+      "occupied_voxels": 638,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_pantry_shelf",
+      "base_id": "pantry_shelf",
+      "creator": "Claude",
+      "name": "Pantry Shelving",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_pantry_shelf/Claude_pantry_shelf.vox",
+      "metadata_path": "models/furniture/Claude_pantry_shelf/model.json",
+      "preview_path": "previews/furniture/Claude_pantry_shelf/",
+      "derived_paths": [
+        "models/furniture/Claude_pantry_shelf/Claude_pantry_shelf.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.15,
+        0.65,
+        1.8
+      ],
+      "occupied_voxels": 1620,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_refrigerator",
+      "base_id": "refrigerator",
+      "creator": "Claude",
+      "name": "Almond Fridge-Freezer",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_refrigerator/Claude_refrigerator.vox",
+      "metadata_path": "models/furniture/Claude_refrigerator/model.json",
+      "preview_path": "previews/furniture/Claude_refrigerator/",
+      "derived_paths": [
+        "models/furniture/Claude_refrigerator/Claude_refrigerator.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.85,
+        0.7,
+        1.8
+      ],
+      "occupied_voxels": 2224,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_toilet",
+      "base_id": "toilet",
+      "creator": "Claude",
+      "name": "Toilet",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_toilet/Claude_toilet.vox",
+      "metadata_path": "models/furniture/Claude_toilet/model.json",
+      "preview_path": "previews/furniture/Claude_toilet/",
+      "derived_paths": [
+        "models/furniture/Claude_toilet/Claude_toilet.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.6,
+        0.7,
+        0.8
+      ],
+      "occupied_voxels": 651,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_wall_cabinet",
+      "base_id": "wall_cabinet",
+      "creator": "Claude",
+      "name": "Kitchen Wall Cabinet",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_wall_cabinet/Claude_wall_cabinet.vox",
+      "metadata_path": "models/furniture/Claude_wall_cabinet/model.json",
+      "preview_path": "previews/furniture/Claude_wall_cabinet/",
+      "derived_paths": [
+        "models/furniture/Claude_wall_cabinet/Claude_wall_cabinet.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.15,
+        0.8,
+        0.75
+      ],
+      "occupied_voxels": 1141,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_washing_machine",
+      "base_id": "washing_machine",
+      "creator": "Claude",
+      "name": "Washing Machine",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_washing_machine/Claude_washing_machine.vox",
+      "metadata_path": "models/furniture/Claude_washing_machine/model.json",
+      "preview_path": "previews/furniture/Claude_washing_machine/",
+      "derived_paths": [
+        "models/furniture/Claude_washing_machine/Claude_washing_machine.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.65,
+        0.65,
+        0.85
+      ],
+      "occupied_voxels": 1045,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_water_heater",
+      "base_id": "water_heater",
+      "creator": "Claude",
+      "name": "Gas Water Heater",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_water_heater/Claude_water_heater.vox",
+      "metadata_path": "models/furniture/Claude_water_heater/model.json",
+      "preview_path": "previews/furniture/Claude_water_heater/",
+      "derived_paths": [
+        "models/furniture/Claude_water_heater/Claude_water_heater.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.65,
+        0.75,
+        1.6
+      ],
+      "occupied_voxels": 1469,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
     }
   ]
 }

@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "id": "Claude_refrigerator",
+  "base_id": "refrigerator",
+  "creator": "Claude",
+  "name": "Almond Fridge-Freezer",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_refrigerator.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_refrigerator.glb",
+    "glb_vertices": 756,
+    "glb_triangles": 378,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    9.5,
+    6.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    17,
+    14,
+    36
+  ],
+  "dimensions_m": [
+    0.85,
+    0.7,
+    1.8
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 2224,
+  "condition": "worn",
+  "gameplay_use": "Fridge-freezer; lootable; game prop 'fridge'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "almond",
+    "almond_dark",
+    "black",
+    "charcoal",
+    "cream",
+    "cream_deep",
+    "cream_mid",
+    "cream_shadow",
+    "iron_edge",
+    "leaf",
+    "mustard",
+    "mustard_dark",
+    "porcelain_hi",
+    "rust",
+    "rust_dark",
+    "rust_deep",
+    "signal_red_dark",
+    "steel",
+    "steel_dark",
+    "steel_light",
+    "teal_dark",
+    "terra"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 11
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 2
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 1
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 130
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 6
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 18
+    },
+    {
+      "index": 50,
+      "role": "rust",
+      "hex": "#B36E44",
+      "voxels": 3
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 8
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 2
+    },
+    {
+      "index": 90,
+      "role": "cream",
+      "hex": "#D7CDB9",
+      "voxels": 170
+    },
+    {
+      "index": 91,
+      "role": "cream_mid",
+      "hex": "#C7BCA6",
+      "voxels": 795
+    },
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 2
+    },
+    {
+      "index": 93,
+      "role": "cream_deep",
+      "hex": "#988C77",
+      "voxels": 67
+    },
+    {
+      "index": 113,
+      "role": "porcelain_hi",
+      "hex": "#EAE7DF",
+      "voxels": 19
+    },
+    {
+      "index": 118,
+      "role": "almond",
+      "hex": "#CFC5AC",
+      "voxels": 462
+    },
+    {
+      "index": 119,
+      "role": "almond_dark",
+      "hex": "#AFA58D",
+      "voxels": 518
+    },
+    {
+      "index": 138,
+      "role": "mustard",
+      "hex": "#AA8847",
+      "voxels": 1
+    },
+    {
+      "index": 139,
+      "role": "mustard_dark",
+      "hex": "#876B38",
+      "voxels": 1
+    },
+    {
+      "index": 142,
+      "role": "terra",
+      "hex": "#925A41",
+      "voxels": 2
+    },
+    {
+      "index": 151,
+      "role": "teal_dark",
+      "hex": "#445A59",
+      "voxels": 1
+    },
+    {
+      "index": 178,
+      "role": "leaf",
+      "hex": "#6F8551",
+      "voxels": 4
+    },
+    {
+      "index": 202,
+      "role": "signal_red_dark",
+      "hex": "#7E3229",
+      "voxels": 1
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A twenty-year-old almond fridge-freezer that outlived two kitchens. A shopping note and a child's drawing are still held by magnets; the door seal on the opening side has come loose and hangs out, and damp under it has bloomed into rust along the bottom corner.",
+  "notes": [
+    "0.75 x 0.70 x 1.80 m (GPT reference 0.73 x 0.70 x 1.78 m); the hanging seal adds one cell on the left."
+  ],
+  "generator": "tools/claude/models/catalog/a3_kitchen.py",
+  "spec": "docs/specs/furniture/Claude_refrigerator.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_refrigerator/hero.png",
+    "front": "previews/furniture/Claude_refrigerator/front.png",
+    "side": "previews/furniture/Claude_refrigerator/side.png",
+    "scale": "previews/furniture/Claude_refrigerator/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.75,
+    0.65
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "id": "Claude_kitchen_counter",
+  "base_id": "kitchen_counter",
+  "creator": "Claude",
+  "name": "Kitchen Base Unit",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_kitchen_counter.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_kitchen_counter.glb",
+    "glb_vertices": 560,
+    "glb_triangles": 280,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    12.5,
+    6.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    25,
+    14,
+    18
+  ],
+  "dimensions_m": [
+    1.25,
+    0.7,
+    0.9
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1945,
+  "condition": "used",
+  "gameplay_use": "Modular base unit; game prop 'counter'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "charcoal",
+    "pine_hi",
+    "pine_light",
+    "pine_mid",
+    "sage",
+    "sage_dark",
+    "sage_deep",
+    "sage_hi"
+  ],
+  "palette_roles": [
+    {
+      "index": 1,
+      "role": "pine_hi",
+      "hex": "#CDA77D",
+      "voxels": 12
+    },
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 244
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 78
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 16
+    },
+    {
+      "index": 145,
+      "role": "sage_hi",
+      "hex": "#93A193",
+      "voxels": 4
+    },
+    {
+      "index": 146,
+      "role": "sage",
+      "hex": "#7A887B",
+      "voxels": 1159
+    },
+    {
+      "index": 147,
+      "role": "sage_dark",
+      "hex": "#637064",
+      "voxels": 227
+    },
+    {
+      "index": 148,
+      "role": "sage_deep",
+      "hex": "#4C574D",
+      "voxels": 205
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The everyday prep counter beside the cooker. The left drawer, where the cutlery lived, was yanked open by someone looking for a knife and left out; the paint is rubbed through to the wood where hands pulled the doors for years.",
+  "notes": [
+    "Shares the kitchen run rhythm: worktop top 0.90 m, 0.65 m deep, same doors, handles and toe kick as Claude_kitchen_sink and Claude_wall_cabinet.",
+    "Width 1.25 m (25 cells, two 0.60 m doors and a centre reveal) against GPT's 1.26 m reference."
+  ],
+  "generator": "tools/claude/models/catalog/a3_kitchen.py",
+  "spec": "docs/specs/furniture/Claude_kitchen_counter.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_kitchen_counter/hero.png",
+    "front": "previews/furniture/Claude_kitchen_counter/front.png",
+    "side": "previews/furniture/Claude_kitchen_counter/side.png",
+    "scale": "previews/furniture/Claude_kitchen_counter/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.25,
+    0.65
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "id": "Claude_clothes_dryer",
+  "base_id": "clothes_dryer",
+  "creator": "Claude",
+  "name": "Almond Tumble Dryer",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_clothes_dryer.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_clothes_dryer.glb",
+    "glb_vertices": 884,
+    "glb_triangles": 442,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    6.5,
+    9.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    15,
+    17,
+    17
+  ],
+  "dimensions_m": [
+    0.75,
+    0.85,
+    0.85
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1101,
+  "condition": "worn",
+  "gameplay_use": "Utility appliance; game prop 'dryer'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "almond",
+    "almond_dark",
+    "ash",
+    "ash_light",
+    "charcoal",
+    "cream",
+    "cream_hi",
+    "cream_mid",
+    "cream_shadow",
+    "foil",
+    "galv",
+    "galv_dark",
+    "iron_edge",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 14
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 121
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 4
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 2
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 23
+    },
+    {
+      "index": 61,
+      "role": "ash",
+      "hex": "#8F8A83",
+      "voxels": 5
+    },
+    {
+      "index": 64,
+      "role": "ash_light",
+      "hex": "#B0ABA3",
+      "voxels": 8
+    },
+    {
+      "index": 89,
+      "role": "cream_hi",
+      "hex": "#E4DCCB",
+      "voxels": 6
+    },
+    {
+      "index": 90,
+      "role": "cream",
+      "hex": "#D7CDB9",
+      "voxels": 177
+    },
+    {
+      "index": 91,
+      "role": "cream_mid",
+      "hex": "#C7BCA6",
+      "voxels": 311
+    },
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 2
+    },
+    {
+      "index": 118,
+      "role": "almond",
+      "hex": "#CFC5AC",
+      "voxels": 361
+    },
+    {
+      "index": 119,
+      "role": "almond_dark",
+      "hex": "#AFA58D",
+      "voxels": 47
+    },
+    {
+      "index": 232,
+      "role": "foil",
+      "hex": "#9EA3A1",
+      "voxels": 20
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "An old almond tumble dryer, much older than the washer beside it. It was dented when it was dragged in through the back door, the lint was never cleaned out properly, and the foil vent hose still trails out of the back where it was meant to go to the window.",
+  "notes": [
+    "0.65 x 0.80 x 0.85 m with the vent hose (GPT reference 0.64 x 0.64 x 0.85 m); the body is 0.65 x 0.65 m."
+  ],
+  "generator": "tools/claude/models/catalog/a4_bath_utility.py",
+  "spec": "docs/specs/furniture/Claude_clothes_dryer.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_clothes_dryer/hero.png",
+    "front": "previews/furniture/Claude_clothes_dryer/front.png",
+    "side": "previews/furniture/Claude_clothes_dryer/side.png",
+    "scale": "previews/furniture/Claude_clothes_dryer/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.65,
+    0.6
+  ],
+  "pairs_with": [
+    "Claude_washing_machine"
+  ]
+}
