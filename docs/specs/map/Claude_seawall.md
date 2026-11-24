@@ -15,7 +15,7 @@ A stretch of stepped concrete seawall below the beach promenade. Storm waves hav
 Condition: **worn**.
 
 ## Silhouette
-See the generator docstring and previews.
+Long, three-step concrete revetment, green-stained at the foot, pale coping on top.
 
 ## Dimensions and orientation
 - Width (X): 10.0 m

@@ -15,13 +15,13 @@ A family sawmill at the edge of the woods. The last log is still on the carriage
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Open metal-roofed saw shed with an inclined conveyor to a sawdust heap, a log pyramid and pale lumber bundles.
 
 ## Dimensions and orientation
 - Width (X): 15.0 m
 - Depth (Y): 14.0 m
 - Height (Z): 5.5 m
-- Grid: 30 x 28 x 11 cells at 0.5 m (map tier), 1,964 occupied voxels
+- Grid: 30 x 28 x 11 cells at 0.5 m (map tier), 1,982 occupied voxels
 - Front direction: +Y (library voxel)
 - Front: +Y is the street side / main entrance.
 - Pivot: Bottom centre of the occupied footprint at ground level. (pivot_voxel [15.0, 14.0, 0.0])
@@ -34,7 +34,8 @@ See the generator docstring and previews.
 - Open-sided saw shed with a low metal gable roof and a closed back wall
 - Carriage, log and saw housing inside the shed
 - Inclined chip conveyor out of the camera-side end onto a sawdust heap
-- Pyramid log pile with pale cut ends, strapped lumber bundles
+- Log deck stacked end-on to the street with pale cut ends
+- Strapped lumber bundles on a rutted loading area
 
 ## Details excluded
 - No vehicles

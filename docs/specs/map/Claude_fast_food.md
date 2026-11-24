@@ -10,12 +10,12 @@
 - Brief approved by: user commission for the full Claude catalog (2026-11-24); the model itself is not approved
 
 ## Function and story
-A drive-through burger restaurant at the edge of the strip. The drive-through lane is still marked, the menu board is blank and the tall pole sign lost its panel faces in the first storm.
+A drive-through burger restaurant at the edge of the strip. The drive-through lane is still marked, the menu board is blank and the tall pole sign has been dark since the power went.
 
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Compact box under a projecting terracotta mansard band, wrapped by a drive-through lane, tall empty pole sign.
 
 ## Dimensions and orientation
 - Width (X): 9.0 m
@@ -33,7 +33,7 @@ See the generator docstring and previews.
 ## Details included
 - Flat-roofed box with a terracotta mansard band
 - Drive-through lane wrapping the +X side with a pick-up window canopy and a blank menu board
-- Tall pole sign with an empty frame
+- Tall pole sign with a blank dark panel
 - Glazed front, parking stalls
 
 ## Details excluded

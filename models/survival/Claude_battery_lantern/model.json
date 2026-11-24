@@ -13,8 +13,8 @@
   "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
   "derived": {
     "glb": "Claude_battery_lantern.glb",
-    "glb_vertices": 2012,
-    "glb_triangles": 1006,
+    "glb_vertices": 2044,
+    "glb_triangles": 1022,
     "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
   },
   "voxel_size_m": 0.0125,
@@ -45,7 +45,7 @@
     0.35
   ],
   "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
-  "occupied_voxels": 1476,
+  "occupied_voxels": 1480,
   "condition": "used",
   "gameplay_use": "Night light (game lantern)",
   "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
@@ -80,7 +80,7 @@
       "index": 35,
       "role": "steel",
       "hex": "#687072",
-      "voxels": 52
+      "voxels": 56
     },
     {
       "index": 36,

@@ -15,7 +15,7 @@ A two-lane suburban street. Years of patching show in darker squares, a pothole 
 Condition: **worn**.
 
 ## Silhouette
-See the generator docstring and previews.
+Flat 8.5 m road strip: dark asphalt, yellow centre dashes, pale kerbs and sidewalks, green verges.
 
 ## Dimensions and orientation
 - Width (X): 8.5 m

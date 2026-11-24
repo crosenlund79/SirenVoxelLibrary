@@ -15,7 +15,7 @@ A corner pharmacy on the high street, the first shop people broke into. The corn
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Brick corner shop with a recessed corner door, green awnings and a projecting white blade sign with a green cross.
 
 ## Dimensions and orientation
 - Width (X): 8.0 m

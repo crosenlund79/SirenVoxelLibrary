@@ -15,7 +15,7 @@ A salvage yard behind a wall of patched sheet metal. The crane still holds its m
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Patchwork sheet-metal enclosure with stacked car hulks, a yellow mast-and-jib crane and a yellow office cabin.
 
 ## Dimensions and orientation
 - Width (X): 13.0 m

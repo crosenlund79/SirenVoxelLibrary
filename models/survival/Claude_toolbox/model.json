@@ -13,8 +13,8 @@
   "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
   "derived": {
     "glb": "Claude_toolbox.glb",
-    "glb_vertices": 1944,
-    "glb_triangles": 972,
+    "glb_vertices": 1892,
+    "glb_triangles": 946,
     "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
   },
   "voxel_size_m": 0.0125,
@@ -103,19 +103,19 @@
       "index": 34,
       "role": "steel_light",
       "hex": "#8C9496",
-      "voxels": 21
+      "voxels": 22
     },
     {
       "index": 35,
       "role": "steel",
       "hex": "#687072",
-      "voxels": 94
+      "voxels": 81
     },
     {
       "index": 36,
       "role": "steel_dark",
       "hex": "#4F5658",
-      "voxels": 138
+      "voxels": 150
     },
     {
       "index": 37,

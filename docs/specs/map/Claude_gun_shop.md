@@ -15,7 +15,7 @@ An independent gun shop in a strip of small units. The owner barred everything t
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Banded concrete-block box with barred windows, dark sign band and a sandbag chicane at the door.
 
 ## Dimensions and orientation
 - Width (X): 8.0 m

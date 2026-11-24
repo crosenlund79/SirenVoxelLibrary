@@ -15,7 +15,7 @@ A two-island filling station on the main road. The tanks were pumped dry in the 
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Wide flat white canopy with a red stripe on columns over two pump islands, kiosk behind, blank price sign.
 
 ## Dimensions and orientation
 - Width (X): 13.0 m

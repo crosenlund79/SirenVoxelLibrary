@@ -15,7 +15,7 @@ A checkpoint line thrown across a road: two concrete barriers, a manual boom bet
 Condition: **worn**.
 
 ## Silhouette
-See the generator docstring and previews.
+Two short concrete barriers bridged by a red-and-white boom on a dark post, an orange cone at each.
 
 ## Dimensions and orientation
 - Width (X): 4.5 m

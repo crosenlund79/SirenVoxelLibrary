@@ -15,7 +15,7 @@ The regional hospital, overwhelmed in the first week and evacuated by helicopter
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Four-storey glazed tower with a red-cross panel and rooftop helipad ring, flanked by two-storey wings.
 
 ## Dimensions and orientation
 - Width (X): 20.0 m

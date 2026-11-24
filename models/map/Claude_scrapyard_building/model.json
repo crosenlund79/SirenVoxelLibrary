@@ -135,7 +135,7 @@
       "index": 50,
       "role": "rust",
       "hex": "#B36E44",
-      "voxels": 47
+      "voxels": 16
     },
     {
       "index": 51,
@@ -147,7 +147,7 @@
       "index": 52,
       "role": "rust_deep",
       "hex": "#674230",
-      "voxels": 44
+      "voxels": 75
     },
     {
       "index": 80,

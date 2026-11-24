@@ -15,7 +15,7 @@ A distribution warehouse on the industrial estate. Two loading doors are still l
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Big corrugated front-gabled shed with three tall loading doors (one torn open) and ridge ventilators.
 
 ## Dimensions and orientation
 - Width (X): 18.0 m

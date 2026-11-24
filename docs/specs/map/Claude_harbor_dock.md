@@ -15,7 +15,7 @@ A small concrete jetty in the fishing harbour. The last boats left in a hurry: a
 Condition: **worn**.
 
 ## Silhouette
-See the generator docstring and previews.
+Raised concrete jetty with black fenders and bollards round its edge, an orange jib crane and a crate stack.
 
 ## Dimensions and orientation
 - Width (X): 10.0 m

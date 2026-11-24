@@ -21,7 +21,7 @@ See the generator docstring and previews.
 - Width (X): 0.2 m
 - Depth (Y): 0.1875 m
 - Height (Z): 0.35 m
-- Grid: 16 x 15 x 28 cells at 0.0125 m (micro tier), 1,476 occupied voxels
+- Grid: 16 x 15 x 28 cells at 0.0125 m (micro tier), 1,480 occupied voxels
 - Front direction: +Y (library voxel)
 - Front: +Y is the working / interaction side.
 - Pivot: Bottom centre of the occupied footprint at ground level. (pivot_voxel [8.0, 7.5, 0.0])

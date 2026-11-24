@@ -15,7 +15,7 @@ The town hardware store, stripped of generators, fuel cans and tarps early on. T
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Beige store with a stepped false front and green sign band beside a fenced yard of lumber.
 
 ## Dimensions and orientation
 - Width (X): 13.0 m

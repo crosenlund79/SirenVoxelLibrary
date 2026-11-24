@@ -15,7 +15,7 @@ A small-town vet in a converted house. Before leaving, the staff opened the kenn
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Sage front-gabled building with a white entrance canopy and a fenced dog run with a red-roofed dog house.
 
 ## Dimensions and orientation
 - Width (X): 10.0 m

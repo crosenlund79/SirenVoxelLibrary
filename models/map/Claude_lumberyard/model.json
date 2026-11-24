@@ -13,8 +13,8 @@
   "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
   "derived": {
     "glb": "Claude_lumberyard.glb",
-    "glb_vertices": 1788,
-    "glb_triangles": 894,
+    "glb_vertices": 1872,
+    "glb_triangles": 936,
     "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
   },
   "voxel_size_m": 0.5,
@@ -45,7 +45,7 @@
     5.5
   ],
   "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
-  "occupied_voxels": 1964,
+  "occupied_voxels": 1982,
   "condition": "abandoned",
   "gameplay_use": "Regional-map destination (Construction)",
   "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
@@ -105,25 +105,25 @@
       "index": 19,
       "role": "bark_mid",
       "hex": "#5F564E",
-      "voxels": 42
+      "voxels": 48
     },
     {
       "index": 22,
       "role": "snag_light",
       "hex": "#BFB39F",
-      "voxels": 18
+      "voxels": 28
     },
     {
       "index": 25,
       "role": "break_fresh",
       "hex": "#C9B08A",
-      "voxels": 20
+      "voxels": 22
     },
     {
       "index": 31,
       "role": "soil",
       "hex": "#4F453C",
-      "voxels": 90
+      "voxels": 152
     },
     {
       "index": 35,
@@ -171,7 +171,7 @@
       "index": 200,
       "role": "gravel",
       "hex": "#8C877D",
-      "voxels": 447
+      "voxels": 385
     },
     {
       "index": 204,

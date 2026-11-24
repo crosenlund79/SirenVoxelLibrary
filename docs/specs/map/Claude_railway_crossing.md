@@ -15,7 +15,7 @@ A level crossing on the freight line out of town. The barriers came down when th
 Condition: **worn**.
 
 ## Silhouette
-See the generator docstring and previews.
+Road tile crossed by a ballasted track with raised rails, two signal posts and striped barrier arms down.
 
 ## Dimensions and orientation
 - Width (X): 12.5 m

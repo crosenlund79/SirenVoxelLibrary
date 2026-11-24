@@ -10,12 +10,12 @@
 - Brief approved by: user commission for the full Claude catalog (2026-11-24); the model itself is not approved
 
 ## Function and story
-A forward checkpoint compound thrown up to hold the county road. The unit pulled out in a hurry: the boom is down, the tents still pitched and one truck left behind with a flat.
+A forward checkpoint compound thrown up to hold the county road. The unit pulled out in a hurry: the boom is down, the tents still pitched and one truck left behind.
 
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Square ring of tan barrier baskets around prefab barracks, olive tents, a truck and a thin radio mast.
 
 ## Dimensions and orientation
 - Width (X): 14.0 m

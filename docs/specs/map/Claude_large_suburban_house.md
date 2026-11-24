@@ -15,7 +15,7 @@ A two-storey family house with an attached garage. A storm brought a limb down o
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Two-storey cream block under a broad grey hip roof with a lower hip-roofed garage whose front corner has caved in.
 
 ## Dimensions and orientation
 - Width (X): 11.5 m

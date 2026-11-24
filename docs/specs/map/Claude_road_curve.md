@@ -15,7 +15,7 @@ A 90-degree bend where the street turns along the creek. Drivers cut the corner 
 Condition: **worn**.
 
 ## Silhouette
-See the generator docstring and previews.
+Square tile with the road section swept through a quarter circle, grass inside and outside the bend.
 
 ## Dimensions and orientation
 - Width (X): 12.5 m

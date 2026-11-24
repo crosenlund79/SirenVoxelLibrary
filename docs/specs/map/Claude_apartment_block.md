@@ -15,7 +15,7 @@ A five-storey council block of twenty flats around a central stair core. A fire 
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Tall plaster slab with sage-fronted balcony bands and a glazed stair core rising above the parapet.
 
 ## Dimensions and orientation
 - Width (X): 12.0 m

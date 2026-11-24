@@ -13,8 +13,8 @@
   "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
   "derived": {
     "glb": "Claude_flashlight.glb",
-    "glb_vertices": 1180,
-    "glb_triangles": 590,
+    "glb_vertices": 1212,
+    "glb_triangles": 606,
     "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
   },
   "voxel_size_m": 0.0125,
@@ -45,7 +45,7 @@
     0.0875
   ],
   "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
-  "occupied_voxels": 433,
+  "occupied_voxels": 435,
   "condition": "used",
   "gameplay_use": "Tool item 'flashlight' (clinic access)",
   "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
@@ -98,7 +98,7 @@
       "index": 86,
       "role": "olive",
       "hex": "#777B55",
-      "voxels": 12
+      "voxels": 14
     },
     {
       "index": 96,

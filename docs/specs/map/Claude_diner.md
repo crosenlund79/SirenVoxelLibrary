@@ -15,7 +15,7 @@ A stainless roadside diner on the county road. Everything was left mid-shift: th
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Long, low, round-ended steel-and-white body with a maroon stripe, ribbon windows and a framed sign on a roof pole.
 
 ## Dimensions and orientation
 - Width (X): 11.0 m

@@ -15,7 +15,7 @@ The district supermarket, emptied shelf by shelf in the first fortnight. The car
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Long low beige hall with a raised red sign panel over a glazed entrance canopy, side dock and a striped lot.
 
 ## Dimensions and orientation
 - Width (X): 20.0 m

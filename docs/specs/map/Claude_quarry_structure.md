@@ -10,12 +10,12 @@
 - Brief approved by: user commission for the full Claude catalog (2026-11-24); the model itself is not approved
 
 ## Function and story
-A gravel quarry's processing plant. The crusher stopped with a load still in its hopper; the stockpiles have started to grow weeds and the site office door hangs open.
+A gravel quarry's processing plant. The crusher stopped with a load still in its hopper; weeds have taken the cut rock bench and the site office door hangs open.
 
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Orange crusher on a steel frame under a flared hopper, a conveyor rising to a gravel heap, a cut rock bench.
 
 ## Dimensions and orientation
 - Width (X): 15.0 m
@@ -32,8 +32,9 @@ See the generator docstring and previews.
 
 ## Details included
 - Crusher on a four-leg steel frame with a flared hopper
-- Inclined conveyor feeding a stepped stockpile cone
+- Inclined conveyor feeding a rounded gravel stockpile
 - Second, smaller sand pile
+- Cut rock bench with weeds along the back
 - Portable site office with steps
 
 ## Details excluded

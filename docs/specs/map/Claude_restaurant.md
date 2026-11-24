@@ -15,7 +15,7 @@ A family restaurant with a timber patio. A kitchen fire burned out the camera-si
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Brick box under a grey side-gable with a small entry gable; one end scorched, timber patio with umbrellas.
 
 ## Dimensions and orientation
 - Width (X): 9.0 m

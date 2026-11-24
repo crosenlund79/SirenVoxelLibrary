@@ -15,7 +15,7 @@ A members' outdoor range with a timber clubhouse. Targets are still pinned up fr
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Low timber clubhouse beside a covered firing line, lanes with paper targets and a tall earth berm behind.
 
 ## Dimensions and orientation
 - Width (X): 16.0 m

@@ -15,7 +15,7 @@ A two-span concrete road bridge over the creek on the county road. Its parapets 
 Condition: **worn**.
 
 ## Silhouette
-See the generator docstring and previews.
+Long road deck with posted steel railings on a central two-column pier and end abutments.
 
 ## Dimensions and orientation
 - Width (X): 8.5 m

@@ -15,7 +15,7 @@ A corner convenience store that was looted on the second night: two of the front
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Small flat-roofed box with a raised false front, blue sign band and a glazed, partly boarded shopfront.
 
 ## Dimensions and orientation
 - Width (X): 8.0 m

@@ -15,7 +15,7 @@ A four-way junction at the centre of the subdivision. The traffic lights were on
 Condition: **worn**.
 
 ## Silhouette
-See the generator docstring and previews.
+Plus-shaped asphalt crossing with zebra stripes on each arm and grass corner squares.
 
 ## Dimensions and orientation
 - Width (X): 12.5 m

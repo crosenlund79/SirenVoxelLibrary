@@ -15,7 +15,7 @@ The walk-in medical clinic where people queued for days after the sirens stopped
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Single-storey white clinic with a raised entrance tower carrying a red cross and a side ambulance canopy.
 
 ## Dimensions and orientation
 - Width (X): 11.0 m

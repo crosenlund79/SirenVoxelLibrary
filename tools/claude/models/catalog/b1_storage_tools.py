@@ -624,12 +624,12 @@ def toolbox():
     g.paint(20, 13, 7, 26, 13, 8, "pine_aged")
     g.box(6, 11, 6, 8, 14, 8, "charcoal")                           # hammer head
     g.set(6, 14, 8, "steel_hi")
-    g.box(27, 8, 8, 31, 8, 8, "steel_light")                        # screwdriver shaft
-    g.box(32, 8, 7, 36, 9, 8, "mustard_dark")                       # its amber handle
-    g.paint(36, 8, 7, 36, 9, 8, "mustard_deep")
-    g.box(10, 9, 5, 22, 9, 6, "steel")                              # spanner
-    g.box(9, 8, 5, 9, 10, 6, "steel_light")
-    g.box(23, 8, 5, 23, 10, 6, "steel_light")
+    g.box(26, 11, 8, 31, 11, 8, "steel_light")                      # screwdriver across the tape
+    g.box(32, 11, 7, 36, 12, 8, "mustard_dark")                     # its amber handle
+    g.paint(36, 11, 7, 36, 12, 8, "mustard_deep")
+    g.box(10, 9, 4, 22, 9, 4, "steel")                              # spanner on the jumble
+    g.box(9, 8, 4, 9, 10, 5, "steel_light")
+    g.box(23, 8, 4, 23, 10, 5, "steel_light")
     g.box(28, 11, 4, 31, 14, 7, "charcoal")                         # tape measure
     g.paint(28, 11, 7, 31, 14, 7, "iron")
     g.set(31, 14, 5, "mustard")                                     # its tape end

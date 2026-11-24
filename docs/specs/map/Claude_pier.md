@@ -15,7 +15,7 @@ A timber fishing pier off the beach road. A winter storm took two deck boards ne
 Condition: **worn**.
 
 ## Silhouette
-See the generator docstring and previews.
+Narrow grey timber deck on paired piles whose heads stand proud along both edges.
 
 ## Dimensions and orientation
 - Width (X): 4.0 m

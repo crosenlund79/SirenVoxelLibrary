@@ -15,7 +15,7 @@ The district police station, the last place in town with lights on. The cruisers
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Two-storey brick block with a navy band, navy entrance canopy, flagpole and two white cruisers.
 
 ## Dimensions and orientation
 - Width (X): 16.0 m

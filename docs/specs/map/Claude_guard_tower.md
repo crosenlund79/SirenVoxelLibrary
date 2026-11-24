@@ -10,12 +10,12 @@
 - Brief approved by: user commission for the full Claude catalog (2026-11-24); the model itself is not approved
 
 ## Function and story
-A timber watchtower over a perimeter road. The last guard climbed down and left the hatch open; the searchlight still points at the gate.
+A timber watchtower over a perimeter road. The last guard climbed down and never came back; the searchlight still points at the gate.
 
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Tall braced timber stilt frame carrying a box cabin with an open window band and a pyramid metal roof.
 
 ## Dimensions and orientation
 - Width (X): 4.0 m
@@ -31,7 +31,7 @@ See the generator docstring and previews.
 `galv`, `galv_hi`, `steel`, `steel_hi`, `wgrey`, `wgrey_dark`, `wgrey_deep`, `wgrey_hi`, `wgrey_mid`
 
 ## Details included
-- Four timber legs with girts and single diagonal braces
+- Four timber legs with girts and diagonal braces
 - Cabin with a solid lower wall, open window band and corner posts
 - Galvanised pyramid roof, timber ladder on the street side
 - Searchlight on the front corner

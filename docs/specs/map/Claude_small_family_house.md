@@ -15,7 +15,7 @@ A one-storey starter home on a small lot. The family boarded every window and le
 Condition: **abandoned**.
 
 ## Silhouette
-See the generator docstring and previews.
+Low blue box under a steep brown side-gable, brick chimney up one gable, small porch roof on two white posts.
 
 ## Dimensions and orientation
 - Width (X): 9.0 m
