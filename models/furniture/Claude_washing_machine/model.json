@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "id": "Claude_washing_machine",
+  "base_id": "washing_machine",
+  "creator": "Claude",
+  "name": "Washing Machine",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_washing_machine.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_washing_machine.glb",
+    "glb_vertices": 528,
+    "glb_triangles": 264,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    6.5,
+    6.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    13,
+    13,
+    17
+  ],
+  "dimensions_m": [
+    0.65,
+    0.65,
+    0.85
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1045,
+  "condition": "used",
+  "gameplay_use": "Utility appliance; game prop 'washer'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "charcoal",
+    "glass_dark",
+    "glass_deep",
+    "mustard",
+    "mustard_dark",
+    "porcelain",
+    "porcelain_hi",
+    "porcelain_mid",
+    "porcelain_shadow",
+    "screen",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 27
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 1
+    },
+    {
+      "index": 113,
+      "role": "porcelain_hi",
+      "hex": "#EAE7DF",
+      "voxels": 261
+    },
+    {
+      "index": 114,
+      "role": "porcelain",
+      "hex": "#DAD6CC",
+      "voxels": 633
+    },
+    {
+      "index": 115,
+      "role": "porcelain_mid",
+      "hex": "#C5C0B5",
+      "voxels": 67
+    },
+    {
+      "index": 116,
+      "role": "porcelain_shadow",
+      "hex": "#ABA69B",
+      "voxels": 4
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 6
+    },
+    {
+      "index": 124,
+      "role": "glass_deep",
+      "hex": "#42535A",
+      "voxels": 39
+    },
+    {
+      "index": 125,
+      "role": "screen",
+      "hex": "#262C2F",
+      "voxels": 2
+    },
+    {
+      "index": 138,
+      "role": "mustard",
+      "hex": "#AA8847",
+      "voxels": 2
+    },
+    {
+      "index": 139,
+      "role": "mustard_dark",
+      "hex": "#876B38",
+      "voxels": 3
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A white front-loader in the utility room, only a few years old and still clean. The last load was pulled out in a hurry; one mustard sock stayed caught in the door seal and hangs down the front (its partner is in the laundry basket).",
+  "notes": [
+    "0.65 x 0.70 x 0.85 m with the door ring (GPT reference 0.64 x 0.64 x 0.86 m)."
+  ],
+  "generator": "tools/claude/models/catalog/a4_bath_utility.py",
+  "spec": "docs/specs/furniture/Claude_washing_machine.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_washing_machine/hero.png",
+    "front": "previews/furniture/Claude_washing_machine/front.png",
+    "side": "previews/furniture/Claude_washing_machine/side.png",
+    "scale": "previews/furniture/Claude_washing_machine/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.65,
+    0.6
+  ],
+  "pairs_with": [
+    "Claude_laundry_basket",
+    "Claude_clothes_dryer"
+  ]
+}

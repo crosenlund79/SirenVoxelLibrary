@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "Claude_cutting_board",
+  "base_id": "cutting_board",
+  "creator": "Claude",
+  "name": "Wooden Cutting Board",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_cutting_board.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_cutting_board.glb",
+    "glb_vertices": 556,
+    "glb_triangles": 278,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.0125,
+  "resolution_tier": "micro",
+  "resolution_rationale": "1.25 cm cells: a hand-sized pickup would be only 3-6 cells at 2.5 cm, losing the grip, cap or label that identifies it.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    17.0,
+    12.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    34,
+    24,
+    4
+  ],
+  "dimensions_m": [
+    0.425,
+    0.3,
+    0.05
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1643,
+  "condition": "used",
+  "gameplay_use": "Kitchen dressing",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "brass",
+    "pine_dark",
+    "pine_hi",
+    "pine_light",
+    "pine_mid",
+    "steel",
+    "steel_hi",
+    "steel_light",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 1,
+      "role": "pine_hi",
+      "hex": "#CDA77D",
+      "voxels": 305
+    },
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 359
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 936
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 7
+    },
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 19
+    },
+    {
+      "index": 33,
+      "role": "steel_hi",
+      "hex": "#ADB4B2",
+      "voxels": 6
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 7
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 2
+    },
+    {
+      "index": 54,
+      "role": "brass",
+      "hex": "#A3874E",
+      "voxels": 2
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A beech chopping board from the knife drawer side of the counter, scored grey in the middle by years of onions, with the little paring knife still lying on it from the last meal anyone made.",
+  "notes": [
+    "0.425 x 0.30 x 0.05 m at 1.25 cm cells (GPT reference 0.43 x 0.29 x 0.045 m); board 2.5 cm thick, knife handle on top."
+  ],
+  "generator": "tools/claude/models/catalog/a3_kitchen.py",
+  "spec": "docs/specs/furniture/Claude_cutting_board.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_cutting_board/hero.png",
+    "front": "previews/furniture/Claude_cutting_board/front.png",
+    "side": "previews/furniture/Claude_cutting_board/side.png",
+    "scale": "previews/furniture/Claude_cutting_board/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.425,
+    0.3
+  ]
+}

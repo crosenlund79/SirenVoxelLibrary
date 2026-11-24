@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "id": "Claude_kitchen_sink",
+  "base_id": "kitchen_sink",
+  "creator": "Claude",
+  "name": "Kitchen Sink Unit",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_kitchen_sink.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_kitchen_sink.glb",
+    "glb_vertices": 1276,
+    "glb_triangles": 638,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    10.5,
+    6.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    21,
+    13,
+    24
+  ],
+  "dimensions_m": [
+    1.05,
+    0.65,
+    1.2
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1794,
+  "condition": "used",
+  "gameplay_use": "Sink unit; game prop 'sink_counter'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "card_dark",
+    "charcoal",
+    "chrome",
+    "pine_light",
+    "pine_mid",
+    "porcelain_hi",
+    "porcelain_mid",
+    "rust_deep",
+    "sage",
+    "sage_dark",
+    "sage_deep",
+    "sage_hi",
+    "steel",
+    "steel_hi",
+    "steel_light",
+    "terra",
+    "terra_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 57
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 53
+    },
+    {
+      "index": 33,
+      "role": "steel_hi",
+      "hex": "#ADB4B2",
+      "voxels": 92
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 58
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 36
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 8
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 1
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 8
+    },
+    {
+      "index": 113,
+      "role": "porcelain_hi",
+      "hex": "#EAE7DF",
+      "voxels": 32
+    },
+    {
+      "index": 115,
+      "role": "porcelain_mid",
+      "hex": "#C5C0B5",
+      "voxels": 14
+    },
+    {
+      "index": 120,
+      "role": "chrome",
+      "hex": "#C4C9C7",
+      "voxels": 12
+    },
+    {
+      "index": 142,
+      "role": "terra",
+      "hex": "#925A41",
+      "voxels": 8
+    },
+    {
+      "index": 143,
+      "role": "terra_dark",
+      "hex": "#744733",
+      "voxels": 1
+    },
+    {
+      "index": 145,
+      "role": "sage_hi",
+      "hex": "#93A193",
+      "voxels": 7
+    },
+    {
+      "index": 146,
+      "role": "sage",
+      "hex": "#7A887B",
+      "voxels": 1032
+    },
+    {
+      "index": 147,
+      "role": "sage_dark",
+      "hex": "#637064",
+      "voxels": 230
+    },
+    {
+      "index": 148,
+      "role": "sage_deep",
+      "hex": "#4C574D",
+      "voxels": 141
+    },
+    {
+      "index": 159,
+      "role": "card_dark",
+      "hex": "#8A714F",
+      "voxels": 4
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The family washed up here every evening. The last water dried in the basin and left a brown tide ring round the drain; two plates are still standing in the rack where somebody left them to drain.",
+  "notes": [
+    "Same rhythm as Claude_kitchen_counter (0.90 m worktop, 0.65 m deep); 1.05 m wide (21 cells, two doors and a centre reveal) against GPT's 1.00 m reference.",
+    "Overall height 1.20 m is the tap; the worktop line is 0.90 m."
+  ],
+  "generator": "tools/claude/models/catalog/a3_kitchen.py",
+  "spec": "docs/specs/furniture/Claude_kitchen_sink.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_kitchen_sink/hero.png",
+    "front": "previews/furniture/Claude_kitchen_sink/front.png",
+    "side": "previews/furniture/Claude_kitchen_sink/side.png",
+    "scale": "previews/furniture/Claude_kitchen_sink/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.05,
+    0.65
+  ]
+}

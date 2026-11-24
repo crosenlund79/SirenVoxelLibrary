@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "id": "Claude_pantry_shelf",
+  "base_id": "pantry_shelf",
+  "creator": "Claude",
+  "name": "Pantry Shelving",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_pantry_shelf.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_pantry_shelf.glb",
+    "glb_vertices": 1716,
+    "glb_triangles": 858,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    11.5,
+    5.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    23,
+    13,
+    36
+  ],
+  "dimensions_m": [
+    1.15,
+    0.65,
+    1.8
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1620,
+  "condition": "abandoned",
+  "gameplay_use": "Food storage; scavenging target",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "blue_dark",
+    "blue_mid",
+    "brass_dark",
+    "card",
+    "card_dark",
+    "card_hi",
+    "cream",
+    "cream_mid",
+    "cream_shadow",
+    "foil",
+    "glass_hi",
+    "label_green",
+    "label_red",
+    "mustard_dark",
+    "paper",
+    "pine_aged",
+    "pine_dark",
+    "pine_hi",
+    "pine_light",
+    "pine_mid",
+    "porcelain_hi",
+    "red_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 1,
+      "role": "pine_hi",
+      "hex": "#CDA77D",
+      "voxels": 50
+    },
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 540
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 530
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 252
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 4
+    },
+    {
+      "index": 55,
+      "role": "brass_dark",
+      "hex": "#786439",
+      "voxels": 8
+    },
+    {
+      "index": 83,
+      "role": "red_dark",
+      "hex": "#7B463B",
+      "voxels": 4
+    },
+    {
+      "index": 90,
+      "role": "cream",
+      "hex": "#D7CDB9",
+      "voxels": 26
+    },
+    {
+      "index": 91,
+      "role": "cream_mid",
+      "hex": "#C7BCA6",
+      "voxels": 7
+    },
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 19
+    },
+    {
+      "index": 95,
+      "role": "paper",
+      "hex": "#DDD6C6",
+      "voxels": 44
+    },
+    {
+      "index": 99,
+      "role": "blue_mid",
+      "hex": "#5D707D",
+      "voxels": 21
+    },
+    {
+      "index": 100,
+      "role": "blue_dark",
+      "hex": "#4E5F6B",
+      "voxels": 4
+    },
+    {
+      "index": 113,
+      "role": "porcelain_hi",
+      "hex": "#EAE7DF",
+      "voxels": 6
+    },
+    {
+      "index": 121,
+      "role": "glass_hi",
+      "hex": "#A7BDC2",
+      "voxels": 8
+    },
+    {
+      "index": 139,
+      "role": "mustard_dark",
+      "hex": "#876B38",
+      "voxels": 4
+    },
+    {
+      "index": 157,
+      "role": "card_hi",
+      "hex": "#C2A47A",
+      "voxels": 8
+    },
+    {
+      "index": 158,
+      "role": "card",
+      "hex": "#A88A62",
+      "voxels": 18
+    },
+    {
+      "index": 159,
+      "role": "card_dark",
+      "hex": "#8A714F",
+      "voxels": 31
+    },
+    {
+      "index": 228,
+      "role": "label_red",
+      "hex": "#9C4A3A",
+      "voxels": 16
+    },
+    {
+      "index": 229,
+      "role": "label_green",
+      "hex": "#5F7752",
+      "voxels": 8
+    },
+    {
+      "index": 232,
+      "role": "foil",
+      "hex": "#9EA3A1",
+      "voxels": 12
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "Plain pine shelving in a walk-in pantry, stripped by whoever came first. They took what they could carry: a few cans rolled to the back, two jars nobody wanted, a flour sack that split when it was dragged and spilled down to the floor, and the cardboard tray the tins came in.",
+  "notes": [
+    "1.15 x 0.50 x 1.80 m (GPT reference 1.15 x 0.48 x 1.80 m)."
+  ],
+  "generator": "tools/claude/models/catalog/a3_kitchen.py",
+  "spec": "docs/specs/furniture/Claude_pantry_shelf.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_pantry_shelf/hero.png",
+    "front": "previews/furniture/Claude_pantry_shelf/front.png",
+    "side": "previews/furniture/Claude_pantry_shelf/side.png",
+    "scale": "previews/furniture/Claude_pantry_shelf/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.15,
+    0.5
+  ]
+}

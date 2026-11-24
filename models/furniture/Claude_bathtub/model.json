@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "id": "Claude_bathtub",
+  "base_id": "bathtub",
+  "creator": "Claude",
+  "name": "Bathtub",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_bathtub.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_bathtub.glb",
+    "glb_vertices": 920,
+    "glb_triangles": 460,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    17.5,
+    7.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the open front panel; the back and both ends go against walls.",
+  "grid_size_cells": [
+    35,
+    15,
+    14
+  ],
+  "dimensions_m": [
+    1.75,
+    0.75,
+    0.7
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 2528,
+  "condition": "used",
+  "gameplay_use": "Bathroom fixture; water storage; game prop 'bathtub'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "charcoal",
+    "chrome",
+    "pine_aged",
+    "pine_light",
+    "pine_mid",
+    "porcelain",
+    "porcelain_hi",
+    "porcelain_mid",
+    "porcelain_shadow",
+    "steel_dark",
+    "steel_light",
+    "teal",
+    "teal_dark",
+    "teal_hi",
+    "water",
+    "water_hi"
+  ],
+  "palette_roles": [
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 14
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 28
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 3
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 18
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 1
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 35
+    },
+    {
+      "index": 77,
+      "role": "water_hi",
+      "hex": "#5E747B",
+      "voxels": 78
+    },
+    {
+      "index": 78,
+      "role": "water",
+      "hex": "#3E5359",
+      "voxels": 252
+    },
+    {
+      "index": 113,
+      "role": "porcelain_hi",
+      "hex": "#EAE7DF",
+      "voxels": 228
+    },
+    {
+      "index": 114,
+      "role": "porcelain",
+      "hex": "#DAD6CC",
+      "voxels": 539
+    },
+    {
+      "index": 115,
+      "role": "porcelain_mid",
+      "hex": "#C5C0B5",
+      "voxels": 336
+    },
+    {
+      "index": 116,
+      "role": "porcelain_shadow",
+      "hex": "#ABA69B",
+      "voxels": 493
+    },
+    {
+      "index": 120,
+      "role": "chrome",
+      "hex": "#C4C9C7",
+      "voxels": 9
+    },
+    {
+      "index": 149,
+      "role": "teal_hi",
+      "hex": "#6F8C8A",
+      "voxels": 216
+    },
+    {
+      "index": 150,
+      "role": "teal",
+      "hex": "#587372",
+      "voxels": 130
+    },
+    {
+      "index": 151,
+      "role": "teal_dark",
+      "hex": "#445A59",
+      "voxels": 148
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "When the mains failed, the family filled the bath while the pressure lasted and used it as their water tank. A plank laid across the far end holds the saucepan they dipped with; the level has dropped well below the grey line where it first stood.",
+  "notes": [
+    "1.75 x 0.75 x 0.65 m with the taps (rim 0.60 m; GPT reference 1.75 x 0.75 x 0.58 m)."
+  ],
+  "generator": "tools/claude/models/catalog/a4_bath_utility.py",
+  "spec": "docs/specs/furniture/Claude_bathtub.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_bathtub/hero.png",
+    "front": "previews/furniture/Claude_bathtub/front.png",
+    "side": "previews/furniture/Claude_bathtub/side.png",
+    "scale": "previews/furniture/Claude_bathtub/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.75,
+    0.75
+  ]
+}

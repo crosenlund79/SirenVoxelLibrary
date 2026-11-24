@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "id": "Claude_wall_cabinet",
+  "base_id": "wall_cabinet",
+  "creator": "Claude",
+  "name": "Kitchen Wall Cabinet",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_wall_cabinet.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_wall_cabinet.glb",
+    "glb_vertices": 656,
+    "glb_triangles": 328,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    10.5,
+    0.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the back face (the cabinet body, not the open door). Hang with the back on the wall; bottom at about 1.45 m (0.55 m over the 0.90 m worktop).",
+  "front_note": "+Y faces into the room; the back (y = 0) is flat for the wall.",
+  "grid_size_cells": [
+    23,
+    16,
+    15
+  ],
+  "dimensions_m": [
+    1.15,
+    0.8,
+    0.75
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1141,
+  "condition": "used",
+  "gameplay_use": "Wall-mounted kitchen cabinet",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "charcoal",
+    "cream_deep",
+    "cream_shadow",
+    "glass_hi",
+    "paper",
+    "porcelain_hi",
+    "porcelain_mid",
+    "porcelain_shadow",
+    "sage",
+    "sage_dark",
+    "sage_hi",
+    "steel_dark",
+    "terra",
+    "terra_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 4
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 6
+    },
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 3
+    },
+    {
+      "index": 93,
+      "role": "cream_deep",
+      "hex": "#988C77",
+      "voxels": 1
+    },
+    {
+      "index": 95,
+      "role": "paper",
+      "hex": "#DDD6C6",
+      "voxels": 11
+    },
+    {
+      "index": 113,
+      "role": "porcelain_hi",
+      "hex": "#EAE7DF",
+      "voxels": 24
+    },
+    {
+      "index": 115,
+      "role": "porcelain_mid",
+      "hex": "#C5C0B5",
+      "voxels": 19
+    },
+    {
+      "index": 116,
+      "role": "porcelain_shadow",
+      "hex": "#ABA69B",
+      "voxels": 9
+    },
+    {
+      "index": 121,
+      "role": "glass_hi",
+      "hex": "#A7BDC2",
+      "voxels": 2
+    },
+    {
+      "index": 142,
+      "role": "terra",
+      "hex": "#925A41",
+      "voxels": 8
+    },
+    {
+      "index": 143,
+      "role": "terra_dark",
+      "hex": "#744733",
+      "voxels": 1
+    },
+    {
+      "index": 145,
+      "role": "sage_hi",
+      "hex": "#93A193",
+      "voxels": 21
+    },
+    {
+      "index": 146,
+      "role": "sage",
+      "hex": "#7A887B",
+      "voxels": 785
+    },
+    {
+      "index": 147,
+      "role": "sage_dark",
+      "hex": "#637064",
+      "voxels": 247
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 1.05 x 0.35 x 0.75 m for the body; the open door adds a 0.05 x 0.50 m leaf at the right end.",
+  "story": "Hung above the counter, it held the everyday plates and cups. The right-hand door was left standing open; most of the cups are gone, the plates were left because nobody needed plates any more.",
+  "notes": [
+    "Closed body 1.05 x 0.35 x 0.75 m (GPT reference 1.06 x 0.36 x 0.76 m). The open door is part of the story and adds 0.50 m of depth at the right end only."
+  ],
+  "generator": "tools/claude/models/catalog/a3_kitchen.py",
+  "spec": "docs/specs/furniture/Claude_wall_cabinet.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_wall_cabinet/hero.png",
+    "front": "previews/furniture/Claude_wall_cabinet/front.png",
+    "side": "previews/furniture/Claude_wall_cabinet/side.png",
+    "scale": "previews/furniture/Claude_wall_cabinet/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "mount": {
+    "type": "wall",
+    "recommended_bottom_height_m": 1.45
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "id": "Claude_water_heater",
+  "base_id": "water_heater",
+  "creator": "Claude",
+  "name": "Gas Water Heater",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_water_heater.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_water_heater.glb",
+    "glb_vertices": 1192,
+    "glb_triangles": 596,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    7.0,
+    7.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    13,
+    15,
+    32
+  ],
+  "dimensions_m": [
+    0.65,
+    0.75,
+    1.6
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1469,
+  "condition": "worn",
+  "gameplay_use": "Utility; emergency water source; game prop 'water_heater'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "brass",
+    "brass_dark",
+    "charcoal",
+    "copper",
+    "cream_deep",
+    "cream_shadow",
+    "galv",
+    "galv_dark",
+    "galv_hi",
+    "label_cream",
+    "paint_white",
+    "paint_white_shadow",
+    "rust",
+    "rust_dark",
+    "rust_deep",
+    "signal_red_dark",
+    "steel_dark",
+    "steel_hi",
+    "steel_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 33,
+      "role": "steel_hi",
+      "hex": "#ADB4B2",
+      "voxels": 48
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 100
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 130
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 7
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 8
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 12
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 4
+    },
+    {
+      "index": 50,
+      "role": "rust",
+      "hex": "#B36E44",
+      "voxels": 1
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 3
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 2
+    },
+    {
+      "index": 54,
+      "role": "brass",
+      "hex": "#A3874E",
+      "voxels": 9
+    },
+    {
+      "index": 55,
+      "role": "brass_dark",
+      "hex": "#786439",
+      "voxels": 1
+    },
+    {
+      "index": 56,
+      "role": "copper",
+      "hex": "#9A6448",
+      "voxels": 39
+    },
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 4
+    },
+    {
+      "index": 93,
+      "role": "cream_deep",
+      "hex": "#988C77",
+      "voxels": 1
+    },
+    {
+      "index": 202,
+      "role": "signal_red_dark",
+      "hex": "#7E3229",
+      "voxels": 4
+    },
+    {
+      "index": 209,
+      "role": "paint_white",
+      "hex": "#D0CEC6",
+      "voxels": 1010
+    },
+    {
+      "index": 210,
+      "role": "paint_white_shadow",
+      "hex": "#B0AEA6",
+      "voxels": 79
+    },
+    {
+      "index": 231,
+      "role": "label_cream",
+      "hex": "#D9CFB3",
+      "voxels": 7
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The tank water heater in the utility corner. After the gas went off it became the house's emergency water: someone has been drawing off the drain valve into buckets, and the valve's slow drip has left a rust streak down the jacket.",
+  "notes": [
+    "0.65 x 0.70 x 1.60 m with the valves and pipes (GPT reference 0.61 x 0.61 x 1.60 m); the tank itself is 0.60 m across."
+  ],
+  "generator": "tools/claude/models/catalog/a4_bath_utility.py",
+  "spec": "docs/specs/furniture/Claude_water_heater.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_water_heater/hero.png",
+    "front": "previews/furniture/Claude_water_heater/front.png",
+    "side": "previews/furniture/Claude_water_heater/side.png",
+    "scale": "previews/furniture/Claude_water_heater/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.6,
+    0.6
+  ]
+}
