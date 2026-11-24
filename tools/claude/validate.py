@@ -218,7 +218,7 @@ def check_glb(meta, path, grid, pal):
         got[int(ci)] = int(round(area[m].sum()))
     # exterior-only faces (current exporter) or all faces (frozen pilot GLBs)
     from export_glb import exterior_air
-    got = {int(k): int(v) for k, v in got.items()}
+    got = {int(k): int(v) for k, v in got.items() if v}   # colours fully hidden: no faces
     mode = None
     for ext in (True, False):
         want = {int(k): int(v) for k, v in exposed_faces_by_colour(grid, ext).items()}

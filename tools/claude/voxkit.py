@@ -472,6 +472,27 @@ def _mirror_x(self, x_mid2: int):
             self.v[t, j, k] = self.v[i, j, k]
 
 
+def _fline(self, p0, p1, c):
+    """Face-connected 3D line (every step shares a face with the previous cell). Grid.line is
+    kept unchanged for byte-stable rebuilds; it can touch only along edges at diagonals."""
+    import numpy as _np
+    a = _np.array(p0, float)
+    b = _np.array(p1, float)
+    n = int(max(abs(b - a).max(), 1) * 3) + 1
+    last = None
+    for t in _np.linspace(0.0, 1.0, n):
+        q = [int(math.floor(v + 0.5)) for v in a + (b - a) * t]
+        if last is not None:
+            cur = list(last)
+            for ax in (2, 0, 1):          # settle height last-first so lines sag, not hover
+                if cur[ax] != q[ax]:
+                    cur[ax] = q[ax]
+                    self.set(*cur, c)
+        self.set(*q, c)
+        last = q
+
+
+Grid.fline = _fline
 Grid.cyl_x = _cyl_x
 Grid.cyl_y = _cyl_y
 Grid.ellipsoid = _ellipsoid
