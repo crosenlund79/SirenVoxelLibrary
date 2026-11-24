@@ -2,6 +2,7 @@
 
     python3 tools/claude/catalog_sync.py            # sync every Claude model.json on disk
     python3 tools/claude/catalog_sync.py --check    # report differences, write nothing
+    python3 tools/claude/catalog_sync.py --only sofa armchair   # only these base IDs (batch commits)
 
 Rules (docs/RIVAL_WORKFLOW.md, docs/REVIEW_PROCESS.md):
   * Only entries whose id starts with "Claude_" are added or refreshed.
@@ -31,7 +32,7 @@ def entry_from(meta: dict, mdir: Path) -> dict:
         "voxel_size_m": meta["voxel_size_m"], "dimensions_m": meta["dimensions_m"],
         "occupied_voxels": meta["occupied_voxels"], "game_integrations": [],
     }
-    for k in ("batch", "scale_family", "condition"):
+    for k in ("batch", "scale_family", "condition", "compare_base_id"):
         if k in meta:
             e[k] = meta[k]
     return e
@@ -39,6 +40,7 @@ def entry_from(meta: dict, mdir: Path) -> dict:
 
 def main():
     check = "--check" in sys.argv
+    only = set(sys.argv[sys.argv.index("--only") + 1:]) if "--only" in sys.argv else None
     path = ROOT / "catalog.json"
     cat = json.loads(path.read_text())
     models = cat.setdefault("models", [])
@@ -46,6 +48,8 @@ def main():
     added, refreshed, kept = [], [], []
     for mp in sorted(ROOT.glob("models/*/Claude_*/model.json")):
         meta = json.loads(mp.read_text())
+        if only is not None and meta["base_id"] not in only and meta["id"] not in only:
+            continue
         if not meta["id"].startswith("Claude_") or meta.get("creator") != "Claude":
             raise SystemExit(f"refusing non-Claude metadata {mp}")
         if not (mp.parent / meta["source"]).exists():
