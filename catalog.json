@@ -4893,6 +4893,630 @@
       "batch": "Claude_catalog_B",
       "scale_family": "full",
       "condition": "improvised"
+    },
+    {
+      "id": "Claude_backpack",
+      "base_id": "backpack",
+      "creator": "Claude",
+      "name": "Backpack",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_backpack/Claude_backpack.vox",
+      "metadata_path": "models/survival/Claude_backpack/model.json",
+      "preview_path": "previews/survival/Claude_backpack/",
+      "derived_paths": [
+        "models/survival/Claude_backpack/Claude_backpack.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.425,
+        0.25,
+        0.55
+      ],
+      "occupied_voxels": 1159,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_basic_generator",
+      "base_id": "basic_generator",
+      "creator": "Claude",
+      "name": "Basic Generator",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_basic_generator/Claude_basic_generator.vox",
+      "metadata_path": "models/survival/Claude_basic_generator/model.json",
+      "preview_path": "previews/survival/Claude_basic_generator/",
+      "derived_paths": [
+        "models/survival/Claude_basic_generator/Claude_basic_generator.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.75,
+        0.5,
+        0.625
+      ],
+      "occupied_voxels": 2997,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_battery_lantern",
+      "base_id": "battery_lantern",
+      "creator": "Claude",
+      "name": "Battery Lantern",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_battery_lantern/Claude_battery_lantern.vox",
+      "metadata_path": "models/survival/Claude_battery_lantern/model.json",
+      "preview_path": "previews/survival/Claude_battery_lantern/",
+      "derived_paths": [
+        "models/survival/Claude_battery_lantern/Claude_battery_lantern.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.2,
+        0.1875,
+        0.35
+      ],
+      "occupied_voxels": 1480,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_camping_stove",
+      "base_id": "camping_stove",
+      "creator": "Claude",
+      "name": "Camping Stove",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_camping_stove/Claude_camping_stove.vox",
+      "metadata_path": "models/survival/Claude_camping_stove/model.json",
+      "preview_path": "previews/survival/Claude_camping_stove/",
+      "derived_paths": [
+        "models/survival/Claude_camping_stove/Claude_camping_stove.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.5,
+        0.275,
+        0.325
+      ],
+      "occupied_voxels": 752,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_candle",
+      "base_id": "candle",
+      "creator": "Claude",
+      "name": "Candle",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_candle/Claude_candle.vox",
+      "metadata_path": "models/survival/Claude_candle/model.json",
+      "preview_path": "previews/survival/Claude_candle/",
+      "derived_paths": [
+        "models/survival/Claude_candle/Claude_candle.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.175,
+        0.175,
+        0.1875
+      ],
+      "occupied_voxels": 517,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_cooking_pot",
+      "base_id": "cooking_pot",
+      "creator": "Claude",
+      "name": "Cooking Pot",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_cooking_pot/Claude_cooking_pot.vox",
+      "metadata_path": "models/survival/Claude_cooking_pot/model.json",
+      "preview_path": "previews/survival/Claude_cooking_pot/",
+      "derived_paths": [
+        "models/survival/Claude_cooking_pot/Claude_cooking_pot.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.35,
+        0.3,
+        0.275
+      ],
+      "occupied_voxels": 650,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_crowbar",
+      "base_id": "crowbar",
+      "creator": "Claude",
+      "name": "Crowbar",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_crowbar/Claude_crowbar.vox",
+      "metadata_path": "models/survival/Claude_crowbar/model.json",
+      "preview_path": "previews/survival/Claude_crowbar/",
+      "derived_paths": [
+        "models/survival/Claude_crowbar/Claude_crowbar.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.1,
+        0.6875,
+        0.025
+      ],
+      "occupied_voxels": 244,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_first_aid_box",
+      "base_id": "first_aid_box",
+      "creator": "Claude",
+      "name": "Wall First-Aid Box",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_first_aid_box/Claude_first_aid_box.vox",
+      "metadata_path": "models/survival/Claude_first_aid_box/model.json",
+      "preview_path": "previews/survival/Claude_first_aid_box/",
+      "derived_paths": [
+        "models/survival/Claude_first_aid_box/Claude_first_aid_box.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.375,
+        0.2375,
+        0.225
+      ],
+      "occupied_voxels": 2693,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_flashlight",
+      "base_id": "flashlight",
+      "creator": "Claude",
+      "name": "Flashlight",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_flashlight/Claude_flashlight.vox",
+      "metadata_path": "models/survival/Claude_flashlight/model.json",
+      "preview_path": "previews/survival/Claude_flashlight/",
+      "derived_paths": [
+        "models/survival/Claude_flashlight/Claude_flashlight.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.0875,
+        0.3125,
+        0.0875
+      ],
+      "occupied_voxels": 435,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_fuel_container",
+      "base_id": "fuel_container",
+      "creator": "Claude",
+      "name": "Fuel Container",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_fuel_container/Claude_fuel_container.vox",
+      "metadata_path": "models/survival/Claude_fuel_container/model.json",
+      "preview_path": "previews/survival/Claude_fuel_container/",
+      "derived_paths": [
+        "models/survival/Claude_fuel_container/Claude_fuel_container.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.35,
+        0.2,
+        0.475
+      ],
+      "occupied_voxels": 784,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_hammer",
+      "base_id": "hammer",
+      "creator": "Claude",
+      "name": "Claw Hammer",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_hammer/Claude_hammer.vox",
+      "metadata_path": "models/survival/Claude_hammer/model.json",
+      "preview_path": "previews/survival/Claude_hammer/",
+      "derived_paths": [
+        "models/survival/Claude_hammer/Claude_hammer.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.15,
+        0.3875,
+        0.0375
+      ],
+      "occupied_voxels": 276,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_hatchet",
+      "base_id": "hatchet",
+      "creator": "Claude",
+      "name": "Hatchet",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_hatchet/Claude_hatchet.vox",
+      "metadata_path": "models/survival/Claude_hatchet/model.json",
+      "preview_path": "previews/survival/Claude_hatchet/",
+      "derived_paths": [
+        "models/survival/Claude_hatchet/Claude_hatchet.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.2,
+        0.4375,
+        0.0375
+      ],
+      "occupied_voxels": 357,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_improvised_forge",
+      "base_id": "improvised_forge",
+      "creator": "Claude",
+      "name": "Improvised Forge",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_improvised_forge/Claude_improvised_forge.vox",
+      "metadata_path": "models/survival/Claude_improvised_forge/model.json",
+      "preview_path": "previews/survival/Claude_improvised_forge/",
+      "derived_paths": [
+        "models/survival/Claude_improvised_forge/Claude_improvised_forge.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.65,
+        1.1
+      ],
+      "occupied_voxels": 1012,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "improvised"
+    },
+    {
+      "id": "Claude_jerry_can",
+      "base_id": "jerry_can",
+      "creator": "Claude",
+      "name": "Jerry Can",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_jerry_can/Claude_jerry_can.vox",
+      "metadata_path": "models/survival/Claude_jerry_can/model.json",
+      "preview_path": "previews/survival/Claude_jerry_can/",
+      "derived_paths": [
+        "models/survival/Claude_jerry_can/Claude_jerry_can.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.35,
+        0.175,
+        0.475
+      ],
+      "occupied_voxels": 889,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_metal_storage_cabinet",
+      "base_id": "metal_storage_cabinet",
+      "creator": "Claude",
+      "name": "Metal Storage Cabinet",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_metal_storage_cabinet/Claude_metal_storage_cabinet.vox",
+      "metadata_path": "models/survival/Claude_metal_storage_cabinet/model.json",
+      "preview_path": "previews/survival/Claude_metal_storage_cabinet/",
+      "derived_paths": [
+        "models/survival/Claude_metal_storage_cabinet/Claude_metal_storage_cabinet.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.85,
+        0.5,
+        1.85
+      ],
+      "occupied_voxels": 2014,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_pickaxe",
+      "base_id": "pickaxe",
+      "creator": "Claude",
+      "name": "Pickaxe",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_pickaxe/Claude_pickaxe.vox",
+      "metadata_path": "models/survival/Claude_pickaxe/model.json",
+      "preview_path": "previews/survival/Claude_pickaxe/",
+      "derived_paths": [
+        "models/survival/Claude_pickaxe/Claude_pickaxe.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.5,
+        0.85,
+        0.075
+      ],
+      "occupied_voxels": 244,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_portable_battery",
+      "base_id": "portable_battery",
+      "creator": "Claude",
+      "name": "Portable Battery",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_portable_battery/Claude_portable_battery.vox",
+      "metadata_path": "models/survival/Claude_portable_battery/model.json",
+      "preview_path": "previews/survival/Claude_portable_battery/",
+      "derived_paths": [
+        "models/survival/Claude_portable_battery/Claude_portable_battery.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.325,
+        0.225,
+        0.2375
+      ],
+      "occupied_voxels": 1957,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "lightly_used"
+    },
+    {
+      "id": "Claude_saw",
+      "base_id": "saw",
+      "creator": "Claude",
+      "name": "Hand Saw",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_saw/Claude_saw.vox",
+      "metadata_path": "models/survival/Claude_saw/model.json",
+      "preview_path": "previews/survival/Claude_saw/",
+      "derived_paths": [
+        "models/survival/Claude_saw/Claude_saw.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.125,
+        0.6875,
+        0.025
+      ],
+      "occupied_voxels": 426,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_shovel",
+      "base_id": "shovel",
+      "creator": "Claude",
+      "name": "Shovel",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_shovel/Claude_shovel.vox",
+      "metadata_path": "models/survival/Claude_shovel/model.json",
+      "preview_path": "previews/survival/Claude_shovel/",
+      "derived_paths": [
+        "models/survival/Claude_shovel/Claude_shovel.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.2,
+        1.15,
+        0.075
+      ],
+      "occupied_voxels": 294,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_tool_chest",
+      "base_id": "tool_chest",
+      "creator": "Claude",
+      "name": "Tool Chest",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_tool_chest/Claude_tool_chest.vox",
+      "metadata_path": "models/survival/Claude_tool_chest/model.json",
+      "preview_path": "previews/survival/Claude_tool_chest/",
+      "derived_paths": [
+        "models/survival/Claude_tool_chest/Claude_tool_chest.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.875,
+        0.5,
+        0.475
+      ],
+      "occupied_voxels": 2542,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_toolbox",
+      "base_id": "toolbox",
+      "creator": "Claude",
+      "name": "Toolbox",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_toolbox/Claude_toolbox.vox",
+      "metadata_path": "models/survival/Claude_toolbox/model.json",
+      "preview_path": "previews/survival/Claude_toolbox/",
+      "derived_paths": [
+        "models/survival/Claude_toolbox/Claude_toolbox.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.5,
+        0.25,
+        0.2125
+      ],
+      "occupied_voxels": 2707,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_water_barrel",
+      "base_id": "water_barrel",
+      "creator": "Claude",
+      "name": "Water Barrel",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_water_barrel/Claude_water_barrel.vox",
+      "metadata_path": "models/survival/Claude_water_barrel/model.json",
+      "preview_path": "previews/survival/Claude_water_barrel/",
+      "derived_paths": [
+        "models/survival/Claude_water_barrel/Claude_water_barrel.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.6,
+        0.7,
+        1.1
+      ],
+      "occupied_voxels": 1175,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_water_bottle",
+      "base_id": "water_bottle",
+      "creator": "Claude",
+      "name": "Water Bottle",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_water_bottle/Claude_water_bottle.vox",
+      "metadata_path": "models/survival/Claude_water_bottle/model.json",
+      "preview_path": "previews/survival/Claude_water_bottle/",
+      "derived_paths": [
+        "models/survival/Claude_water_bottle/Claude_water_bottle.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.0875,
+        0.0875,
+        0.2875
+      ],
+      "occupied_voxels": 510,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_wooden_storage_crate",
+      "base_id": "wooden_storage_crate",
+      "creator": "Claude",
+      "name": "Wooden Storage Crate",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_wooden_storage_crate/Claude_wooden_storage_crate.vox",
+      "metadata_path": "models/survival/Claude_wooden_storage_crate/model.json",
+      "preview_path": "previews/survival/Claude_wooden_storage_crate/",
+      "derived_paths": [
+        "models/survival/Claude_wooden_storage_crate/Claude_wooden_storage_crate.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.9,
+        0.65,
+        0.6
+      ],
+      "occupied_voxels": 943,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "improvised"
     }
   ]
 }
