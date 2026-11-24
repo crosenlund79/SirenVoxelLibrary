@@ -1,38 +1,38 @@
 # GPT vs Claude coverage
 
-Generated 2026-11-24 11:53 UTC by `tools/compare/build_compare.py` from `catalog.json`.
+Generated 2026-11-24 12:16 UTC by `tools/compare/build_compare.py` from `catalog.json`.
 
 GPT object types: **179**. Claude coverage:
 
-- independent Claude model: **6**
+- independent Claude model: **25**
 - existing Claude model reused: **1**
 - existing Claude model (alias): **5**
 - needs revision: **0**
-- missing: **167**
+- missing: **148**
 - Claude-only extras (no GPT counterpart): **0**
 
 | Batch | Base ID | GPT | Claude | Status | Note |
 |---|---|---|---|---|---|
 | A | `sofa` | `GPT_sofa` | `Claude_sofa` | independent Claude model |  |
-| A | `armchair` | `GPT_armchair` | — | missing |  |
-| A | `coffee_table` | `GPT_coffee_table` | — | missing |  |
-| A | `television` | `GPT_television` | — | missing |  |
-| A | `tv_cabinet` | `GPT_tv_cabinet` | — | missing |  |
-| A | `bookshelf` | `GPT_bookshelf` | — | missing |  |
-| A | `side_table` | `GPT_side_table` | — | missing |  |
-| A | `floor_lamp` | `GPT_floor_lamp` | — | missing |  |
-| A | `small_storage_cabinet` | `GPT_small_storage_cabinet` | — | missing |  |
-| A | `rug` | `GPT_rug` | — | missing |  |
-| A | `stool` | `GPT_stool` | — | missing |  |
-| A | `sideboard` | `GPT_sideboard` | — | missing |  |
-| A | `small_shelf` | `GPT_small_shelf` | — | missing |  |
+| A | `armchair` | `GPT_armchair` | `Claude_armchair` | independent Claude model |  |
+| A | `coffee_table` | `GPT_coffee_table` | `Claude_coffee_table` | independent Claude model |  |
+| A | `television` | `GPT_television` | `Claude_television` | independent Claude model |  |
+| A | `tv_cabinet` | `GPT_tv_cabinet` | `Claude_tv_cabinet` | independent Claude model |  |
+| A | `bookshelf` | `GPT_bookshelf` | `Claude_bookshelf` | independent Claude model |  |
+| A | `side_table` | `GPT_side_table` | `Claude_side_table` | independent Claude model |  |
+| A | `floor_lamp` | `GPT_floor_lamp` | `Claude_floor_lamp` | independent Claude model |  |
+| A | `small_storage_cabinet` | `GPT_small_storage_cabinet` | `Claude_small_storage_cabinet` | independent Claude model |  |
+| A | `rug` | `GPT_rug` | `Claude_rug` | independent Claude model |  |
+| A | `stool` | `GPT_stool` | `Claude_stool` | independent Claude model |  |
+| A | `sideboard` | `GPT_sideboard` | `Claude_sideboard` | independent Claude model |  |
+| A | `small_shelf` | `GPT_small_shelf` | `Claude_small_shelf` | independent Claude model |  |
 | A | `single_bed` | `GPT_single_bed` | `Claude_single_bed_unmade` | existing Claude model (alias) |  |
-| A | `double_bed` | `GPT_double_bed` | — | missing |  |
-| A | `nightstand` | `GPT_nightstand` | — | missing |  |
-| A | `wardrobe` | `GPT_wardrobe` | — | missing |  |
-| A | `dresser` | `GPT_dresser` | — | missing |  |
-| A | `small_desk` | `GPT_small_desk` | — | missing |  |
-| A | `desk_chair` | `GPT_desk_chair` | — | missing |  |
+| A | `double_bed` | `GPT_double_bed` | `Claude_double_bed` | independent Claude model |  |
+| A | `nightstand` | `GPT_nightstand` | `Claude_nightstand` | independent Claude model |  |
+| A | `wardrobe` | `GPT_wardrobe` | `Claude_wardrobe` | independent Claude model |  |
+| A | `dresser` | `GPT_dresser` | `Claude_dresser` | independent Claude model |  |
+| A | `small_desk` | `GPT_small_desk` | `Claude_small_desk` | independent Claude model |  |
+| A | `desk_chair` | `GPT_desk_chair` | `Claude_desk_chair` | independent Claude model |  |
 | A | `refrigerator` | `GPT_refrigerator` | — | missing |  |
 | A | `kitchen_oven` | `GPT_kitchen_oven` | — | missing |  |
 | A | `kitchen_counter` | `GPT_kitchen_counter` | — | missing |  |
@@ -52,7 +52,7 @@ GPT object types: **179**. Claude coverage:
 | A | `water_heater` | `GPT_water_heater` | — | missing |  |
 | A | `laundry_basket` | `GPT_laundry_basket` | — | missing |  |
 | A | `dining_table` | `GPT_dining_table` | `Claude_dining_table` | existing Claude model reused |  |
-| A | `dining_chair` | `GPT_dining_chair` | — | missing |  |
+| A | `dining_chair` | `GPT_dining_chair` | `Claude_dining_chair` | independent Claude model |  |
 | B | `workbench` | `GPT_workbench` | `Claude_workbench_worn` | existing Claude model (alias) |  |
 | B | `wooden_storage_crate` | `GPT_wooden_storage_crate` | — | missing |  |
 | B | `metal_storage_cabinet` | `GPT_metal_storage_cabinet` | — | missing |  |
