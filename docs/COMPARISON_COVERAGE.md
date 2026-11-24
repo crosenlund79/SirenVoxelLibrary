@@ -1,14 +1,14 @@
 # GPT vs Claude coverage
 
-Generated 2026-11-24 15:53 UTC by `tools/compare/build_compare.py` from `catalog.json`.
+Generated 2026-11-24 15:55 UTC by `tools/compare/build_compare.py` from `catalog.json`.
 
 GPT object types: **179**. Claude coverage:
 
-- independent Claude model: **93**
+- independent Claude model: **117**
 - existing Claude model reused: **1**
 - existing Claude model (alias): **5**
 - needs revision: **0**
-- missing: **80**
+- missing: **56**
 - Claude-only extras (no GPT counterpart): **0**
 
 | Batch | Base ID | GPT | Claude | Status | Note |
@@ -54,31 +54,31 @@ GPT object types: **179**. Claude coverage:
 | A | `dining_table` | `GPT_dining_table` | `Claude_dining_table` | existing Claude model reused |  |
 | A | `dining_chair` | `GPT_dining_chair` | `Claude_dining_chair` | independent Claude model |  |
 | B | `workbench` | `GPT_workbench` | `Claude_workbench_worn` | existing Claude model (alias) |  |
-| B | `wooden_storage_crate` | `GPT_wooden_storage_crate` | — | missing |  |
-| B | `metal_storage_cabinet` | `GPT_metal_storage_cabinet` | — | missing |  |
-| B | `tool_chest` | `GPT_tool_chest` | — | missing |  |
-| B | `toolbox` | `GPT_toolbox` | — | missing |  |
-| B | `hammer` | `GPT_hammer` | — | missing |  |
-| B | `crowbar` | `GPT_crowbar` | — | missing |  |
-| B | `hatchet` | `GPT_hatchet` | — | missing |  |
-| B | `shovel` | `GPT_shovel` | — | missing |  |
-| B | `pickaxe` | `GPT_pickaxe` | — | missing |  |
-| B | `saw` | `GPT_saw` | — | missing |  |
-| B | `flashlight` | `GPT_flashlight` | — | missing |  |
-| B | `battery_lantern` | `GPT_battery_lantern` | — | missing |  |
-| B | `candle` | `GPT_candle` | — | missing |  |
-| B | `camping_stove` | `GPT_camping_stove` | — | missing |  |
+| B | `wooden_storage_crate` | `GPT_wooden_storage_crate` | `Claude_wooden_storage_crate` | independent Claude model |  |
+| B | `metal_storage_cabinet` | `GPT_metal_storage_cabinet` | `Claude_metal_storage_cabinet` | independent Claude model |  |
+| B | `tool_chest` | `GPT_tool_chest` | `Claude_tool_chest` | independent Claude model |  |
+| B | `toolbox` | `GPT_toolbox` | `Claude_toolbox` | independent Claude model |  |
+| B | `hammer` | `GPT_hammer` | `Claude_hammer` | independent Claude model |  |
+| B | `crowbar` | `GPT_crowbar` | `Claude_crowbar` | independent Claude model |  |
+| B | `hatchet` | `GPT_hatchet` | `Claude_hatchet` | independent Claude model |  |
+| B | `shovel` | `GPT_shovel` | `Claude_shovel` | independent Claude model |  |
+| B | `pickaxe` | `GPT_pickaxe` | `Claude_pickaxe` | independent Claude model |  |
+| B | `saw` | `GPT_saw` | `Claude_saw` | independent Claude model |  |
+| B | `flashlight` | `GPT_flashlight` | `Claude_flashlight` | independent Claude model |  |
+| B | `battery_lantern` | `GPT_battery_lantern` | `Claude_battery_lantern` | independent Claude model |  |
+| B | `candle` | `GPT_candle` | `Claude_candle` | independent Claude model |  |
+| B | `camping_stove` | `GPT_camping_stove` | `Claude_camping_stove` | independent Claude model |  |
 | B | `wood_stove` | `GPT_wood_stove` | `Claude_wood_stove_compact` | existing Claude model (alias) |  |
-| B | `improvised_forge` | `GPT_improvised_forge` | — | missing |  |
+| B | `improvised_forge` | `GPT_improvised_forge` | `Claude_improvised_forge` | independent Claude model |  |
 | B | `rainwater_collector` | `GPT_rainwater_collector` | `Claude_rain_collector_basic` | existing Claude model (alias) |  |
-| B | `water_barrel` | `GPT_water_barrel` | — | missing |  |
-| B | `jerry_can` | `GPT_jerry_can` | — | missing |  |
-| B | `water_bottle` | `GPT_water_bottle` | — | missing |  |
-| B | `backpack` | `GPT_backpack` | — | missing |  |
-| B | `basic_generator` | `GPT_basic_generator` | — | missing |  |
-| B | `fuel_container` | `GPT_fuel_container` | — | missing |  |
-| B | `portable_battery` | `GPT_portable_battery` | — | missing |  |
-| B | `first_aid_box` | `GPT_first_aid_box` | — | missing |  |
+| B | `water_barrel` | `GPT_water_barrel` | `Claude_water_barrel` | independent Claude model |  |
+| B | `jerry_can` | `GPT_jerry_can` | `Claude_jerry_can` | independent Claude model |  |
+| B | `water_bottle` | `GPT_water_bottle` | `Claude_water_bottle` | independent Claude model |  |
+| B | `backpack` | `GPT_backpack` | `Claude_backpack` | independent Claude model |  |
+| B | `basic_generator` | `GPT_basic_generator` | `Claude_basic_generator` | independent Claude model |  |
+| B | `fuel_container` | `GPT_fuel_container` | `Claude_fuel_container` | independent Claude model |  |
+| B | `portable_battery` | `GPT_portable_battery` | `Claude_portable_battery` | independent Claude model |  |
+| B | `first_aid_box` | `GPT_first_aid_box` | `Claude_first_aid_box` | independent Claude model |  |
 | B | `wooden_wall_section` | `GPT_wooden_wall_section` | `Claude_wooden_wall_section` | independent Claude model |  |
 | B | `wooden_floor_section` | `GPT_wooden_floor_section` | `Claude_wooden_floor_section` | independent Claude model |  |
 | B | `wooden_foundation_support` | `GPT_wooden_foundation_support` | `Claude_wooden_foundation_support` | independent Claude model |  |
@@ -102,7 +102,7 @@ GPT object types: **179**. Claude coverage:
 | B | `damaged_wooden_wall` | `GPT_damaged_wooden_wall` | `Claude_damaged_wooden_wall` | independent Claude model |  |
 | B | `broken_brick_wall` | `GPT_broken_brick_wall` | `Claude_broken_brick_wall` | independent Claude model |  |
 | B | `destroyed_barricade` | `GPT_destroyed_barricade` | `Claude_destroyed_barricade` | independent Claude model |  |
-| B | `cooking_pot` | `GPT_cooking_pot` | — | missing |  |
+| B | `cooking_pot` | `GPT_cooking_pot` | `Claude_cooking_pot` | independent Claude model |  |
 | C | `revolver` | `GPT_revolver` | — | missing |  |
 | C | `shotgun` | `GPT_shotgun` | — | missing |  |
 | C | `hunting_rifle` | `GPT_hunting_rifle` | — | missing |  |
