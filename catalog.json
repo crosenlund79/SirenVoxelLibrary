@@ -1266,6 +1266,3386 @@
       "batch": "Claude_catalog_A",
       "scale_family": "full",
       "condition": "worn"
+    },
+    {
+      "id": "Claude_ammunition_box",
+      "base_id": "ammunition_box",
+      "creator": "Claude",
+      "name": "Ammunition Box",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_ammunition_box/Claude_ammunition_box.vox",
+      "metadata_path": "models/combat/Claude_ammunition_box/model.json",
+      "preview_path": "previews/combat/Claude_ammunition_box/",
+      "derived_paths": [
+        "models/combat/Claude_ammunition_box/Claude_ammunition_box.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.2875,
+        0.175,
+        0.175
+      ],
+      "occupied_voxels": 1264,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_baseball_bat",
+      "base_id": "baseball_bat",
+      "creator": "Claude",
+      "name": "Baseball Bat",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_baseball_bat/Claude_baseball_bat.vox",
+      "metadata_path": "models/combat/Claude_baseball_bat/model.json",
+      "preview_path": "previews/combat/Claude_baseball_bat/",
+      "derived_paths": [
+        "models/combat/Claude_baseball_bat/Claude_baseball_bat.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.075,
+        0.775,
+        0.075
+      ],
+      "occupied_voxels": 864,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_compact_smg",
+      "base_id": "compact_smg",
+      "creator": "Claude",
+      "name": "Compact Submachine Gun",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_compact_smg/Claude_compact_smg.vox",
+      "metadata_path": "models/combat/Claude_compact_smg/model.json",
+      "preview_path": "previews/combat/Claude_compact_smg/",
+      "derived_paths": [
+        "models/combat/Claude_compact_smg/Claude_compact_smg.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.0625,
+        0.5,
+        0.225
+      ],
+      "occupied_voxels": 908,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_helmet",
+      "base_id": "helmet",
+      "creator": "Claude",
+      "name": "Simple Helmet",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_helmet/Claude_helmet.vox",
+      "metadata_path": "models/combat/Claude_helmet/model.json",
+      "preview_path": "previews/combat/Claude_helmet/",
+      "derived_paths": [
+        "models/combat/Claude_helmet/Claude_helmet.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.3625,
+        0.325,
+        0.1625
+      ],
+      "occupied_voxels": 1651,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_hunting_rifle",
+      "base_id": "hunting_rifle",
+      "creator": "Claude",
+      "name": "Hunting Rifle",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_hunting_rifle/Claude_hunting_rifle.vox",
+      "metadata_path": "models/combat/Claude_hunting_rifle/model.json",
+      "preview_path": "previews/combat/Claude_hunting_rifle/",
+      "derived_paths": [
+        "models/combat/Claude_hunting_rifle/Claude_hunting_rifle.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.075,
+        1.075,
+        0.2375
+      ],
+      "occupied_voxels": 1563,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_loose_ammo_pickup",
+      "base_id": "loose_ammo_pickup",
+      "creator": "Claude",
+      "name": "Loose Ammunition",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_loose_ammo_pickup/Claude_loose_ammo_pickup.vox",
+      "metadata_path": "models/combat/Claude_loose_ammo_pickup/model.json",
+      "preview_path": "previews/combat/Claude_loose_ammo_pickup/",
+      "derived_paths": [
+        "models/combat/Claude_loose_ammo_pickup/Claude_loose_ammo_pickup.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.2,
+        0.1,
+        0.0375
+      ],
+      "occupied_voxels": 105,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_protective_vest",
+      "base_id": "protective_vest",
+      "creator": "Claude",
+      "name": "Protective Vest",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_protective_vest/Claude_protective_vest.vox",
+      "metadata_path": "models/combat/Claude_protective_vest/model.json",
+      "preview_path": "previews/combat/Claude_protective_vest/",
+      "derived_paths": [
+        "models/combat/Claude_protective_vest/Claude_protective_vest.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.525,
+        0.3,
+        0.6
+      ],
+      "occupied_voxels": 1202,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_revolver",
+      "base_id": "revolver",
+      "creator": "Claude",
+      "name": "Revolver",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_revolver/Claude_revolver.vox",
+      "metadata_path": "models/combat/Claude_revolver/model.json",
+      "preview_path": "previews/combat/Claude_revolver/",
+      "derived_paths": [
+        "models/combat/Claude_revolver/Claude_revolver.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.05,
+        0.2125,
+        0.1625
+      ],
+      "occupied_voxels": 260,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_shotgun",
+      "base_id": "shotgun",
+      "creator": "Claude",
+      "name": "Pump Shotgun",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_shotgun/Claude_shotgun.vox",
+      "metadata_path": "models/combat/Claude_shotgun/model.json",
+      "preview_path": "previews/combat/Claude_shotgun/",
+      "derived_paths": [
+        "models/combat/Claude_shotgun/Claude_shotgun.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.05,
+        1.0,
+        0.175
+      ],
+      "occupied_voxels": 1294,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_shotgun_shell_box",
+      "base_id": "shotgun_shell_box",
+      "creator": "Claude",
+      "name": "Shotgun Shell Box",
+      "category": "combat",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/combat/Claude_shotgun_shell_box/Claude_shotgun_shell_box.vox",
+      "metadata_path": "models/combat/Claude_shotgun_shell_box/model.json",
+      "preview_path": "previews/combat/Claude_shotgun_shell_box/",
+      "derived_paths": [
+        "models/combat/Claude_shotgun_shell_box/Claude_shotgun_shell_box.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.225,
+        0.175,
+        0.2125
+      ],
+      "occupied_voxels": 1066,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_brick_wall_section",
+      "base_id": "brick_wall_section",
+      "creator": "Claude",
+      "name": "Brick Wall Section",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_brick_wall_section/Claude_brick_wall_section.vox",
+      "metadata_path": "models/construction/Claude_brick_wall_section/model.json",
+      "preview_path": "previews/construction/Claude_brick_wall_section/",
+      "derived_paths": [
+        "models/construction/Claude_brick_wall_section/Claude_brick_wall_section.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        0.3,
+        2.6
+      ],
+      "occupied_voxels": 540,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_broken_brick_wall",
+      "base_id": "broken_brick_wall",
+      "creator": "Claude",
+      "name": "Partially Broken Brick Wall",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_broken_brick_wall/Claude_broken_brick_wall.vox",
+      "metadata_path": "models/construction/Claude_broken_brick_wall/model.json",
+      "preview_path": "previews/construction/Claude_broken_brick_wall/",
+      "derived_paths": [
+        "models/construction/Claude_broken_brick_wall/Claude_broken_brick_wall.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        0.7,
+        2.3
+      ],
+      "occupied_voxels": 394,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "damaged"
+    },
+    {
+      "id": "Claude_concrete_foundation",
+      "base_id": "concrete_foundation",
+      "creator": "Claude",
+      "name": "Concrete Foundation",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_concrete_foundation/Claude_concrete_foundation.vox",
+      "metadata_path": "models/construction/Claude_concrete_foundation/model.json",
+      "preview_path": "previews/construction/Claude_concrete_foundation/",
+      "derived_paths": [
+        "models/construction/Claude_concrete_foundation/Claude_concrete_foundation.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        1.0,
+        0.4
+      ],
+      "occupied_voxels": 243,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_concrete_wall_section",
+      "base_id": "concrete_wall_section",
+      "creator": "Claude",
+      "name": "Concrete Wall Section",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_concrete_wall_section/Claude_concrete_wall_section.vox",
+      "metadata_path": "models/construction/Claude_concrete_wall_section/model.json",
+      "preview_path": "previews/construction/Claude_concrete_wall_section/",
+      "derived_paths": [
+        "models/construction/Claude_concrete_wall_section/Claude_concrete_wall_section.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        0.3,
+        2.6
+      ],
+      "occupied_voxels": 588,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_damaged_wooden_wall",
+      "base_id": "damaged_wooden_wall",
+      "creator": "Claude",
+      "name": "Damaged Wooden Wall",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_damaged_wooden_wall/Claude_damaged_wooden_wall.vox",
+      "metadata_path": "models/construction/Claude_damaged_wooden_wall/model.json",
+      "preview_path": "previews/construction/Claude_damaged_wooden_wall/",
+      "derived_paths": [
+        "models/construction/Claude_damaged_wooden_wall/Claude_damaged_wooden_wall.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        0.4,
+        2.6
+      ],
+      "occupied_voxels": 348,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "damaged"
+    },
+    {
+      "id": "Claude_destroyed_barricade",
+      "base_id": "destroyed_barricade",
+      "creator": "Claude",
+      "name": "Destroyed Barricade",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_destroyed_barricade/Claude_destroyed_barricade.vox",
+      "metadata_path": "models/construction/Claude_destroyed_barricade/model.json",
+      "preview_path": "previews/construction/Claude_destroyed_barricade/",
+      "derived_paths": [
+        "models/construction/Claude_destroyed_barricade/Claude_destroyed_barricade.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.55,
+        1.35
+      ],
+      "occupied_voxels": 487,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "destroyed"
+    },
+    {
+      "id": "Claude_metal_door",
+      "base_id": "metal_door",
+      "creator": "Claude",
+      "name": "Metal Door",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_metal_door/Claude_metal_door.vox",
+      "metadata_path": "models/construction/Claude_metal_door/model.json",
+      "preview_path": "previews/construction/Claude_metal_door/",
+      "derived_paths": [
+        "models/construction/Claude_metal_door/Claude_metal_door.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.2,
+        2.1
+      ],
+      "occupied_voxels": 2048,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_metal_fence_gate",
+      "base_id": "metal_fence_gate",
+      "creator": "Claude",
+      "name": "Metal Gate",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_metal_fence_gate/Claude_metal_fence_gate.vox",
+      "metadata_path": "models/construction/Claude_metal_fence_gate/model.json",
+      "preview_path": "previews/construction/Claude_metal_fence_gate/",
+      "derived_paths": [
+        "models/construction/Claude_metal_fence_gate/Claude_metal_fence_gate.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.15,
+        0.15,
+        2.0
+      ],
+      "occupied_voxels": 711,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_metal_reinforced_wall",
+      "base_id": "metal_reinforced_wall",
+      "creator": "Claude",
+      "name": "Metal-Reinforced Wall",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_metal_reinforced_wall/Claude_metal_reinforced_wall.vox",
+      "metadata_path": "models/construction/Claude_metal_reinforced_wall/model.json",
+      "preview_path": "previews/construction/Claude_metal_reinforced_wall/",
+      "derived_paths": [
+        "models/construction/Claude_metal_reinforced_wall/Claude_metal_reinforced_wall.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        0.3,
+        2.6
+      ],
+      "occupied_voxels": 538,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "improvised"
+    },
+    {
+      "id": "Claude_metal_support_beam",
+      "base_id": "metal_support_beam",
+      "creator": "Claude",
+      "name": "Metal Support Beam",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_metal_support_beam/Claude_metal_support_beam.vox",
+      "metadata_path": "models/construction/Claude_metal_support_beam/model.json",
+      "preview_path": "previews/construction/Claude_metal_support_beam/",
+      "derived_paths": [
+        "models/construction/Claude_metal_support_beam/Claude_metal_support_beam.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.35,
+        0.35,
+        2.55
+      ],
+      "occupied_voxels": 743,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_reinforced_wooden_barricade",
+      "base_id": "reinforced_wooden_barricade",
+      "creator": "Claude",
+      "name": "Reinforced Wooden Barricade",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_reinforced_wooden_barricade/Claude_reinforced_wooden_barricade.vox",
+      "metadata_path": "models/construction/Claude_reinforced_wooden_barricade/model.json",
+      "preview_path": "previews/construction/Claude_reinforced_wooden_barricade/",
+      "derived_paths": [
+        "models/construction/Claude_reinforced_wooden_barricade/Claude_reinforced_wooden_barricade.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.5,
+        2.05
+      ],
+      "occupied_voxels": 2236,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "improvised"
+    },
+    {
+      "id": "Claude_steel_reinforcement_panel",
+      "base_id": "steel_reinforcement_panel",
+      "creator": "Claude",
+      "name": "Steel Reinforcement Panel",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_steel_reinforcement_panel/Claude_steel_reinforcement_panel.vox",
+      "metadata_path": "models/construction/Claude_steel_reinforcement_panel/model.json",
+      "preview_path": "previews/construction/Claude_steel_reinforcement_panel/",
+      "derived_paths": [
+        "models/construction/Claude_steel_reinforcement_panel/Claude_steel_reinforcement_panel.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.1,
+        2.3
+      ],
+      "occupied_voxels": 1188,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_stone_foundation",
+      "base_id": "stone_foundation",
+      "creator": "Claude",
+      "name": "Stone Foundation",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_stone_foundation/Claude_stone_foundation.vox",
+      "metadata_path": "models/construction/Claude_stone_foundation/model.json",
+      "preview_path": "previews/construction/Claude_stone_foundation/",
+      "derived_paths": [
+        "models/construction/Claude_stone_foundation/Claude_stone_foundation.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        1.0,
+        0.3
+      ],
+      "occupied_voxels": 233,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_stone_wall_section",
+      "base_id": "stone_wall_section",
+      "creator": "Claude",
+      "name": "Stone Wall Section",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_stone_wall_section/Claude_stone_wall_section.vox",
+      "metadata_path": "models/construction/Claude_stone_wall_section/model.json",
+      "preview_path": "previews/construction/Claude_stone_wall_section/",
+      "derived_paths": [
+        "models/construction/Claude_stone_wall_section/Claude_stone_wall_section.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        0.3,
+        2.6
+      ],
+      "occupied_voxels": 520,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_window_frame",
+      "base_id": "window_frame",
+      "creator": "Claude",
+      "name": "Window Frame",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_window_frame/Claude_window_frame.vox",
+      "metadata_path": "models/construction/Claude_window_frame/model.json",
+      "preview_path": "previews/construction/Claude_window_frame/",
+      "derived_paths": [
+        "models/construction/Claude_window_frame/Claude_window_frame.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.25,
+        1.2
+      ],
+      "occupied_voxels": 1118,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_wooden_barricade",
+      "base_id": "wooden_barricade",
+      "creator": "Claude",
+      "name": "Wooden Barricade",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_barricade/Claude_wooden_barricade.vox",
+      "metadata_path": "models/construction/Claude_wooden_barricade/model.json",
+      "preview_path": "previews/construction/Claude_wooden_barricade/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_barricade/Claude_wooden_barricade.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.4,
+        2.0
+      ],
+      "occupied_voxels": 1062,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "improvised"
+    },
+    {
+      "id": "Claude_wooden_beam",
+      "base_id": "wooden_beam",
+      "creator": "Claude",
+      "name": "Wooden Beam",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_beam/Claude_wooden_beam.vox",
+      "metadata_path": "models/construction/Claude_wooden_beam/model.json",
+      "preview_path": "previews/construction/Claude_wooden_beam/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_beam/Claude_wooden_beam.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.3,
+        0.3
+      ],
+      "occupied_voxels": 288,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_wooden_door",
+      "base_id": "wooden_door",
+      "creator": "Claude",
+      "name": "Wooden Door",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_door/Claude_wooden_door.vox",
+      "metadata_path": "models/construction/Claude_wooden_door/model.json",
+      "preview_path": "previews/construction/Claude_wooden_door/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_door/Claude_wooden_door.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.2,
+        2.1
+      ],
+      "occupied_voxels": 1894,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_wooden_floor_section",
+      "base_id": "wooden_floor_section",
+      "creator": "Claude",
+      "name": "Wooden Floor Section",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_floor_section/Claude_wooden_floor_section.vox",
+      "metadata_path": "models/construction/Claude_wooden_floor_section/model.json",
+      "preview_path": "previews/construction/Claude_wooden_floor_section/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_floor_section/Claude_wooden_floor_section.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        1.0,
+        0.2
+      ],
+      "occupied_voxels": 130,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_wooden_foundation_support",
+      "base_id": "wooden_foundation_support",
+      "creator": "Claude",
+      "name": "Wooden Foundation Support",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_foundation_support/Claude_wooden_foundation_support.vox",
+      "metadata_path": "models/construction/Claude_wooden_foundation_support/model.json",
+      "preview_path": "previews/construction/Claude_wooden_foundation_support/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_foundation_support/Claude_wooden_foundation_support.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.35,
+        0.35,
+        1.2
+      ],
+      "occupied_voxels": 707,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_wooden_post",
+      "base_id": "wooden_post",
+      "creator": "Claude",
+      "name": "Wooden Post",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_post/Claude_wooden_post.vox",
+      "metadata_path": "models/construction/Claude_wooden_post/model.json",
+      "preview_path": "previews/construction/Claude_wooden_post/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_post/Claude_wooden_post.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.3,
+        0.3,
+        2.5
+      ],
+      "occupied_voxels": 640,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_wooden_stairs",
+      "base_id": "wooden_stairs",
+      "creator": "Claude",
+      "name": "Simple Wooden Stairs",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_stairs/Claude_wooden_stairs.vox",
+      "metadata_path": "models/construction/Claude_wooden_stairs/model.json",
+      "preview_path": "previews/construction/Claude_wooden_stairs/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_stairs/Claude_wooden_stairs.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.1,
+        1.7,
+        1.0
+      ],
+      "occupied_voxels": 283,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_wooden_wall_section",
+      "base_id": "wooden_wall_section",
+      "creator": "Claude",
+      "name": "Wooden Wall Section",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_wall_section/Claude_wooden_wall_section.vox",
+      "metadata_path": "models/construction/Claude_wooden_wall_section/model.json",
+      "preview_path": "previews/construction/Claude_wooden_wall_section/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_wall_section/Claude_wooden_wall_section.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        0.2,
+        2.6
+      ],
+      "occupied_voxels": 357,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "improvised"
+    },
+    {
+      "id": "Claude_bandage_roll",
+      "base_id": "bandage_roll",
+      "creator": "Claude",
+      "name": "Bandage Roll",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_bandage_roll/Claude_bandage_roll.vox",
+      "metadata_path": "models/consumables/Claude_bandage_roll/model.json",
+      "preview_path": "previews/consumables/Claude_bandage_roll/",
+      "derived_paths": [
+        "models/consumables/Claude_bandage_roll/Claude_bandage_roll.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.125,
+        0.1625,
+        0.1
+      ],
+      "occupied_voxels": 389,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_canned_food",
+      "base_id": "canned_food",
+      "creator": "Claude",
+      "name": "Canned Food",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_canned_food/Claude_canned_food.vox",
+      "metadata_path": "models/consumables/Claude_canned_food/model.json",
+      "preview_path": "previews/consumables/Claude_canned_food/",
+      "derived_paths": [
+        "models/consumables/Claude_canned_food/Claude_canned_food.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.1,
+        0.1,
+        0.1375
+      ],
+      "occupied_voxels": 358,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_emergency_supply_box",
+      "base_id": "emergency_supply_box",
+      "creator": "Claude",
+      "name": "Emergency Supply Box",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_emergency_supply_box/Claude_emergency_supply_box.vox",
+      "metadata_path": "models/consumables/Claude_emergency_supply_box/model.json",
+      "preview_path": "previews/consumables/Claude_emergency_supply_box/",
+      "derived_paths": [
+        "models/consumables/Claude_emergency_supply_box/Claude_emergency_supply_box.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.55,
+        0.375,
+        0.4
+      ],
+      "occupied_voxels": 1452,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_first_aid_kit",
+      "base_id": "first_aid_kit",
+      "creator": "Claude",
+      "name": "First-Aid Kit",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_first_aid_kit/Claude_first_aid_kit.vox",
+      "metadata_path": "models/consumables/Claude_first_aid_kit/model.json",
+      "preview_path": "previews/consumables/Claude_first_aid_kit/",
+      "derived_paths": [
+        "models/consumables/Claude_first_aid_kit/Claude_first_aid_kit.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.375,
+        0.1375,
+        0.2625
+      ],
+      "occupied_voxels": 1912,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_food_box",
+      "base_id": "food_box",
+      "creator": "Claude",
+      "name": "Food Box",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_food_box/Claude_food_box.vox",
+      "metadata_path": "models/consumables/Claude_food_box/model.json",
+      "preview_path": "previews/consumables/Claude_food_box/",
+      "derived_paths": [
+        "models/consumables/Claude_food_box/Claude_food_box.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.25,
+        0.1125,
+        0.3
+      ],
+      "occupied_voxels": 1348,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_food_storage_crate",
+      "base_id": "food_storage_crate",
+      "creator": "Claude",
+      "name": "Food Storage Crate",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_food_storage_crate/Claude_food_storage_crate.vox",
+      "metadata_path": "models/consumables/Claude_food_storage_crate/model.json",
+      "preview_path": "previews/consumables/Claude_food_storage_crate/",
+      "derived_paths": [
+        "models/consumables/Claude_food_storage_crate/Claude_food_storage_crate.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.45,
+        0.3625,
+        0.325
+      ],
+      "occupied_voxels": 7627,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_large_water_container",
+      "base_id": "large_water_container",
+      "creator": "Claude",
+      "name": "Large Water Container",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_large_water_container/Claude_large_water_container.vox",
+      "metadata_path": "models/consumables/Claude_large_water_container/model.json",
+      "preview_path": "previews/consumables/Claude_large_water_container/",
+      "derived_paths": [
+        "models/consumables/Claude_large_water_container/Claude_large_water_container.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.275,
+        0.275,
+        0.45
+      ],
+      "occupied_voxels": 819,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_medical_bag",
+      "base_id": "medical_bag",
+      "creator": "Claude",
+      "name": "Medical Bag",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_medical_bag/Claude_medical_bag.vox",
+      "metadata_path": "models/consumables/Claude_medical_bag/model.json",
+      "preview_path": "previews/consumables/Claude_medical_bag/",
+      "derived_paths": [
+        "models/consumables/Claude_medical_bag/Claude_medical_bag.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.4125,
+        0.2375,
+        0.3125
+      ],
+      "occupied_voxels": 3269,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_medicine_bottle",
+      "base_id": "medicine_bottle",
+      "creator": "Claude",
+      "name": "Medicine Bottle",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_medicine_bottle/Claude_medicine_bottle.vox",
+      "metadata_path": "models/consumables/Claude_medicine_bottle/model.json",
+      "preview_path": "previews/consumables/Claude_medicine_bottle/",
+      "derived_paths": [
+        "models/consumables/Claude_medicine_bottle/Claude_medicine_bottle.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.1,
+        0.1,
+        0.1875
+      ],
+      "occupied_voxels": 484,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_small_cooler",
+      "base_id": "small_cooler",
+      "creator": "Claude",
+      "name": "Small Cooler",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_small_cooler/Claude_small_cooler.vox",
+      "metadata_path": "models/consumables/Claude_small_cooler/model.json",
+      "preview_path": "previews/consumables/Claude_small_cooler/",
+      "derived_paths": [
+        "models/consumables/Claude_small_cooler/Claude_small_cooler.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.45,
+        0.325,
+        0.3
+      ],
+      "occupied_voxels": 938,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_snack_package",
+      "base_id": "snack_package",
+      "creator": "Claude",
+      "name": "Snack Package",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_snack_package/Claude_snack_package.vox",
+      "metadata_path": "models/consumables/Claude_snack_package/model.json",
+      "preview_path": "previews/consumables/Claude_snack_package/",
+      "derived_paths": [
+        "models/consumables/Claude_snack_package/Claude_snack_package.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.15,
+        0.0875,
+        0.2125
+      ],
+      "occupied_voxels": 531,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_soup_can",
+      "base_id": "soup_can",
+      "creator": "Claude",
+      "name": "Soup Can",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_soup_can/Claude_soup_can.vox",
+      "metadata_path": "models/consumables/Claude_soup_can/model.json",
+      "preview_path": "previews/consumables/Claude_soup_can/",
+      "derived_paths": [
+        "models/consumables/Claude_soup_can/Claude_soup_can.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.0875,
+        0.0875,
+        0.1
+      ],
+      "occupied_voxels": 218,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_tablet_packet",
+      "base_id": "tablet_packet",
+      "creator": "Claude",
+      "name": "Tablet Packet",
+      "category": "consumables",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/consumables/Claude_tablet_packet/Claude_tablet_packet.vox",
+      "metadata_path": "models/consumables/Claude_tablet_packet/model.json",
+      "preview_path": "previews/consumables/Claude_tablet_packet/",
+      "derived_paths": [
+        "models/consumables/Claude_tablet_packet/Claude_tablet_packet.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.2,
+        0.0875,
+        0.075
+      ],
+      "occupied_voxels": 219,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_abandoned_bicycle",
+      "base_id": "abandoned_bicycle",
+      "creator": "Claude",
+      "name": "Abandoned Bicycle",
+      "category": "decorations",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/decorations/Claude_abandoned_bicycle/Claude_abandoned_bicycle.vox",
+      "metadata_path": "models/decorations/Claude_abandoned_bicycle/model.json",
+      "preview_path": "previews/decorations/Claude_abandoned_bicycle/",
+      "derived_paths": [
+        "models/decorations/Claude_abandoned_bicycle/Claude_abandoned_bicycle.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        1.625,
+        0.9,
+        0.35
+      ],
+      "occupied_voxels": 1300,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_garden_table",
+      "base_id": "garden_table",
+      "creator": "Claude",
+      "name": "Garden Table",
+      "category": "decorations",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/decorations/Claude_garden_table/Claude_garden_table.vox",
+      "metadata_path": "models/decorations/Claude_garden_table/model.json",
+      "preview_path": "previews/decorations/Claude_garden_table/",
+      "derived_paths": [
+        "models/decorations/Claude_garden_table/Claude_garden_table.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.1,
+        0.7,
+        0.75
+      ],
+      "occupied_voxels": 724,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_mailbox",
+      "base_id": "mailbox",
+      "creator": "Claude",
+      "name": "Mailbox",
+      "category": "decorations",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/decorations/Claude_mailbox/Claude_mailbox.vox",
+      "metadata_path": "models/decorations/Claude_mailbox/model.json",
+      "preview_path": "previews/decorations/Claude_mailbox/",
+      "derived_paths": [
+        "models/decorations/Claude_mailbox/Claude_mailbox.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.4,
+        0.55,
+        1.3
+      ],
+      "occupied_voxels": 340,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_metal_fence",
+      "base_id": "metal_fence",
+      "creator": "Claude",
+      "name": "Metal Fence Section",
+      "category": "decorations",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/decorations/Claude_metal_fence/Claude_metal_fence.vox",
+      "metadata_path": "models/decorations/Claude_metal_fence/model.json",
+      "preview_path": "previews/decorations/Claude_metal_fence/",
+      "derived_paths": [
+        "models/decorations/Claude_metal_fence/Claude_metal_fence.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.9,
+        0.1,
+        1.65
+      ],
+      "occupied_voxels": 854,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_outdoor_bench",
+      "base_id": "outdoor_bench",
+      "creator": "Claude",
+      "name": "Outdoor Bench",
+      "category": "decorations",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/decorations/Claude_outdoor_bench/Claude_outdoor_bench.vox",
+      "metadata_path": "models/decorations/Claude_outdoor_bench/model.json",
+      "preview_path": "previews/decorations/Claude_outdoor_bench/",
+      "derived_paths": [
+        "models/decorations/Claude_outdoor_bench/Claude_outdoor_bench.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.55,
+        0.6,
+        0.85
+      ],
+      "occupied_voxels": 496,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_road_sign",
+      "base_id": "road_sign",
+      "creator": "Claude",
+      "name": "Road Sign",
+      "category": "decorations",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/decorations/Claude_road_sign/Claude_road_sign.vox",
+      "metadata_path": "models/decorations/Claude_road_sign/model.json",
+      "preview_path": "previews/decorations/Claude_road_sign/",
+      "derived_paths": [
+        "models/decorations/Claude_road_sign/Claude_road_sign.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.65,
+        0.25,
+        2.45
+      ],
+      "occupied_voxels": 177,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_streetlight",
+      "base_id": "streetlight",
+      "creator": "Claude",
+      "name": "Streetlight",
+      "category": "decorations",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/decorations/Claude_streetlight/Claude_streetlight.vox",
+      "metadata_path": "models/decorations/Claude_streetlight/model.json",
+      "preview_path": "previews/decorations/Claude_streetlight/",
+      "derived_paths": [
+        "models/decorations/Claude_streetlight/Claude_streetlight.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        0.4,
+        1.6,
+        4.3
+      ],
+      "occupied_voxels": 261,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_traffic_cone",
+      "base_id": "traffic_cone",
+      "creator": "Claude",
+      "name": "Traffic Cone",
+      "category": "decorations",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/decorations/Claude_traffic_cone/Claude_traffic_cone.vox",
+      "metadata_path": "models/decorations/Claude_traffic_cone/model.json",
+      "preview_path": "previews/decorations/Claude_traffic_cone/",
+      "derived_paths": [
+        "models/decorations/Claude_traffic_cone/Claude_traffic_cone.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.325,
+        0.325,
+        0.525
+      ],
+      "occupied_voxels": 738,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_trash_bin",
+      "base_id": "trash_bin",
+      "creator": "Claude",
+      "name": "Wheelie Bin",
+      "category": "decorations",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/decorations/Claude_trash_bin/Claude_trash_bin.vox",
+      "metadata_path": "models/decorations/Claude_trash_bin/model.json",
+      "preview_path": "previews/decorations/Claude_trash_bin/",
+      "derived_paths": [
+        "models/decorations/Claude_trash_bin/Claude_trash_bin.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.6,
+        0.55,
+        0.95
+      ],
+      "occupied_voxels": 909,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_utility_pole",
+      "base_id": "utility_pole",
+      "creator": "Claude",
+      "name": "Utility Pole",
+      "category": "decorations",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/decorations/Claude_utility_pole/Claude_utility_pole.vox",
+      "metadata_path": "models/decorations/Claude_utility_pole/model.json",
+      "preview_path": "previews/decorations/Claude_utility_pole/",
+      "derived_paths": [
+        "models/decorations/Claude_utility_pole/Claude_utility_pole.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        2.0,
+        0.7,
+        4.8
+      ],
+      "occupied_voxels": 578,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_wooden_fence",
+      "base_id": "wooden_fence",
+      "creator": "Claude",
+      "name": "Wooden Fence Section",
+      "category": "decorations",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/decorations/Claude_wooden_fence/Claude_wooden_fence.vox",
+      "metadata_path": "models/decorations/Claude_wooden_fence/model.json",
+      "preview_path": "previews/decorations/Claude_wooden_fence/",
+      "derived_paths": [
+        "models/decorations/Claude_wooden_fence/Claude_wooden_fence.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.9,
+        0.15,
+        1.5
+      ],
+      "occupied_voxels": 1261,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_wooden_pallet",
+      "base_id": "wooden_pallet",
+      "creator": "Claude",
+      "name": "Wooden Pallet",
+      "category": "decorations",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/decorations/Claude_wooden_pallet/Claude_wooden_pallet.vox",
+      "metadata_path": "models/decorations/Claude_wooden_pallet/model.json",
+      "preview_path": "previews/decorations/Claude_wooden_pallet/",
+      "derived_paths": [
+        "models/decorations/Claude_wooden_pallet/Claude_wooden_pallet.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        1.125,
+        0.8,
+        0.15
+      ],
+      "occupied_voxels": 2193,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_apartment_block",
+      "base_id": "apartment_block",
+      "creator": "Claude",
+      "name": "Apartment Block",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_apartment_block/Claude_apartment_block.vox",
+      "metadata_path": "models/map/Claude_apartment_block/model.json",
+      "preview_path": "previews/map/Claude_apartment_block/",
+      "derived_paths": [
+        "models/map/Claude_apartment_block/Claude_apartment_block.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        12.0,
+        9.0,
+        17.0
+      ],
+      "occupied_voxels": 3716,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_bridge",
+      "base_id": "bridge",
+      "creator": "Claude",
+      "name": "Bridge",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_bridge/Claude_bridge.vox",
+      "metadata_path": "models/map/Claude_bridge/model.json",
+      "preview_path": "previews/map/Claude_bridge/",
+      "derived_paths": [
+        "models/map/Claude_bridge/Claude_bridge.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        8.5,
+        20.0,
+        2.5
+      ],
+      "occupied_voxels": 955,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_clinic",
+      "base_id": "clinic",
+      "creator": "Claude",
+      "name": "Medical Clinic",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_clinic/Claude_clinic.vox",
+      "metadata_path": "models/map/Claude_clinic/model.json",
+      "preview_path": "previews/map/Claude_clinic/",
+      "derived_paths": [
+        "models/map/Claude_clinic/Claude_clinic.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        11.0,
+        11.0,
+        6.0
+      ],
+      "occupied_voxels": 1330,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_convenience_store",
+      "base_id": "convenience_store",
+      "creator": "Claude",
+      "name": "Convenience Store",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_convenience_store/Claude_convenience_store.vox",
+      "metadata_path": "models/map/Claude_convenience_store/model.json",
+      "preview_path": "previews/map/Claude_convenience_store/",
+      "derived_paths": [
+        "models/map/Claude_convenience_store/Claude_convenience_store.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        8.0,
+        9.0,
+        5.0
+      ],
+      "occupied_voxels": 814,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_diner",
+      "base_id": "diner",
+      "creator": "Claude",
+      "name": "Diner",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_diner/Claude_diner.vox",
+      "metadata_path": "models/map/Claude_diner/model.json",
+      "preview_path": "previews/map/Claude_diner/",
+      "derived_paths": [
+        "models/map/Claude_diner/Claude_diner.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        11.0,
+        8.0,
+        6.5
+      ],
+      "occupied_voxels": 917,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_fast_food",
+      "base_id": "fast_food",
+      "creator": "Claude",
+      "name": "Fast-Food Restaurant",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_fast_food/Claude_fast_food.vox",
+      "metadata_path": "models/map/Claude_fast_food/model.json",
+      "preview_path": "previews/map/Claude_fast_food/",
+      "derived_paths": [
+        "models/map/Claude_fast_food/Claude_fast_food.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        9.0,
+        10.0,
+        6.0
+      ],
+      "occupied_voxels": 807,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_gas_station",
+      "base_id": "gas_station",
+      "creator": "Claude",
+      "name": "Gas Station",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_gas_station/Claude_gas_station.vox",
+      "metadata_path": "models/map/Claude_gas_station/model.json",
+      "preview_path": "previews/map/Claude_gas_station/",
+      "derived_paths": [
+        "models/map/Claude_gas_station/Claude_gas_station.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        13.0,
+        12.0,
+        5.0
+      ],
+      "occupied_voxels": 1397,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_guard_tower",
+      "base_id": "guard_tower",
+      "creator": "Claude",
+      "name": "Guard Tower",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_guard_tower/Claude_guard_tower.vox",
+      "metadata_path": "models/map/Claude_guard_tower/model.json",
+      "preview_path": "previews/map/Claude_guard_tower/",
+      "derived_paths": [
+        "models/map/Claude_guard_tower/Claude_guard_tower.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        4.0,
+        4.0,
+        10.5
+      ],
+      "occupied_voxels": 400,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_gun_shop",
+      "base_id": "gun_shop",
+      "creator": "Claude",
+      "name": "Gun Shop",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_gun_shop/Claude_gun_shop.vox",
+      "metadata_path": "models/map/Claude_gun_shop/model.json",
+      "preview_path": "previews/map/Claude_gun_shop/",
+      "derived_paths": [
+        "models/map/Claude_gun_shop/Claude_gun_shop.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        8.0,
+        9.0,
+        5.0
+      ],
+      "occupied_voxels": 884,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_harbor_dock",
+      "base_id": "harbor_dock",
+      "creator": "Claude",
+      "name": "Harbour Dock",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_harbor_dock/Claude_harbor_dock.vox",
+      "metadata_path": "models/map/Claude_harbor_dock/model.json",
+      "preview_path": "previews/map/Claude_harbor_dock/",
+      "derived_paths": [
+        "models/map/Claude_harbor_dock/Claude_harbor_dock.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        10.0,
+        16.0,
+        5.0
+      ],
+      "occupied_voxels": 1385,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_hardware_store",
+      "base_id": "hardware_store",
+      "creator": "Claude",
+      "name": "Hardware Store",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_hardware_store/Claude_hardware_store.vox",
+      "metadata_path": "models/map/Claude_hardware_store/model.json",
+      "preview_path": "previews/map/Claude_hardware_store/",
+      "derived_paths": [
+        "models/map/Claude_hardware_store/Claude_hardware_store.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        13.0,
+        11.0,
+        7.0
+      ],
+      "occupied_voxels": 1597,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_hospital",
+      "base_id": "hospital",
+      "creator": "Claude",
+      "name": "Hospital",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_hospital/Claude_hospital.vox",
+      "metadata_path": "models/map/Claude_hospital/model.json",
+      "preview_path": "previews/map/Claude_hospital/",
+      "derived_paths": [
+        "models/map/Claude_hospital/Claude_hospital.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        20.0,
+        18.0,
+        13.0
+      ],
+      "occupied_voxels": 5686,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_industrial_warehouse",
+      "base_id": "industrial_warehouse",
+      "creator": "Claude",
+      "name": "Industrial Warehouse",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_industrial_warehouse/Claude_industrial_warehouse.vox",
+      "metadata_path": "models/map/Claude_industrial_warehouse/model.json",
+      "preview_path": "previews/map/Claude_industrial_warehouse/",
+      "derived_paths": [
+        "models/map/Claude_industrial_warehouse/Claude_industrial_warehouse.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        18.0,
+        14.0,
+        10.5
+      ],
+      "occupied_voxels": 3776,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_large_suburban_house",
+      "base_id": "large_suburban_house",
+      "creator": "Claude",
+      "name": "Large Suburban House",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_large_suburban_house/Claude_large_suburban_house.vox",
+      "metadata_path": "models/map/Claude_large_suburban_house/model.json",
+      "preview_path": "previews/map/Claude_large_suburban_house/",
+      "derived_paths": [
+        "models/map/Claude_large_suburban_house/Claude_large_suburban_house.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        11.5,
+        10.0,
+        9.0
+      ],
+      "occupied_voxels": 1758,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_lumberyard",
+      "base_id": "lumberyard",
+      "creator": "Claude",
+      "name": "Lumberyard / Sawmill",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_lumberyard/Claude_lumberyard.vox",
+      "metadata_path": "models/map/Claude_lumberyard/model.json",
+      "preview_path": "previews/map/Claude_lumberyard/",
+      "derived_paths": [
+        "models/map/Claude_lumberyard/Claude_lumberyard.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        15.0,
+        14.0,
+        5.5
+      ],
+      "occupied_voxels": 1982,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_military_outpost",
+      "base_id": "military_outpost",
+      "creator": "Claude",
+      "name": "Military Outpost",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_military_outpost/Claude_military_outpost.vox",
+      "metadata_path": "models/map/Claude_military_outpost/model.json",
+      "preview_path": "previews/map/Claude_military_outpost/",
+      "derived_paths": [
+        "models/map/Claude_military_outpost/Claude_military_outpost.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        14.0,
+        14.0,
+        8.0
+      ],
+      "occupied_voxels": 1919,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_pharmacy",
+      "base_id": "pharmacy",
+      "creator": "Claude",
+      "name": "Pharmacy",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_pharmacy/Claude_pharmacy.vox",
+      "metadata_path": "models/map/Claude_pharmacy/model.json",
+      "preview_path": "previews/map/Claude_pharmacy/",
+      "derived_paths": [
+        "models/map/Claude_pharmacy/Claude_pharmacy.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        8.0,
+        9.5,
+        5.5
+      ],
+      "occupied_voxels": 976,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_pier",
+      "base_id": "pier",
+      "creator": "Claude",
+      "name": "Small Pier",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_pier/Claude_pier.vox",
+      "metadata_path": "models/map/Claude_pier/model.json",
+      "preview_path": "previews/map/Claude_pier/",
+      "derived_paths": [
+        "models/map/Claude_pier/Claude_pier.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        4.0,
+        15.0,
+        1.5
+      ],
+      "occupied_voxels": 318,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_police_station",
+      "base_id": "police_station",
+      "creator": "Claude",
+      "name": "Police Station",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_police_station/Claude_police_station.vox",
+      "metadata_path": "models/map/Claude_police_station/model.json",
+      "preview_path": "previews/map/Claude_police_station/",
+      "derived_paths": [
+        "models/map/Claude_police_station/Claude_police_station.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        16.0,
+        12.0,
+        9.5
+      ],
+      "occupied_voxels": 2298,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_quarry_structure",
+      "base_id": "quarry_structure",
+      "creator": "Claude",
+      "name": "Quarry Structures",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_quarry_structure/Claude_quarry_structure.vox",
+      "metadata_path": "models/map/Claude_quarry_structure/model.json",
+      "preview_path": "previews/map/Claude_quarry_structure/",
+      "derived_paths": [
+        "models/map/Claude_quarry_structure/Claude_quarry_structure.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        15.0,
+        12.0,
+        7.0
+      ],
+      "occupied_voxels": 1751,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_railway_crossing",
+      "base_id": "railway_crossing",
+      "creator": "Claude",
+      "name": "Railway Crossing",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_railway_crossing/Claude_railway_crossing.vox",
+      "metadata_path": "models/map/Claude_railway_crossing/model.json",
+      "preview_path": "previews/map/Claude_railway_crossing/",
+      "derived_paths": [
+        "models/map/Claude_railway_crossing/Claude_railway_crossing.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        12.5,
+        12.5,
+        4.0
+      ],
+      "occupied_voxels": 693,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_restaurant",
+      "base_id": "restaurant",
+      "creator": "Claude",
+      "name": "Restaurant",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_restaurant/Claude_restaurant.vox",
+      "metadata_path": "models/map/Claude_restaurant/model.json",
+      "preview_path": "previews/map/Claude_restaurant/",
+      "derived_paths": [
+        "models/map/Claude_restaurant/Claude_restaurant.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        9.0,
+        10.0,
+        5.5
+      ],
+      "occupied_voxels": 1166,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_road_barrier",
+      "base_id": "road_barrier",
+      "creator": "Claude",
+      "name": "Road Barrier",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_road_barrier/Claude_road_barrier.vox",
+      "metadata_path": "models/map/Claude_road_barrier/model.json",
+      "preview_path": "previews/map/Claude_road_barrier/",
+      "derived_paths": [
+        "models/map/Claude_road_barrier/Claude_road_barrier.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        4.5,
+        1.0,
+        1.5
+      ],
+      "occupied_voxels": 23,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_road_curve",
+      "base_id": "road_curve",
+      "creator": "Claude",
+      "name": "Road Curve",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_road_curve/Claude_road_curve.vox",
+      "metadata_path": "models/map/Claude_road_curve/model.json",
+      "preview_path": "previews/map/Claude_road_curve/",
+      "derived_paths": [
+        "models/map/Claude_road_curve/Claude_road_curve.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        12.5,
+        12.5,
+        0.5
+      ],
+      "occupied_voxels": 625,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_road_intersection",
+      "base_id": "road_intersection",
+      "creator": "Claude",
+      "name": "Intersection",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_road_intersection/Claude_road_intersection.vox",
+      "metadata_path": "models/map/Claude_road_intersection/model.json",
+      "preview_path": "previews/map/Claude_road_intersection/",
+      "derived_paths": [
+        "models/map/Claude_road_intersection/Claude_road_intersection.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        12.5,
+        12.5,
+        0.5
+      ],
+      "occupied_voxels": 625,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_road_straight",
+      "base_id": "road_straight",
+      "creator": "Claude",
+      "name": "Straight Road",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_road_straight/Claude_road_straight.vox",
+      "metadata_path": "models/map/Claude_road_straight/model.json",
+      "preview_path": "previews/map/Claude_road_straight/",
+      "derived_paths": [
+        "models/map/Claude_road_straight/Claude_road_straight.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        8.5,
+        16.0,
+        0.5
+      ],
+      "occupied_voxels": 544,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_scrapyard_building",
+      "base_id": "scrapyard_building",
+      "creator": "Claude",
+      "name": "Scrapyard",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_scrapyard_building/Claude_scrapyard_building.vox",
+      "metadata_path": "models/map/Claude_scrapyard_building/model.json",
+      "preview_path": "previews/map/Claude_scrapyard_building/",
+      "derived_paths": [
+        "models/map/Claude_scrapyard_building/Claude_scrapyard_building.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        13.0,
+        10.0,
+        6.5
+      ],
+      "occupied_voxels": 1337,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_seawall",
+      "base_id": "seawall",
+      "creator": "Claude",
+      "name": "Concrete Seawall",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_seawall/Claude_seawall.vox",
+      "metadata_path": "models/map/Claude_seawall/model.json",
+      "preview_path": "previews/map/Claude_seawall/",
+      "derived_paths": [
+        "models/map/Claude_seawall/Claude_seawall.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        10.0,
+        1.5,
+        2.0
+      ],
+      "occupied_voxels": 180,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_shooting_range",
+      "base_id": "shooting_range",
+      "creator": "Claude",
+      "name": "Shooting Range",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_shooting_range/Claude_shooting_range.vox",
+      "metadata_path": "models/map/Claude_shooting_range/model.json",
+      "preview_path": "previews/map/Claude_shooting_range/",
+      "derived_paths": [
+        "models/map/Claude_shooting_range/Claude_shooting_range.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        16.0,
+        11.0,
+        5.5
+      ],
+      "occupied_voxels": 1763,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_small_family_house",
+      "base_id": "small_family_house",
+      "creator": "Claude",
+      "name": "Small Family House",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_small_family_house/Claude_small_family_house.vox",
+      "metadata_path": "models/map/Claude_small_family_house/model.json",
+      "preview_path": "previews/map/Claude_small_family_house/",
+      "derived_paths": [
+        "models/map/Claude_small_family_house/Claude_small_family_house.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        9.0,
+        9.0,
+        7.0
+      ],
+      "occupied_voxels": 1112,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_supermarket",
+      "base_id": "supermarket",
+      "creator": "Claude",
+      "name": "Supermarket",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_supermarket/Claude_supermarket.vox",
+      "metadata_path": "models/map/Claude_supermarket/model.json",
+      "preview_path": "previews/map/Claude_supermarket/",
+      "derived_paths": [
+        "models/map/Claude_supermarket/Claude_supermarket.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        20.0,
+        15.0,
+        7.0
+      ],
+      "occupied_voxels": 3056,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_veterinary_clinic",
+      "base_id": "veterinary_clinic",
+      "creator": "Claude",
+      "name": "Veterinary Clinic",
+      "category": "map",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/map/Claude_veterinary_clinic/Claude_veterinary_clinic.vox",
+      "metadata_path": "models/map/Claude_veterinary_clinic/model.json",
+      "preview_path": "previews/map/Claude_veterinary_clinic/",
+      "derived_paths": [
+        "models/map/Claude_veterinary_clinic/Claude_veterinary_clinic.glb"
+      ],
+      "voxel_size_m": 0.5,
+      "dimensions_m": [
+        10.0,
+        10.0,
+        7.0
+      ],
+      "occupied_voxels": 1214,
+      "game_integrations": [],
+      "batch": "Claude_catalog_E",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_backpack",
+      "base_id": "backpack",
+      "creator": "Claude",
+      "name": "Backpack",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_backpack/Claude_backpack.vox",
+      "metadata_path": "models/survival/Claude_backpack/model.json",
+      "preview_path": "previews/survival/Claude_backpack/",
+      "derived_paths": [
+        "models/survival/Claude_backpack/Claude_backpack.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.425,
+        0.25,
+        0.55
+      ],
+      "occupied_voxels": 1159,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_basic_generator",
+      "base_id": "basic_generator",
+      "creator": "Claude",
+      "name": "Basic Generator",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_basic_generator/Claude_basic_generator.vox",
+      "metadata_path": "models/survival/Claude_basic_generator/model.json",
+      "preview_path": "previews/survival/Claude_basic_generator/",
+      "derived_paths": [
+        "models/survival/Claude_basic_generator/Claude_basic_generator.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.75,
+        0.5,
+        0.625
+      ],
+      "occupied_voxels": 2997,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_battery_lantern",
+      "base_id": "battery_lantern",
+      "creator": "Claude",
+      "name": "Battery Lantern",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_battery_lantern/Claude_battery_lantern.vox",
+      "metadata_path": "models/survival/Claude_battery_lantern/model.json",
+      "preview_path": "previews/survival/Claude_battery_lantern/",
+      "derived_paths": [
+        "models/survival/Claude_battery_lantern/Claude_battery_lantern.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.2,
+        0.1875,
+        0.35
+      ],
+      "occupied_voxels": 1480,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_camping_stove",
+      "base_id": "camping_stove",
+      "creator": "Claude",
+      "name": "Camping Stove",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_camping_stove/Claude_camping_stove.vox",
+      "metadata_path": "models/survival/Claude_camping_stove/model.json",
+      "preview_path": "previews/survival/Claude_camping_stove/",
+      "derived_paths": [
+        "models/survival/Claude_camping_stove/Claude_camping_stove.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.5,
+        0.275,
+        0.325
+      ],
+      "occupied_voxels": 752,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_candle",
+      "base_id": "candle",
+      "creator": "Claude",
+      "name": "Candle",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_candle/Claude_candle.vox",
+      "metadata_path": "models/survival/Claude_candle/model.json",
+      "preview_path": "previews/survival/Claude_candle/",
+      "derived_paths": [
+        "models/survival/Claude_candle/Claude_candle.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.175,
+        0.175,
+        0.1875
+      ],
+      "occupied_voxels": 517,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_cooking_pot",
+      "base_id": "cooking_pot",
+      "creator": "Claude",
+      "name": "Cooking Pot",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_cooking_pot/Claude_cooking_pot.vox",
+      "metadata_path": "models/survival/Claude_cooking_pot/model.json",
+      "preview_path": "previews/survival/Claude_cooking_pot/",
+      "derived_paths": [
+        "models/survival/Claude_cooking_pot/Claude_cooking_pot.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.35,
+        0.3,
+        0.275
+      ],
+      "occupied_voxels": 650,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_crowbar",
+      "base_id": "crowbar",
+      "creator": "Claude",
+      "name": "Crowbar",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_crowbar/Claude_crowbar.vox",
+      "metadata_path": "models/survival/Claude_crowbar/model.json",
+      "preview_path": "previews/survival/Claude_crowbar/",
+      "derived_paths": [
+        "models/survival/Claude_crowbar/Claude_crowbar.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.1,
+        0.6875,
+        0.025
+      ],
+      "occupied_voxels": 244,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_first_aid_box",
+      "base_id": "first_aid_box",
+      "creator": "Claude",
+      "name": "Wall First-Aid Box",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_first_aid_box/Claude_first_aid_box.vox",
+      "metadata_path": "models/survival/Claude_first_aid_box/model.json",
+      "preview_path": "previews/survival/Claude_first_aid_box/",
+      "derived_paths": [
+        "models/survival/Claude_first_aid_box/Claude_first_aid_box.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.375,
+        0.2375,
+        0.225
+      ],
+      "occupied_voxels": 2693,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_flashlight",
+      "base_id": "flashlight",
+      "creator": "Claude",
+      "name": "Flashlight",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_flashlight/Claude_flashlight.vox",
+      "metadata_path": "models/survival/Claude_flashlight/model.json",
+      "preview_path": "previews/survival/Claude_flashlight/",
+      "derived_paths": [
+        "models/survival/Claude_flashlight/Claude_flashlight.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.0875,
+        0.3125,
+        0.0875
+      ],
+      "occupied_voxels": 435,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_fuel_container",
+      "base_id": "fuel_container",
+      "creator": "Claude",
+      "name": "Fuel Container",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_fuel_container/Claude_fuel_container.vox",
+      "metadata_path": "models/survival/Claude_fuel_container/model.json",
+      "preview_path": "previews/survival/Claude_fuel_container/",
+      "derived_paths": [
+        "models/survival/Claude_fuel_container/Claude_fuel_container.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.35,
+        0.2,
+        0.475
+      ],
+      "occupied_voxels": 784,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_hammer",
+      "base_id": "hammer",
+      "creator": "Claude",
+      "name": "Claw Hammer",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_hammer/Claude_hammer.vox",
+      "metadata_path": "models/survival/Claude_hammer/model.json",
+      "preview_path": "previews/survival/Claude_hammer/",
+      "derived_paths": [
+        "models/survival/Claude_hammer/Claude_hammer.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.15,
+        0.3875,
+        0.0375
+      ],
+      "occupied_voxels": 276,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_handgun",
+      "base_id": "handgun",
+      "creator": "Claude",
+      "name": "Handgun",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_handgun/Claude_handgun.vox",
+      "metadata_path": "models/survival/Claude_handgun/model.json",
+      "preview_path": "previews/survival/Claude_handgun/",
+      "derived_paths": [
+        "models/survival/Claude_handgun/Claude_handgun.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.0375,
+        0.2375,
+        0.1625
+      ],
+      "occupied_voxels": 321,
+      "game_integrations": [],
+      "batch": "Claude_catalog_C",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_hatchet",
+      "base_id": "hatchet",
+      "creator": "Claude",
+      "name": "Hatchet",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_hatchet/Claude_hatchet.vox",
+      "metadata_path": "models/survival/Claude_hatchet/model.json",
+      "preview_path": "previews/survival/Claude_hatchet/",
+      "derived_paths": [
+        "models/survival/Claude_hatchet/Claude_hatchet.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.2,
+        0.4375,
+        0.0375
+      ],
+      "occupied_voxels": 357,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_improvised_forge",
+      "base_id": "improvised_forge",
+      "creator": "Claude",
+      "name": "Improvised Forge",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_improvised_forge/Claude_improvised_forge.vox",
+      "metadata_path": "models/survival/Claude_improvised_forge/model.json",
+      "preview_path": "previews/survival/Claude_improvised_forge/",
+      "derived_paths": [
+        "models/survival/Claude_improvised_forge/Claude_improvised_forge.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.65,
+        1.1
+      ],
+      "occupied_voxels": 1012,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "improvised"
+    },
+    {
+      "id": "Claude_jerry_can",
+      "base_id": "jerry_can",
+      "creator": "Claude",
+      "name": "Jerry Can",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_jerry_can/Claude_jerry_can.vox",
+      "metadata_path": "models/survival/Claude_jerry_can/model.json",
+      "preview_path": "previews/survival/Claude_jerry_can/",
+      "derived_paths": [
+        "models/survival/Claude_jerry_can/Claude_jerry_can.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.35,
+        0.175,
+        0.475
+      ],
+      "occupied_voxels": 889,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_metal_storage_cabinet",
+      "base_id": "metal_storage_cabinet",
+      "creator": "Claude",
+      "name": "Metal Storage Cabinet",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_metal_storage_cabinet/Claude_metal_storage_cabinet.vox",
+      "metadata_path": "models/survival/Claude_metal_storage_cabinet/model.json",
+      "preview_path": "previews/survival/Claude_metal_storage_cabinet/",
+      "derived_paths": [
+        "models/survival/Claude_metal_storage_cabinet/Claude_metal_storage_cabinet.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.85,
+        0.5,
+        1.85
+      ],
+      "occupied_voxels": 2014,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_pickaxe",
+      "base_id": "pickaxe",
+      "creator": "Claude",
+      "name": "Pickaxe",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_pickaxe/Claude_pickaxe.vox",
+      "metadata_path": "models/survival/Claude_pickaxe/model.json",
+      "preview_path": "previews/survival/Claude_pickaxe/",
+      "derived_paths": [
+        "models/survival/Claude_pickaxe/Claude_pickaxe.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.5,
+        0.85,
+        0.075
+      ],
+      "occupied_voxels": 244,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_portable_battery",
+      "base_id": "portable_battery",
+      "creator": "Claude",
+      "name": "Portable Battery",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_portable_battery/Claude_portable_battery.vox",
+      "metadata_path": "models/survival/Claude_portable_battery/model.json",
+      "preview_path": "previews/survival/Claude_portable_battery/",
+      "derived_paths": [
+        "models/survival/Claude_portable_battery/Claude_portable_battery.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.325,
+        0.225,
+        0.2375
+      ],
+      "occupied_voxels": 1957,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "lightly_used"
+    },
+    {
+      "id": "Claude_saw",
+      "base_id": "saw",
+      "creator": "Claude",
+      "name": "Hand Saw",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_saw/Claude_saw.vox",
+      "metadata_path": "models/survival/Claude_saw/model.json",
+      "preview_path": "previews/survival/Claude_saw/",
+      "derived_paths": [
+        "models/survival/Claude_saw/Claude_saw.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.125,
+        0.6875,
+        0.025
+      ],
+      "occupied_voxels": 426,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_shovel",
+      "base_id": "shovel",
+      "creator": "Claude",
+      "name": "Shovel",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_shovel/Claude_shovel.vox",
+      "metadata_path": "models/survival/Claude_shovel/model.json",
+      "preview_path": "previews/survival/Claude_shovel/",
+      "derived_paths": [
+        "models/survival/Claude_shovel/Claude_shovel.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.2,
+        1.15,
+        0.075
+      ],
+      "occupied_voxels": 294,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_tool_chest",
+      "base_id": "tool_chest",
+      "creator": "Claude",
+      "name": "Tool Chest",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_tool_chest/Claude_tool_chest.vox",
+      "metadata_path": "models/survival/Claude_tool_chest/model.json",
+      "preview_path": "previews/survival/Claude_tool_chest/",
+      "derived_paths": [
+        "models/survival/Claude_tool_chest/Claude_tool_chest.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.875,
+        0.5,
+        0.475
+      ],
+      "occupied_voxels": 2542,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_toolbox",
+      "base_id": "toolbox",
+      "creator": "Claude",
+      "name": "Toolbox",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_toolbox/Claude_toolbox.vox",
+      "metadata_path": "models/survival/Claude_toolbox/model.json",
+      "preview_path": "previews/survival/Claude_toolbox/",
+      "derived_paths": [
+        "models/survival/Claude_toolbox/Claude_toolbox.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.5,
+        0.25,
+        0.2125
+      ],
+      "occupied_voxels": 2707,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_water_barrel",
+      "base_id": "water_barrel",
+      "creator": "Claude",
+      "name": "Water Barrel",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_water_barrel/Claude_water_barrel.vox",
+      "metadata_path": "models/survival/Claude_water_barrel/model.json",
+      "preview_path": "previews/survival/Claude_water_barrel/",
+      "derived_paths": [
+        "models/survival/Claude_water_barrel/Claude_water_barrel.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.6,
+        0.7,
+        1.1
+      ],
+      "occupied_voxels": 1175,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_water_bottle",
+      "base_id": "water_bottle",
+      "creator": "Claude",
+      "name": "Water Bottle",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_water_bottle/Claude_water_bottle.vox",
+      "metadata_path": "models/survival/Claude_water_bottle/model.json",
+      "preview_path": "previews/survival/Claude_water_bottle/",
+      "derived_paths": [
+        "models/survival/Claude_water_bottle/Claude_water_bottle.glb"
+      ],
+      "voxel_size_m": 0.0125,
+      "dimensions_m": [
+        0.0875,
+        0.0875,
+        0.2875
+      ],
+      "occupied_voxels": 510,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_wooden_storage_crate",
+      "base_id": "wooden_storage_crate",
+      "creator": "Claude",
+      "name": "Wooden Storage Crate",
+      "category": "survival",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/survival/Claude_wooden_storage_crate/Claude_wooden_storage_crate.vox",
+      "metadata_path": "models/survival/Claude_wooden_storage_crate/model.json",
+      "preview_path": "previews/survival/Claude_wooden_storage_crate/",
+      "derived_paths": [
+        "models/survival/Claude_wooden_storage_crate/Claude_wooden_storage_crate.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.9,
+        0.65,
+        0.6
+      ],
+      "occupied_voxels": 943,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "improvised"
+    },
+    {
+      "id": "Claude_boulder",
+      "base_id": "boulder",
+      "creator": "Claude",
+      "name": "Boulder",
+      "category": "vegetation",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vegetation/Claude_boulder/Claude_boulder.vox",
+      "metadata_path": "models/vegetation/Claude_boulder/model.json",
+      "preview_path": "previews/vegetation/Claude_boulder/",
+      "derived_paths": [
+        "models/vegetation/Claude_boulder/Claude_boulder.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.9,
+        1.6,
+        1.3
+      ],
+      "occupied_voxels": 1079,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "n/a"
+    },
+    {
+      "id": "Claude_bush",
+      "base_id": "bush",
+      "creator": "Claude",
+      "name": "Bush",
+      "category": "vegetation",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vegetation/Claude_bush/Claude_bush.vox",
+      "metadata_path": "models/vegetation/Claude_bush/model.json",
+      "preview_path": "previews/vegetation/Claude_bush/",
+      "derived_paths": [
+        "models/vegetation/Claude_bush/Claude_bush.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.2,
+        1.05,
+        0.85
+      ],
+      "occupied_voxels": 1694,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "living"
+    },
+    {
+      "id": "Claude_dead_shrub",
+      "base_id": "dead_shrub",
+      "creator": "Claude",
+      "name": "Dead Shrub",
+      "category": "vegetation",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vegetation/Claude_dead_shrub/Claude_dead_shrub.vox",
+      "metadata_path": "models/vegetation/Claude_dead_shrub/model.json",
+      "preview_path": "previews/vegetation/Claude_dead_shrub/",
+      "derived_paths": [
+        "models/vegetation/Claude_dead_shrub/Claude_dead_shrub.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.1,
+        0.95,
+        0.85
+      ],
+      "occupied_voxels": 329,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "dead"
+    },
+    {
+      "id": "Claude_fallen_log",
+      "base_id": "fallen_log",
+      "creator": "Claude",
+      "name": "Fallen Log",
+      "category": "vegetation",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vegetation/Claude_fallen_log/Claude_fallen_log.vox",
+      "metadata_path": "models/vegetation/Claude_fallen_log/model.json",
+      "preview_path": "previews/vegetation/Claude_fallen_log/",
+      "derived_paths": [
+        "models/vegetation/Claude_fallen_log/Claude_fallen_log.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        2.6,
+        0.6,
+        0.55
+      ],
+      "occupied_voxels": 1860,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "dead"
+    },
+    {
+      "id": "Claude_grass_clump",
+      "base_id": "grass_clump",
+      "creator": "Claude",
+      "name": "Grass Clump",
+      "category": "vegetation",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vegetation/Claude_grass_clump/Claude_grass_clump.vox",
+      "metadata_path": "models/vegetation/Claude_grass_clump/model.json",
+      "preview_path": "previews/vegetation/Claude_grass_clump/",
+      "derived_paths": [
+        "models/vegetation/Claude_grass_clump/Claude_grass_clump.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        0.65,
+        0.475,
+        0.45
+      ],
+      "occupied_voxels": 538,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "living"
+    },
+    {
+      "id": "Claude_healthy_pine",
+      "base_id": "healthy_pine",
+      "creator": "Claude",
+      "name": "Healthy Pine",
+      "category": "vegetation",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vegetation/Claude_healthy_pine/Claude_healthy_pine.vox",
+      "metadata_path": "models/vegetation/Claude_healthy_pine/model.json",
+      "preview_path": "previews/vegetation/Claude_healthy_pine/",
+      "derived_paths": [
+        "models/vegetation/Claude_healthy_pine/Claude_healthy_pine.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        2.7,
+        2.6,
+        5.1
+      ],
+      "occupied_voxels": 3437,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "living"
+    },
+    {
+      "id": "Claude_leafless_deciduous",
+      "base_id": "leafless_deciduous",
+      "creator": "Claude",
+      "name": "Leafless Deciduous Tree",
+      "category": "vegetation",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vegetation/Claude_leafless_deciduous/Claude_leafless_deciduous.vox",
+      "metadata_path": "models/vegetation/Claude_leafless_deciduous/model.json",
+      "preview_path": "previews/vegetation/Claude_leafless_deciduous/",
+      "derived_paths": [
+        "models/vegetation/Claude_leafless_deciduous/Claude_leafless_deciduous.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        3.4,
+        3.4,
+        4.8
+      ],
+      "occupied_voxels": 888,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "dead"
+    },
+    {
+      "id": "Claude_rock",
+      "base_id": "rock",
+      "creator": "Claude",
+      "name": "Rock",
+      "category": "vegetation",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vegetation/Claude_rock/Claude_rock.vox",
+      "metadata_path": "models/vegetation/Claude_rock/model.json",
+      "preview_path": "previews/vegetation/Claude_rock/",
+      "derived_paths": [
+        "models/vegetation/Claude_rock/Claude_rock.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.75,
+        0.5,
+        0.45
+      ],
+      "occupied_voxels": 472,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "n/a"
+    },
+    {
+      "id": "Claude_small_leafy_tree",
+      "base_id": "small_leafy_tree",
+      "creator": "Claude",
+      "name": "Small Leafy Tree",
+      "category": "vegetation",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vegetation/Claude_small_leafy_tree/Claude_small_leafy_tree.vox",
+      "metadata_path": "models/vegetation/Claude_small_leafy_tree/model.json",
+      "preview_path": "previews/vegetation/Claude_small_leafy_tree/",
+      "derived_paths": [
+        "models/vegetation/Claude_small_leafy_tree/Claude_small_leafy_tree.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        2.7,
+        2.6,
+        3.7
+      ],
+      "occupied_voxels": 2197,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "living"
+    },
+    {
+      "id": "Claude_tree_stump",
+      "base_id": "tree_stump",
+      "creator": "Claude",
+      "name": "Tree Stump",
+      "category": "vegetation",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vegetation/Claude_tree_stump/Claude_tree_stump.vox",
+      "metadata_path": "models/vegetation/Claude_tree_stump/model.json",
+      "preview_path": "previews/vegetation/Claude_tree_stump/",
+      "derived_paths": [
+        "models/vegetation/Claude_tree_stump/Claude_tree_stump.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.75,
+        0.7,
+        0.5
+      ],
+      "occupied_voxels": 477,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "dead"
+    },
+    {
+      "id": "Claude_delivery_van",
+      "base_id": "delivery_van",
+      "creator": "Claude",
+      "name": "Delivery Van",
+      "category": "vehicles",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vehicles/Claude_delivery_van/Claude_delivery_van.vox",
+      "metadata_path": "models/vehicles/Claude_delivery_van/model.json",
+      "preview_path": "previews/vehicles/Claude_delivery_van/",
+      "derived_paths": [
+        "models/vehicles/Claude_delivery_van/Claude_delivery_van.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        2.9,
+        5.2,
+        2.5
+      ],
+      "occupied_voxels": 6642,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_family_car",
+      "base_id": "family_car",
+      "creator": "Claude",
+      "name": "Family Car",
+      "category": "vehicles",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vehicles/Claude_family_car/Claude_family_car.vox",
+      "metadata_path": "models/vehicles/Claude_family_car/model.json",
+      "preview_path": "previews/vehicles/Claude_family_car/",
+      "derived_paths": [
+        "models/vehicles/Claude_family_car/Claude_family_car.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.9,
+        4.2,
+        1.4
+      ],
+      "occupied_voxels": 2884,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_pickup_truck",
+      "base_id": "pickup_truck",
+      "creator": "Claude",
+      "name": "Pickup Truck",
+      "category": "vehicles",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vehicles/Claude_pickup_truck/Claude_pickup_truck.vox",
+      "metadata_path": "models/vehicles/Claude_pickup_truck/model.json",
+      "preview_path": "previews/vehicles/Claude_pickup_truck/",
+      "derived_paths": [
+        "models/vehicles/Claude_pickup_truck/Claude_pickup_truck.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        2.0,
+        5.1,
+        1.7
+      ],
+      "occupied_voxels": 3600,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_police_car",
+      "base_id": "police_car",
+      "creator": "Claude",
+      "name": "Police Car",
+      "category": "vehicles",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vehicles/Claude_police_car/Claude_police_car.vox",
+      "metadata_path": "models/vehicles/Claude_police_car/model.json",
+      "preview_path": "previews/vehicles/Claude_police_car/",
+      "derived_paths": [
+        "models/vehicles/Claude_police_car/Claude_police_car.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        2.7,
+        4.9,
+        1.5
+      ],
+      "occupied_voxels": 3092,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "abandoned"
+    },
+    {
+      "id": "Claude_utility_truck",
+      "base_id": "utility_truck",
+      "creator": "Claude",
+      "name": "Abandoned Utility Truck",
+      "category": "vehicles",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/vehicles/Claude_utility_truck/Claude_utility_truck.vox",
+      "metadata_path": "models/vehicles/Claude_utility_truck/model.json",
+      "preview_path": "previews/vehicles/Claude_utility_truck/",
+      "derived_paths": [
+        "models/vehicles/Claude_utility_truck/Claude_utility_truck.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        2.3,
+        5.6,
+        2.3
+      ],
+      "occupied_voxels": 5475,
+      "game_integrations": [],
+      "batch": "Claude_catalog_D",
+      "scale_family": "full",
+      "condition": "abandoned"
     }
   ]
 }
