@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "id": "Claude_tv_cabinet",
+  "base_id": "tv_cabinet",
+  "creator": "Claude",
+  "name": "TV Cabinet",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_tv_cabinet.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_tv_cabinet.glb",
+    "glb_vertices": 824,
+    "glb_triangles": 412,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    17.0,
+    4.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    34,
+    12,
+    12
+  ],
+  "dimensions_m": [
+    1.7,
+    0.6,
+    0.6
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1457,
+  "condition": "worn",
+  "gameplay_use": "Media cabinet; game prop 'tv_stand'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "brass",
+    "brass_dark",
+    "charcoal",
+    "pine_aged",
+    "pine_dark",
+    "steel_dark",
+    "steel_light",
+    "wood_deep",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 10
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 338
+    },
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 722
+    },
+    {
+      "index": 7,
+      "role": "wood_deep",
+      "hex": "#46362B",
+      "voxels": 338
+    },
+    {
+      "index": 34,
+      "role": "steel_light",
+      "hex": "#8C9496",
+      "voxels": 1
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 21
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 6
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 14
+    },
+    {
+      "index": 54,
+      "role": "brass",
+      "hex": "#A3874E",
+      "voxels": 2
+    },
+    {
+      "index": 55,
+      "role": "brass_dark",
+      "hex": "#786439",
+      "voxels": 5
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A walnut media cabinet that has been moved through three houses. The near door came off its top hinge and now hangs askew on the bottom one; the set-top box is still in the open bay, its cable pulled out when someone took the console.",
+  "notes": [
+    "Low walnut media cabinet: two doors and an open middle bay holding a set-top box and loose cables; one door off its top hinge."
+  ],
+  "generator": "tools/claude/models/catalog/a1_living_room.py",
+  "spec": "docs/specs/furniture/Claude_tv_cabinet.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_tv_cabinet/hero.png",
+    "front": "previews/furniture/Claude_tv_cabinet/front.png",
+    "side": "previews/furniture/Claude_tv_cabinet/side.png",
+    "scale": "previews/furniture/Claude_tv_cabinet/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.7,
+    0.45
+  ]
+}

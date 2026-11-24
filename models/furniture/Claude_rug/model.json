@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "id": "Claude_rug",
+  "base_id": "rug",
+  "creator": "Claude",
+  "name": "Living-Room Rug",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_rug.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_rug.glb",
+    "glb_vertices": 9344,
+    "glb_triangles": 4672,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.025,
+  "resolution_tier": "fine",
+  "resolution_rationale": "2.5 cm cells: a handheld or small gear item whose handles, straps and blades would be 2-4x too thick at 5 cm. A flat-weave rug is about 1 cm thick: 2.5 cm is the thinnest honest layer, and the finer cells carry the border motif and fringe.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    51.0,
+    35.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    102,
+    70,
+    2
+  ],
+  "dimensions_m": [
+    2.55,
+    1.75,
+    0.05
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 6941,
+  "condition": "worn",
+  "gameplay_use": "Floor rug; game prop 'rug'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "blue_dark",
+    "blue_deep",
+    "bluegrey_dark",
+    "bluegrey_deep",
+    "cream_deep",
+    "cream_mid",
+    "cream_shadow",
+    "red_dark",
+    "red_deep",
+    "terra_dark",
+    "wgrey_warm",
+    "wool",
+    "wool_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 15,
+      "role": "wgrey_warm",
+      "hex": "#94806A",
+      "voxels": 221
+    },
+    {
+      "index": 75,
+      "role": "bluegrey_dark",
+      "hex": "#53636A",
+      "voxels": 301
+    },
+    {
+      "index": 76,
+      "role": "bluegrey_deep",
+      "hex": "#404C52",
+      "voxels": 78
+    },
+    {
+      "index": 83,
+      "role": "red_dark",
+      "hex": "#7B463B",
+      "voxels": 506
+    },
+    {
+      "index": 84,
+      "role": "red_deep",
+      "hex": "#5C352D",
+      "voxels": 3
+    },
+    {
+      "index": 91,
+      "role": "cream_mid",
+      "hex": "#C7BCA6",
+      "voxels": 631
+    },
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 104
+    },
+    {
+      "index": 93,
+      "role": "cream_deep",
+      "hex": "#988C77",
+      "voxels": 81
+    },
+    {
+      "index": 100,
+      "role": "blue_dark",
+      "hex": "#4E5F6B",
+      "voxels": 1568
+    },
+    {
+      "index": 101,
+      "role": "blue_deep",
+      "hex": "#3E4C56",
+      "voxels": 518
+    },
+    {
+      "index": 103,
+      "role": "wool",
+      "hex": "#9A8E7C",
+      "voxels": 2463
+    },
+    {
+      "index": 104,
+      "role": "wool_dark",
+      "hex": "#7E7363",
+      "voxels": 396
+    },
+    {
+      "index": 143,
+      "role": "terra_dark",
+      "hex": "#744733",
+      "voxels": 71
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A flat-woven living-room rug laid across the route from the hall to the kitchen. A grey track is trodden into it along that line, and the near corner got kicked over in the last rush through the room and was never laid flat again.",
+  "notes": [
+    "Flat-woven rug with a simple border pattern in muted tones, one corner folded over, a scuffed walking path across it."
+  ],
+  "generator": "tools/claude/models/catalog/a1_living_room.py",
+  "spec": "docs/specs/furniture/Claude_rug.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_rug/hero.png",
+    "front": "previews/furniture/Claude_rug/front.png",
+    "side": "previews/furniture/Claude_rug/side.png",
+    "scale": "previews/furniture/Claude_rug/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    2.4,
+    1.75
+  ]
+}

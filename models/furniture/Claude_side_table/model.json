@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "Claude_side_table",
+  "base_id": "side_table",
+  "creator": "Claude",
+  "name": "Side Table",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_side_table.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_side_table.glb",
+    "glb_vertices": 320,
+    "glb_triangles": 160,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    5.5,
+    5.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    11,
+    10,
+    11
+  ],
+  "dimensions_m": [
+    0.55,
+    0.5,
+    0.55
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 335,
+  "condition": "lightly_used",
+  "gameplay_use": "Small table beside sofa/bed",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "card",
+    "pine_hi",
+    "pine_light",
+    "sawdust",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 1,
+      "role": "pine_hi",
+      "hex": "#CDA77D",
+      "voxels": 144
+    },
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 70
+    },
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 1
+    },
+    {
+      "index": 8,
+      "role": "sawdust",
+      "hex": "#D6C19C",
+      "voxels": 116
+    },
+    {
+      "index": 158,
+      "role": "card",
+      "hex": "#A88A62",
+      "voxels": 4
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "Bought new a month before everything stopped and still has its showroom finish. Its only mark is the cork coaster someone always remembered to use.",
+  "notes": [
+    "Nearly new square side table with one drawer and a coaster; clean contrast to the worn pieces."
+  ],
+  "generator": "tools/claude/models/catalog/a1_living_room.py",
+  "spec": "docs/specs/furniture/Claude_side_table.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_side_table/hero.png",
+    "front": "previews/furniture/Claude_side_table/front.png",
+    "side": "previews/furniture/Claude_side_table/side.png",
+    "scale": "previews/furniture/Claude_side_table/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.55,
+    0.5
+  ]
+}

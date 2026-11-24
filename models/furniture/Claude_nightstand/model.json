@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "id": "Claude_nightstand",
+  "base_id": "nightstand",
+  "creator": "Claude",
+  "name": "Nightstand",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_nightstand.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_nightstand.glb",
+    "glb_vertices": 540,
+    "glb_triangles": 270,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    5.0,
+    4.5,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    10,
+    12,
+    13
+  ],
+  "dimensions_m": [
+    0.5,
+    0.6,
+    0.65
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 502,
+  "condition": "used",
+  "gameplay_use": "Bedside table; game prop 'nightstand'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "brass",
+    "brass_dark",
+    "paper",
+    "pine_aged",
+    "pine_dark",
+    "pine_light",
+    "pine_mid",
+    "porcelain_hi",
+    "terra_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 90
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 296
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 42
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 44
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 1
+    },
+    {
+      "index": 54,
+      "role": "brass",
+      "hex": "#A3874E",
+      "voxels": 2
+    },
+    {
+      "index": 55,
+      "role": "brass_dark",
+      "hex": "#786439",
+      "voxels": 6
+    },
+    {
+      "index": 95,
+      "role": "paper",
+      "hex": "#DDD6C6",
+      "voxels": 4
+    },
+    {
+      "index": 113,
+      "role": "porcelain_hi",
+      "hex": "#EAE7DF",
+      "voxels": 5
+    },
+    {
+      "index": 143,
+      "role": "terra_dark",
+      "hex": "#744733",
+      "voxels": 12
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The near-side nightstand, from the same honey-oak set as the double bed. The drawer was pulled open for a phone charger that was not there; the wind-up alarm clock stopped at some small hour and a paperback lies where it was put down.",
+  "notes": [
+    "Body top at 0.50 m to sit just above the double bed's 0.45 m mattress; the clock adds 0.15 m, so the overall height is 0.65 m."
+  ],
+  "generator": "tools/claude/models/catalog/a2_bedroom_office.py",
+  "spec": "docs/specs/furniture/Claude_nightstand.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_nightstand/hero.png",
+    "front": "previews/furniture/Claude_nightstand/front.png",
+    "side": "previews/furniture/Claude_nightstand/side.png",
+    "scale": "previews/furniture/Claude_nightstand/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.5,
+    0.45
+  ]
+}

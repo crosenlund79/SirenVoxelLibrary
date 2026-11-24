@@ -304,6 +304,500 @@
       "batch": "Claude_catalog_A",
       "scale_family": "full",
       "condition": "worn"
+    },
+    {
+      "id": "Claude_armchair",
+      "base_id": "armchair",
+      "creator": "Claude",
+      "name": "Armchair",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_armchair/Claude_armchair.vox",
+      "metadata_path": "models/furniture/Claude_armchair/model.json",
+      "preview_path": "previews/furniture/Claude_armchair/",
+      "derived_paths": [
+        "models/furniture/Claude_armchair/Claude_armchair.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.9,
+        0.9,
+        0.9
+      ],
+      "occupied_voxels": 1692,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_bookshelf",
+      "base_id": "bookshelf",
+      "creator": "Claude",
+      "name": "Bookshelf",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_bookshelf/Claude_bookshelf.vox",
+      "metadata_path": "models/furniture/Claude_bookshelf/model.json",
+      "preview_path": "previews/furniture/Claude_bookshelf/",
+      "derived_paths": [
+        "models/furniture/Claude_bookshelf/Claude_bookshelf.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.25,
+        0.4,
+        1.85
+      ],
+      "occupied_voxels": 3687,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_coffee_table",
+      "base_id": "coffee_table",
+      "creator": "Claude",
+      "name": "Coffee Table",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_coffee_table/Claude_coffee_table.vox",
+      "metadata_path": "models/furniture/Claude_coffee_table/model.json",
+      "preview_path": "previews/furniture/Claude_coffee_table/",
+      "derived_paths": [
+        "models/furniture/Claude_coffee_table/Claude_coffee_table.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.15,
+        0.6,
+        0.45
+      ],
+      "occupied_voxels": 782,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_desk_chair",
+      "base_id": "desk_chair",
+      "creator": "Claude",
+      "name": "Desk Chair",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_desk_chair/Claude_desk_chair.vox",
+      "metadata_path": "models/furniture/Claude_desk_chair/model.json",
+      "preview_path": "previews/furniture/Claude_desk_chair/",
+      "derived_paths": [
+        "models/furniture/Claude_desk_chair/Claude_desk_chair.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.55,
+        0.65,
+        0.95
+      ],
+      "occupied_voxels": 372,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_dining_chair",
+      "base_id": "dining_chair",
+      "creator": "Claude",
+      "name": "Dining Chair",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_dining_chair/Claude_dining_chair.vox",
+      "metadata_path": "models/furniture/Claude_dining_chair/model.json",
+      "preview_path": "previews/furniture/Claude_dining_chair/",
+      "derived_paths": [
+        "models/furniture/Claude_dining_chair/Claude_dining_chair.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.45,
+        0.5,
+        0.9
+      ],
+      "occupied_voxels": 207,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_double_bed",
+      "base_id": "double_bed",
+      "creator": "Claude",
+      "name": "Double Bed",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_double_bed/Claude_double_bed.vox",
+      "metadata_path": "models/furniture/Claude_double_bed/model.json",
+      "preview_path": "previews/furniture/Claude_double_bed/",
+      "derived_paths": [
+        "models/furniture/Claude_double_bed/Claude_double_bed.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.75,
+        2.1,
+        0.9
+      ],
+      "occupied_voxels": 4306,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_dresser",
+      "base_id": "dresser",
+      "creator": "Claude",
+      "name": "Dresser",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_dresser/Claude_dresser.vox",
+      "metadata_path": "models/furniture/Claude_dresser/model.json",
+      "preview_path": "previews/furniture/Claude_dresser/",
+      "derived_paths": [
+        "models/furniture/Claude_dresser/Claude_dresser.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.25,
+        0.85,
+        0.9
+      ],
+      "occupied_voxels": 1883,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_floor_lamp",
+      "base_id": "floor_lamp",
+      "creator": "Claude",
+      "name": "Floor Lamp",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_floor_lamp/Claude_floor_lamp.vox",
+      "metadata_path": "models/furniture/Claude_floor_lamp/model.json",
+      "preview_path": "previews/furniture/Claude_floor_lamp/",
+      "derived_paths": [
+        "models/furniture/Claude_floor_lamp/Claude_floor_lamp.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.6,
+        0.7,
+        1.6
+      ],
+      "occupied_voxels": 315,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_nightstand",
+      "base_id": "nightstand",
+      "creator": "Claude",
+      "name": "Nightstand",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_nightstand/Claude_nightstand.vox",
+      "metadata_path": "models/furniture/Claude_nightstand/model.json",
+      "preview_path": "previews/furniture/Claude_nightstand/",
+      "derived_paths": [
+        "models/furniture/Claude_nightstand/Claude_nightstand.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.5,
+        0.6,
+        0.65
+      ],
+      "occupied_voxels": 502,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_rug",
+      "base_id": "rug",
+      "creator": "Claude",
+      "name": "Living-Room Rug",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_rug/Claude_rug.vox",
+      "metadata_path": "models/furniture/Claude_rug/model.json",
+      "preview_path": "previews/furniture/Claude_rug/",
+      "derived_paths": [
+        "models/furniture/Claude_rug/Claude_rug.glb"
+      ],
+      "voxel_size_m": 0.025,
+      "dimensions_m": [
+        2.55,
+        1.75,
+        0.05
+      ],
+      "occupied_voxels": 6941,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_side_table",
+      "base_id": "side_table",
+      "creator": "Claude",
+      "name": "Side Table",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_side_table/Claude_side_table.vox",
+      "metadata_path": "models/furniture/Claude_side_table/model.json",
+      "preview_path": "previews/furniture/Claude_side_table/",
+      "derived_paths": [
+        "models/furniture/Claude_side_table/Claude_side_table.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.55,
+        0.5,
+        0.55
+      ],
+      "occupied_voxels": 335,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "lightly_used"
+    },
+    {
+      "id": "Claude_sideboard",
+      "base_id": "sideboard",
+      "creator": "Claude",
+      "name": "Sideboard",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_sideboard/Claude_sideboard.vox",
+      "metadata_path": "models/furniture/Claude_sideboard/model.json",
+      "preview_path": "previews/furniture/Claude_sideboard/",
+      "derived_paths": [
+        "models/furniture/Claude_sideboard/Claude_sideboard.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.75,
+        0.75,
+        0.9
+      ],
+      "occupied_voxels": 1882,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_small_desk",
+      "base_id": "small_desk",
+      "creator": "Claude",
+      "name": "Small Desk",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_small_desk/Claude_small_desk.vox",
+      "metadata_path": "models/furniture/Claude_small_desk/model.json",
+      "preview_path": "previews/furniture/Claude_small_desk/",
+      "derived_paths": [
+        "models/furniture/Claude_small_desk/Claude_small_desk.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.25,
+        0.85,
+        0.8
+      ],
+      "occupied_voxels": 1069,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_small_shelf",
+      "base_id": "small_shelf",
+      "creator": "Claude",
+      "name": "Small Shelf",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_small_shelf/Claude_small_shelf.vox",
+      "metadata_path": "models/furniture/Claude_small_shelf/model.json",
+      "preview_path": "previews/furniture/Claude_small_shelf/",
+      "derived_paths": [
+        "models/furniture/Claude_small_shelf/Claude_small_shelf.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.9,
+        0.35,
+        1.25
+      ],
+      "occupied_voxels": 785,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_small_storage_cabinet",
+      "base_id": "small_storage_cabinet",
+      "creator": "Claude",
+      "name": "Small Storage Cabinet",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_small_storage_cabinet/Claude_small_storage_cabinet.vox",
+      "metadata_path": "models/furniture/Claude_small_storage_cabinet/model.json",
+      "preview_path": "previews/furniture/Claude_small_storage_cabinet/",
+      "derived_paths": [
+        "models/furniture/Claude_small_storage_cabinet/Claude_small_storage_cabinet.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.75,
+        1.1
+      ],
+      "occupied_voxels": 1851,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_stool",
+      "base_id": "stool",
+      "creator": "Claude",
+      "name": "Stool",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_stool/Claude_stool.vox",
+      "metadata_path": "models/furniture/Claude_stool/model.json",
+      "preview_path": "previews/furniture/Claude_stool/",
+      "derived_paths": [
+        "models/furniture/Claude_stool/Claude_stool.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.45,
+        0.45,
+        0.7
+      ],
+      "occupied_voxels": 161,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_television",
+      "base_id": "television",
+      "creator": "Claude",
+      "name": "Flat Television",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_television/Claude_television.vox",
+      "metadata_path": "models/furniture/Claude_television/model.json",
+      "preview_path": "previews/furniture/Claude_television/",
+      "derived_paths": [
+        "models/furniture/Claude_television/Claude_television.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.1,
+        0.2,
+        0.7
+      ],
+      "occupied_voxels": 382,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_tv_cabinet",
+      "base_id": "tv_cabinet",
+      "creator": "Claude",
+      "name": "TV Cabinet",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_tv_cabinet/Claude_tv_cabinet.vox",
+      "metadata_path": "models/furniture/Claude_tv_cabinet/model.json",
+      "preview_path": "previews/furniture/Claude_tv_cabinet/",
+      "derived_paths": [
+        "models/furniture/Claude_tv_cabinet/Claude_tv_cabinet.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.7,
+        0.6,
+        0.6
+      ],
+      "occupied_voxels": 1457,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_wardrobe",
+      "base_id": "wardrobe",
+      "creator": "Claude",
+      "name": "Wardrobe",
+      "category": "furniture",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/furniture/Claude_wardrobe/Claude_wardrobe.vox",
+      "metadata_path": "models/furniture/Claude_wardrobe/model.json",
+      "preview_path": "previews/furniture/Claude_wardrobe/",
+      "derived_paths": [
+        "models/furniture/Claude_wardrobe/Claude_wardrobe.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.6,
+        1.3,
+        2.0
+      ],
+      "occupied_voxels": 5455,
+      "game_integrations": [],
+      "batch": "Claude_catalog_A",
+      "scale_family": "full",
+      "condition": "worn"
     }
   ]
 }

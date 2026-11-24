@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "Claude_television",
+  "base_id": "television",
+  "creator": "Claude",
+  "name": "Flat Television",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_television.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_television.glb",
+    "glb_vertices": 436,
+    "glb_triangles": 218,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    11.0,
+    2.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    22,
+    4,
+    14
+  ],
+  "dimensions_m": [
+    1.1,
+    0.2,
+    0.7
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 382,
+  "condition": "used",
+  "gameplay_use": "Dead TV on a stand; living-room dressing",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "charcoal",
+    "glass_dark",
+    "iron_edge",
+    "screen",
+    "screen_sheen",
+    "steel",
+    "steel_dark",
+    "water_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 6
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 44
+    },
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 104
+    },
+    {
+      "index": 41,
+      "role": "iron_edge",
+      "hex": "#5B605F",
+      "voxels": 28
+    },
+    {
+      "index": 79,
+      "role": "water_dark",
+      "hex": "#2C3B40",
+      "voxels": 36
+    },
+    {
+      "index": 123,
+      "role": "glass_dark",
+      "hex": "#5E7378",
+      "voxels": 1
+    },
+    {
+      "index": 125,
+      "role": "screen",
+      "hex": "#262C2F",
+      "voxels": 150
+    },
+    {
+      "index": 126,
+      "role": "screen_sheen",
+      "hex": "#48555A",
+      "voxels": 13
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The living-room television, switched off at the wall when the power went. Someone knocked it reaching for the cabinet - a hairline crack now runs across the near top corner - and dust has settled along its top edge since.",
+  "notes": [
+    "Unbranded ~43-inch flat TV on a centre foot, dark screen with a hairline crack across one corner, dust on top edge. No logo."
+  ],
+  "generator": "tools/claude/models/catalog/a1_living_room.py",
+  "spec": "docs/specs/furniture/Claude_television.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_television/hero.png",
+    "front": "previews/furniture/Claude_television/front.png",
+    "side": "previews/furniture/Claude_television/side.png",
+    "scale": "previews/furniture/Claude_television/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.4,
+    0.2
+  ]
+}
