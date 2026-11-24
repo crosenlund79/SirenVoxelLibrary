@@ -1,14 +1,14 @@
 # GPT vs Claude coverage
 
-Generated 2026-11-24 15:55 UTC by `tools/compare/build_compare.py` from `catalog.json`.
+Generated 2026-11-24 15:58 UTC by `tools/compare/build_compare.py` from `catalog.json`.
 
 GPT object types: **179**. Claude coverage:
 
-- independent Claude model: **141**
+- independent Claude model: **173**
 - existing Claude model reused: **1**
 - existing Claude model (alias): **5**
 - needs revision: **0**
-- missing: **32**
+- missing: **0**
 - Claude-only extras (no GPT counterpart): **0**
 
 | Batch | Base ID | GPT | Claude | Status | Note |
@@ -155,38 +155,38 @@ GPT object types: **179**. Claude coverage:
 | D | `police_car` | `GPT_police_car` | `Claude_police_car` | independent Claude model |  |
 | D | `delivery_van` | `GPT_delivery_van` | `Claude_delivery_van` | independent Claude model |  |
 | D | `utility_truck` | `GPT_utility_truck` | `Claude_utility_truck` | independent Claude model |  |
-| E | `small_family_house` | `GPT_small_family_house` | — | missing |  |
-| E | `large_suburban_house` | `GPT_large_suburban_house` | — | missing |  |
-| E | `apartment_block` | `GPT_apartment_block` | — | missing |  |
-| E | `convenience_store` | `GPT_convenience_store` | — | missing |  |
-| E | `supermarket` | `GPT_supermarket` | — | missing |  |
-| E | `diner` | `GPT_diner` | — | missing |  |
-| E | `restaurant` | `GPT_restaurant` | — | missing |  |
-| E | `fast_food` | `GPT_fast_food` | — | missing |  |
-| E | `hardware_store` | `GPT_hardware_store` | — | missing |  |
-| E | `lumberyard` | `GPT_lumberyard` | — | missing |  |
-| E | `industrial_warehouse` | `GPT_industrial_warehouse` | — | missing |  |
-| E | `scrapyard_building` | `GPT_scrapyard_building` | — | missing |  |
-| E | `gun_shop` | `GPT_gun_shop` | — | missing |  |
-| E | `shooting_range` | `GPT_shooting_range` | — | missing |  |
-| E | `police_station` | `GPT_police_station` | — | missing |  |
-| E | `clinic` | `GPT_clinic` | — | missing |  |
-| E | `pharmacy` | `GPT_pharmacy` | — | missing |  |
-| E | `veterinary_clinic` | `GPT_veterinary_clinic` | — | missing |  |
-| E | `hospital` | `GPT_hospital` | — | missing |  |
-| E | `military_outpost` | `GPT_military_outpost` | — | missing |  |
-| E | `guard_tower` | `GPT_guard_tower` | — | missing |  |
-| E | `quarry_structure` | `GPT_quarry_structure` | — | missing |  |
-| E | `gas_station` | `GPT_gas_station` | — | missing |  |
-| E | `road_straight` | `GPT_road_straight` | — | missing |  |
-| E | `road_curve` | `GPT_road_curve` | — | missing |  |
-| E | `road_intersection` | `GPT_road_intersection` | — | missing |  |
-| E | `bridge` | `GPT_bridge` | — | missing |  |
-| E | `railway_crossing` | `GPT_railway_crossing` | — | missing |  |
-| E | `harbor_dock` | `GPT_harbor_dock` | — | missing |  |
-| E | `pier` | `GPT_pier` | — | missing |  |
-| E | `seawall` | `GPT_seawall` | — | missing |  |
-| E | `road_barrier` | `GPT_road_barrier` | — | missing |  |
+| E | `small_family_house` | `GPT_small_family_house` | `Claude_small_family_house` | independent Claude model |  |
+| E | `large_suburban_house` | `GPT_large_suburban_house` | `Claude_large_suburban_house` | independent Claude model |  |
+| E | `apartment_block` | `GPT_apartment_block` | `Claude_apartment_block` | independent Claude model |  |
+| E | `convenience_store` | `GPT_convenience_store` | `Claude_convenience_store` | independent Claude model |  |
+| E | `supermarket` | `GPT_supermarket` | `Claude_supermarket` | independent Claude model |  |
+| E | `diner` | `GPT_diner` | `Claude_diner` | independent Claude model |  |
+| E | `restaurant` | `GPT_restaurant` | `Claude_restaurant` | independent Claude model |  |
+| E | `fast_food` | `GPT_fast_food` | `Claude_fast_food` | independent Claude model |  |
+| E | `hardware_store` | `GPT_hardware_store` | `Claude_hardware_store` | independent Claude model |  |
+| E | `lumberyard` | `GPT_lumberyard` | `Claude_lumberyard` | independent Claude model |  |
+| E | `industrial_warehouse` | `GPT_industrial_warehouse` | `Claude_industrial_warehouse` | independent Claude model |  |
+| E | `scrapyard_building` | `GPT_scrapyard_building` | `Claude_scrapyard_building` | independent Claude model |  |
+| E | `gun_shop` | `GPT_gun_shop` | `Claude_gun_shop` | independent Claude model |  |
+| E | `shooting_range` | `GPT_shooting_range` | `Claude_shooting_range` | independent Claude model |  |
+| E | `police_station` | `GPT_police_station` | `Claude_police_station` | independent Claude model |  |
+| E | `clinic` | `GPT_clinic` | `Claude_clinic` | independent Claude model |  |
+| E | `pharmacy` | `GPT_pharmacy` | `Claude_pharmacy` | independent Claude model |  |
+| E | `veterinary_clinic` | `GPT_veterinary_clinic` | `Claude_veterinary_clinic` | independent Claude model |  |
+| E | `hospital` | `GPT_hospital` | `Claude_hospital` | independent Claude model |  |
+| E | `military_outpost` | `GPT_military_outpost` | `Claude_military_outpost` | independent Claude model |  |
+| E | `guard_tower` | `GPT_guard_tower` | `Claude_guard_tower` | independent Claude model |  |
+| E | `quarry_structure` | `GPT_quarry_structure` | `Claude_quarry_structure` | independent Claude model |  |
+| E | `gas_station` | `GPT_gas_station` | `Claude_gas_station` | independent Claude model |  |
+| E | `road_straight` | `GPT_road_straight` | `Claude_road_straight` | independent Claude model |  |
+| E | `road_curve` | `GPT_road_curve` | `Claude_road_curve` | independent Claude model |  |
+| E | `road_intersection` | `GPT_road_intersection` | `Claude_road_intersection` | independent Claude model |  |
+| E | `bridge` | `GPT_bridge` | `Claude_bridge` | independent Claude model |  |
+| E | `railway_crossing` | `GPT_railway_crossing` | `Claude_railway_crossing` | independent Claude model |  |
+| E | `harbor_dock` | `GPT_harbor_dock` | `Claude_harbor_dock` | independent Claude model |  |
+| E | `pier` | `GPT_pier` | `Claude_pier` | independent Claude model |  |
+| E | `seawall` | `GPT_seawall` | `Claude_seawall` | independent Claude model |  |
+| E | `road_barrier` | `GPT_road_barrier` | `Claude_road_barrier` | independent Claude model |  |
 | F | `survivor` | `GPT_survivor` | `Claude_survivor` | independent Claude model |  |
 | F | `ordinary_psycho` | `GPT_ordinary_psycho` | `Claude_ordinary_psycho` | independent Claude model |  |
 | F | `runner` | `GPT_runner` | `Claude_runner` | independent Claude model |  |
