@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "Claude_armchair",
+  "base_id": "armchair",
+  "creator": "Claude",
+  "name": "Armchair",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_armchair.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_armchair.glb",
+    "glb_vertices": 760,
+    "glb_triangles": 380,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    9.0,
+    9.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    18,
+    18,
+    18
+  ],
+  "dimensions_m": [
+    0.9,
+    0.9,
+    0.9
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1692,
+  "condition": "worn",
+  "gameplay_use": "Living-room furniture; game prop 'armchair'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "card_hi",
+    "terra",
+    "terra_dark",
+    "terra_hi",
+    "wood_deep",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 32
+    },
+    {
+      "index": 7,
+      "role": "wood_deep",
+      "hex": "#46362B",
+      "voxels": 16
+    },
+    {
+      "index": 141,
+      "role": "terra_hi",
+      "hex": "#AA6E52",
+      "voxels": 72
+    },
+    {
+      "index": 142,
+      "role": "terra",
+      "hex": "#925A41",
+      "voxels": 841
+    },
+    {
+      "index": 143,
+      "role": "terra_dark",
+      "hex": "#744733",
+      "voxels": 725
+    },
+    {
+      "index": 157,
+      "role": "card_hi",
+      "hex": "#C2A47A",
+      "voxels": 6
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "Grandad's terracotta club chair by the window. Years of the same head have sun-faded the top of the back cushion, the seat cushion is pressed flat where he sat, and the seam on the near arm finally split under his hand, showing the yellowed foam.",
+  "notes": [
+    "Rust/terracotta upholstered armchair (the game's rust armchair) with a split seam on one arm, flattened seat cushion, faded headrest."
+  ],
+  "generator": "tools/claude/models/catalog/a1_living_room.py",
+  "spec": "docs/specs/furniture/Claude_armchair.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_armchair/hero.png",
+    "front": "previews/furniture/Claude_armchair/front.png",
+    "side": "previews/furniture/Claude_armchair/side.png",
+    "scale": "previews/furniture/Claude_armchair/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.9,
+    0.9
+  ]
+}

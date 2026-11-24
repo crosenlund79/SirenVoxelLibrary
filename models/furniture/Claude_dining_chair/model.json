@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "id": "Claude_dining_chair",
+  "base_id": "dining_chair",
+  "creator": "Claude",
+  "name": "Dining Chair",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_dining_chair.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_dining_chair.glb",
+    "glb_vertices": 608,
+    "glb_triangles": 304,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    4.5,
+    5.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    9,
+    10,
+    18
+  ],
+  "dimensions_m": [
+    0.45,
+    0.5,
+    0.9
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 207,
+  "condition": "worn",
+  "gameplay_use": "Dining chair; game prop 'chair'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "pine_aged",
+    "pine_hi",
+    "pine_light",
+    "pine_mid",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 1,
+      "role": "pine_hi",
+      "hex": "#CDA77D",
+      "voxels": 11
+    },
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 72
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 114
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 4
+    },
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 6
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "One of the six chairs bought with the oak dining table. Its seat front and crest rail are rubbed pale by years of hands pulling it out, and one spindle that snapped was replaced with a darker one from the hardware shop.",
+  "notes": [
+    "The manifest brief asks for a sage-painted chair that does not quite match the table; the commission for this batch asks that the chair clearly belongs with Claude_dining_table, so it is in the table's oak and keeps the brief's replaced darker spindle as the mismatch.",
+    "Seat height 0.45 m, back 0.90 m, 0.45 m wide (the 3-spindle rhythm needs an odd width)."
+  ],
+  "generator": "tools/claude/models/catalog/a2_bedroom_office.py",
+  "spec": "docs/specs/furniture/Claude_dining_chair.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_dining_chair/hero.png",
+    "front": "previews/furniture/Claude_dining_chair/front.png",
+    "side": "previews/furniture/Claude_dining_chair/side.png",
+    "scale": "previews/furniture/Claude_dining_chair/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    0.45,
+    0.5
+  ],
+  "pairs_with": [
+    "Claude_dining_table"
+  ]
+}

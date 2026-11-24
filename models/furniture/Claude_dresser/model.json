@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "id": "Claude_dresser",
+  "base_id": "dresser",
+  "creator": "Claude",
+  "name": "Dresser",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_dresser.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_dresser.glb",
+    "glb_vertices": 916,
+    "glb_triangles": 458,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    12.5,
+    5.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    25,
+    17,
+    18
+  ],
+  "dimensions_m": [
+    1.25,
+    0.85,
+    0.9
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1883,
+  "condition": "worn",
+  "gameplay_use": "Chest of drawers; lootable; game prop 'dresser'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "brass",
+    "cream_mid",
+    "leather",
+    "leather_dark",
+    "leather_deep",
+    "leather_hi",
+    "paper",
+    "pine_aged",
+    "sage",
+    "sage_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 93
+    },
+    {
+      "index": 54,
+      "role": "brass",
+      "hex": "#A3874E",
+      "voxels": 18
+    },
+    {
+      "index": 91,
+      "role": "cream_mid",
+      "hex": "#C7BCA6",
+      "voxels": 12
+    },
+    {
+      "index": 95,
+      "role": "paper",
+      "hex": "#DDD6C6",
+      "voxels": 24
+    },
+    {
+      "index": 146,
+      "role": "sage",
+      "hex": "#7A887B",
+      "voxels": 12
+    },
+    {
+      "index": 147,
+      "role": "sage_dark",
+      "hex": "#637064",
+      "voxels": 6
+    },
+    {
+      "index": 153,
+      "role": "leather_hi",
+      "hex": "#94694B",
+      "voxels": 354
+    },
+    {
+      "index": 154,
+      "role": "leather",
+      "hex": "#7A553C",
+      "voxels": 170
+    },
+    {
+      "index": 155,
+      "role": "leather_dark",
+      "hex": "#5E402E",
+      "voxels": 705
+    },
+    {
+      "index": 156,
+      "role": "leather_deep",
+      "hex": "#432E22",
+      "voxels": 489
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "An old mahogany chest of drawers handed down twice. Its top drawer was yanked out and emptied in a hurry - only the rucked lining paper is left - and the drawer below the middle was shoved shut on a jumper sleeve.",
+  "notes": [
+    "Chest of four drawers, the top drawer pulled out and emptied in a hurry, a sleeve hanging out of another."
+  ],
+  "generator": "tools/claude/models/catalog/a2_bedroom_office.py",
+  "spec": "docs/specs/furniture/Claude_dresser.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_dresser/hero.png",
+    "front": "previews/furniture/Claude_dresser/front.png",
+    "side": "previews/furniture/Claude_dresser/side.png",
+    "scale": "previews/furniture/Claude_dresser/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.25,
+    0.5
+  ]
+}

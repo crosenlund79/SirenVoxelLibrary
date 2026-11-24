@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "id": "Claude_double_bed",
+  "base_id": "double_bed",
+  "creator": "Claude",
+  "name": "Double Bed",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_double_bed.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_double_bed.glb",
+    "glb_vertices": 1236,
+    "glb_triangles": 618,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    17.5,
+    21.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    35,
+    42,
+    18
+  ],
+  "dimensions_m": [
+    1.75,
+    2.1,
+    0.9
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 4306,
+  "condition": "used",
+  "gameplay_use": "Main bed; game prop 'bed'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "cream",
+    "cream_deep",
+    "cream_hi",
+    "cream_mid",
+    "mauve",
+    "mauve_dark",
+    "mauve_hi",
+    "pine_aged",
+    "pine_dark",
+    "pine_hi",
+    "pine_light",
+    "pine_mid"
+  ],
+  "palette_roles": [
+    {
+      "index": 1,
+      "role": "pine_hi",
+      "hex": "#CDA77D",
+      "voxels": 8
+    },
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 237
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 202
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 601
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 16
+    },
+    {
+      "index": 89,
+      "role": "cream_hi",
+      "hex": "#E4DCCB",
+      "voxels": 187
+    },
+    {
+      "index": 90,
+      "role": "cream",
+      "hex": "#D7CDB9",
+      "voxels": 232
+    },
+    {
+      "index": 91,
+      "role": "cream_mid",
+      "hex": "#C7BCA6",
+      "voxels": 138
+    },
+    {
+      "index": 93,
+      "role": "cream_deep",
+      "hex": "#988C77",
+      "voxels": 1235
+    },
+    {
+      "index": 133,
+      "role": "mauve_hi",
+      "hex": "#BFA3A0",
+      "voxels": 58
+    },
+    {
+      "index": 134,
+      "role": "mauve",
+      "hex": "#A98C89",
+      "voxels": 1262
+    },
+    {
+      "index": 135,
+      "role": "mauve_dark",
+      "hex": "#8C7270",
+      "voxels": 130
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "The parents' bed. Only the near side was slept in that last night: its pillow is still dented and skewed, and the mauve duvet was yanked up in a hurry before they left - square on the far side, rumpled and turned back on the near one.",
+  "notes": [
+    "Wooden double bed with headboard, mauve bedding (game colour) pulled up hastily, two pillows, one side slept in."
+  ],
+  "generator": "tools/claude/models/catalog/a2_bedroom_office.py",
+  "spec": "docs/specs/furniture/Claude_double_bed.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_double_bed/hero.png",
+    "front": "previews/furniture/Claude_double_bed/front.png",
+    "side": "previews/furniture/Claude_double_bed/side.png",
+    "scale": "previews/furniture/Claude_double_bed/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.65,
+    2.1
+  ]
+}

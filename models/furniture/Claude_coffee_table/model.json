@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "id": "Claude_coffee_table",
+  "base_id": "coffee_table",
+  "creator": "Claude",
+  "name": "Coffee Table",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_coffee_table.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_coffee_table.glb",
+    "glb_vertices": 600,
+    "glb_triangles": 300,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    11.5,
+    6.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    23,
+    12,
+    9
+  ],
+  "dimensions_m": [
+    1.15,
+    0.6,
+    0.45
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 782,
+  "condition": "used",
+  "gameplay_use": "Living-room table; game prop 'coffee_table'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "bluegrey_hi",
+    "cream_mid",
+    "cream_shadow",
+    "paper",
+    "pine_aged",
+    "pine_hi",
+    "pine_light",
+    "pine_mid",
+    "terra_hi"
+  ],
+  "palette_roles": [
+    {
+      "index": 1,
+      "role": "pine_hi",
+      "hex": "#CDA77D",
+      "voxels": 5
+    },
+    {
+      "index": 2,
+      "role": "pine_light",
+      "hex": "#BC9670",
+      "voxels": 173
+    },
+    {
+      "index": 3,
+      "role": "pine_mid",
+      "hex": "#AA8562",
+      "voxels": 267
+    },
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 238
+    },
+    {
+      "index": 73,
+      "role": "bluegrey_hi",
+      "hex": "#8698A1",
+      "voxels": 27
+    },
+    {
+      "index": 91,
+      "role": "cream_mid",
+      "hex": "#C7BCA6",
+      "voxels": 7
+    },
+    {
+      "index": 92,
+      "role": "cream_shadow",
+      "hex": "#B3A791",
+      "voxels": 7
+    },
+    {
+      "index": 95,
+      "role": "paper",
+      "hex": "#DDD6C6",
+      "voxels": 33
+    },
+    {
+      "index": 141,
+      "role": "terra_hi",
+      "hex": "#AA6E52",
+      "voxels": 25
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A solid oak coffee table that took the knocks of a family living room: the front corner was chipped when the sofa was dragged past it and never filled, and the shelf underneath still holds the last week's paper and two magazines.",
+  "notes": [
+    "Low oak coffee table with a lower shelf holding a few magazines/newspapers; one corner chipped."
+  ],
+  "generator": "tools/claude/models/catalog/a1_living_room.py",
+  "spec": "docs/specs/furniture/Claude_coffee_table.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_coffee_table/hero.png",
+    "front": "previews/furniture/Claude_coffee_table/front.png",
+    "side": "previews/furniture/Claude_coffee_table/side.png",
+    "scale": "previews/furniture/Claude_coffee_table/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.15,
+    0.6
+  ]
+}
