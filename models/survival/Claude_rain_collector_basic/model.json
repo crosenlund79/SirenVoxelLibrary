@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "id": "Claude_rain_collector_basic",
+  "base_id": "rain_collector_basic",
+  "creator": "Claude",
+  "name": "Basic Rain Collector",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_pilot_001",
+  "source": "Claude_rain_collector_basic.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_rain_collector_basic.glb",
+    "glb_vertices": 4496,
+    "glb_triangles": 2248,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "Built first at the suggested 0.10 m and rejected after review: the 0.8 m tank is only 8 cells across, so its stair-stepped circle and lid broke into a lumpy block, and the tap, collar and brackets became stacked 10 cm cubes that read as a placeholder beside the rest of the batch. At 0.05 m the tank is a clean 16-cell pixel circle. The plumbing is kept deliberately chunky (inlet pipe 2x2 cells = 10 cm), so nothing is too thin to render.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    11.0,
+    9.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the timber stand footprint (1.00 x 0.90 m); the overflow pipe (-X) and the tap (+Y) protrude beyond it.",
+  "front_note": "+Y is the tap / service side.",
+  "grid_size_cells": [
+    21,
+    20,
+    32
+  ],
+  "dimensions_m": [
+    1.05,
+    1.0,
+    1.6
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 2390,
+  "palette": "Shared Claude pilot palette (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "material_roles": [
+    "algae_dark",
+    "brass",
+    "brass_dark",
+    "concrete",
+    "concrete_dark",
+    "concrete_deep",
+    "concrete_hi",
+    "galv",
+    "galv_dark",
+    "galv_hi",
+    "green",
+    "green_dark",
+    "green_light",
+    "olive",
+    "olive_dark",
+    "pine_aged",
+    "pine_dark",
+    "red",
+    "red_dark",
+    "rust_dark",
+    "rust_deep",
+    "steel",
+    "steel_dark",
+    "wgrey",
+    "wgrey_dark",
+    "wgrey_deep",
+    "wgrey_hi",
+    "wgrey_mid",
+    "wgrey_warm",
+    "wgrey_wet"
+  ],
+  "palette_roles": [
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 92
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 12
+    },
+    {
+      "index": 9,
+      "role": "wgrey_hi",
+      "hex": "#A59E91",
+      "voxels": 108
+    },
+    {
+      "index": 10,
+      "role": "wgrey",
+      "hex": "#8B8478",
+      "voxels": 167
+    },
+    {
+      "index": 11,
+      "role": "wgrey_mid",
+      "hex": "#766F64",
+      "voxels": 164
+    },
+    {
+      "index": 12,
+      "role": "wgrey_dark",
+      "hex": "#5E5850",
+      "voxels": 88
+    },
+    {
+      "index": 13,
+      "role": "wgrey_deep",
+      "hex": "#46423C",
+      "voxels": 36
+    },
+    {
+      "index": 15,
+      "role": "wgrey_warm",
+      "hex": "#94806A",
+      "voxels": 42
+    },
+    {
+      "index": 16,
+      "role": "wgrey_wet",
+      "hex": "#524C45",
+      "voxels": 4
+    },
+    {
+      "index": 35,
+      "role": "steel",
+      "hex": "#687072",
+      "voxels": 2
+    },
+    {
+      "index": 36,
+      "role": "steel_dark",
+      "hex": "#4F5658",
+      "voxels": 6
+    },
+    {
+      "index": 39,
+      "role": "galv_hi",
+      "hex": "#B5BAB5",
+      "voxels": 20
+    },
+    {
+      "index": 40,
+      "role": "galv",
+      "hex": "#989E9A",
+      "voxels": 24
+    },
+    {
+      "index": 46,
+      "role": "galv_dark",
+      "hex": "#7A807C",
+      "voxels": 12
+    },
+    {
+      "index": 51,
+      "role": "rust_dark",
+      "hex": "#8B5336",
+      "voxels": 2
+    },
+    {
+      "index": 52,
+      "role": "rust_deep",
+      "hex": "#674230",
+      "voxels": 2
+    },
+    {
+      "index": 54,
+      "role": "brass",
+      "hex": "#A3874E",
+      "voxels": 3
+    },
+    {
+      "index": 55,
+      "role": "brass_dark",
+      "hex": "#786439",
+      "voxels": 2
+    },
+    {
+      "index": 66,
+      "role": "green_light",
+      "hex": "#69806F",
+      "voxels": 212
+    },
+    {
+      "index": 67,
+      "role": "green",
+      "hex": "#566C60",
+      "voxels": 876
+    },
+    {
+      "index": 68,
+      "role": "green_dark",
+      "hex": "#46584F",
+      "voxels": 200
+    },
+    {
+      "index": 72,
+      "role": "algae_dark",
+      "hex": "#4A553E",
+      "voxels": 160
+    },
+    {
+      "index": 82,
+      "role": "red",
+      "hex": "#9A594B",
+      "voxels": 2
+    },
+    {
+      "index": 83,
+      "role": "red_dark",
+      "hex": "#7B463B",
+      "voxels": 1
+    },
+    {
+      "index": 86,
+      "role": "olive",
+      "hex": "#777B55",
+      "voxels": 6
+    },
+    {
+      "index": 87,
+      "role": "olive_dark",
+      "hex": "#5F6244",
+      "voxels": 54
+    },
+    {
+      "index": 105,
+      "role": "concrete_hi",
+      "hex": "#A7A8A0",
+      "voxels": 44
+    },
+    {
+      "index": 106,
+      "role": "concrete",
+      "hex": "#90918A",
+      "voxels": 47
+    },
+    {
+      "index": 107,
+      "role": "concrete_dark",
+      "hex": "#76776F",
+      "voxels": 1
+    },
+    {
+      "index": 108,
+      "role": "concrete_deep",
+      "hex": "#5D5E58",
+      "voxels": 1
+    }
+  ],
+  "attachments": {
+    "gutter_inlet": {
+      "description": "Open rear end of the galvanised 10 cm inlet pipe; a downpipe from the gutter connects here (toward -Y).",
+      "diameter_m": 0.1,
+      "voxel": [
+        11.0,
+        0.0,
+        31.0
+      ],
+      "offset_m_from_pivot": [
+        0.0,
+        -0.45,
+        1.55
+      ]
+    }
+  },
+  "collision_hint": "Cylinder r=0.40 m, h=1.45 m on a 1.0 x 0.9 x 0.55 m box.",
+  "story": "Built from what was lying around: pallet boards and fence posts, one leg propped on a concrete block, a fresher post added later to carry the inlet pipe, a ratchet strap so the tank survives the wind.",
+  "notes": [
+    "Deck surface at 0.55 m; tank rim 1.45 m; inlet pipe top 1.60 m.",
+    "Tap spout 0.55 m above the ground, overhanging the deck so a can fits below.",
+    "The tank is a closed hollow shell (no water volume modelled)."
+  ],
+  "generator": "tools/claude/models/rain_collector_basic.py",
+  "previews": {
+    "hero": "previews/survival/Claude_rain_collector_basic/hero.png",
+    "front": "previews/survival/Claude_rain_collector_basic/front.png",
+    "side": "previews/survival/Claude_rain_collector_basic/side.png",
+    "scale": "previews/survival/Claude_rain_collector_basic/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_pilot_001.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.0,
+    0.9
+  ]
+}

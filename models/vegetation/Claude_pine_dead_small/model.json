@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "id": "Claude_pine_dead_small",
+  "base_id": "pine_dead_small",
+  "creator": "Claude",
+  "name": "Small Dead Pine",
+  "category": "vegetation",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_pilot_001",
+  "source": "Claude_pine_dead_small.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_pine_dead_small.glb",
+    "glb_vertices": 3252,
+    "glb_triangles": 1626,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.1,
+  "resolution_tier": "standard",
+  "resolution_rationale": "The same metric design was voxelised at 0.20, 0.10 and 0.05 m and compared. At 0.20 m (165 voxels) every branch is as thick as the trunk and the tree becomes a blobby column with no pine branching. At 0.05 m the silhouette is finer but turns into many single-cell twigs that the brief warns against and that would shimmer at distance. 0.10 m is the coarsest tier that keeps whorled pine branching, the broken ends and the snapped leader readable (trunk 2 cells, limbs 1 cell).",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    7.0,
+    10.0,
+    0.0
+  ],
+  "pivot_note": "Trunk base centre at ground level (not the bounding-box centre; the crown leans toward +X).",
+  "front_note": "Vegetation has no functional front; the drooping dead limb and the stripped windward face are arranged toward the default camera (-X / +Y).",
+  "grid_size_cells": [
+    22,
+    19,
+    44
+  ],
+  "dimensions_m": [
+    2.2,
+    1.9,
+    4.4
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 400,
+  "palette": "Shared Claude pilot palette (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "material_roles": [
+    "bark",
+    "bark_dark",
+    "bark_deep",
+    "bark_hi",
+    "bark_mid",
+    "break_fresh",
+    "lichen",
+    "needle_dark",
+    "needle_dry",
+    "needle_olive",
+    "needle_rust",
+    "snag",
+    "snag_light"
+  ],
+  "palette_roles": [
+    {
+      "index": 17,
+      "role": "bark_hi",
+      "hex": "#8D837A",
+      "voxels": 6
+    },
+    {
+      "index": 18,
+      "role": "bark",
+      "hex": "#73695F",
+      "voxels": 68
+    },
+    {
+      "index": 19,
+      "role": "bark_mid",
+      "hex": "#5F564E",
+      "voxels": 202
+    },
+    {
+      "index": 20,
+      "role": "bark_dark",
+      "hex": "#4B443E",
+      "voxels": 24
+    },
+    {
+      "index": 21,
+      "role": "bark_deep",
+      "hex": "#37322E",
+      "voxels": 22
+    },
+    {
+      "index": 22,
+      "role": "snag_light",
+      "hex": "#BFB39F",
+      "voxels": 4
+    },
+    {
+      "index": 23,
+      "role": "snag",
+      "hex": "#A79B87",
+      "voxels": 25
+    },
+    {
+      "index": 25,
+      "role": "break_fresh",
+      "hex": "#C9B08A",
+      "voxels": 1
+    },
+    {
+      "index": 26,
+      "role": "needle_olive",
+      "hex": "#6E7251",
+      "voxels": 2
+    },
+    {
+      "index": 27,
+      "role": "needle_dry",
+      "hex": "#877A53",
+      "voxels": 10
+    },
+    {
+      "index": 28,
+      "role": "needle_rust",
+      "hex": "#86684C",
+      "voxels": 29
+    },
+    {
+      "index": 29,
+      "role": "needle_dark",
+      "hex": "#50573F",
+      "voxels": 1
+    },
+    {
+      "index": 30,
+      "role": "lichen",
+      "hex": "#8E9979",
+      "voxels": 6
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Capsule r=0.12 m, h=4.4 m at the pivot (trunk only); branches non-colliding.",
+  "story": "A young pine that died standing at the edge of a clearing: leaning away from the wind, leader snapped and replaced by a crooked branch, the windward side stripped, a few rust-brown tufts clinging on the lee side.",
+  "notes": [
+    "Prevailing wind modelled from -X: the lee (+X) side carries the longest limbs.",
+    "Roots spread on the ground plane (z = 0); no soil mound, so it sits on any terrain."
+  ],
+  "generator": "tools/claude/models/pine_dead_small.py",
+  "previews": {
+    "hero": "previews/vegetation/Claude_pine_dead_small/hero.png",
+    "front": "previews/vegetation/Claude_pine_dead_small/front.png",
+    "side": "previews/vegetation/Claude_pine_dead_small/side.png",
+    "scale": "previews/vegetation/Claude_pine_dead_small/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_pilot_001.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": []
+}

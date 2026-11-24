@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "Claude_sofa",
+  "base_id": "sofa",
+  "creator": "Claude",
+  "name": "Three-Seat Sofa",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_A",
+  "scale_family": "full",
+  "source": "Claude_sofa.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_sofa.glb",
+    "glb_vertices": 860,
+    "glb_triangles": 430,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    23.5,
+    10.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the occupied footprint at ground level.",
+  "front_note": "+Y is the side a person uses (seat, doors, drawers, controls).",
+  "grid_size_cells": [
+    46,
+    20,
+    17
+  ],
+  "dimensions_m": [
+    2.3,
+    1.0,
+    0.85
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 3733,
+  "condition": "worn",
+  "gameplay_use": "Living-room furniture; cover; game prop 'sofa'",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "mustard",
+    "mustard_dark",
+    "mustard_deep",
+    "slate",
+    "slate_dark",
+    "slate_deep",
+    "slate_hi",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 32
+    },
+    {
+      "index": 129,
+      "role": "slate_hi",
+      "hex": "#74848B",
+      "voxels": 414
+    },
+    {
+      "index": 130,
+      "role": "slate",
+      "hex": "#5E6D74",
+      "voxels": 1368
+    },
+    {
+      "index": 131,
+      "role": "slate_dark",
+      "hex": "#4B585E",
+      "voxels": 1790
+    },
+    {
+      "index": 132,
+      "role": "slate_deep",
+      "hex": "#3A4449",
+      "voxels": 45
+    },
+    {
+      "index": 138,
+      "role": "mustard",
+      "hex": "#AA8847",
+      "voxels": 21
+    },
+    {
+      "index": 139,
+      "role": "mustard_dark",
+      "hex": "#876B38",
+      "voxels": 44
+    },
+    {
+      "index": 140,
+      "role": "mustard_deep",
+      "hex": "#63502C",
+      "voxels": 19
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box matching dimensions_m, centred on the pivot.",
+  "story": "A slate-blue three-seater from a family living room. The middle cushion has sagged from years of the same person sitting there, the right cushion was pulled forward and never pushed back, and a mustard throw still lies folded over the left arm.",
+  "notes": [
+    "Slate-blue fabric three-seater on low wooden feet; sagging middle cushion, one seat cushion pushed askew, a folded blanket over one arm, armrest fronts rubbed darker."
+  ],
+  "generator": "tools/claude/models/catalog/a1_living.py",
+  "spec": "docs/specs/furniture/Claude_sofa.md",
+  "previews": {
+    "hero": "previews/furniture/Claude_sofa/hero.png",
+    "front": "previews/furniture/Claude_sofa/front.png",
+    "side": "previews/furniture/Claude_sofa/side.png",
+    "scale": "previews/furniture/Claude_sofa/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_A.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    2.25,
+    0.9
+  ]
+}

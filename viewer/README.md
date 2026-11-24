@@ -34,6 +34,8 @@ The built-in sample workbench merely demonstrates that the viewer is working; it
 
 If the repository is hosted as a static website, the viewer also reads `../catalog.json` and offers a dropdown of actual catalogued models. The catalog requires the usual fields including `source_path`; `model.json` metadata is used if `metadata_path` exists.
 
+**Deep links:** `viewer/?model=<asset_id>` (for example `viewer/?model=Claude_dining_table`) opens that catalogued model directly; the Claude catalog page (`catalog/index.html`) links every model this way.
+
 When opened directly as a local `file://` page, browser security normally blocks automatic catalog loading. **The file picker still works offline.**
 
 For optional catalog browsing from a local clone, serve the repository root with any static web server, e.g. run `python -m http.server 8000` in the repo and visit `http://localhost:8000/viewer/`. A server is **not** required for the ordinary file picker.
