@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "id": "Claude_runner",
+  "base_id": "runner",
+  "creator": "Claude",
+  "name": "Runner",
+  "category": "characters",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_F",
+  "scale_family": "full",
+  "source": "Claude_runner.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_runner.glb",
+    "glb_vertices": 1252,
+    "glb_triangles": 626,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    5.5,
+    6.0,
+    0.0
+  ],
+  "pivot_note": "Between the feet at ground level.",
+  "front_note": "The character faces +Y in a neutral standing display pose.",
+  "grid_size_cells": [
+    11,
+    12,
+    35
+  ],
+  "dimensions_m": [
+    0.55,
+    0.6,
+    1.75
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 594,
+  "condition": "n/a",
+  "gameplay_use": "Enemy archetype: fast, fragile",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "charcoal",
+    "hair_black",
+    "navy",
+    "navy_dark",
+    "paint_white_shadow",
+    "porcelain_deep",
+    "porcelain_mid",
+    "skin1_shadow",
+    "skin2",
+    "skin2_shadow"
+  ],
+  "palette_roles": [
+    {
+      "index": 37,
+      "role": "charcoal",
+      "hex": "#363C3D",
+      "voxels": 30
+    },
+    {
+      "index": 115,
+      "role": "porcelain_mid",
+      "hex": "#C5C0B5",
+      "voxels": 40
+    },
+    {
+      "index": 117,
+      "role": "porcelain_deep",
+      "hex": "#8D897F",
+      "voxels": 11
+    },
+    {
+      "index": 163,
+      "role": "skin1_shadow",
+      "hex": "#AC846B",
+      "voxels": 1
+    },
+    {
+      "index": 164,
+      "role": "skin2",
+      "hex": "#A97A5D",
+      "voxels": 208
+    },
+    {
+      "index": 165,
+      "role": "skin2_shadow",
+      "hex": "#8B6249",
+      "voxels": 7
+    },
+    {
+      "index": 169,
+      "role": "hair_black",
+      "hex": "#2A2524",
+      "voxels": 30
+    },
+    {
+      "index": 210,
+      "role": "paint_white_shadow",
+      "hex": "#B0AEA6",
+      "voxels": 177
+    },
+    {
+      "index": 211,
+      "role": "navy",
+      "hex": "#3E4A5B",
+      "voxels": 80
+    },
+    {
+      "index": 212,
+      "role": "navy_dark",
+      "hex": "#2F3846",
+      "voxels": 10
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Upright capsule about 0.3 m in radius and dimensions_m[2] tall, centred on the pivot; static reference figure, no rig.",
+  "story": "Out on a morning run when the sirens stopped, and still running in a way: the same light kit, torn now, worn for weeks. Lean to the point of gauntness, always tipped forward as if the next step has already started.",
+  "notes": [
+    "Lean figure in torn running clothes, forward-leaning sprint pose, light silhouette.",
+    "Still display version of the sprint lean: both feet on the ground, staggered. Narrower than the 0.85 m reference (lean build, arms close) and deeper (0.60 m) because of the stagger and forward tilt."
+  ],
+  "generator": "tools/claude/models/catalog/f1_characters.py",
+  "spec": "docs/specs/characters/Claude_runner.md",
+  "previews": {
+    "hero": "previews/characters/Claude_runner/hero.png",
+    "front": "previews/characters/Claude_runner/front.png",
+    "side": "previews/characters/Claude_runner/side.png",
+    "scale": "previews/characters/Claude_runner/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_F.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": []
+}

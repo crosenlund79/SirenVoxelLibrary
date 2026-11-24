@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "id": "Claude_ordinary_psycho",
+  "base_id": "ordinary_psycho",
+  "creator": "Claude",
+  "name": "Ordinary Psycho",
+  "category": "characters",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_F",
+  "scale_family": "full",
+  "source": "Claude_ordinary_psycho.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_ordinary_psycho.glb",
+    "glb_vertices": 1440,
+    "glb_triangles": 720,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    5.5,
+    4.0,
+    0.0
+  ],
+  "pivot_note": "Between the feet at ground level.",
+  "front_note": "The character faces +Y in a neutral standing display pose.",
+  "grid_size_cells": [
+    11,
+    10,
+    36
+  ],
+  "dimensions_m": [
+    0.55,
+    0.5,
+    1.8
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 864,
+  "condition": "n/a",
+  "gameplay_use": "Enemy archetype (current)",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "ash_dark",
+    "black",
+    "blue",
+    "blue_hi",
+    "cream_deep",
+    "iron_dark",
+    "maroon",
+    "maroon_dark",
+    "porcelain_deep",
+    "porcelain_mid",
+    "skin_pallid",
+    "stone_dark",
+    "wgrey_dark",
+    "wgrey_deep",
+    "wool_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 12,
+      "role": "wgrey_dark",
+      "hex": "#5E5850",
+      "voxels": 204
+    },
+    {
+      "index": 13,
+      "role": "wgrey_deep",
+      "hex": "#46423C",
+      "voxels": 3
+    },
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 35
+    },
+    {
+      "index": 43,
+      "role": "iron_dark",
+      "hex": "#2E3232",
+      "voxels": 17
+    },
+    {
+      "index": 62,
+      "role": "ash_dark",
+      "hex": "#66615C",
+      "voxels": 39
+    },
+    {
+      "index": 93,
+      "role": "cream_deep",
+      "hex": "#988C77",
+      "voxels": 15
+    },
+    {
+      "index": 97,
+      "role": "blue_hi",
+      "hex": "#8497A4",
+      "voxels": 372
+    },
+    {
+      "index": 98,
+      "role": "blue",
+      "hex": "#697D8B",
+      "voxels": 33
+    },
+    {
+      "index": 104,
+      "role": "wool_dark",
+      "hex": "#7E7363",
+      "voxels": 56
+    },
+    {
+      "index": 110,
+      "role": "stone_dark",
+      "hex": "#68645E",
+      "voxels": 2
+    },
+    {
+      "index": 115,
+      "role": "porcelain_mid",
+      "hex": "#C5C0B5",
+      "voxels": 3
+    },
+    {
+      "index": 117,
+      "role": "porcelain_deep",
+      "hex": "#8D897F",
+      "voxels": 9
+    },
+    {
+      "index": 168,
+      "role": "skin_pallid",
+      "hex": "#B9AFA0",
+      "voxels": 67
+    },
+    {
+      "index": 213,
+      "role": "maroon",
+      "hex": "#703F3C",
+      "voxels": 1
+    },
+    {
+      "index": 214,
+      "role": "maroon_dark",
+      "hex": "#57302E",
+      "voxels": 8
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Upright capsule about 0.3 m in radius and dimensions_m[2] tall, centred on the pivot; static reference figure, no rig.",
+  "story": "An office worker who walked out of the building the day the sirens stopped and never went home: the same pale shirt, the tie still knotted, one shoe lost somewhere along the way. Whatever happened to them happened on the inside.",
+  "notes": [
+    "Disturbed ordinary person, not a zombie: hunched, limping, arms hanging forward, torn office clothes, stains.",
+    "A tall man stooped to 1.80 m (reference 1.82 m). Narrower than the 0.85 m reference because the arms hang forward in front of the thighs instead of out to the sides."
+  ],
+  "generator": "tools/claude/models/catalog/f1_characters.py",
+  "spec": "docs/specs/characters/Claude_ordinary_psycho.md",
+  "previews": {
+    "hero": "previews/characters/Claude_ordinary_psycho/hero.png",
+    "front": "previews/characters/Claude_ordinary_psycho/front.png",
+    "side": "previews/characters/Claude_ordinary_psycho/side.png",
+    "scale": "previews/characters/Claude_ordinary_psycho/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_F.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": []
+}

@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "id": "Claude_brute",
+  "base_id": "brute",
+  "creator": "Claude",
+  "name": "Brute",
+  "category": "characters",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_catalog_F",
+  "scale_family": "full",
+  "source": "Claude_brute.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_brute.glb",
+    "glb_vertices": 1656,
+    "glb_triangles": 828,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "5 cm cells (the library's furniture/prop tier): real member thicknesses (boards, rails, cushions, doors) stay believable instead of toy-like; matches the game's 0.05 m character rig.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    9.5,
+    4.5,
+    0.0
+  ],
+  "pivot_note": "Between the feet at ground level.",
+  "front_note": "The character faces +Y in a neutral standing display pose.",
+  "grid_size_cells": [
+    19,
+    9,
+    42
+  ],
+  "dimensions_m": [
+    0.95,
+    0.45,
+    2.1
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 1775,
+  "condition": "n/a",
+  "gameplay_use": "Enemy archetype: slow, tough",
+  "palette": "Shared Claude palette v2 (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "palette_version": 2,
+  "material_roles": [
+    "black",
+    "denim",
+    "denim_dark",
+    "hair_black",
+    "hair_brown",
+    "leather",
+    "leather_dark",
+    "leather_deep",
+    "navy_dark",
+    "skin1_shadow",
+    "skin2",
+    "skin2_shadow",
+    "wool",
+    "wool_dark"
+  ],
+  "palette_roles": [
+    {
+      "index": 38,
+      "role": "black",
+      "hex": "#252A2B",
+      "voxels": 56
+    },
+    {
+      "index": 103,
+      "role": "wool",
+      "hex": "#9A8E7C",
+      "voxels": 337
+    },
+    {
+      "index": 104,
+      "role": "wool_dark",
+      "hex": "#7E7363",
+      "voxels": 20
+    },
+    {
+      "index": 154,
+      "role": "leather",
+      "hex": "#7A553C",
+      "voxels": 57
+    },
+    {
+      "index": 155,
+      "role": "leather_dark",
+      "hex": "#5E402E",
+      "voxels": 92
+    },
+    {
+      "index": 156,
+      "role": "leather_deep",
+      "hex": "#432E22",
+      "voxels": 155
+    },
+    {
+      "index": 163,
+      "role": "skin1_shadow",
+      "hex": "#AC846B",
+      "voxels": 1
+    },
+    {
+      "index": 164,
+      "role": "skin2",
+      "hex": "#A97A5D",
+      "voxels": 254
+    },
+    {
+      "index": 165,
+      "role": "skin2_shadow",
+      "hex": "#8B6249",
+      "voxels": 33
+    },
+    {
+      "index": 169,
+      "role": "hair_black",
+      "hex": "#2A2524",
+      "voxels": 2
+    },
+    {
+      "index": 170,
+      "role": "hair_brown",
+      "hex": "#594230",
+      "voxels": 23
+    },
+    {
+      "index": 173,
+      "role": "denim",
+      "hex": "#536476",
+      "voxels": 22
+    },
+    {
+      "index": 174,
+      "role": "denim_dark",
+      "hex": "#414F5E",
+      "voxels": 665
+    },
+    {
+      "index": 212,
+      "role": "navy_dark",
+      "hex": "#2F3846",
+      "voxels": 58
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Upright capsule about 0.45 m in radius and dimensions_m[2] tall, centred on the pivot; static reference figure, no rig.",
+  "story": "A huge man who worked the cutting floor of a meat-packing plant on the edge of town; he was still in his overalls and heavy leather apron when it happened. Slow now, heavy-footed, carrying his weight forward.",
+  "notes": [
+    "Heavy figure with broad shoulders, thick arms, work overalls and apron.",
+    "2.10 m as the reference. Width 0.95 m rather than 1.12 m: the heavy arms hang beside the body rather than held out."
+  ],
+  "generator": "tools/claude/models/catalog/f1_characters.py",
+  "spec": "docs/specs/characters/Claude_brute.md",
+  "previews": {
+    "hero": "previews/characters/Claude_brute/hero.png",
+    "front": "previews/characters/Claude_brute/front.png",
+    "side": "previews/characters/Claude_brute/side.png",
+    "scale": "previews/characters/Claude_brute/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_catalog_F.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": []
+}
