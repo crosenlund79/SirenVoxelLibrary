@@ -964,7 +964,7 @@ def broken_brick_wall():
              "a chamfered outside edge, two anchor bolts waiting for a sill plate, and the "
              "screed board the builder left on it when the sirens went quiet.",
        details=["Poured slab with a chamfered top edge on the outside (+Y) face",
-                "Two galvanised anchor bolts with washers on the sill line",
+                "Two galvanised anchor bolts on the sill line",
                 "Float-finished lighter top, damp foot",
                 "The screed board still lying on it"],
        exclusions=["No reinforcement visible", "No cracks (new)"],
@@ -982,7 +982,6 @@ def concrete_foundation():
     g.box(1, 2, 3, 7, 2, 3, "pine_aged")                         # forgotten screed board
     g.box(1, 2, 3, 1, 2, 3, "pine_dark")
     for x in (3, 7):                                             # anchor bolts on the sill line
-        g.set(x, 6, 2, "steel_dark")                             # washer seat
         g.set(x, 6, 3, "galv")
     return g
 

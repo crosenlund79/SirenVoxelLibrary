@@ -1968,6 +1968,604 @@
       "batch": "Claude_catalog_D",
       "scale_family": "full",
       "condition": "abandoned"
+    },
+    {
+      "id": "Claude_brick_wall_section",
+      "base_id": "brick_wall_section",
+      "creator": "Claude",
+      "name": "Brick Wall Section",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_brick_wall_section/Claude_brick_wall_section.vox",
+      "metadata_path": "models/construction/Claude_brick_wall_section/model.json",
+      "preview_path": "previews/construction/Claude_brick_wall_section/",
+      "derived_paths": [
+        "models/construction/Claude_brick_wall_section/Claude_brick_wall_section.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        0.3,
+        2.6
+      ],
+      "occupied_voxels": 540,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_broken_brick_wall",
+      "base_id": "broken_brick_wall",
+      "creator": "Claude",
+      "name": "Partially Broken Brick Wall",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_broken_brick_wall/Claude_broken_brick_wall.vox",
+      "metadata_path": "models/construction/Claude_broken_brick_wall/model.json",
+      "preview_path": "previews/construction/Claude_broken_brick_wall/",
+      "derived_paths": [
+        "models/construction/Claude_broken_brick_wall/Claude_broken_brick_wall.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        0.7,
+        2.3
+      ],
+      "occupied_voxels": 394,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "damaged"
+    },
+    {
+      "id": "Claude_concrete_foundation",
+      "base_id": "concrete_foundation",
+      "creator": "Claude",
+      "name": "Concrete Foundation",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_concrete_foundation/Claude_concrete_foundation.vox",
+      "metadata_path": "models/construction/Claude_concrete_foundation/model.json",
+      "preview_path": "previews/construction/Claude_concrete_foundation/",
+      "derived_paths": [
+        "models/construction/Claude_concrete_foundation/Claude_concrete_foundation.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        1.0,
+        0.4
+      ],
+      "occupied_voxels": 243,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_concrete_wall_section",
+      "base_id": "concrete_wall_section",
+      "creator": "Claude",
+      "name": "Concrete Wall Section",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_concrete_wall_section/Claude_concrete_wall_section.vox",
+      "metadata_path": "models/construction/Claude_concrete_wall_section/model.json",
+      "preview_path": "previews/construction/Claude_concrete_wall_section/",
+      "derived_paths": [
+        "models/construction/Claude_concrete_wall_section/Claude_concrete_wall_section.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        0.3,
+        2.6
+      ],
+      "occupied_voxels": 588,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_damaged_wooden_wall",
+      "base_id": "damaged_wooden_wall",
+      "creator": "Claude",
+      "name": "Damaged Wooden Wall",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_damaged_wooden_wall/Claude_damaged_wooden_wall.vox",
+      "metadata_path": "models/construction/Claude_damaged_wooden_wall/model.json",
+      "preview_path": "previews/construction/Claude_damaged_wooden_wall/",
+      "derived_paths": [
+        "models/construction/Claude_damaged_wooden_wall/Claude_damaged_wooden_wall.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        0.4,
+        2.6
+      ],
+      "occupied_voxels": 348,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "damaged"
+    },
+    {
+      "id": "Claude_destroyed_barricade",
+      "base_id": "destroyed_barricade",
+      "creator": "Claude",
+      "name": "Destroyed Barricade",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_destroyed_barricade/Claude_destroyed_barricade.vox",
+      "metadata_path": "models/construction/Claude_destroyed_barricade/model.json",
+      "preview_path": "previews/construction/Claude_destroyed_barricade/",
+      "derived_paths": [
+        "models/construction/Claude_destroyed_barricade/Claude_destroyed_barricade.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.55,
+        1.35
+      ],
+      "occupied_voxels": 487,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "destroyed"
+    },
+    {
+      "id": "Claude_metal_door",
+      "base_id": "metal_door",
+      "creator": "Claude",
+      "name": "Metal Door",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_metal_door/Claude_metal_door.vox",
+      "metadata_path": "models/construction/Claude_metal_door/model.json",
+      "preview_path": "previews/construction/Claude_metal_door/",
+      "derived_paths": [
+        "models/construction/Claude_metal_door/Claude_metal_door.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.2,
+        2.1
+      ],
+      "occupied_voxels": 2048,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_metal_fence_gate",
+      "base_id": "metal_fence_gate",
+      "creator": "Claude",
+      "name": "Metal Gate",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_metal_fence_gate/Claude_metal_fence_gate.vox",
+      "metadata_path": "models/construction/Claude_metal_fence_gate/model.json",
+      "preview_path": "previews/construction/Claude_metal_fence_gate/",
+      "derived_paths": [
+        "models/construction/Claude_metal_fence_gate/Claude_metal_fence_gate.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.15,
+        0.15,
+        2.0
+      ],
+      "occupied_voxels": 711,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_metal_reinforced_wall",
+      "base_id": "metal_reinforced_wall",
+      "creator": "Claude",
+      "name": "Metal-Reinforced Wall",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_metal_reinforced_wall/Claude_metal_reinforced_wall.vox",
+      "metadata_path": "models/construction/Claude_metal_reinforced_wall/model.json",
+      "preview_path": "previews/construction/Claude_metal_reinforced_wall/",
+      "derived_paths": [
+        "models/construction/Claude_metal_reinforced_wall/Claude_metal_reinforced_wall.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        0.3,
+        2.6
+      ],
+      "occupied_voxels": 538,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "improvised"
+    },
+    {
+      "id": "Claude_metal_support_beam",
+      "base_id": "metal_support_beam",
+      "creator": "Claude",
+      "name": "Metal Support Beam",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_metal_support_beam/Claude_metal_support_beam.vox",
+      "metadata_path": "models/construction/Claude_metal_support_beam/model.json",
+      "preview_path": "previews/construction/Claude_metal_support_beam/",
+      "derived_paths": [
+        "models/construction/Claude_metal_support_beam/Claude_metal_support_beam.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.35,
+        0.35,
+        2.55
+      ],
+      "occupied_voxels": 743,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "worn"
+    },
+    {
+      "id": "Claude_reinforced_wooden_barricade",
+      "base_id": "reinforced_wooden_barricade",
+      "creator": "Claude",
+      "name": "Reinforced Wooden Barricade",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_reinforced_wooden_barricade/Claude_reinforced_wooden_barricade.vox",
+      "metadata_path": "models/construction/Claude_reinforced_wooden_barricade/model.json",
+      "preview_path": "previews/construction/Claude_reinforced_wooden_barricade/",
+      "derived_paths": [
+        "models/construction/Claude_reinforced_wooden_barricade/Claude_reinforced_wooden_barricade.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.5,
+        2.05
+      ],
+      "occupied_voxels": 2236,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "improvised"
+    },
+    {
+      "id": "Claude_steel_reinforcement_panel",
+      "base_id": "steel_reinforcement_panel",
+      "creator": "Claude",
+      "name": "Steel Reinforcement Panel",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_steel_reinforcement_panel/Claude_steel_reinforcement_panel.vox",
+      "metadata_path": "models/construction/Claude_steel_reinforcement_panel/model.json",
+      "preview_path": "previews/construction/Claude_steel_reinforcement_panel/",
+      "derived_paths": [
+        "models/construction/Claude_steel_reinforcement_panel/Claude_steel_reinforcement_panel.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.1,
+        2.3
+      ],
+      "occupied_voxels": 1188,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_stone_foundation",
+      "base_id": "stone_foundation",
+      "creator": "Claude",
+      "name": "Stone Foundation",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_stone_foundation/Claude_stone_foundation.vox",
+      "metadata_path": "models/construction/Claude_stone_foundation/model.json",
+      "preview_path": "previews/construction/Claude_stone_foundation/",
+      "derived_paths": [
+        "models/construction/Claude_stone_foundation/Claude_stone_foundation.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        1.0,
+        0.3
+      ],
+      "occupied_voxels": 233,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_stone_wall_section",
+      "base_id": "stone_wall_section",
+      "creator": "Claude",
+      "name": "Stone Wall Section",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_stone_wall_section/Claude_stone_wall_section.vox",
+      "metadata_path": "models/construction/Claude_stone_wall_section/model.json",
+      "preview_path": "previews/construction/Claude_stone_wall_section/",
+      "derived_paths": [
+        "models/construction/Claude_stone_wall_section/Claude_stone_wall_section.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        0.3,
+        2.6
+      ],
+      "occupied_voxels": 520,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_window_frame",
+      "base_id": "window_frame",
+      "creator": "Claude",
+      "name": "Window Frame",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_window_frame/Claude_window_frame.vox",
+      "metadata_path": "models/construction/Claude_window_frame/model.json",
+      "preview_path": "previews/construction/Claude_window_frame/",
+      "derived_paths": [
+        "models/construction/Claude_window_frame/Claude_window_frame.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.25,
+        1.2
+      ],
+      "occupied_voxels": 1118,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_wooden_barricade",
+      "base_id": "wooden_barricade",
+      "creator": "Claude",
+      "name": "Wooden Barricade",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_barricade/Claude_wooden_barricade.vox",
+      "metadata_path": "models/construction/Claude_wooden_barricade/model.json",
+      "preview_path": "previews/construction/Claude_wooden_barricade/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_barricade/Claude_wooden_barricade.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.4,
+        2.0
+      ],
+      "occupied_voxels": 1062,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "improvised"
+    },
+    {
+      "id": "Claude_wooden_beam",
+      "base_id": "wooden_beam",
+      "creator": "Claude",
+      "name": "Wooden Beam",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_beam/Claude_wooden_beam.vox",
+      "metadata_path": "models/construction/Claude_wooden_beam/model.json",
+      "preview_path": "previews/construction/Claude_wooden_beam/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_beam/Claude_wooden_beam.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.3,
+        0.3
+      ],
+      "occupied_voxels": 288,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_wooden_door",
+      "base_id": "wooden_door",
+      "creator": "Claude",
+      "name": "Wooden Door",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_door/Claude_wooden_door.vox",
+      "metadata_path": "models/construction/Claude_wooden_door/model.json",
+      "preview_path": "previews/construction/Claude_wooden_door/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_door/Claude_wooden_door.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        1.0,
+        0.2,
+        2.1
+      ],
+      "occupied_voxels": 1894,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "used"
+    },
+    {
+      "id": "Claude_wooden_floor_section",
+      "base_id": "wooden_floor_section",
+      "creator": "Claude",
+      "name": "Wooden Floor Section",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_floor_section/Claude_wooden_floor_section.vox",
+      "metadata_path": "models/construction/Claude_wooden_floor_section/model.json",
+      "preview_path": "previews/construction/Claude_wooden_floor_section/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_floor_section/Claude_wooden_floor_section.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        1.0,
+        0.2
+      ],
+      "occupied_voxels": 130,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_wooden_foundation_support",
+      "base_id": "wooden_foundation_support",
+      "creator": "Claude",
+      "name": "Wooden Foundation Support",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_foundation_support/Claude_wooden_foundation_support.vox",
+      "metadata_path": "models/construction/Claude_wooden_foundation_support/model.json",
+      "preview_path": "previews/construction/Claude_wooden_foundation_support/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_foundation_support/Claude_wooden_foundation_support.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.35,
+        0.35,
+        1.2
+      ],
+      "occupied_voxels": 707,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_wooden_post",
+      "base_id": "wooden_post",
+      "creator": "Claude",
+      "name": "Wooden Post",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_post/Claude_wooden_post.vox",
+      "metadata_path": "models/construction/Claude_wooden_post/model.json",
+      "preview_path": "previews/construction/Claude_wooden_post/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_post/Claude_wooden_post.glb"
+      ],
+      "voxel_size_m": 0.05,
+      "dimensions_m": [
+        0.3,
+        0.3,
+        2.5
+      ],
+      "occupied_voxels": 640,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_wooden_stairs",
+      "base_id": "wooden_stairs",
+      "creator": "Claude",
+      "name": "Simple Wooden Stairs",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_stairs/Claude_wooden_stairs.vox",
+      "metadata_path": "models/construction/Claude_wooden_stairs/model.json",
+      "preview_path": "previews/construction/Claude_wooden_stairs/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_stairs/Claude_wooden_stairs.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.1,
+        1.7,
+        1.0
+      ],
+      "occupied_voxels": 283,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "new"
+    },
+    {
+      "id": "Claude_wooden_wall_section",
+      "base_id": "wooden_wall_section",
+      "creator": "Claude",
+      "name": "Wooden Wall Section",
+      "category": "construction",
+      "status": "candidate",
+      "revision": 1,
+      "source_path": "models/construction/Claude_wooden_wall_section/Claude_wooden_wall_section.vox",
+      "metadata_path": "models/construction/Claude_wooden_wall_section/model.json",
+      "preview_path": "previews/construction/Claude_wooden_wall_section/",
+      "derived_paths": [
+        "models/construction/Claude_wooden_wall_section/Claude_wooden_wall_section.glb"
+      ],
+      "voxel_size_m": 0.1,
+      "dimensions_m": [
+        1.0,
+        0.2,
+        2.6
+      ],
+      "occupied_voxels": 357,
+      "game_integrations": [],
+      "batch": "Claude_catalog_B",
+      "scale_family": "full",
+      "condition": "improvised"
     }
   ]
 }
