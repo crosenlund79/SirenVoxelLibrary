@@ -98,3 +98,26 @@ python3 tools/claude/manifest.py                                           # man
 - [ ] `validate.py` passes with no unexplained warnings.
 
 Passing validation is not approval. Every model stays a **candidate** until the user decides.
+
+## 9. Rival catalog commission (2026-11-24)
+
+- **Base IDs are GPT's base IDs** (`docs/claude/manifest.json`, schema 2) so `GPT_<id>` and `Claude_<id>` pair automatically in the comparison viewer. Folders use GPT's category for the same object (`furniture`, `survival`, `construction`, `combat`, `consumables`, `vegetation`, `decorations`, `vehicles`, `map`, `characters`).
+- Batches: **A** household · **B** survival and construction · **C** combat and consumables · **D** outdoors and vehicles · **E** regional voxel map · **F** characters and enemies · **X** Claude-only extras.
+- Existing Claude models that already satisfy an object are kept and paired by an explicit alias (`manifest.json → alias`, `model.json → compare_base_id`): `workbench_worn→workbench`, `rain_collector_basic→rainwater_collector`, `wood_stove_compact→wood_stove`, `single_bed_unmade→single_bed`, `pine_dead_small→dead_pine`.
+- `target_dims_m` defaults to GPT's reference size for a fair comparison; designs may deviate where proportions demand it (record why in a note).
+- GPT's geometry, generators and meshes are never opened or copied. Only its list of objects, names, categories and sizes is used.
+- Catalog generators live in **family files** `tools/claude/models/catalog/<family>.py` using `catalog_registry.model` (manifest supplies name, category, cell, batch, condition, gameplay use). Interior fill is removed automatically (closed shells); the GLB exporter emits only faces that border outside air.
+
+## 10. Lessons from production (read before modelling)
+
+1. **Small circles lie.** A 4-cell "round" with its corners removed reads as a plus sign at 0.05 m. Use a 3×3 square for ~15 cm round things, or 6+ cells for real circles. Radii 8 / 7 / 6 (cells) give clean pixel circles; avoid radii that leave single-cell nubs at the extremes.
+2. **One-cell rings only touch diagonally** at 45°. Use `Grid.ring_cells` (face-connected outline) for shells, tanks, pipes and rims.
+3. **Single-cell dots are confetti.** Knots, stains, rivets and scuffs as isolated cells read as noise. Use coherent zones (a rubbed edge row, a grimy work area) or nothing.
+4. **Diagonals become staircases.** Prefer axis-aligned members. Branches and limbs should be near-horizontal with a drooping tip; braces may be diagonal because they are structural.
+5. **No stepped cakes.** Insetting every layer by one cell turns pillows and cushions into ziggurats. Use vertical sides with rounded (cut) corners and one soft crown.
+6. **Thin layers sit on volumes.** A sheet is the top layer of the mattress, a label is the colour of the can's band, a blanket is one cell thick. Nothing thinner than a cell is modelled as its own slab.
+7. **Put the story on the camera side.** The hero camera sees the front (+Y) and the −X side. Drapes, damage and the interesting end go there.
+8. **Dark objects need value structure.** Use catch-light rows on edges, recessed panels and lighter hardware, or the object collapses into one dark blob.
+9. **One saturated accent per object, at most.** Prefer the `_dark` variant of an accent ramp.
+10. **No random generators.** Hand-author placements in small tables, and use `hash01` only for sparse, repeatable variation, so a fix to one part does not reshuffle the whole model.
+11. **Judge the renders, not the validator.** Check the hero at full size and the game-camera strip. Passing validation is necessary, not sufficient.

@@ -20,11 +20,34 @@ def _srgb_to_lin(c):
     return np.where(c <= 0.04045, c / 12.92, ((c + 0.055) / 1.055) ** 2.4)
 
 
-def greedy_quads(grid: np.ndarray):
-    """Yield (axis, sign, plane, u0, u1, v0, v1, colour) for merged exposed faces."""
+def exterior_air(grid: np.ndarray) -> np.ndarray:
+    """Padded boolean mask of empty cells connected (6-way) to the outside of the grid.
+    Sealed interior voids (hollowed shells) are excluded, so no faces are emitted into them;
+    cavities open to the outside (a firebox seen through a flue) are kept."""
+    from collections import deque
+    occ = np.pad(grid > 0, 1)
+    air = np.zeros_like(occ)
+    q = deque([(0, 0, 0)])
+    air[0, 0, 0] = True
+    shp = occ.shape
+    while q:
+        x, y, z = q.popleft()
+        for dx, dy, dz in ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)):
+            n = (x + dx, y + dy, z + dz)
+            if 0 <= n[0] < shp[0] and 0 <= n[1] < shp[1] and 0 <= n[2] < shp[2] \
+                    and not occ[n] and not air[n]:
+                air[n] = True
+                q.append(n)
+    return air
+
+
+def greedy_quads(grid: np.ndarray, exterior_only: bool = True):
+    """Yield (axis, sign, plane, u0, u1, v0, v1, colour) for merged exposed faces.
+    exterior_only: only faces bordering air connected to the outside."""
     dims = grid.shape
     padded = np.zeros(tuple(d + 2 for d in dims), grid.dtype)
     padded[1:-1, 1:-1, 1:-1] = grid
+    air = exterior_air(grid) if exterior_only else (padded == 0)
     for d in range(3):
         u, v = (d + 1) % 3, (d + 2) % 3
         for sign in (1, -1):
@@ -33,8 +56,8 @@ def greedy_quads(grid: np.ndarray):
                 sl[d] = k + 1
                 cur = padded[tuple(sl)]
                 sl[d] = k + 1 + sign
-                nb = padded[tuple(sl)]
-                mask = np.where((cur > 0) & (nb == 0), cur, 0)
+                nb = air[tuple(sl)]
+                mask = np.where((cur > 0) & nb, cur, 0)
                 # mask axes are the two remaining source axes in increasing order
                 axes = [a for a in range(3) if a != d]
                 if axes != [u, v]:          # reorder to (u, v)

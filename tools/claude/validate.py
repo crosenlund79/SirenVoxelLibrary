@@ -56,14 +56,18 @@ def components(grid):
     return sorted(sizes, reverse=True)
 
 
-def exposed_faces_by_colour(grid):
+def exposed_faces_by_colour(grid, exterior_only=True):
+    """Faces bordering empty space; exterior_only counts only air connected to the outside
+    (the GLB exporter skips faces lining sealed, hollowed interiors)."""
+    from export_glb import exterior_air
     p = np.pad(grid, 1)
+    air = exterior_air(grid) if exterior_only else (p == 0)
     core = p[1:-1, 1:-1, 1:-1]
     out = Counter()
     for ax in range(3):
         for sgn in (1, -1):
-            nb = np.roll(p, -sgn, axis=ax)[1:-1, 1:-1, 1:-1]
-            m = (core > 0) & (nb == 0)
+            nb = np.roll(air, -sgn, axis=ax)[1:-1, 1:-1, 1:-1]
+            m = (core > 0) & nb
             out.update(Counter(core[m].tolist()))
     return out
 
@@ -211,16 +215,26 @@ def check_glb(meta, path, grid, pal):
     for ci in np.unique(grid[grid > 0]):
         m = np.all(np.abs(tri_col - lin[ci]) < 1e-5, axis=1)
         got[int(ci)] = int(round(area[m].sum()))
-    want = exposed_faces_by_colour(grid)
-    assert dict(got) == {int(k): int(v) for k, v in want.items()}, "face area mismatch"
+    # exterior-only faces (current exporter) or all faces (frozen pilot GLBs)
+    from export_glb import exterior_air
+    got = {int(k): int(v) for k, v in got.items()}
+    mode = None
+    for ext in (True, False):
+        want = {int(k): int(v) for k, v in exposed_faces_by_colour(grid, ext).items()}
+        if got == want:
+            mode = ext
+            break
+    assert mode is not None, "face area mismatch"
     # orientation: library front (+Y) must become Godot -Z
-    src_front = int((np.pad(grid, 1)[1:-1, 2:, 1:-1] == 0)[grid > 0].sum())
+    air = exterior_air(grid) if mode else (np.pad(grid, 1) == 0)
+    src_front = int(air[1:-1, 2:, 1:-1][grid > 0].sum())
     glb_front = int(round(area[n_st[:, 2] < -0.5].sum()))
     assert src_front == glb_front, ("front-facing area", src_front, glb_front)
     res = {"triangles": int(len(idx) // 3), "vertices": int(len(pos)),
            "bounds_godot_m": [[round(float(v), 3) for v in pos.min(0)],
                               [round(float(v), 3) for v in pos.max(0)]],
-           "exposed_faces": int(sum(want.values())), "front_faces_to_-Z": glb_front}
+           "exposed_faces": int(sum(want.values())), "front_faces_to_-Z": glb_front,
+           "faces_exported": "exterior only" if mode else "all (pilot)"}
     try:
         import trimesh
         sc = trimesh.load(str(path))

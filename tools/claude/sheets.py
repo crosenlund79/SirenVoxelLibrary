@@ -4,6 +4,7 @@
     python3 tools/claude/sheets.py category furniture     # previews/categories/Claude_furniture*.png
     python3 tools/claude/sheets.py gamecam catalog_A      # true game-camera readability strip
     python3 tools/claude/sheets.py overview               # previews/batches/Claude_catalog_overview.png
+    python3 tools/claude/sheets.py ids <out_dir> <stem> sofa armchair ...   # ad-hoc QA sheet
 
 Contact sheets ("pages"): every tile on one page uses the SAME camera (three-quarter, az -35,
 el 30), the same light and the SAME pixels-per-metre, so sizes compare honestly; models are
@@ -46,11 +47,13 @@ CATEGORY_TITLES = {
     "Survival and workshop equipment", "architecture": "Construction", "combat": "Combat",
     "vegetation": "Vegetation", "exterior": "Exterior props", "vehicles": "Vehicles",
     "regional": "Regional map", "characters": "Characters",
+    "construction": "Construction", "decorations": "Exterior and street props",
+    "map": "Regional map",
 }
-BATCH_TITLES = {"catalog_A": "Batch A - Household essentials",
-                "catalog_B": "Batch B - Building and survival",
-                "catalog_C": "Batch C - Combat and medical",
-                "catalog_D": "Batch D - Outdoor world",
+BATCH_TITLES = {"catalog_A": "Batch A - Household",
+                "catalog_B": "Batch B - Survival and construction",
+                "catalog_C": "Batch C - Combat and consumables",
+                "catalog_D": "Batch D - Outdoors and vehicles",
                 "catalog_E": "Batch E - Regional map",
                 "catalog_F": "Batch F - Characters and enemies"}
 
@@ -353,6 +356,13 @@ def main():
         ms = sorted([m for m in metas if m.get("batch") == f"Claude_{b}"], key=sort_key)
         gamecam([m["base_id"] for m in ms], f"Claude_{b} at the game camera",
                 ROOT / "previews" / "batches" / f"Claude_{b}_gamecam.png")
+    elif cmd == "ids":      # sheets.py ids <out_dir> <stem> id1 id2 ...   (agent QA sheets)
+        outdir, stem, ids = Path(a[1]), a[2], set(a[3:])
+        ms = [m for m in metas if m["base_id"] in ids]
+        outdir.mkdir(parents=True, exist_ok=True)
+        sheet_for(ms, stem, f"{stem} · QA sheet", outdir)
+        gamecam([m["base_id"] for m in sorted(ms, key=sort_key)], f"{stem} at the game camera",
+                outdir / f"{stem}_gamecam.png")
     elif cmd == "overview":
         overview(ROOT / "previews" / "batches" / "Claude_catalog_overview.png")
     else:

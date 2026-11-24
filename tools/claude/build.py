@@ -32,7 +32,8 @@ CREATOR = "Claude"
 PILOT = {"workbench_worn", "rain_collector_basic", "wood_stove_compact",
          "single_bed_unmade", "pine_dead_small"}
 CATEGORIES = {"furniture", "household", "consumables", "medical", "survival", "architecture",
-              "combat", "vegetation", "exterior", "vehicles", "regional", "characters"}
+              "combat", "vegetation", "exterior", "vehicles", "regional", "characters",
+              "construction", "decorations", "map"}  # last three: GPT's names, for aligned folders
 TIERS = {"micro": 0.0125, "fine": 0.025, "detail": 0.05, "standard": 0.1, "coarse": 0.2,
          "map": 0.5}
 CONDITIONS = {"new", "lightly_used", "used", "worn", "damaged", "improvised", "abandoned",
@@ -46,12 +47,23 @@ def rel(p: Path) -> str:
 
 
 def all_generators() -> list[str]:
-    return sorted(p.stem for p in (HERE / "models").glob("*.py")
-                  if not p.stem.startswith("_") and p.stem != "__init__")
+    import catalog_registry
+    single = {p.stem for p in (HERE / "models").glob("*.py")
+              if not p.stem.startswith("_") and p.stem != "__init__"}
+    return sorted(single | set(catalog_registry.discover()))
 
 
 def load(base_id: str):
-    return importlib.import_module(f"models.{base_id}")
+    if (HERE / "models" / f"{base_id}.py").exists():
+        return importlib.import_module(f"models.{base_id}")
+    import catalog_registry
+    reg = catalog_registry.discover()
+    if base_id not in reg:
+        errs = "\n".join(f"{k}: {v.splitlines()[-1]}" for k, v in
+                         catalog_registry.IMPORT_ERRORS.items())
+        raise SystemExit(f"no generator for {base_id}" + (f"\nbroken family files:\n{errs}"
+                                                         if errs else ""))
+    return reg[base_id]
 
 
 def build_one(base_id: str, allow_pilot: bool = False) -> dict:
@@ -177,6 +189,11 @@ def build_one(base_id: str, allow_pilot: bool = False) -> dict:
     }
     if footprint:
         record["footprint_m"] = footprint
+    if getattr(mod, "COMPARE_BASE_ID", None):
+        record["compare_base_id"] = mod.COMPARE_BASE_ID
+    if getattr(mod, "FAMILY_FILE", None):
+        record["generator"] = rel(HERE / "models" / "catalog" /
+                                  (mod.FAMILY_FILE.split(".")[-1] + ".py"))
     for opt in ("mount", "allowed_components", "components_reason", "variant_of", "pairs_with"):
         if opt in meta:
             record[opt] = meta[opt]
