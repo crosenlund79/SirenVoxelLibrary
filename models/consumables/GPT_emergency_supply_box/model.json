@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_emergency_supply_box",
+  "base_id": "emergency_supply_box",
+  "creator": "GPT",
+  "name": "Emergency Supply Box",
+  "category": "consumables",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_emergency_supply_box.vox",
+  "voxel_size_m": 0.01,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    28.5,
+    18.0,
+    0
+  ],
+  "dimensions_m": [
+    0.57,
+    0.36,
+    0.38
+  ],
+  "occupied_voxels": 61594,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_destroyed_barricade",
+  "base_id": "destroyed_barricade",
+  "creator": "GPT",
+  "name": "Destroyed Barricade",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_destroyed_barricade.vox",
+  "voxel_size_m": 0.1,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    5.0,
+    1.5,
+    0
+  ],
+  "dimensions_m": [
+    1.0,
+    0.3,
+    1.4
+  ],
+  "occupied_voxels": 224,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

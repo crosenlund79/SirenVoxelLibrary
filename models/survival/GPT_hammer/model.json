@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_hammer",
+  "base_id": "hammer",
+  "creator": "GPT",
+  "name": "Hammer",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_hammer.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    1.5,
+    4.0,
+    0
+  ],
+  "dimensions_m": [
+    0.15,
+    0.4,
+    0.15
+  ],
+  "occupied_voxels": 9,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

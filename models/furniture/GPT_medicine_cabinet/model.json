@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_medicine_cabinet",
+  "base_id": "medicine_cabinet",
+  "creator": "GPT",
+  "name": "Medicine Cabinet",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_medicine_cabinet.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    6.5,
+    2.5,
+    0
+  ],
+  "dimensions_m": [
+    0.65,
+    0.25,
+    0.75
+  ],
+  "occupied_voxels": 825,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

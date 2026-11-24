@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_bandage_roll",
+  "base_id": "bandage_roll",
+  "creator": "GPT",
+  "name": "Bandage Roll",
+  "category": "consumables",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_bandage_roll.vox",
+  "voxel_size_m": 0.01,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    6.5,
+    6.5,
+    0
+  ],
+  "dimensions_m": [
+    0.13,
+    0.13,
+    0.11
+  ],
+  "occupied_voxels": 845,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

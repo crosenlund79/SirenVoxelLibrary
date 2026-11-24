@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_battery_lantern",
+  "base_id": "battery_lantern",
+  "creator": "GPT",
+  "name": "Battery Lantern",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_battery_lantern.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    2.5,
+    2.5,
+    0
+  ],
+  "dimensions_m": [
+    0.25,
+    0.25,
+    0.35
+  ],
+  "occupied_voxels": 60,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

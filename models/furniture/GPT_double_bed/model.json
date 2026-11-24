@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_double_bed",
+  "base_id": "double_bed",
+  "creator": "GPT",
+  "name": "Double Bed",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_double_bed.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    17.5,
+    21.0,
+    0
+  ],
+  "dimensions_m": [
+    1.75,
+    2.1,
+    0.9
+  ],
+  "occupied_voxels": 12610,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

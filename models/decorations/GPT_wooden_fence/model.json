@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_wooden_fence",
+  "base_id": "wooden_fence",
+  "creator": "GPT",
+  "name": "Wooden Fence",
+  "category": "decorations",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_wooden_fence.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    19.0,
+    2.0,
+    0
+  ],
+  "dimensions_m": [
+    1.9,
+    0.2,
+    1.5
+  ],
+  "occupied_voxels": 300,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

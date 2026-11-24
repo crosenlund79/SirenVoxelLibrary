@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_pharmacy",
+  "base_id": "pharmacy",
+  "creator": "GPT",
+  "name": "Pharmacy",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_pharmacy.vox",
+  "voxel_size_m": 0.5,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    8.0,
+    9.0,
+    0
+  ],
+  "dimensions_m": [
+    8.0,
+    9.0,
+    5.0
+  ],
+  "occupied_voxels": 1854,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

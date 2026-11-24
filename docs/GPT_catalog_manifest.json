@@ -1,0 +1,2340 @@
+{
+  "schema_version": 1,
+  "creator": "GPT",
+  "scope": "Complete first-pass catalog",
+  "items": [
+    {
+      "id": "GPT_sofa",
+      "base_id": "sofa",
+      "name": "Sofa",
+      "category": "furniture",
+      "kind": "sofa",
+      "dimensions": [
+        2.4,
+        0.95,
+        0.88
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_armchair",
+      "base_id": "armchair",
+      "name": "Armchair",
+      "category": "furniture",
+      "kind": "sofa",
+      "dimensions": [
+        0.92,
+        0.92,
+        0.92
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_coffee_table",
+      "base_id": "coffee_table",
+      "name": "Coffee Table",
+      "category": "furniture",
+      "kind": "table",
+      "dimensions": [
+        1.15,
+        0.62,
+        0.46
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_television",
+      "base_id": "television",
+      "name": "Television",
+      "category": "furniture",
+      "kind": "screen",
+      "dimensions": [
+        1.08,
+        0.15,
+        0.68
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_tv_cabinet",
+      "base_id": "tv_cabinet",
+      "name": "Tv Cabinet",
+      "category": "furniture",
+      "kind": "cabinet",
+      "dimensions": [
+        1.7,
+        0.45,
+        0.62
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_bookshelf",
+      "base_id": "bookshelf",
+      "name": "Bookshelf",
+      "category": "furniture",
+      "kind": "shelf",
+      "dimensions": [
+        1.25,
+        0.4,
+        1.85
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_side_table",
+      "base_id": "side_table",
+      "name": "Side Table",
+      "category": "furniture",
+      "kind": "table",
+      "dimensions": [
+        0.56,
+        0.52,
+        0.54
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_floor_lamp",
+      "base_id": "floor_lamp",
+      "name": "Floor Lamp",
+      "category": "furniture",
+      "kind": "lamp",
+      "dimensions": [
+        0.4,
+        0.4,
+        1.67
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_small_storage_cabinet",
+      "base_id": "small_storage_cabinet",
+      "name": "Small Storage Cabinet",
+      "category": "furniture",
+      "kind": "cabinet",
+      "dimensions": [
+        0.95,
+        0.46,
+        1.1
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_rug",
+      "base_id": "rug",
+      "name": "Rug",
+      "category": "furniture",
+      "kind": "rug",
+      "dimensions": [
+        2.4,
+        1.75,
+        0.06
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_stool",
+      "base_id": "stool",
+      "name": "Stool",
+      "category": "furniture",
+      "kind": "stool",
+      "dimensions": [
+        0.43,
+        0.43,
+        0.7
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_sideboard",
+      "base_id": "sideboard",
+      "name": "Sideboard",
+      "category": "furniture",
+      "kind": "cabinet",
+      "dimensions": [
+        1.75,
+        0.49,
+        0.87
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_small_shelf",
+      "base_id": "small_shelf",
+      "name": "Small Shelf",
+      "category": "furniture",
+      "kind": "shelf",
+      "dimensions": [
+        0.83,
+        0.34,
+        1.23
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_single_bed",
+      "base_id": "single_bed",
+      "name": "Single Bed",
+      "category": "furniture",
+      "kind": "bed",
+      "dimensions": [
+        1.05,
+        2.06,
+        0.82
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_double_bed",
+      "base_id": "double_bed",
+      "name": "Double Bed",
+      "category": "furniture",
+      "kind": "bed",
+      "dimensions": [
+        1.74,
+        2.08,
+        0.88
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_nightstand",
+      "base_id": "nightstand",
+      "name": "Nightstand",
+      "category": "furniture",
+      "kind": "cabinet",
+      "dimensions": [
+        0.48,
+        0.44,
+        0.55
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_wardrobe",
+      "base_id": "wardrobe",
+      "name": "Wardrobe",
+      "category": "furniture",
+      "kind": "cabinet",
+      "dimensions": [
+        1.55,
+        0.6,
+        2.05
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_dresser",
+      "base_id": "dresser",
+      "name": "Dresser",
+      "category": "furniture",
+      "kind": "cabinet",
+      "dimensions": [
+        1.25,
+        0.48,
+        0.88
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_small_desk",
+      "base_id": "small_desk",
+      "name": "Small Desk",
+      "category": "furniture",
+      "kind": "table",
+      "dimensions": [
+        1.25,
+        0.62,
+        0.74
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_desk_chair",
+      "base_id": "desk_chair",
+      "name": "Desk Chair",
+      "category": "furniture",
+      "kind": "chair",
+      "dimensions": [
+        0.54,
+        0.52,
+        0.94
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_refrigerator",
+      "base_id": "refrigerator",
+      "name": "Refrigerator",
+      "category": "furniture",
+      "kind": "appliance",
+      "dimensions": [
+        0.73,
+        0.7,
+        1.78
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_kitchen_oven",
+      "base_id": "kitchen_oven",
+      "name": "Kitchen Oven",
+      "category": "furniture",
+      "kind": "appliance",
+      "dimensions": [
+        0.68,
+        0.62,
+        0.9
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_kitchen_counter",
+      "base_id": "kitchen_counter",
+      "name": "Kitchen Counter",
+      "category": "furniture",
+      "kind": "cabinet",
+      "dimensions": [
+        1.26,
+        0.62,
+        0.92
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_kitchen_sink",
+      "base_id": "kitchen_sink",
+      "name": "Kitchen Sink",
+      "category": "furniture",
+      "kind": "sink",
+      "dimensions": [
+        1.0,
+        0.6,
+        0.95
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_wall_cabinet",
+      "base_id": "wall_cabinet",
+      "name": "Wall Cabinet",
+      "category": "furniture",
+      "kind": "cabinet",
+      "dimensions": [
+        1.06,
+        0.36,
+        0.76
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_pantry_shelf",
+      "base_id": "pantry_shelf",
+      "name": "Pantry Shelf",
+      "category": "furniture",
+      "kind": "shelf",
+      "dimensions": [
+        1.15,
+        0.48,
+        1.8
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_dining_crockery",
+      "base_id": "dining_crockery",
+      "name": "Dining Crockery",
+      "category": "furniture",
+      "kind": "dish",
+      "dimensions": [
+        0.52,
+        0.32,
+        0.13
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_frying_pan",
+      "base_id": "frying_pan",
+      "name": "Frying Pan",
+      "category": "furniture",
+      "kind": "pan",
+      "dimensions": [
+        0.57,
+        0.28,
+        0.1
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_kettle",
+      "base_id": "kettle",
+      "name": "Kettle",
+      "category": "furniture",
+      "kind": "pot",
+      "dimensions": [
+        0.26,
+        0.24,
+        0.28
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_cutting_board",
+      "base_id": "cutting_board",
+      "name": "Cutting Board",
+      "category": "furniture",
+      "kind": "board",
+      "dimensions": [
+        0.43,
+        0.29,
+        0.045
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_toilet",
+      "base_id": "toilet",
+      "name": "Toilet",
+      "category": "furniture",
+      "kind": "toilet",
+      "dimensions": [
+        0.58,
+        0.69,
+        0.78
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_bathtub",
+      "base_id": "bathtub",
+      "name": "Bathtub",
+      "category": "furniture",
+      "kind": "bath",
+      "dimensions": [
+        1.75,
+        0.75,
+        0.58
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_bathroom_sink",
+      "base_id": "bathroom_sink",
+      "name": "Bathroom Sink",
+      "category": "furniture",
+      "kind": "sink",
+      "dimensions": [
+        0.62,
+        0.52,
+        0.83
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_medicine_cabinet",
+      "base_id": "medicine_cabinet",
+      "name": "Medicine Cabinet",
+      "category": "furniture",
+      "kind": "cabinet",
+      "dimensions": [
+        0.65,
+        0.22,
+        0.74
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_washing_machine",
+      "base_id": "washing_machine",
+      "name": "Washing Machine",
+      "category": "furniture",
+      "kind": "appliance",
+      "dimensions": [
+        0.64,
+        0.64,
+        0.86
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_clothes_dryer",
+      "base_id": "clothes_dryer",
+      "name": "Clothes Dryer",
+      "category": "furniture",
+      "kind": "appliance",
+      "dimensions": [
+        0.64,
+        0.64,
+        0.85
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_water_heater",
+      "base_id": "water_heater",
+      "name": "Water Heater",
+      "category": "furniture",
+      "kind": "tank",
+      "dimensions": [
+        0.61,
+        0.61,
+        1.6
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_laundry_basket",
+      "base_id": "laundry_basket",
+      "name": "Laundry Basket",
+      "category": "furniture",
+      "kind": "crate",
+      "dimensions": [
+        0.57,
+        0.43,
+        0.49
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_workbench",
+      "base_id": "workbench",
+      "name": "Workbench",
+      "category": "survival",
+      "kind": "table",
+      "dimensions": [
+        1.72,
+        0.76,
+        0.9
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_wooden_storage_crate",
+      "base_id": "wooden_storage_crate",
+      "name": "Wooden Storage Crate",
+      "category": "survival",
+      "kind": "crate",
+      "dimensions": [
+        0.9,
+        0.62,
+        0.62
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_metal_storage_cabinet",
+      "base_id": "metal_storage_cabinet",
+      "name": "Metal Storage Cabinet",
+      "category": "survival",
+      "kind": "cabinet",
+      "dimensions": [
+        0.84,
+        0.48,
+        1.83
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_tool_chest",
+      "base_id": "tool_chest",
+      "name": "Tool Chest",
+      "category": "survival",
+      "kind": "crate",
+      "dimensions": [
+        0.86,
+        0.44,
+        0.47
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_toolbox",
+      "base_id": "toolbox",
+      "name": "Toolbox",
+      "category": "survival",
+      "kind": "crate",
+      "dimensions": [
+        0.48,
+        0.22,
+        0.22
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_hammer",
+      "base_id": "hammer",
+      "name": "Hammer",
+      "category": "survival",
+      "kind": "tool",
+      "dimensions": [
+        0.15,
+        0.4,
+        0.08
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_crowbar",
+      "base_id": "crowbar",
+      "name": "Crowbar",
+      "category": "survival",
+      "kind": "tool",
+      "dimensions": [
+        0.1,
+        0.7,
+        0.09
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_hatchet",
+      "base_id": "hatchet",
+      "name": "Hatchet",
+      "category": "survival",
+      "kind": "tool",
+      "dimensions": [
+        0.2,
+        0.45,
+        0.11
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_shovel",
+      "base_id": "shovel",
+      "name": "Shovel",
+      "category": "survival",
+      "kind": "tool",
+      "dimensions": [
+        0.21,
+        1.12,
+        0.1
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_pickaxe",
+      "base_id": "pickaxe",
+      "name": "Pickaxe",
+      "category": "survival",
+      "kind": "tool",
+      "dimensions": [
+        0.48,
+        0.87,
+        0.12
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_saw",
+      "base_id": "saw",
+      "name": "Saw",
+      "category": "survival",
+      "kind": "tool",
+      "dimensions": [
+        0.13,
+        0.68,
+        0.09
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_flashlight",
+      "base_id": "flashlight",
+      "name": "Flashlight",
+      "category": "survival",
+      "kind": "flashlight",
+      "dimensions": [
+        0.1,
+        0.31,
+        0.1
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_battery_lantern",
+      "base_id": "battery_lantern",
+      "name": "Battery Lantern",
+      "category": "survival",
+      "kind": "lantern",
+      "dimensions": [
+        0.23,
+        0.23,
+        0.35
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_candle",
+      "base_id": "candle",
+      "name": "Candle",
+      "category": "survival",
+      "kind": "candle",
+      "dimensions": [
+        0.17,
+        0.16,
+        0.19
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_camping_stove",
+      "base_id": "camping_stove",
+      "name": "Camping Stove",
+      "category": "survival",
+      "kind": "stove",
+      "dimensions": [
+        0.38,
+        0.3,
+        0.24
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_wood_stove",
+      "base_id": "wood_stove",
+      "name": "Wood Stove",
+      "category": "survival",
+      "kind": "stove",
+      "dimensions": [
+        0.77,
+        0.64,
+        1.1
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_improvised_forge",
+      "base_id": "improvised_forge",
+      "name": "Improvised Forge",
+      "category": "survival",
+      "kind": "stove",
+      "dimensions": [
+        1.08,
+        0.69,
+        1.12
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_rainwater_collector",
+      "base_id": "rainwater_collector",
+      "name": "Rainwater Collector",
+      "category": "survival",
+      "kind": "collector",
+      "dimensions": [
+        1.0,
+        0.94,
+        1.58
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_water_barrel",
+      "base_id": "water_barrel",
+      "name": "Water Barrel",
+      "category": "survival",
+      "kind": "tank",
+      "dimensions": [
+        0.65,
+        0.65,
+        0.92
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_jerry_can",
+      "base_id": "jerry_can",
+      "name": "Jerry Can",
+      "category": "survival",
+      "kind": "can",
+      "dimensions": [
+        0.34,
+        0.19,
+        0.46
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_water_bottle",
+      "base_id": "water_bottle",
+      "name": "Water Bottle",
+      "category": "survival",
+      "kind": "bottle",
+      "dimensions": [
+        0.1,
+        0.1,
+        0.27
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_backpack",
+      "base_id": "backpack",
+      "name": "Backpack",
+      "category": "survival",
+      "kind": "bag",
+      "dimensions": [
+        0.4,
+        0.23,
+        0.54
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_basic_generator",
+      "base_id": "basic_generator",
+      "name": "Basic Generator",
+      "category": "survival",
+      "kind": "generator",
+      "dimensions": [
+        0.78,
+        0.54,
+        0.63
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_fuel_container",
+      "base_id": "fuel_container",
+      "name": "Fuel Container",
+      "category": "survival",
+      "kind": "can",
+      "dimensions": [
+        0.32,
+        0.21,
+        0.44
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_portable_battery",
+      "base_id": "portable_battery",
+      "name": "Portable Battery",
+      "category": "survival",
+      "kind": "crate",
+      "dimensions": [
+        0.32,
+        0.19,
+        0.23
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_first_aid_box",
+      "base_id": "first_aid_box",
+      "name": "First Aid Box",
+      "category": "survival",
+      "kind": "crate",
+      "dimensions": [
+        0.38,
+        0.24,
+        0.22
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_wooden_wall_section",
+      "base_id": "wooden_wall_section",
+      "name": "Wooden Wall Section",
+      "category": "construction",
+      "kind": "wall",
+      "dimensions": [
+        1.0,
+        0.2,
+        2.55
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_wooden_floor_section",
+      "base_id": "wooden_floor_section",
+      "name": "Wooden Floor Section",
+      "category": "construction",
+      "kind": "panel",
+      "dimensions": [
+        1.0,
+        1.0,
+        0.15
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_wooden_foundation_support",
+      "base_id": "wooden_foundation_support",
+      "name": "Wooden Foundation Support",
+      "category": "construction",
+      "kind": "beam",
+      "dimensions": [
+        0.24,
+        0.24,
+        1.2
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_wooden_post",
+      "base_id": "wooden_post",
+      "name": "Wooden Post",
+      "category": "construction",
+      "kind": "beam",
+      "dimensions": [
+        0.17,
+        0.17,
+        2.48
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_wooden_beam",
+      "base_id": "wooden_beam",
+      "name": "Wooden Beam",
+      "category": "construction",
+      "kind": "beam",
+      "dimensions": [
+        1.0,
+        0.18,
+        0.18
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_wooden_door",
+      "base_id": "wooden_door",
+      "name": "Wooden Door",
+      "category": "construction",
+      "kind": "door",
+      "dimensions": [
+        1.0,
+        0.18,
+        2.13
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_window_frame",
+      "base_id": "window_frame",
+      "name": "Window Frame",
+      "category": "construction",
+      "kind": "frame",
+      "dimensions": [
+        1.0,
+        0.18,
+        1.18
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_wooden_barricade",
+      "base_id": "wooden_barricade",
+      "name": "Wooden Barricade",
+      "category": "construction",
+      "kind": "barricade",
+      "dimensions": [
+        1.0,
+        0.23,
+        1.98
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_reinforced_wooden_barricade",
+      "base_id": "reinforced_wooden_barricade",
+      "name": "Reinforced Wooden Barricade",
+      "category": "construction",
+      "kind": "barricade",
+      "dimensions": [
+        1.0,
+        0.25,
+        2.03
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_wooden_stairs",
+      "base_id": "wooden_stairs",
+      "name": "Wooden Stairs",
+      "category": "construction",
+      "kind": "stairs",
+      "dimensions": [
+        1.06,
+        1.72,
+        1.12
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_stone_wall_section",
+      "base_id": "stone_wall_section",
+      "name": "Stone Wall Section",
+      "category": "construction",
+      "kind": "wall",
+      "dimensions": [
+        1.0,
+        0.28,
+        2.4
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_stone_foundation",
+      "base_id": "stone_foundation",
+      "name": "Stone Foundation",
+      "category": "construction",
+      "kind": "panel",
+      "dimensions": [
+        1.0,
+        1.0,
+        0.27
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_brick_wall_section",
+      "base_id": "brick_wall_section",
+      "name": "Brick Wall Section",
+      "category": "construction",
+      "kind": "wall",
+      "dimensions": [
+        1.0,
+        0.24,
+        2.42
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_concrete_foundation",
+      "base_id": "concrete_foundation",
+      "name": "Concrete Foundation",
+      "category": "construction",
+      "kind": "panel",
+      "dimensions": [
+        1.0,
+        1.0,
+        0.3
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_concrete_wall_section",
+      "base_id": "concrete_wall_section",
+      "name": "Concrete Wall Section",
+      "category": "construction",
+      "kind": "wall",
+      "dimensions": [
+        1.0,
+        0.27,
+        2.5
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_metal_reinforced_wall",
+      "base_id": "metal_reinforced_wall",
+      "name": "Metal Reinforced Wall",
+      "category": "construction",
+      "kind": "wall",
+      "dimensions": [
+        1.0,
+        0.27,
+        2.44
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_metal_door",
+      "base_id": "metal_door",
+      "name": "Metal Door",
+      "category": "construction",
+      "kind": "door",
+      "dimensions": [
+        1.0,
+        0.17,
+        2.13
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_metal_support_beam",
+      "base_id": "metal_support_beam",
+      "name": "Metal Support Beam",
+      "category": "construction",
+      "kind": "beam",
+      "dimensions": [
+        0.23,
+        0.23,
+        2.46
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_steel_reinforcement_panel",
+      "base_id": "steel_reinforcement_panel",
+      "name": "Steel Reinforcement Panel",
+      "category": "construction",
+      "kind": "panel",
+      "dimensions": [
+        1.0,
+        0.08,
+        2.28
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_metal_fence_gate",
+      "base_id": "metal_fence_gate",
+      "name": "Metal Fence Gate",
+      "category": "construction",
+      "kind": "fence",
+      "dimensions": [
+        1.13,
+        0.14,
+        2.0
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_damaged_wooden_wall",
+      "base_id": "damaged_wooden_wall",
+      "name": "Damaged Wooden Wall",
+      "category": "construction",
+      "kind": "wall",
+      "dimensions": [
+        1.0,
+        0.21,
+        2.44
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_broken_brick_wall",
+      "base_id": "broken_brick_wall",
+      "name": "Broken Brick Wall",
+      "category": "construction",
+      "kind": "wall",
+      "dimensions": [
+        1.0,
+        0.28,
+        2.26
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_destroyed_barricade",
+      "base_id": "destroyed_barricade",
+      "name": "Destroyed Barricade",
+      "category": "construction",
+      "kind": "barricade",
+      "dimensions": [
+        1.0,
+        0.26,
+        1.35
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_revolver",
+      "base_id": "revolver",
+      "name": "Revolver",
+      "category": "combat",
+      "kind": "pistol",
+      "dimensions": [
+        0.19,
+        0.08,
+        0.16
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_shotgun",
+      "base_id": "shotgun",
+      "name": "Shotgun",
+      "category": "combat",
+      "kind": "longgun",
+      "dimensions": [
+        0.12,
+        1.0,
+        0.23
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_hunting_rifle",
+      "base_id": "hunting_rifle",
+      "name": "Hunting Rifle",
+      "category": "combat",
+      "kind": "longgun",
+      "dimensions": [
+        0.11,
+        1.08,
+        0.24
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_compact_smg",
+      "base_id": "compact_smg",
+      "name": "Compact Smg",
+      "category": "combat",
+      "kind": "longgun",
+      "dimensions": [
+        0.12,
+        0.6,
+        0.22
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_baseball_bat",
+      "base_id": "baseball_bat",
+      "name": "Baseball Bat",
+      "category": "combat",
+      "kind": "tool",
+      "dimensions": [
+        0.08,
+        0.78,
+        0.08
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_ammunition_box",
+      "base_id": "ammunition_box",
+      "name": "Ammunition Box",
+      "category": "combat",
+      "kind": "crate",
+      "dimensions": [
+        0.25,
+        0.16,
+        0.11
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_shotgun_shell_box",
+      "base_id": "shotgun_shell_box",
+      "name": "Shotgun Shell Box",
+      "category": "combat",
+      "kind": "crate",
+      "dimensions": [
+        0.21,
+        0.13,
+        0.14
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_loose_ammo_pickup",
+      "base_id": "loose_ammo_pickup",
+      "name": "Loose Ammo Pickup",
+      "category": "combat",
+      "kind": "ammo",
+      "dimensions": [
+        0.23,
+        0.16,
+        0.1
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_protective_vest",
+      "base_id": "protective_vest",
+      "name": "Protective Vest",
+      "category": "combat",
+      "kind": "vest",
+      "dimensions": [
+        0.52,
+        0.25,
+        0.63
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_helmet",
+      "base_id": "helmet",
+      "name": "Helmet",
+      "category": "combat",
+      "kind": "helmet",
+      "dimensions": [
+        0.28,
+        0.32,
+        0.25
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_canned_food",
+      "base_id": "canned_food",
+      "name": "Canned Food",
+      "category": "consumables",
+      "kind": "can",
+      "dimensions": [
+        0.1,
+        0.1,
+        0.13
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_soup_can",
+      "base_id": "soup_can",
+      "name": "Soup Can",
+      "category": "consumables",
+      "kind": "can",
+      "dimensions": [
+        0.09,
+        0.09,
+        0.13
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_food_box",
+      "base_id": "food_box",
+      "name": "Food Box",
+      "category": "consumables",
+      "kind": "crate",
+      "dimensions": [
+        0.27,
+        0.16,
+        0.29
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_snack_package",
+      "base_id": "snack_package",
+      "name": "Snack Package",
+      "category": "consumables",
+      "kind": "crate",
+      "dimensions": [
+        0.15,
+        0.08,
+        0.21
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_large_water_container",
+      "base_id": "large_water_container",
+      "name": "Large Water Container",
+      "category": "consumables",
+      "kind": "bottle",
+      "dimensions": [
+        0.27,
+        0.25,
+        0.43
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_food_storage_crate",
+      "base_id": "food_storage_crate",
+      "name": "Food Storage Crate",
+      "category": "consumables",
+      "kind": "crate",
+      "dimensions": [
+        0.45,
+        0.33,
+        0.26
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_small_cooler",
+      "base_id": "small_cooler",
+      "name": "Small Cooler",
+      "category": "consumables",
+      "kind": "crate",
+      "dimensions": [
+        0.45,
+        0.32,
+        0.31
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_bandage_roll",
+      "base_id": "bandage_roll",
+      "name": "Bandage Roll",
+      "category": "consumables",
+      "kind": "bandage",
+      "dimensions": [
+        0.13,
+        0.13,
+        0.11
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_first_aid_kit",
+      "base_id": "first_aid_kit",
+      "name": "First Aid Kit",
+      "category": "consumables",
+      "kind": "crate",
+      "dimensions": [
+        0.38,
+        0.14,
+        0.26
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_medicine_bottle",
+      "base_id": "medicine_bottle",
+      "name": "Medicine Bottle",
+      "category": "consumables",
+      "kind": "bottle",
+      "dimensions": [
+        0.11,
+        0.1,
+        0.2
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_tablet_packet",
+      "base_id": "tablet_packet",
+      "name": "Tablet Packet",
+      "category": "consumables",
+      "kind": "crate",
+      "dimensions": [
+        0.14,
+        0.06,
+        0.1
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_medical_bag",
+      "base_id": "medical_bag",
+      "name": "Medical Bag",
+      "category": "consumables",
+      "kind": "bag",
+      "dimensions": [
+        0.41,
+        0.22,
+        0.31
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_emergency_supply_box",
+      "base_id": "emergency_supply_box",
+      "name": "Emergency Supply Box",
+      "category": "consumables",
+      "kind": "crate",
+      "dimensions": [
+        0.56,
+        0.36,
+        0.38
+      ],
+      "voxel_size_m": 0.01
+    },
+    {
+      "id": "GPT_healthy_pine",
+      "base_id": "healthy_pine",
+      "name": "Healthy Pine",
+      "category": "vegetation",
+      "kind": "pine",
+      "dimensions": [
+        2.7,
+        2.7,
+        5.1
+      ],
+      "voxel_size_m": 0.2
+    },
+    {
+      "id": "GPT_dead_pine",
+      "base_id": "dead_pine",
+      "name": "Dead Pine",
+      "category": "vegetation",
+      "kind": "pine",
+      "dimensions": [
+        2.32,
+        2.4,
+        4.56
+      ],
+      "voxel_size_m": 0.2
+    },
+    {
+      "id": "GPT_leafless_deciduous",
+      "base_id": "leafless_deciduous",
+      "name": "Leafless Deciduous",
+      "category": "vegetation",
+      "kind": "tree",
+      "dimensions": [
+        3.3,
+        3.1,
+        4.7
+      ],
+      "voxel_size_m": 0.2
+    },
+    {
+      "id": "GPT_small_leafy_tree",
+      "base_id": "small_leafy_tree",
+      "name": "Small Leafy Tree",
+      "category": "vegetation",
+      "kind": "tree",
+      "dimensions": [
+        2.7,
+        2.6,
+        3.75
+      ],
+      "voxel_size_m": 0.2
+    },
+    {
+      "id": "GPT_bush",
+      "base_id": "bush",
+      "name": "Bush",
+      "category": "vegetation",
+      "kind": "shrub",
+      "dimensions": [
+        1.15,
+        0.98,
+        0.84
+      ],
+      "voxel_size_m": 0.2
+    },
+    {
+      "id": "GPT_dead_shrub",
+      "base_id": "dead_shrub",
+      "name": "Dead Shrub",
+      "category": "vegetation",
+      "kind": "shrub",
+      "dimensions": [
+        1.08,
+        0.91,
+        0.84
+      ],
+      "voxel_size_m": 0.2
+    },
+    {
+      "id": "GPT_grass_clump",
+      "base_id": "grass_clump",
+      "name": "Grass Clump",
+      "category": "vegetation",
+      "kind": "grass",
+      "dimensions": [
+        0.65,
+        0.48,
+        0.43
+      ],
+      "voxel_size_m": 0.2
+    },
+    {
+      "id": "GPT_fallen_log",
+      "base_id": "fallen_log",
+      "name": "Fallen Log",
+      "category": "vegetation",
+      "kind": "log",
+      "dimensions": [
+        2.55,
+        0.52,
+        0.48
+      ],
+      "voxel_size_m": 0.2
+    },
+    {
+      "id": "GPT_tree_stump",
+      "base_id": "tree_stump",
+      "name": "Tree Stump",
+      "category": "vegetation",
+      "kind": "stump",
+      "dimensions": [
+        0.72,
+        0.74,
+        0.52
+      ],
+      "voxel_size_m": 0.2
+    },
+    {
+      "id": "GPT_rock",
+      "base_id": "rock",
+      "name": "Rock",
+      "category": "vegetation",
+      "kind": "rock",
+      "dimensions": [
+        0.72,
+        0.55,
+        0.44
+      ],
+      "voxel_size_m": 0.2
+    },
+    {
+      "id": "GPT_boulder",
+      "base_id": "boulder",
+      "name": "Boulder",
+      "category": "vegetation",
+      "kind": "rock",
+      "dimensions": [
+        1.87,
+        1.55,
+        1.27
+      ],
+      "voxel_size_m": 0.2
+    },
+    {
+      "id": "GPT_trash_bin",
+      "base_id": "trash_bin",
+      "name": "Trash Bin",
+      "category": "decorations",
+      "kind": "can",
+      "dimensions": [
+        0.59,
+        0.51,
+        0.91
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_mailbox",
+      "base_id": "mailbox",
+      "name": "Mailbox",
+      "category": "decorations",
+      "kind": "mailbox",
+      "dimensions": [
+        0.33,
+        0.49,
+        1.2
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_outdoor_bench",
+      "base_id": "outdoor_bench",
+      "name": "Outdoor Bench",
+      "category": "decorations",
+      "kind": "bench",
+      "dimensions": [
+        1.55,
+        0.62,
+        0.84
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_garden_table",
+      "base_id": "garden_table",
+      "name": "Garden Table",
+      "category": "decorations",
+      "kind": "table",
+      "dimensions": [
+        1.1,
+        0.68,
+        0.77
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_wooden_fence",
+      "base_id": "wooden_fence",
+      "name": "Wooden Fence",
+      "category": "decorations",
+      "kind": "fence",
+      "dimensions": [
+        1.9,
+        0.18,
+        1.48
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_metal_fence",
+      "base_id": "metal_fence",
+      "name": "Metal Fence",
+      "category": "decorations",
+      "kind": "fence",
+      "dimensions": [
+        1.91,
+        0.16,
+        1.62
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_streetlight",
+      "base_id": "streetlight",
+      "name": "Streetlight",
+      "category": "decorations",
+      "kind": "streetlight",
+      "dimensions": [
+        0.45,
+        0.35,
+        4.35
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_road_sign",
+      "base_id": "road_sign",
+      "name": "Road Sign",
+      "category": "decorations",
+      "kind": "sign",
+      "dimensions": [
+        0.51,
+        0.21,
+        2.4
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_traffic_cone",
+      "base_id": "traffic_cone",
+      "name": "Traffic Cone",
+      "category": "decorations",
+      "kind": "cone",
+      "dimensions": [
+        0.31,
+        0.31,
+        0.53
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_wooden_pallet",
+      "base_id": "wooden_pallet",
+      "name": "Wooden Pallet",
+      "category": "decorations",
+      "kind": "panel",
+      "dimensions": [
+        1.12,
+        0.8,
+        0.16
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_utility_pole",
+      "base_id": "utility_pole",
+      "name": "Utility Pole",
+      "category": "decorations",
+      "kind": "pole",
+      "dimensions": [
+        0.35,
+        0.35,
+        4.45
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_abandoned_bicycle",
+      "base_id": "abandoned_bicycle",
+      "name": "Abandoned Bicycle",
+      "category": "decorations",
+      "kind": "bike",
+      "dimensions": [
+        1.62,
+        0.47,
+        1.06
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_family_car",
+      "base_id": "family_car",
+      "name": "Family Car",
+      "category": "vehicles",
+      "kind": "vehicle",
+      "dimensions": [
+        1.91,
+        4.2,
+        1.42
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_pickup_truck",
+      "base_id": "pickup_truck",
+      "name": "Pickup Truck",
+      "category": "vehicles",
+      "kind": "vehicle",
+      "dimensions": [
+        2.0,
+        5.02,
+        1.73
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_police_car",
+      "base_id": "police_car",
+      "name": "Police Car",
+      "category": "vehicles",
+      "kind": "vehicle",
+      "dimensions": [
+        1.99,
+        4.67,
+        1.49
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_delivery_van",
+      "base_id": "delivery_van",
+      "name": "Delivery Van",
+      "category": "vehicles",
+      "kind": "vehicle",
+      "dimensions": [
+        2.1,
+        5.15,
+        2.51
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_utility_truck",
+      "base_id": "utility_truck",
+      "name": "Utility Truck",
+      "category": "vehicles",
+      "kind": "vehicle",
+      "dimensions": [
+        2.31,
+        5.6,
+        2.35
+      ],
+      "voxel_size_m": 0.1
+    },
+    {
+      "id": "GPT_small_family_house",
+      "base_id": "small_family_house",
+      "name": "Small Family House",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        8.0,
+        9.0,
+        6.5
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_large_suburban_house",
+      "base_id": "large_suburban_house",
+      "name": "Large Suburban House",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        11.0,
+        10.0,
+        7.5
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_apartment_block",
+      "base_id": "apartment_block",
+      "name": "Apartment Block",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        12.0,
+        9.0,
+        15.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_convenience_store",
+      "base_id": "convenience_store",
+      "name": "Convenience Store",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        8.0,
+        9.0,
+        5.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_supermarket",
+      "base_id": "supermarket",
+      "name": "Supermarket",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        17.0,
+        13.0,
+        6.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_diner",
+      "base_id": "diner",
+      "name": "Diner",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        11.0,
+        8.0,
+        5.5
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_restaurant",
+      "base_id": "restaurant",
+      "name": "Restaurant",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        9.0,
+        10.0,
+        6.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_fast_food",
+      "base_id": "fast_food",
+      "name": "Fast Food",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        9.0,
+        10.0,
+        5.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_hardware_store",
+      "base_id": "hardware_store",
+      "name": "Hardware Store",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        13.0,
+        11.0,
+        7.5
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_lumberyard",
+      "base_id": "lumberyard",
+      "name": "Lumberyard",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        15.0,
+        14.0,
+        6.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_industrial_warehouse",
+      "base_id": "industrial_warehouse",
+      "name": "Industrial Warehouse",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        18.0,
+        14.0,
+        10.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_scrapyard_building",
+      "base_id": "scrapyard_building",
+      "name": "Scrapyard Building",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        13.0,
+        10.0,
+        7.5
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_gun_shop",
+      "base_id": "gun_shop",
+      "name": "Gun Shop",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        8.0,
+        9.0,
+        5.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_shooting_range",
+      "base_id": "shooting_range",
+      "name": "Shooting Range",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        16.0,
+        11.0,
+        6.5
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_police_station",
+      "base_id": "police_station",
+      "name": "Police Station",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        16.0,
+        12.0,
+        9.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_clinic",
+      "base_id": "clinic",
+      "name": "Clinic",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        11.0,
+        11.0,
+        6.5
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_pharmacy",
+      "base_id": "pharmacy",
+      "name": "Pharmacy",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        8.0,
+        9.0,
+        5.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_veterinary_clinic",
+      "base_id": "veterinary_clinic",
+      "name": "Veterinary Clinic",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        10.0,
+        10.0,
+        6.5
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_hospital",
+      "base_id": "hospital",
+      "name": "Hospital",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        18.0,
+        16.0,
+        13.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_military_outpost",
+      "base_id": "military_outpost",
+      "name": "Military Outpost",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        14.0,
+        14.0,
+        8.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_guard_tower",
+      "base_id": "guard_tower",
+      "name": "Guard Tower",
+      "category": "map",
+      "kind": "tower",
+      "dimensions": [
+        4.0,
+        4.0,
+        10.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_quarry_structure",
+      "base_id": "quarry_structure",
+      "name": "Quarry Structure",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        15.0,
+        12.0,
+        7.5
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_gas_station",
+      "base_id": "gas_station",
+      "name": "Gas Station",
+      "category": "map",
+      "kind": "mapbuilding",
+      "dimensions": [
+        13.0,
+        12.0,
+        5.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_road_straight",
+      "base_id": "road_straight",
+      "name": "Road Straight",
+      "category": "map",
+      "kind": "road",
+      "dimensions": [
+        8.0,
+        16.0,
+        0.4
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_road_curve",
+      "base_id": "road_curve",
+      "name": "Road Curve",
+      "category": "map",
+      "kind": "road",
+      "dimensions": [
+        12.0,
+        12.0,
+        0.4
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_road_intersection",
+      "base_id": "road_intersection",
+      "name": "Road Intersection",
+      "category": "map",
+      "kind": "road",
+      "dimensions": [
+        12.0,
+        12.0,
+        0.4
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_bridge",
+      "base_id": "bridge",
+      "name": "Bridge",
+      "category": "map",
+      "kind": "bridge",
+      "dimensions": [
+        8.0,
+        19.0,
+        2.2
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_railway_crossing",
+      "base_id": "railway_crossing",
+      "name": "Railway Crossing",
+      "category": "map",
+      "kind": "road",
+      "dimensions": [
+        12.0,
+        12.0,
+        0.6
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_harbor_dock",
+      "base_id": "harbor_dock",
+      "name": "Harbor Dock",
+      "category": "map",
+      "kind": "dock",
+      "dimensions": [
+        10.0,
+        16.0,
+        1.5
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_pier",
+      "base_id": "pier",
+      "name": "Pier",
+      "category": "map",
+      "kind": "dock",
+      "dimensions": [
+        4.0,
+        15.0,
+        1.4
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_seawall",
+      "base_id": "seawall",
+      "name": "Seawall",
+      "category": "map",
+      "kind": "wall",
+      "dimensions": [
+        10.0,
+        1.2,
+        2.0
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_road_barrier",
+      "base_id": "road_barrier",
+      "name": "Road Barrier",
+      "category": "map",
+      "kind": "barricade",
+      "dimensions": [
+        4.0,
+        0.6,
+        0.9
+      ],
+      "voxel_size_m": 0.5
+    },
+    {
+      "id": "GPT_survivor",
+      "base_id": "survivor",
+      "name": "Survivor",
+      "category": "characters",
+      "kind": "human",
+      "dimensions": [
+        0.85,
+        0.36,
+        1.78
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_ordinary_psycho",
+      "base_id": "ordinary_psycho",
+      "name": "Ordinary Psycho",
+      "category": "characters",
+      "kind": "human",
+      "dimensions": [
+        0.85,
+        0.38,
+        1.82
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_runner",
+      "base_id": "runner",
+      "name": "Runner",
+      "category": "characters",
+      "kind": "human",
+      "dimensions": [
+        0.85,
+        0.37,
+        1.78
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_brute",
+      "base_id": "brute",
+      "name": "Brute",
+      "category": "characters",
+      "kind": "human",
+      "dimensions": [
+        1.12,
+        0.48,
+        2.1
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_suicide_bomber",
+      "base_id": "suicide_bomber",
+      "name": "Suicide Bomber",
+      "category": "characters",
+      "kind": "human",
+      "dimensions": [
+        0.94,
+        0.48,
+        1.88
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_dining_table",
+      "base_id": "dining_table",
+      "name": "Dining Table",
+      "category": "furniture",
+      "kind": "table",
+      "dimensions": [
+        1.4,
+        0.8,
+        0.75
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_dining_chair",
+      "base_id": "dining_chair",
+      "name": "Dining Chair",
+      "category": "furniture",
+      "kind": "chair",
+      "dimensions": [
+        0.5,
+        0.55,
+        0.9
+      ],
+      "voxel_size_m": 0.05
+    },
+    {
+      "id": "GPT_cooking_pot",
+      "base_id": "cooking_pot",
+      "name": "Cooking Pot",
+      "category": "survival",
+      "kind": "pot",
+      "dimensions": [
+        0.36,
+        0.3,
+        0.26
+      ],
+      "voxel_size_m": 0.02
+    },
+    {
+      "id": "GPT_handgun",
+      "base_id": "handgun",
+      "name": "Handgun",
+      "category": "survival",
+      "kind": "pistol",
+      "dimensions": [
+        0.06,
+        0.23,
+        0.17
+      ],
+      "voxel_size_m": 0.01
+    }
+  ],
+  "existing_gpt_models": [
+    "GPT_dining_table",
+    "GPT_dining_chair",
+    "GPT_cooking_pot",
+    "GPT_handgun"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_medicine_bottle",
+  "base_id": "medicine_bottle",
+  "creator": "GPT",
+  "name": "Medicine Bottle",
+  "category": "consumables",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_medicine_bottle.vox",
+  "voxel_size_m": 0.01,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    5.5,
+    5.0,
+    0
+  ],
+  "dimensions_m": [
+    0.11,
+    0.1,
+    0.2
+  ],
+  "occupied_voxels": 638,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

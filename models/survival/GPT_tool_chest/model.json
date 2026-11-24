@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_tool_chest",
+  "base_id": "tool_chest",
+  "creator": "GPT",
+  "name": "Tool Chest",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_tool_chest.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    9.0,
+    4.5,
+    0
+  ],
+  "dimensions_m": [
+    0.9,
+    0.45,
+    0.5
+  ],
+  "occupied_voxels": 1440,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

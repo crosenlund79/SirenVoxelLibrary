@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_first_aid_kit",
+  "base_id": "first_aid_kit",
+  "creator": "GPT",
+  "name": "First Aid Kit",
+  "category": "consumables",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_first_aid_kit.vox",
+  "voxel_size_m": 0.01,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    19.0,
+    7.5,
+    0
+  ],
+  "dimensions_m": [
+    0.38,
+    0.15,
+    0.26
+  ],
+  "occupied_voxels": 11470,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

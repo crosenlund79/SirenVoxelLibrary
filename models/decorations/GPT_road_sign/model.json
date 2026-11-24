@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_road_sign",
+  "base_id": "road_sign",
+  "creator": "GPT",
+  "name": "Road Sign",
+  "category": "decorations",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_road_sign.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    5.5,
+    2.5,
+    0
+  ],
+  "dimensions_m": [
+    0.55,
+    0.25,
+    2.4
+  ],
+  "occupied_voxels": 147,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

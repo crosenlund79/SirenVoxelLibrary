@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_dead_pine",
+  "base_id": "dead_pine",
+  "creator": "GPT",
+  "name": "Dead Pine",
+  "category": "vegetation",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_dead_pine.vox",
+  "voxel_size_m": 0.2,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    6.0,
+    6.0,
+    0
+  ],
+  "dimensions_m": [
+    2.4,
+    2.4,
+    4.6
+  ],
+  "occupied_voxels": 120,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

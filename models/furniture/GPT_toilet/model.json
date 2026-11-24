@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_toilet",
+  "base_id": "toilet",
+  "creator": "GPT",
+  "name": "Toilet",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_toilet.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    6.0,
+    7.0,
+    0
+  ],
+  "dimensions_m": [
+    0.6,
+    0.7,
+    0.8
+  ],
+  "occupied_voxels": 1800,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

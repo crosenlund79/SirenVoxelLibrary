@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_metal_storage_cabinet",
+  "base_id": "metal_storage_cabinet",
+  "creator": "GPT",
+  "name": "Metal Storage Cabinet",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_metal_storage_cabinet.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    8.5,
+    5.0,
+    0
+  ],
+  "dimensions_m": [
+    0.85,
+    0.5,
+    1.85
+  ],
+  "occupied_voxels": 5400,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

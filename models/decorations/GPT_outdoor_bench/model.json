@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_outdoor_bench",
+  "base_id": "outdoor_bench",
+  "creator": "GPT",
+  "name": "Outdoor Bench",
+  "category": "decorations",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_outdoor_bench.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    15.5,
+    6.5,
+    0
+  ],
+  "dimensions_m": [
+    1.55,
+    0.65,
+    0.85
+  ],
+  "occupied_voxels": 800,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

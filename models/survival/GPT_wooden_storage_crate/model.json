@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_wooden_storage_crate",
+  "base_id": "wooden_storage_crate",
+  "creator": "GPT",
+  "name": "Wooden Storage Crate",
+  "category": "survival",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_wooden_storage_crate.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    9.0,
+    6.5,
+    0
+  ],
+  "dimensions_m": [
+    0.9,
+    0.65,
+    0.65
+  ],
+  "occupied_voxels": 2412,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

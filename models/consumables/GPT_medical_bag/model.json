@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_medical_bag",
+  "base_id": "medical_bag",
+  "creator": "GPT",
+  "name": "Medical Bag",
+  "category": "consumables",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_medical_bag.vox",
+  "voxel_size_m": 0.01,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    20.5,
+    11.0,
+    0
+  ],
+  "dimensions_m": [
+    0.41,
+    0.22,
+    0.31
+  ],
+  "occupied_voxels": 11422,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

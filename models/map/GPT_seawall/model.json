@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_seawall",
+  "base_id": "seawall",
+  "creator": "GPT",
+  "name": "Seawall",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_seawall.vox",
+  "voxel_size_m": 0.5,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    10.0,
+    1.5,
+    0
+  ],
+  "dimensions_m": [
+    10.0,
+    1.5,
+    2.0
+  ],
+  "occupied_voxels": 240,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

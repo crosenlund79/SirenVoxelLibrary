@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_industrial_warehouse",
+  "base_id": "industrial_warehouse",
+  "creator": "GPT",
+  "name": "Industrial Warehouse",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_industrial_warehouse.vox",
+  "voxel_size_m": 0.5,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    18.0,
+    14.0,
+    0
+  ],
+  "dimensions_m": [
+    18.0,
+    14.0,
+    10.0
+  ],
+  "occupied_voxels": 14362,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

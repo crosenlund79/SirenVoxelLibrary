@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_road_barrier",
+  "base_id": "road_barrier",
+  "creator": "GPT",
+  "name": "Road Barrier",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_road_barrier.vox",
+  "voxel_size_m": 0.5,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    4.0,
+    1.5,
+    0
+  ],
+  "dimensions_m": [
+    4.0,
+    1.5,
+    1.5
+  ],
+  "occupied_voxels": 72,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

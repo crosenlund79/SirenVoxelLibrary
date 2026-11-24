@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_delivery_van",
+  "base_id": "delivery_van",
+  "creator": "GPT",
+  "name": "Delivery Van",
+  "category": "vehicles",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_delivery_van.vox",
+  "voxel_size_m": 0.1,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    10.5,
+    26.0,
+    0
+  ],
+  "dimensions_m": [
+    2.1,
+    5.2,
+    2.6
+  ],
+  "occupied_voxels": 13349,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

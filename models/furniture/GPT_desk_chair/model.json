@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_desk_chair",
+  "base_id": "desk_chair",
+  "creator": "GPT",
+  "name": "Desk Chair",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_desk_chair.vox",
+  "voxel_size_m": 0.05,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    5.5,
+    5.5,
+    0
+  ],
+  "dimensions_m": [
+    0.55,
+    0.55,
+    0.95
+  ],
+  "occupied_voxels": 325,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

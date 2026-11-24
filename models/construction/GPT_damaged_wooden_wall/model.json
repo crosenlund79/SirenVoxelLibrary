@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_damaged_wooden_wall",
+  "base_id": "damaged_wooden_wall",
+  "creator": "GPT",
+  "name": "Damaged Wooden Wall",
+  "category": "construction",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_damaged_wooden_wall.vox",
+  "voxel_size_m": 0.1,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    5.0,
+    1.5,
+    0
+  ],
+  "dimensions_m": [
+    1.0,
+    0.3,
+    2.5
+  ],
+  "occupied_voxels": 750,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

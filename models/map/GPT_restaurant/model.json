@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_restaurant",
+  "base_id": "restaurant",
+  "creator": "GPT",
+  "name": "Restaurant",
+  "category": "map",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_restaurant.vox",
+  "voxel_size_m": 0.5,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    9.0,
+    10.0,
+    0
+  ],
+  "dimensions_m": [
+    9.0,
+    10.0,
+    6.0
+  ],
+  "occupied_voxels": 2792,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}

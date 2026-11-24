@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "GPT_bush",
+  "base_id": "bush",
+  "creator": "GPT",
+  "name": "Bush",
+  "category": "vegetation",
+  "revision": 1,
+  "status": "candidate",
+  "source": "GPT_bush.vox",
+  "voxel_size_m": 0.2,
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "pivot_voxel": [
+    3.0,
+    2.5,
+    0
+  ],
+  "dimensions_m": [
+    1.2,
+    1.0,
+    1.0
+  ],
+  "occupied_voxels": 56,
+  "material_roles": [
+    "shadow",
+    "charcoal",
+    "steel",
+    "highlight",
+    "concrete",
+    "plaster",
+    "lightwood",
+    "wood",
+    "darkwood",
+    "green",
+    "olive",
+    "brick",
+    "rust",
+    "slate",
+    "cloth",
+    "blue",
+    "black",
+    "bone",
+    "yellow",
+    "glass",
+    "skin",
+    "soil",
+    "leaf",
+    "white"
+  ],
+  "game_integration": [],
+  "notes": "Independent procedural first-pass GPT model; native MagicaVoxel application verification pending"
+}
