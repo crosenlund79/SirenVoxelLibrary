@@ -1,14 +1,14 @@
 # GPT vs Claude coverage
 
-Generated 2026-11-24 12:16 UTC by `tools/compare/build_compare.py` from `catalog.json`.
+Generated 2026-11-24 12:31 UTC by `tools/compare/build_compare.py` from `catalog.json`.
 
 GPT object types: **179**. Claude coverage:
 
-- independent Claude model: **25**
+- independent Claude model: **43**
 - existing Claude model reused: **1**
 - existing Claude model (alias): **5**
 - needs revision: **0**
-- missing: **148**
+- missing: **130**
 - Claude-only extras (no GPT counterpart): **0**
 
 | Batch | Base ID | GPT | Claude | Status | Note |
@@ -33,24 +33,24 @@ GPT object types: **179**. Claude coverage:
 | A | `dresser` | `GPT_dresser` | `Claude_dresser` | independent Claude model |  |
 | A | `small_desk` | `GPT_small_desk` | `Claude_small_desk` | independent Claude model |  |
 | A | `desk_chair` | `GPT_desk_chair` | `Claude_desk_chair` | independent Claude model |  |
-| A | `refrigerator` | `GPT_refrigerator` | — | missing |  |
-| A | `kitchen_oven` | `GPT_kitchen_oven` | — | missing |  |
-| A | `kitchen_counter` | `GPT_kitchen_counter` | — | missing |  |
-| A | `kitchen_sink` | `GPT_kitchen_sink` | — | missing |  |
-| A | `wall_cabinet` | `GPT_wall_cabinet` | — | missing |  |
-| A | `pantry_shelf` | `GPT_pantry_shelf` | — | missing |  |
-| A | `dining_crockery` | `GPT_dining_crockery` | — | missing |  |
-| A | `frying_pan` | `GPT_frying_pan` | — | missing |  |
-| A | `kettle` | `GPT_kettle` | — | missing |  |
-| A | `cutting_board` | `GPT_cutting_board` | — | missing |  |
-| A | `toilet` | `GPT_toilet` | — | missing |  |
-| A | `bathtub` | `GPT_bathtub` | — | missing |  |
-| A | `bathroom_sink` | `GPT_bathroom_sink` | — | missing |  |
-| A | `medicine_cabinet` | `GPT_medicine_cabinet` | — | missing |  |
-| A | `washing_machine` | `GPT_washing_machine` | — | missing |  |
-| A | `clothes_dryer` | `GPT_clothes_dryer` | — | missing |  |
-| A | `water_heater` | `GPT_water_heater` | — | missing |  |
-| A | `laundry_basket` | `GPT_laundry_basket` | — | missing |  |
+| A | `refrigerator` | `GPT_refrigerator` | `Claude_refrigerator` | independent Claude model |  |
+| A | `kitchen_oven` | `GPT_kitchen_oven` | `Claude_kitchen_oven` | independent Claude model |  |
+| A | `kitchen_counter` | `GPT_kitchen_counter` | `Claude_kitchen_counter` | independent Claude model |  |
+| A | `kitchen_sink` | `GPT_kitchen_sink` | `Claude_kitchen_sink` | independent Claude model |  |
+| A | `wall_cabinet` | `GPT_wall_cabinet` | `Claude_wall_cabinet` | independent Claude model |  |
+| A | `pantry_shelf` | `GPT_pantry_shelf` | `Claude_pantry_shelf` | independent Claude model |  |
+| A | `dining_crockery` | `GPT_dining_crockery` | `Claude_dining_crockery` | independent Claude model |  |
+| A | `frying_pan` | `GPT_frying_pan` | `Claude_frying_pan` | independent Claude model |  |
+| A | `kettle` | `GPT_kettle` | `Claude_kettle` | independent Claude model |  |
+| A | `cutting_board` | `GPT_cutting_board` | `Claude_cutting_board` | independent Claude model |  |
+| A | `toilet` | `GPT_toilet` | `Claude_toilet` | independent Claude model |  |
+| A | `bathtub` | `GPT_bathtub` | `Claude_bathtub` | independent Claude model |  |
+| A | `bathroom_sink` | `GPT_bathroom_sink` | `Claude_bathroom_sink` | independent Claude model |  |
+| A | `medicine_cabinet` | `GPT_medicine_cabinet` | `Claude_medicine_cabinet` | independent Claude model |  |
+| A | `washing_machine` | `GPT_washing_machine` | `Claude_washing_machine` | independent Claude model |  |
+| A | `clothes_dryer` | `GPT_clothes_dryer` | `Claude_clothes_dryer` | independent Claude model |  |
+| A | `water_heater` | `GPT_water_heater` | `Claude_water_heater` | independent Claude model |  |
+| A | `laundry_basket` | `GPT_laundry_basket` | `Claude_laundry_basket` | independent Claude model |  |
 | A | `dining_table` | `GPT_dining_table` | `Claude_dining_table` | existing Claude model reused |  |
 | A | `dining_chair` | `GPT_dining_chair` | `Claude_dining_chair` | independent Claude model |  |
 | B | `workbench` | `GPT_workbench` | `Claude_workbench_worn` | existing Claude model (alias) |  |
