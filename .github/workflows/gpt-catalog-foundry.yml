@@ -1,11 +1,12 @@
-name: Generate GPT Voxel Catalog
+name: Publish complete GPT voxel catalog
+
 on:
   push:
     branches:
       - gpt/complete-catalog
     paths:
-      - tools/gpt_catalog_foundry.py
-      - .github/workflows/gpt-catalog-foundry.yml
+      - '.github/workflows/gpt-catalog-foundry.yml'
+      - 'tools/gpt_catalog_foundry.py'
   workflow_dispatch:
 
 permissions:
@@ -16,9 +17,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  generate:
+  catalog:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
@@ -27,33 +28,80 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install image dependency
-        run: python -m pip install 'Pillow>=10,<12'
-      - name: Generate and validate editable VOX files and preview images
-        run: python tools/gpt_catalog_foundry.py .
-      - name: Verify catalog is complete and creator isolation is preserved
-        run: |
-          python - <<'PY'
-          import json, pathlib
-          root=pathlib.Path('.')
-          c=json.loads((root/'catalog.json').read_text())
-          records=[m for m in c['models'] if m['id'].startswith('GPT_')]
-          assert len(records)==179, f'Expected 179 GPT models, got {len(records)}'
-          for m in records:
-              assert m['creator']=='GPT' and m['status']=='candidate'
-              assert (root/m['source_path']).read_bytes()[:4]==b'VOX '
-              assert (root/m['preview_path']).is_file()
-              assert (root/m['metadata_path']).is_file()
-          print(f'Validated {len(records)} GPT assets with source, metadata and hero PNG.')
-          PY
-      - name: Commit generated assets to GPT branch only
+      - run: python -m pip install 'Pillow>=10,<12'
+      - name: Reassemble the exact original catalog package
         shell: bash
         run: |
           set -euo pipefail
+          test "$(find assets/archive_parts -name 'part_*' -type f | wc -l)" -eq 33
+          cat assets/archive_parts/part_* > /tmp/GPT_complete_catalog.zip
+          echo '538aee87e829022cc16a32705922988bb9221d68fa1f993eb3f86ebc47d6d3fc  /tmp/GPT_complete_catalog.zip' | sha256sum -c -
+          unzip -tq /tmp/GPT_complete_catalog.zip
+          mkdir -p /tmp/gpt_unpacked
+          unzip -q /tmp/GPT_complete_catalog.zip -d /tmp/gpt_unpacked
+
+      - name: Import new GPT candidate sources, preserving existing candidates and Claude ownership
+        shell: bash
+        run: |
+          python - <<'PY'
+          import pathlib,shutil,json
+          root=pathlib.Path('.')
+          unpack=pathlib.Path('/tmp/gpt_unpacked')
+          prior=json.loads((root/'catalog.json').read_text())
+          preserve={m['id'] for m in prior.get('models',[]) if m['id'].startswith('GPT_')}
+          for category in (unpack/'models').iterdir():
+              if not category.is_dir():continue
+              for asset in category.iterdir():
+                  assert asset.name.startswith('GPT_'),f'Unexpected non-GPT asset: {asset}'
+                  target=root/'models'/category.name/asset.name
+                  target.mkdir(parents=True,exist_ok=True)
+                  for path in asset.iterdir():
+                      dest=target/path.name
+                      if not dest.exists():shutil.copy2(path,dest)
+          for category in (unpack/'previews').iterdir():
+              if not category.is_dir():continue
+              for asset in category.iterdir():
+                  assert asset.name.startswith('GPT_'),f'Unexpected non-GPT preview: {asset}'
+                  target=root/'previews'/category.name/asset.name
+                  target.mkdir(parents=True,exist_ok=True)
+                  for path in asset.iterdir():
+                      dest=target/path.name
+                      # Existing model geometry gets independently rerendered from its actual VOX file.
+                      if asset.name not in preserve and not dest.exists():shutil.copy2(path,dest)
+          print('Preserved',len(preserve),'existing GPT sources, adding remaining assets')
+          PY
+          python tools/gpt_catalog_foundry.py .
+
+      - name: Verify 179 actual editable assets and gallery previews
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          root=pathlib.Path('.')
+          data=json.loads((root/'catalog.json').read_text())
+          models=[r for r in data['models'] if r['id'].startswith('GPT_')]
+          assert len(models)==179,len(models)
+          ids=set()
+          for m in models:
+              assert m['id'] not in ids and m['status']=='candidate' and m['creator']=='GPT'
+              ids.add(m['id'])
+              assert (root/m['source_path']).read_bytes()[:4]==b'VOX '
+              assert (root/m['metadata_path']).exists()
+              assert (root/m['preview_path']).exists()
+          assert (root/'gpt_gallery/index.html').exists()
+          print(f'PASS: {len(models)} genuine GPT candidate files, metadata and previews')
+          PY
+
+      - name: Commit assets only on GPT branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp /tmp/GPT_complete_catalog.zip assets/GPT_complete_catalog.zip
+          git rm -r -q assets/archive_parts
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add models previews catalog.json docs/GPT_catalog_manifest.json gpt_gallery/index.html
+          git add -A models previews catalog.json docs/GPT_catalog_manifest.json gpt_gallery/index.html assets/GPT_complete_catalog.zip
           if ! git diff --cached --quiet; then
-            git commit -m "Generate 179 GPT voxel candidates and PNG gallery"
+            git commit -m "Publish complete 179-model GPT voxel catalog and gallery"
             git push origin HEAD:gpt/complete-catalog
           fi
