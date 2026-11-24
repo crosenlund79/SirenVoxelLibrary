@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "id": "Claude_single_bed_unmade",
+  "base_id": "single_bed_unmade",
+  "creator": "Claude",
+  "name": "Unmade Single Bed",
+  "category": "furniture",
+  "revision": 1,
+  "status": "candidate",
+  "batch": "Claude_pilot_001",
+  "source": "Claude_single_bed_unmade.vox",
+  "source_format": "MagicaVoxel VOX v150 (SIZE, XYZI, RGBA), single model",
+  "derived": {
+    "glb": "Claude_single_bed_unmade.glb",
+    "glb_vertices": 2172,
+    "glb_triangles": 1086,
+    "glb_note": "Derived from the .vox by tools/claude/export_glb.py; do not edit by hand. Linear COLOR_0 vertex colours, one material."
+  },
+  "voxel_size_m": 0.05,
+  "resolution_tier": "detail",
+  "resolution_rationale": "0.05 m chosen to meet the brief's explicit 'avoid toy-like thickness'. At 0.10 m the thinnest possible duvet is 10 cm, the pillow is a single 10 cm slab, and the headboard slats and rails double in thickness; the cloth-versus-wood test fails. At 0.05 m the duvet is a believable 5 cm layer with a rolled fold, turned-over flap, hem and side drape. The mattress is a closed hollow shell to avoid invisible fill.",
+  "source_axes": {
+    "right": "+X",
+    "front": "+Y",
+    "up": "+Z"
+  },
+  "godot_forward": "-Z",
+  "godot_mapping": "godot = ((vx - px) * s, (vz - pz) * s, -(vy - py) * s)",
+  "pivot_voxel": [
+    11.5,
+    20.0,
+    0.0
+  ],
+  "pivot_note": "Bottom centre of the frame footprint (1.05 x 2.00 m); the duvet drape adds 0.05 m on the -X side.",
+  "front_note": "+Y is the FOOT of the bed (accessible end); the headboard is at -Y. The long duvet drape faces -X, toward the default three-quarter camera.",
+  "grid_size_cells": [
+    22,
+    40,
+    15
+  ],
+  "dimensions_m": [
+    1.1,
+    2.0,
+    0.75
+  ],
+  "dimensions_note": "Occupied extents of the voxel grid (X width, Y depth, Z height).",
+  "occupied_voxels": 3709,
+  "palette": "Shared Claude pilot palette (tools/claude/voxkit.py); one material family per 8-swatch row in MagicaVoxel's palette grid.",
+  "material_roles": [
+    "blue",
+    "blue_dark",
+    "blue_hi",
+    "blue_mid",
+    "blue_seam",
+    "cream",
+    "cream_deep",
+    "cream_hi",
+    "cream_mid",
+    "ochre_dark",
+    "paper",
+    "pine_aged",
+    "pine_dark",
+    "wood_deep",
+    "wood_stain"
+  ],
+  "palette_roles": [
+    {
+      "index": 4,
+      "role": "pine_aged",
+      "hex": "#967455",
+      "voxels": 456
+    },
+    {
+      "index": 5,
+      "role": "pine_dark",
+      "hex": "#7D5F45",
+      "voxels": 65
+    },
+    {
+      "index": 6,
+      "role": "wood_stain",
+      "hex": "#5E4839",
+      "voxels": 511
+    },
+    {
+      "index": 7,
+      "role": "wood_deep",
+      "hex": "#46362B",
+      "voxels": 88
+    },
+    {
+      "index": 89,
+      "role": "cream_hi",
+      "hex": "#E4DCCB",
+      "voxels": 124
+    },
+    {
+      "index": 90,
+      "role": "cream",
+      "hex": "#D7CDB9",
+      "voxels": 703
+    },
+    {
+      "index": 91,
+      "role": "cream_mid",
+      "hex": "#C7BCA6",
+      "voxels": 201
+    },
+    {
+      "index": 93,
+      "role": "cream_deep",
+      "hex": "#988C77",
+      "voxels": 811
+    },
+    {
+      "index": 95,
+      "role": "paper",
+      "hex": "#DDD6C6",
+      "voxels": 5
+    },
+    {
+      "index": 96,
+      "role": "ochre_dark",
+      "hex": "#826A3A",
+      "voxels": 8
+    },
+    {
+      "index": 97,
+      "role": "blue_hi",
+      "hex": "#8497A4",
+      "voxels": 38
+    },
+    {
+      "index": 98,
+      "role": "blue",
+      "hex": "#697D8B",
+      "voxels": 394
+    },
+    {
+      "index": 99,
+      "role": "blue_mid",
+      "hex": "#5D707D",
+      "voxels": 236
+    },
+    {
+      "index": 100,
+      "role": "blue_dark",
+      "hex": "#4E5F6B",
+      "voxels": 21
+    },
+    {
+      "index": 102,
+      "role": "blue_seam",
+      "hex": "#566874",
+      "voxels": 48
+    }
+  ],
+  "attachments": {},
+  "collision_hint": "Box 1.05 x 2.00 x 0.50 m plus a thin box for the headboard.",
+  "story": "Slept in and left in a hurry: the duvet thrown back toward the foot and sliding off the near side, pillow lopsided with the hollow of a head, a paperback left face-down on the sheet.",
+  "notes": [
+    "Sleeping surface (mattress top) at 0.45 m; headboard posts 0.75 m.",
+    "Single mattress 0.95 x 1.85 m; hidden slats are modelled for construction logic."
+  ],
+  "generator": "tools/claude/models/single_bed_unmade.py",
+  "previews": {
+    "hero": "previews/furniture/Claude_single_bed_unmade/hero.png",
+    "front": "previews/furniture/Claude_single_bed_unmade/front.png",
+    "side": "previews/furniture/Claude_single_bed_unmade/side.png",
+    "scale": "previews/furniture/Claude_single_bed_unmade/scale.png"
+  },
+  "verification": {
+    "automated": "tools/claude/validate.py; results in docs/reviews/Claude_pilot_001.md",
+    "magicavoxel_gui_open": "unverified (MagicaVoxel not available in the build environment)",
+    "godot_import": "unverified (Godot not available in the build environment)"
+  },
+  "game_integration": [],
+  "footprint_m": [
+    1.05,
+    2.0
+  ]
+}
