@@ -28,11 +28,11 @@ See the generator docstring and previews.
 - Resolution rationale: 10 cm cells (the game's structural grid): large silhouettes such as walls, vehicles and trees read clearly without inflating the voxel count.
 
 ## Materials and colors
-`concrete`, `concrete_dark`, `concrete_hi`, `galv`, `pine_aged`, `pine_dark`, `steel_dark`
+`concrete`, `concrete_dark`, `concrete_hi`, `galv`, `pine_aged`, `pine_dark`
 
 ## Details included
 - Poured slab with a chamfered top edge on the outside (+Y) face
-- Two galvanised anchor bolts with washers on the sill line
+- Two galvanised anchor bolts on the sill line
 - Float-finished lighter top, damp foot
 - The screed board still lying on it
 

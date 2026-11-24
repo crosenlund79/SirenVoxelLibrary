@@ -56,8 +56,7 @@
     "concrete_hi",
     "galv",
     "pine_aged",
-    "pine_dark",
-    "steel_dark"
+    "pine_dark"
   ],
   "palette_roles": [
     {
@@ -73,12 +72,6 @@
       "voxels": 1
     },
     {
-      "index": 36,
-      "role": "steel_dark",
-      "hex": "#4F5658",
-      "voxels": 2
-    },
-    {
       "index": 40,
       "role": "galv",
       "hex": "#989E9A",
@@ -88,7 +81,7 @@
       "index": 105,
       "role": "concrete_hi",
       "hex": "#A7A8A0",
-      "voxels": 98
+      "voxels": 100
     },
     {
       "index": 106,
